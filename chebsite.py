@@ -5,6 +5,7 @@
 # method that should be called from an instance of the Chebsite class is
 # .build().
 
+# import pdb; pdb.set_trace()
 import os, shutil, fnmatch, re
 import dateutil.parser as dateparser
 import processors
@@ -16,17 +17,17 @@ class Chebsite:
                        base_url='', out_ext='.html'):
 
         # Some configuration:
-        self.template_dir = template_dir
-        self.build_dir    = build_dir
-        self.base_url     = base_url
+        self.template_dir_rel = template_dir
+        self.build_dir_rel    = build_dir
+        self.base_url         = base_url
 
         # This will be the `site` variable
         self.data         = Struct(**{'base_url': base_url})
 
-        # The paths all become absolute here.
+        # The paths all are absolute here.
         self.work_dir     = os.getcwd()
-        self.template_dir = os.path.join(self.work_dir, self.template_dir)
-        self.build_dir    = os.path.join(self.work_dir, self.build_dir)
+        self.template_dir = os.path.join(self.work_dir, self.template_dir_rel)
+        self.build_dir    = os.path.join(self.work_dir, self.build_dir_rel)
 
     def build(self):
         """ The main build function. Order of operations:
@@ -44,8 +45,8 @@ class Chebsite:
         # extension, then move to the build_dir.
 
         # A full build copies over the entire working directory.
-        # self.copy_to_build_dir()
-        # self.rename_examples_and_guide_chapters()
+        self.copy_to_build_dir()
+        self.rename_examples_and_guide_chapters()
         os.chdir(self.build_dir)
 
         #---------------------------------------------------------------------
@@ -73,14 +74,34 @@ class Chebsite:
             to the build directory.
         """
         # What not to copy to _build directory.
-        ignore = shutil.ignore_patterns('.*', '_*', '*_eq*.png')
+        ignore_patterns = re.compile('\.+|.+\.pyc?|.+_eq.+\.png')
+        ignore_dirs     = ['_build', '_templates', '.git']
 
-        # First remove any existing build files.
-        if os.path.isdir(self.build_dir):
-            shutil.rmtree(self.build_dir)
+        # Walk through the directory and copy appropriate files.
+        for dirpath, dirnames, filenames in os.walk(self.work_dir):
 
-        # Move everything over to the build_dir.
-        shutil.copytree(self.work_dir, self.build_dir, ignore=ignore)
+            # Remove excluded directories.
+            dirnames[:] = [d for d in dirnames if d not in ignore_dirs]
+
+            reldirpath = os.path.relpath(dirpath, self.work_dir)
+
+            # I hate that this is necessary, but create any missing directories.
+            for somedir in dirnames:
+                somedir = os.path.join(self.build_dir, reldirpath, somedir)
+                somedir = os.path.normpath(somedir)
+                if not os.path.exists(somedir):
+                    os.makedirs(somedir)
+
+            for filename in filenames:
+                # Ignore specified file patterns.
+                if not re.match(ignore_patterns, filename):
+                    src = os.path.normpath(os.path.join(self.work_dir,  reldirpath, filename))
+                    dst = os.path.normpath(os.path.join(self.build_dir, reldirpath, filename))
+
+                    # Only copy files that have been modified.
+                    if not os.path.exists(dst) or os.stat(src).st_mtime > os.stat(dst).st_mtime:
+                        print('Modified: ' + src)
+                        shutil.copy2(src, dst)
 
 
     def rename_examples_and_guide_chapters(self):
