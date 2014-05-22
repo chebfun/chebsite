@@ -1,8 +1,10 @@
 
 _build
-*/img/*.html
+examples/*/img/*.html
+docs/guide/img/*.html
+docs/guide2/img/*.html
 docs/functions/*.html
-*/functions-mjunk/*
+docs/functions-mjunk/*
 
 *.pyc
 

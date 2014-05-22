@@ -1,0 +1,31 @@
+{% extends "_base.html" %}
+
+{% block body %}
+<div class='jumbotron page-header'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-12">
+                {% block title %} 
+                <h1>{{page.title}}</h1>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" role="main">
+            {{page.body}}
+            {% if 'guide2' in page.pathlist %}
+                {% for chapter in site.guide2chaps %}
+                <h4><a href="{{chapter.href}}">{{chapter.title}}</a></h4>
+                {% endfor %}
+            {% else %}
+                {% for chapter in site.guide1chaps %}
+                <h4><a href="{{chapter.href}}">{{chapter.title}}</a></h4>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+<li>
+<div class='row'>
+<div class='col-md-6 codewrap'><div class='code'>
+<pre class='mcode-input'>x = chebfun('x');
+
+% Define two functions
+f = exp(-x).*tanh(4*sin(40*x)).*(2 + sin(7*x)) / 16;
+g = (exp(sin(12*x) - x) + x - 2) / 12;
+
+rr = roots(f - g);      % Compute their intersections
+
+plot([f g]), hold on    % Plot the functions
+plot(rr, f(rr), 'o')    % and their intersections
+</pre>
+</div></div>
+<div class='col-md-6 image'><img src='demo1.png' style='margin-top: 33px' /></div>
+</div>
+</li>
+
+
+<li>
+<div class='row'>
+<div class='col-md-6 codewrap'><div class='code'>
+<pre class='mcode-input'>% Airy operator
+L = chebop(@(x,u) 0.01*diff(u,2) - x.*u, [-5,5]);
+L.bc = 'dirichlet';
+
+% Solve
+u = L \ 1;
+
+plot(u)
+</pre>
+</div></div>
+<div class='col-md-6 image'><img src='demo2.png' style='margin-top: 40px' /></div>
+</div>
+</li>
