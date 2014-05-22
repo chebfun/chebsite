@@ -75,7 +75,7 @@ class Chebsite:
         """
         # What not to copy to _build directory.
         ignore_patterns = re.compile('\.+|.+\.pyc?|.+_eq.+\.png')
-        ignore_dirs     = ['_build', '_templates', '.git']
+        ignore_dirs     = ['_build', '_templates', '.git', 'functions-mjunk']
 
         # Walk through the directory and copy appropriate files.
         for dirpath, dirnames, filenames in os.walk(self.work_dir):
