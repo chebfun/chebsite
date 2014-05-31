@@ -6,6 +6,22 @@ docs/guide2/img/*.html
 docs/functions/*.html
 docs/functions-mjunk/*
 
+examples/approx/*.m
+examples/calc/*.m
+examples/complex/*.m
+examples/fun/*.m
+examples/geom/*.m
+examples/integro/*.m
+examples/linalg/*.m
+examples/ode/*.m
+examples/ode-eig/*.m
+examples/opt/*.m
+examples/pde/*.m
+examples/quad/*.m
+examples/roots/*.m
+examples/stats/*.m
+examples/veccalc/*.m
+
 *.pyc
 
 *.pdf

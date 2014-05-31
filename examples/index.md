@@ -8,7 +8,7 @@ tagline:
 
 The Chebfun Examples have been written by various authors
 beginning in 2010.  New Examples are always welcome! &mdash; if
-you have an idea or a draft, please [contact us][/support].
+you have an idea or a draft, please [contact us](../support/).
 
 <!-- 
 The Examples are updated from time to time, but the original

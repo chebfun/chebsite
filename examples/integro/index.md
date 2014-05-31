@@ -1,5 +1,5 @@
 ---
-title: Integral and integro-differential equations
+title: Integral equations
 layout: examples-category-index
 order: title
 ---

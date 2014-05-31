@@ -52,3 +52,23 @@ tagline:
     </a>
     </div>
 </div>
+<div class="row widgets">
+    <div class="col-sm-6 col-md-6">
+    <a href='videos'>
+        <div class="widget thumbnail a">
+            <h3>Videos</h3>
+            <p>A growing collection of bite-size instructional videos 
+            exploring various uses and capabilities of Chebfun.</p>
+        </div>
+    </a>
+    </div>
+
+    <div class="col-sm-6 col-md-6">
+<!--     <a href='#'>
+        <div class="widget thumbnail a">
+            <h3></h3>
+            <p></p>
+        </div>
+    </a> -->
+    </div>
+</div>

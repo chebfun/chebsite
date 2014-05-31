@@ -174,8 +174,9 @@ class Chebsite:
             # Python's dateutils has a magic "fuzzy" date function that
             # parses arbitrary text and turns up a date object. If the day
             # is not given, as in some of the examples, it makes one up.
-            dateobj = dateparser.parse(node.data.authordate, fuzzy=True)
-            date    = dateobj.strftime("%Y-%m-%d")
+            fuzzystr = "1 " + node.data.authordate # In case it complains there's no day.
+            dateobj  = dateparser.parse(fuzzystr, fuzzy=True)
+            date     = dateobj.strftime("%Y-%m-%d")
 
             # Update the node's data fields.
             node.data.update({
