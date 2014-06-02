@@ -110,7 +110,7 @@ class Chebsite:
             to the path
                 .../examples/CATEGORY/NAME.md         (Same content, copied)
             and similar for Guide chapters, which begin at
-                .../docs/guide2?/img/guideN.html
+                .../docs/guide/img/guideN.html
         """
         for dirpath, dirnames, filenames in os.walk(self.build_dir):
             for filename in filenames:
@@ -192,16 +192,15 @@ class Chebsite:
         """
 
         # These are site-wide variables.
-        guide1chaps = [x.get_data() for x in self.nodes if x.isa('guide1chap')]
-        guide2chaps = [x.get_data() for x in self.nodes if x.isa('guide2chap')]
+        guidechaps = [x.get_data() for x in self.nodes if x.isa('guidechap')]
+        guidechaps = sort_alphanum(guidechaps)
         examples_subindexes = [x.get_data() for x in self.nodes if x.isa('examples_subindex')]
-        examples    = [x.get_data() for x in self.nodes if x.isa('example')]
-        examples    = sorted(examples, key=lambda e: e['date'], reverse=True)
+        examples   = [x.get_data() for x in self.nodes if x.isa('example')]
+        examples   = sorted(examples, key=lambda e: e['date'], reverse=True)
 
-        self.data.update({'guide1chaps':            guide1chaps,
-                          'guide2chaps':            guide2chaps,
-                          'examples_subindexes':    examples_subindexes,
-                          'examples':               examples
+        self.data.update({'guidechaps':          guidechaps,
+                          'examples_subindexes': examples_subindexes,
+                          'examples':            examples
                         })
 
         # Each Examples subindex needs a list of its contents.
@@ -299,14 +298,9 @@ class FileNode:
             self.keys = self.keys.union(['examples_subindex'])
 
         if 'guide' in self.pathlist:
-            self.keys = self.keys.union(['guide', 'guide1'])
+            self.keys = self.keys.union('guide')
             if not self.isa('index'):
-                self.keys = self.keys.union(['guidechap', 'guide1chap'])
-
-        if 'guide2' in self.pathlist:
-            self.keys = self.keys.union(['guide', 'guide2'])
-            if not self.isa('index'):
-                self.keys = self.keys.union(['guidechap', 'guide2chap'])
+                self.keys = self.keys.union(['guidechap'])
 
     def has(self, s):
         return s in self.data.__dict__
@@ -364,3 +358,18 @@ def pathlist(path):
             lst.insert(0, next)
 
     return lst
+
+
+
+#-----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+# A function for better (alphanum) sorting. Obfuscated code, but it works. Ug.
+# Modified from  <http://nedbatchelder.com/blog/200712/human_sorting.html#comments>
+
+def sort_alphanum(l):
+    return sorted(l, key=lambda a: zip( \
+                                    re.split("(\\d+)", \
+                                        a['title'].lower())[0::2], \
+                                    map(int, re.split("(\\d+)", \
+                                        a['title'].lower())[1::2])) \
+                                    )
