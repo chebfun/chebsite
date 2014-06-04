@@ -58,8 +58,8 @@ class Chebsite:
 
         #---- ii.
         # Extra processing, e.g. creating the examples gallery.
-        self.crunch_examples_vars()   # Tags and author/date info, etc.
-        self.crunch_site_vars()       # Guide chapters list, etc.
+        self.crunch_page_vars()     # Tags and author/date info, etc.
+        self.crunch_site_vars()     # Guide chapters list, etc.
 
         #---- iii.
         # Convert .md -> .html and do all templating via jinja2.
@@ -142,10 +142,13 @@ class Chebsite:
                     self.nodes.append(node)
 
 
-    def crunch_examples_vars(self):
+    def crunch_page_vars(self):
         """ Computes/parses out a few extra variables (e.g. tags and date)
-            for the examples. The values are saved in the relevant nodes.
+            for individual pages. The values are saved in the relevant nodes.
         """
+
+        #---------------------------------------------------------------------
+        # EXAMPLES
 
         # This includes category indexes as well as Examples themselves.
         examplefiles = [x for x in self.nodes if x.isa('examples')]
@@ -186,9 +189,22 @@ class Chebsite:
                 })
 
 
+        #---------------------------------------------------------------------
+        # NEWS
+
+        # The only thing we need to do for news items is parse out the date.
+        news_items = [x for x in self.nodes if x.isa('news_item')]
+        for node in news_items:
+            datestr = node.pathlist[0]
+            dateobj = dateparser.parse(datestr, fuzzy=True)
+            date    = dateobj.strftime("%Y-%m-%d")
+            node.data.update({'date': date})
+
+
     def crunch_site_vars(self):
         """ Create the `chapters` variables for the Guide index pages.
-            These are global variables.
+            Create the `news_archive` index of all news posts.
+            These are global variables, accessible by the `site` variable in templates.
         """
 
         # These are site-wide variables.
@@ -197,10 +213,12 @@ class Chebsite:
         examples_subindexes = [x.get_data() for x in self.nodes if x.isa('examples_subindex')]
         examples   = [x.get_data() for x in self.nodes if x.isa('example')]
         examples   = sorted(examples, key=lambda e: e['date'], reverse=True)
+        news_items = [x.get_data() for x in self.nodes if x.isa('news_item')]
 
         self.data.update({'guidechaps':          guidechaps,
                           'examples_subindexes': examples_subindexes,
-                          'examples':            examples
+                          'examples':            examples,
+                          'news_items':          news_items
                         })
 
         # Each Examples subindex needs a list of its contents.
@@ -210,8 +228,6 @@ class Chebsite:
             eggs = [eg.get_data() for eg in self.nodes if eg.isa('example') \
                                               and eg.data.category == sub.data.category]
             sub.data.update({'examples': eggs})
-
-
 
     def render_site(self):
         """ Converts Markdown to HTML and then renders templates with jinja2.
@@ -301,6 +317,11 @@ class FileNode:
             self.keys = self.keys.union('guide')
             if not self.isa('index'):
                 self.keys = self.keys.union(['guidechap'])
+
+        if 'news' in self.pathlist:
+            self.keys = self.keys.union('news')
+            if not self.isa('index'):
+                self.keys = self.keys.union(['news_item'])
 
     def has(self, s):
         return s in self.data.__dict__

@@ -1,5 +1,5 @@
 ---
-title: Citing
+title: Publications
 layout: basic
 order: title
 ---
