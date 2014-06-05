@@ -195,9 +195,9 @@ class Chebsite:
         # The only thing we need to do for news items is parse out the date.
         news_items = [x for x in self.nodes if x.isa('news_item')]
         for node in news_items:
-            datestr = node.pathlist[0]
+            datestr = node.slug.split('-')[0]
             dateobj = dateparser.parse(datestr, fuzzy=True)
-            date    = dateobj.strftime("%Y-%m-%d")
+            date    = dateobj.strftime("%e %B %Y")  # e.g. 21 June 2014
             node.data.update({'date': date})
 
 
@@ -210,9 +210,14 @@ class Chebsite:
         # These are site-wide variables.
         guidechaps = [x.get_data() for x in self.nodes if x.isa('guidechap')]
         guidechaps = sort_alphanum(guidechaps)
-        examples_subindexes = [x.get_data() for x in self.nodes if x.isa('examples_subindex')]
-        examples   = [x.get_data() for x in self.nodes if x.isa('example')]
+
+        examples_subindexes = [x.get_data() for x in self.nodes \
+                if x.isa('examples_subindex') and not x.isa('temp')]
+
+        examples   = [x.get_data() for x in self.nodes \
+                if x.isa('example') and not x.isa('temp')]
         examples   = sorted(examples, key=lambda e: e['date'], reverse=True)
+
         news_items = [x.get_data() for x in self.nodes if x.isa('news_item')]
 
         self.data.update({'guidechaps':          guidechaps,
@@ -312,6 +317,9 @@ class FileNode:
 
         if 'examples-category-index' == self.data.layout:
             self.keys = self.keys.union(['examples_subindex'])
+
+        if 'temp' in self.pathlist:
+            self.keys = self.keys.union(['temp'])
 
         if 'guide' in self.pathlist:
             self.keys = self.keys.union('guide')

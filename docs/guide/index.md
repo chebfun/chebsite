@@ -1,5 +1,5 @@
 ---
-title: The Chebfun Guide
+title: Chebfun Guide
 layout: guide-index
 key: guide-index
 ---

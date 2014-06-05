@@ -209,9 +209,9 @@ layout: basic
 
     <div class="col-sm-6 col-md-3">
     <div class="widget">
-    <img class="thumbnail profile" src="images/placeholder.png" />
+    <img class="thumbnail profile" src="images/kx.png" />
     <h3>Kuan Xu</h3>
-    Kuan Xu has been a postdoc at Oxford since 2012.  He is the team's expert
+    Kuan Xu has been a postdoc at Oxford since 2012. He is the team's expert
     on algorithms and mathematics for Chebyshev points of the first kind, and
     he wrote the Chebfun v5 code for handling unbounded intervals.
     </div>
