@@ -1,27 +1,11 @@
-{% extends "_base.html" %}
+{% extends "basic.html" %}
 
-{% block body %}
-<div class='jumbotron page-header'>
-    <div class='container'>
-        <div class="row">
-            <div class="col-md-12">
-                {% block title %}
-                <h1>{{page.title}}</h1>
-                {% endblock %}
-            </div>
-        </div>
-    </div>
-</div>
+{% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <ol class='news-archive'>
-            {%- for item in site.news_items -%}
-            <a href='{{item.href}}'><li><span class='date'>{{item.date}}</span>{{item.title}}<span class='snip'>{{item.snip}}</span></li></a>
-            {%- endfor -%}
-            </ol>
-        </div>
-    </div>
-</div>
+<ol class='news-archive'>
+{%- for item in site.news_items -%}
+<a href='{{item.href}}'><li><span class='date'>{{item.date}}</span>{{item.title}}<span class='snip'>{{item.snip}}</span></li></a>
+{%- endfor -%}
+</ol>
+
 {% endblock %}

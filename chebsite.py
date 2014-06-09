@@ -157,6 +157,13 @@ class Chebsite:
             category = os.path.split(node.dir)[1]
             node.data.update({'category': category})
 
+        for cat in examplefiles:
+            if cat.isa('index'):
+                num = sum(1 for e in examplefiles \
+                        if e.data.category == cat.data.category \
+                        and not e.isa('index'))
+                cat.data.update({'examples_count': num})
+
         # Now we look at examples only.
         tag_pattern = re.compile("#([^,\]\n]+)")    # Regex pattern for hashtags.
         examples = [x for x in self.nodes if x.isa('example')]

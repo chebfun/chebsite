@@ -1,44 +1,38 @@
-{% extends "_base.html" %}
+{% extends "basic.html" %}
 
-{% block body %}
-<div class='jumbotron page-header'>
-    <div class='container'>
-        <div class="row">
-            <div class="col-md-12">
-                {% block title %}
-                <h1>Examples &raquo; {{page.title}}</h1>
-                {% endblock %}
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12" role="main">
-            {{page.body}}
+{% block title %}
+<h1>Examples &raquo; {{page.title}}</h1>
+{% endblock %}
 
-            {%- for egg in page.examples -%}
-                <div class='row'><a href='{{egg.href}}'>
-                <div class='col-md-12 well gallery-item left'>
-                <img src='{{egg.img}}' />
-                <h3>{{egg.title}}</h3>
-                <h4>{{egg.authordate}}</h4>
-                <h4 class='tags'>
+{% block sidenav %}
+    <ul class='sidenav'>
+    {% for sub in site.examples_subindexes %}
+        {% if sub.category == page.category %}
+        <li class='active'><a href="{{sub.href}}">{{sub.title}} ({{sub.examples_count}})</a></li>
+        {% else %}
+        <li><a href="{{sub.href}}">{{sub.title}} ({{sub.examples_count}})</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block content %}
+    {{page.body}}
+    <ol class='examples slats'>
+    {% for egg in page.examples %}
+    <li>
+        <a href='{{egg.href}}' class='widget'>
+            <img src='{{egg.img}}' />
+            <h3>{{egg.title}}</h3>
+            <p>{{egg.authordate}}
+                <span class='tags'>
                 {%- for tag in egg.tags -%}
-                <a href='#' class='tag'>#{{tag}}</a>{% if not loop.last %}, {% endif -%}
+                <span href='#' class='tag'>#{{tag}}</span>{% if not loop.last %}, {% endif -%}
                 {%- endfor -%}
-                </h4>
-                </div></a></div>
-            {%- endfor -%}
-
-            {# List style, no longer used
-            <ol class='orangenumbers'>
-            {% for egg in page.examples %}
-                <h4><li><a href="{{egg.href}}">{{egg.title}}</a></li></h4>
-            {% endfor %}
-            #}
-            </ol>
-        </div>
-    </div>
-</div>
+                </span>
+            </p>
+        </a>
+    </li>
+    {% endfor %}
+    </ol>
 {% endblock %}
