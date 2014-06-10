@@ -108,7 +108,7 @@ layout: basic
     </div>
 
     <div class="col-xs-6 col-sm-3">
-    <img class="thumbnail profile" src="images/hm.jpg" />
+    <img class="thumbnail profile" src="images/hm.png" />
     <h3>Hadrien Montanelli</h3>
     Hadrien Montanelli started as a DPhil student at Oxford in 2013. He is
     interested in fundamental algorithms and theorems related to numerical
