@@ -1,5 +1,9 @@
 {% extends "basic.html" %}
 
+{% block title %}
+<h1 class='pull-left-15px'>{{page.title}}</h1>
+{% endblock %}
+
 {% block sidenav %}
     <ul class='sidenav'>
     {% for sub in site.examples_subindexes %}
@@ -11,9 +15,9 @@
 {% block content %}
     {{page.body}}
     <ol class='examples slats'>
-    {% for egg in site.examples[:10] %}
+    {% for egg in site.examples[:7] %}
     <li>
-        <a href='{{egg.href}}' class='widget'>
+        <a href='{{egg.href}}'>
             <img src='{{egg.img}}' />
             <h3>{{egg.title}}</h3>
             <p>{{egg.authordate}}

@@ -159,9 +159,9 @@ class Chebsite:
 
         for cat in examplefiles:
             if cat.isa('index'):
-                num = sum(1 for e in examplefiles \
-                        if e.data.category == cat.data.category \
-                        and not e.isa('index'))
+                num = sum(1 for x in examplefiles \
+                        if x.data.category == cat.data.category \
+                        and not x.isa('index'))
                 cat.data.update({'examples_count': num})
 
         # Now we look at examples only.
@@ -197,6 +197,40 @@ class Chebsite:
 
 
         #---------------------------------------------------------------------
+        # GUIDE
+
+        # Some variables for Guide chapters.
+        guidechaps = [x for x in self.nodes if x.isa('guidechap')]
+        guidechaps = sort_alphanum(guidechaps, lam=lambda a: a.data.title)
+
+        pattern = re.compile('(\d+)\.\s(.+)\s*')
+        for (i, node) in enumerate(guidechaps):
+            chapter_number = ''
+            matchobj = re.match(pattern, node.data.title)
+            chapter_number = matchobj.group(1)
+            title_nonumber = matchobj.group(2)
+
+            link_prev = None
+            link_next = None
+            if i > 0:
+                link_prev = guidechaps[i-1].href
+            if i < len(guidechaps) - 1:
+                link_next = guidechaps[i+1].href
+
+            imgnum = str(1).zfill(2) # in theory this `1` could be different...
+            imgname = node.slug + '_' + imgnum + '.png'
+            imghref = os.path.join(node.dirref, 'img', imgname)
+
+            node.data.update({
+                'chapter_number': chapter_number,
+                'title_nonumber': title_nonumber,
+                'link_prev':      link_prev,
+                'link_next':      link_next,
+                'img':            imghref
+                })
+
+
+        #---------------------------------------------------------------------
         # NEWS
 
         # The only thing we need to do for news items is parse out the date.
@@ -208,6 +242,29 @@ class Chebsite:
             node.data.update({'date': date})
 
 
+        #---------------------------------------------------------------------
+        # BREADCRUMBS
+
+        self.give_macro_breadcrumbs('docs/guide/index', ['docs/index'])
+        self.give_macro_breadcrumbs('docs/videos/index', ['docs/index'])
+        self.give_macro_breadcrumbs('docs/faq/index', ['docs/index'])
+
+        self.give_macro_breadcrumbs('about/history', ['about/index'])
+        self.give_macro_breadcrumbs('about/people', ['about/index'])
+
+
+    def get_node(self, string):
+        xx = [x for x in self.nodes if x.data.id == string]
+        return xx[0]
+
+    def give_macro_breadcrumbs(self, id, crumbrefs):
+        page    = self.get_node(id)
+        parents = [self.get_node(ref) for ref in crumbrefs]
+        page.data.update({'macro_breadcrumbs': [
+                    {'href': p.data.href, 'title': p.data.title} for p in parents
+                ]
+            })
+
     def crunch_site_vars(self):
         """ Create the `chapters` variables for the Guide index pages.
             Create the `news_archive` index of all news posts.
@@ -216,7 +273,7 @@ class Chebsite:
 
         # These are site-wide variables.
         guidechaps = [x.get_data() for x in self.nodes if x.isa('guidechap')]
-        guidechaps = sort_alphanum(guidechaps)
+        guidechaps = sort_alphanum(guidechaps, lam=lambda a: a['title'])
 
         examples_subindexes = [x.get_data() for x in self.nodes \
                 if x.isa('examples_subindex') and not x.isa('temp')]
@@ -225,11 +282,15 @@ class Chebsite:
                 if x.isa('example') and not x.isa('temp')]
         examples   = sorted(examples, key=lambda e: e['date'], reverse=True)
 
+        examples_count = sum(1 for x in self.nodes \
+                if x.isa('example') and not x.isa('index'))
+
         news_items = [x.get_data() for x in self.nodes if x.isa('news_item')]
 
         self.data.update({'guidechaps':          guidechaps,
                           'examples_subindexes': examples_subindexes,
                           'examples':            examples,
+                          'examples_count':      examples_count,
                           'news_items':          news_items
                         })
 
@@ -273,22 +334,27 @@ class FileNode:
         (self.slugpath, self.in_ext) = os.path.splitext(self.relpath)
         (self.dir, self.slug)  = os.path.split(self.slugpath)
         self.out_ext           = out_ext
+        self.id                = self.slugpath
         self.filename          = self.slug + out_ext
         self.dirref            = os.path.join('/', base_url, self.dir)
+        self.slughref          = os.path.join(self.dirref, self.slug)
         self.href              = os.path.join(self.dirref, self.slug + out_ext)
         self.pathlist          = pathlist(self.slugpath + out_ext)
 
-        # This will be the `page` variable.
+        # This will become the `page` variable in the templates.
         self.data              = Struct(**{
             'title':    '',
             'body':     '',
             'base_url': base_url,
+            'id':       self.id,
             'href':     self.href,
             'dir':      self.dir,
             'pathlist': self.pathlist,
             'filename': self.filename,
+            'slughref': self.slughref,
             'slug':     self.slug,
-            'ext':      self.out_ext
+            'ext':      self.out_ext,
+            'macro_breadcrumbs': []
             })
 
         # Keys are internal tags used to slice a list of FileNodes.
@@ -402,10 +468,10 @@ def pathlist(path):
 # A function for better (alphanum) sorting. Obfuscated code, but it works. Ug.
 # Modified from  <http://nedbatchelder.com/blog/200712/human_sorting.html#comments>
 
-def sort_alphanum(l):
+def sort_alphanum(l, lam):
     return sorted(l, key=lambda a: zip( \
                                     re.split("(\\d+)", \
-                                        a['title'].lower())[0::2], \
+                                        lam(a).lower())[0::2], \
                                     map(int, re.split("(\\d+)", \
-                                        a['title'].lower())[1::2])) \
+                                        lam(a).lower())[1::2])) \
                                     )

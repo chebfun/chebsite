@@ -29,7 +29,7 @@ tagline:
 
 <div class="row">
     <div class="col-sm-6 col-md-6">
-    <a href='functions.html' class='widget'>
+    <a href='functions' class='widget'>
         <h3>Function reference</h3>
         <p>A catalogue of technical documentation for each of Chebfun's
         more than 200 standard functions.</p>
@@ -48,7 +48,7 @@ tagline:
 
 <div class="row">
     <div class="col-sm-6 col-md-6">
-    <a href='faq.html' class='widget'>
+    <a href='faq' class='widget'>
         <h3>FAQ</h3>
         <p>Frequently asked questions about Chebfun, including details
         about terminology, mathematical background, system requirements,

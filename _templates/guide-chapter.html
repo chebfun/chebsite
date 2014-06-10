@@ -1,6 +1,17 @@
 {% extends "basic.html" %}
 
 {% block title %}
-<h1>{{page.title}}</h1>
-<h2>{{page.authordate}}</h2>
+<span class='chapter_number'>{{page.chapter_number}}</span>
+<h1>{{page.title_nonumber}}</h1>
+<h2>{{page.authordate}}<span>
+    
+        <a href='{{page.link_prev}}'
+            {% if not page.link_prev -%}class='invisible'{%- endif -%}
+            >previous</a><span class='sep
+            {% if not page.link_prev %} invisible{%- endif -%}
+            '>&middot;</span><a href='../guide'>index</a><span class='sep
+            {% if not page.link_next %} invisible{%- endif -%}
+            '>&middot;</span><a href='{{page.link_next}}'
+            {% if not page.link_next -%}class='invisible'{%- endif -%}
+            >next</a></span></h2>
 {% endblock %}

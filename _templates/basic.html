@@ -1,44 +1,46 @@
 {% extends "_base.html" %}
 
 {% block body %}
-<div class="container main">
+<div class="page-wrapper">
 
     <div class='page-header'>
-        <div class='container'>
-            <div class="row">
-                <div class="col-sm-12">
-                    {% block title %}
-                    <h1>{{page.title}}</h1>
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
+        {% block title %}
+        <h1>
+        {%- for bc in page.macro_breadcrumbs -%}
+            <a href='{{bc.href}}'>{{bc.title}}</a><span class='sep'>&raquo;</span>
+        {%- endfor -%}
+        {{page.title}}</h1>
+        {%- endblock -%}
     </div>
 
-    {# % block breadcrumbs %}
-    <ol class="breadcrumb">
-       <li><a href="/">Home</a></li>
-       {% for bc in page.breadcrumbs[:-1] %}
-       <li><a href="{{bc.url}}">{{bc.title}}</a></li>
-       {% endfor %}
-       <li class="active">{{page.breadcrumbs[-1].title}}</li>
-    </ol>
-    {% endblock % #}
+    <div class="container">
+        {# % block breadcrumbs %}
+        <ol class="breadcrumb">
+           <li><a href="/">Home</a></li>
+           {% for bc in page.breadcrumbs[:-1] %}
+           <li><a href="{{bc.url}}">{{bc.title}}</a></li>
+           {% endfor %}
+           <li class="active">{{page.breadcrumbs[-1].title}}</li>
+        </ol>
+        {% endblock % #}
+
         {%- if self.sidenav() -%}
         <div class="row main noleftpadding">
             <div class="col-sm-4 noleftpadding">
                 {%- block sidenav -%}
                 {%- endblock -%}
             </div>
-            <div class="col-sm-8" role="main">
+            <div id='content' class="col-sm-8" role="main">
         {%- else -%}
         <div class="row main">
-            <div class="col-sm-12" role="main">
+            <div id='content' class="col-sm-12" role="main">
         {%- endif -%}
-                {%- block content -%}
-                {{page.body}}
-                {%- endblock -%}
-            </div>
+
+        {%- block content -%}
+        {{page.body}}
+        {%- endblock -%}
+        </div>
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -5,9 +5,7 @@ python _urubu/__main__.py serve &
 find . -name "*.md" -type f -delete
 
 /Applications/MATLAB_R2013a.app/toolbox/matlab/codetools/private/mxdom2simplehtml.xsl
-
-inside bootswatch folder, do
-    grunt swatch:united
+/Applications/MATLAB_R2013a.app/toolbox/matlab/codetools/+internal/+matlab/+publish/chebexample_PublishFigures.m
 
 ----
 
