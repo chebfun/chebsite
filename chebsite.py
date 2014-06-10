@@ -239,7 +239,8 @@ class Chebsite:
             datestr = node.slug.split('-')[0]
             dateobj = dateparser.parse(datestr, fuzzy=True)
             date    = dateobj.strftime("%e %B %Y")  # e.g. 21 June 2014
-            node.data.update({'date': date})
+
+            node.data.update({ 'date': date })
 
 
         #---------------------------------------------------------------------
@@ -252,6 +253,8 @@ class Chebsite:
         self.give_macro_breadcrumbs('about/history', ['about/index'])
         self.give_macro_breadcrumbs('about/people', ['about/index'])
 
+        for node in news_items:
+            self.give_macro_breadcrumbs(node.data.id, ['news/index'])
 
     def get_node(self, string):
         xx = [x for x in self.nodes if x.data.id == string]

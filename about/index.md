@@ -20,7 +20,7 @@ a sense of the breadth and power of Chebfun, a great place to start is by
 looking at our [Examples](../examples).
 
 <div class="row">
-    <div class="col-sm-6 col-md-6">
+    <div class="col-sm-4 col-md-4">
     <a href='history.html' class='widget'>
         <h3>History</h3>
         <p>Chebfun was invented in 2002 as part of Zachary Battles' DPhil thesis
@@ -28,10 +28,17 @@ looking at our [Examples](../examples).
     </a>
     </div>
 
-    <div class="col-sm-6 col-md-6">
+    <div class="col-sm-4 col-md-4">
     <a href='people.html' class='widget'>
         <h3>People</h3>
         <p>A list of the major contributors to Chebfun over the years.</p>
+    </a>
+    </div>
+
+    <div class="col-sm-4 col-md-4">
+    <a href='sponsors.html' class='widget'>
+        <h3>Sponsors</h3>
+        <p>Chebfun is sponsored by EPSRC, ERC, Mathworks, and OCCAM.</p>
     </a>
     </div>
 </div>

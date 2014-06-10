@@ -1,31 +1,48 @@
 {% extends "_base.html" %}
 
 {% block body %}
-<div class='jumbotron page-header'>
-    <div class='container text-center'>
+
+<a href="//github.com/chebfun/chebfun"><img style="position: absolute; top: 50px; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+<div class="page-wrapper homepage">
+
+    <div class='page-header'>
+        <h1>Chebfun<span class='sep'>&mdash;</span><span>numerical computing with functions</span></h1>
+    </div>
+
+    <div class="container main">
         <div class="row">
-            <div class="col-md-12">
-                <h1>Chebfun<span>numerical computing with functions</span></h1>
-                <div class="flexslider billboard">
-                  <ul class="slides">
-                  {% include 'homepage-snippets.html' %}
-                  </ul>
+            <div class='description'>
+                <div class='col-sm-9'>
+                    <p>Chebfun is an open-source MATLAB package for computing
+                    with functions to 15-digit accuracy. Most Chebfun commands
+                    are overloads of familiar MATLAB commands &mdash; for
+                    example <code>sum(f)</code> computes an integral,
+                    <code>roots(f)</code> finds zeros, and <code>u =
+                    L\f</code> solves a differential equation.</p>
                 </div>
-                <h4 class='description'>Chebfun is an open-source MATLAB
-                package for computing with functions to 15-digit accuracy.
-                Most Chebfun commands are overloads of familiar MATLAB
-                commands &mdash; for example <code>sum(f)</code> computes an
-                integral, <code>roots(f)</code> finds zeros, and <code>u =
-                L\f</code> solves a differential equation.</h4>
+                <div class='col-sm-3'>
+                    <div class="btn-group-vertical">
+                    <button class='btn btn-lg btn-success btn-download'>Download</button>
+                    <button class='btn btn-lg btn-primary btn-browsesource'>Browse source</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden flexslider billboard">
+          <ul class="slides">
+          {% include 'homepage-snippets.html' %}
+          </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" role="main">
+                {{page.body}}
             </div>
         </div>
     </div>
+
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12" role="main">
-            {{page.body}}
-        </div>
-    </div>
-</div>
+
 {% endblock %}

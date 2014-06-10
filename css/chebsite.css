@@ -12,10 +12,13 @@ body {
   background-color: #ffffff
 }
 
-#content ul li {
-  list-style: square;
-  margin: .36em 0;
+#content ul {
+  padding: 0 0 0 18px;
 }
+  #content ul li {
+    list-style: square;
+    margin: .36em 0;
+  }
 
 /* navbar
 --------------------------------------------------------------------------- */
@@ -75,7 +78,7 @@ body {
   .container {
     max-width: 800px;
   }
-  .row.main {
+  .main {
     background-color: #fefefe;
     padding: 15px;
 
@@ -273,12 +276,10 @@ ol.guide.slats {
 ol.guide.slats {
 }
     ol.guide.slats a {
-      border-right: 1px solid transparent;
       opacity: 0.88;
       filter: alpha(opacity=88); /* For IE8 and earlier */
     }
       ol.guide.slats a:hover, ol.guide.slats a:active {
-        border-color: #bbb;
         opacity: 1.0;
         filter: alpha(opacity=100); /* For IE8 and earlier */
         }
@@ -295,12 +296,37 @@ ol.guide.slats {
         }
 
 
+ol.news.slats {
+  margin: 0;
+}
+  ol.news.slats li a h3 span.date, ol.news.slats li a h3 span.sep {
+    color: #777;
+    font-weight: normal;
+  }
+    ol.news.slats li a h3, ol.news.slats li a p {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    ol.news.slats a h3 {
+      color: #2790ae;
+    }
+    ol.news.slats a:hover h3, ol.news.slats a:active h3 {
+      color: #2e7589;
+    }
+    ol.news.slats a p {
+      color: #555;
+    }
+    ol.news.slats a:hover p, ol.news.slats a:active p {
+      color: #333;
+    }
+
+
 /* examples and guide components
 --------------------------------------------------------------------------- */
 .pull-left-15px { /* to make the title align with the sidenav */
   /*margin-left: -15px;*/
 }
-.page-header .sep {
+.sep {
   padding: 0 10px;
 }
 .page-header a {
@@ -356,6 +382,9 @@ blockquote {
   font-style: italic;
   }
 
+#content h3 {
+  font-weight: 600;
+}
 
 
 /* thumbnail gallery (for about/people.html)
@@ -367,3 +396,40 @@ blockquote {
 .thumbnail.profile {
   width: 100%;
 }
+
+
+/* homepage
+--------------------------------------------------------------------------- */
+.homepage .page-header h1 {
+  text-align: center;
+}
+  .homepage .page-header h1 span {
+    color: #ccc;
+  }
+
+.homepage .description {
+  padding: 0;
+  margin: 1em 0 1.5em;
+}
+  .homepage .description p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .homepage .description .btn-group-vertical {
+    float: right;
+    font-size: 18px;
+  }
+  .homepage .description .btn-group-vertical,
+  .homepage .description .btn-download,
+  .homepage .description .btn-browsesource {
+    font-family: inherit;
+  }
+
+.homepage .widgets {
+  margin-left: -22px;
+  margin-right: -22px;
+}
+  .homepage .widgets .col {
+    padding: 0 7px;
+  }

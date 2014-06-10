@@ -2,10 +2,15 @@
 
 {% block content %}
 
-<ol class='news-archive'>
+<ol class='news slats'>
 {%- for item in site.news_items -%}
-<a href='{{item.href}}'><li><span class='date'>{{item.date}}</span>{{item.title}}<span class='snip'>{{item.snip}}</span></li></a>
-{%- endfor -%}
+<li>
+    <a href='{{item.href}}'>
+        <h3><span class='date'>{{item.date}}</span><span class='sep'>/</span>{{item.title}}</h3>
+        <p>{{item.snip}}</p>
+    </a>
+</li>
+{% endfor %}
 </ol>
 
 {% endblock %}

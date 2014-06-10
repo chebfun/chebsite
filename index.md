@@ -1,35 +1,31 @@
 ---
-title: "Chebfun: Numerical computing with functions"
+title: "Numerical computing with functions"
 layout: homepage
 ---
 
 <div class="row widgets">
-  <div class="col-sm-6 col-md-3">
-    <div class="widget">
-      <h3>Get started<span class="glyphicon glyphicon-off" style='float:right'></span></h3>
+  <div class="col col-sm-6 col-md-3">
+    <a class="widget" href="docs/guide">
+      <h3>Get started &raquo;<span class="glyphicon glyphicon-off" style='float:right'></span></h3>
       <p>Browse the Chebfun Guide, an in-depth introduction to Chebfun's capabilities.</p>
-      <p><a href="docs/guide" class="btn btn-primary full-width" role="button">Read the Chebfun Guide&nbsp;&nbsp;&raquo;</a></p>
-    </div>
+    </a>
   </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="widget">
-      <h3>Download<span class="glyphicon glyphicon-download" style='float:right'></span></h3>
-      <p>Chebfun runs in standard Matlab. You'll be up and running in seconds.</p>
-      <p><a href="download" class="btn btn-primary full-width" role="button">Download Chebfun v5&nbsp;&nbsp;&raquo;</a></p>
-    </div>
+  <div class="col col-sm-6 col-md-3">
+    <a class="widget" href="download">
+      <h3>Download &raquo;<span class="glyphicon glyphicon-download" style='float:right'></span></h3>
+      <p>Chebfun runs in standard Matlab with no toolboxes required. You'll be up and running in seconds.</p>
+    </a>
   </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="widget">
-      <h3>View Examples<span class="glyphicon glyphicon-th" style='float:right'></span></h3>
+  <div class="col col-sm-6 col-md-3">
+    <a class="widget" href="examples">
+      <h3>View Examples &raquo;<span class="glyphicon glyphicon-th" style='float:right'></span></h3>
       <p>The gallery contains hundreds of examples of Chebfun's mathematical applications.</p>
-      <p><a href="examples" class="btn btn-primary full-width" role="button">Browse the Examples&nbsp;&nbsp;&raquo;</a></p>
-    </div>
+    </a>
   </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="widget">
-      <h3></span>Contribute<span class="glyphicon glyphicon-wrench" style='float:right'></span></h3>
+  <div class="col col-sm-6 col-md-3">
+    <a class="widget" href="develop">
+      <h3></span>Contribute &raquo;<span class="glyphicon glyphicon-wrench" style='float:right'></span></h3>
       <p>Chebfun is open-source and hosted on Github. We're always looking for new developers.</p>
-      <p><a href="develop" class="btn btn-primary full-width" role="button">Get involved &raquo;</a></p>
-    </div>
+    </a>
   </div>
 </div>

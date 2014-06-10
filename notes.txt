@@ -13,32 +13,33 @@ TO DO:
     - add forum
     - add twitter?
     - prettify function reference
-    - css cleanup
-        - blockquotes in examples (e.g. ode/ResonantVandal)
-        - news section
     - add links everywhere necessary
         - guide has lots
     - add content
-        - add sponsors to about page:
-            EPSRC, ERC, MathWorks, and OCCAM
         - update faq, including collapsibleness and style
         - update history
         - update support -- only one help@chebfun.org
         - ask for feedback!!!
         - update develop, etc, etc.
         - add more simple examples on the homepage
-        - add prominent 'download' link on homepage
         - fix the white-on-black issue from LNT
         - maybe include the class diagram:
           http://www.gliffy.com/go/publish/image/4249553/L.png
     - 404 error should be a SCRIBBLE rendering
     - markdown in example titles (specifically for code)
-    - make example figures & guide figures export_fig-style
 
 DONE:
+    - add prominent 'download' link on homepage
     - examples category galleries
     - add news section
     - add videos page (in docs?)
+    - css cleanup
+        - blockquotes in examples (e.g. ode/ResonantVandal)
+        - news section
+    - make example figures & guide figures export_fig-style
+    - add content
+        - add sponsors to about page:
+            EPSRC, ERC, MathWorks, and OCCAM
 
 ----
 
