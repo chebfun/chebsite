@@ -7,9 +7,9 @@
     
         <a href='{{page.link_prev}}'
             {% if not page.link_prev -%}class='invisible'{%- endif -%}
-            >previous</a><span class='sep
+            >previous</a><span class='sep-sm
             {% if not page.link_prev %} invisible{%- endif -%}
-            '>&middot;</span><a href='../guide'>index</a><span class='sep
+            '>&middot;</span><a href='../guide'>index</a><span class='sep-sm
             {% if not page.link_next %} invisible{%- endif -%}
             '>&middot;</span><a href='{{page.link_next}}'
             {% if not page.link_next -%}class='invisible'{%- endif -%}

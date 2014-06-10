@@ -252,6 +252,8 @@ class Chebsite:
 
         self.give_macro_breadcrumbs('about/history', ['about/index'])
         self.give_macro_breadcrumbs('about/people', ['about/index'])
+        self.give_macro_breadcrumbs('about/sponsors', ['about/index'])
+        self.give_macro_breadcrumbs('publications/index', ['about/index'])
 
         for node in news_items:
             self.give_macro_breadcrumbs(node.data.id, ['news/index'])

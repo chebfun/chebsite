@@ -33,7 +33,9 @@
             <div id='content' class="col-sm-8" role="main">
         {%- else -%}
         <div class="row main">
+            {% block begincontent %}
             <div id='content' class="col-sm-12" role="main">
+            {% endblock %}
         {%- endif -%}
 
         {%- block content -%}

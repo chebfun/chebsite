@@ -329,6 +329,9 @@ ol.news.slats {
 .sep {
   padding: 0 10px;
 }
+.sep-sm {
+  padding: 0 6px;
+}
 .page-header a {
   color: #b5d5e5;
 }
@@ -384,6 +387,21 @@ blockquote {
 
 #content h3 {
   font-weight: 600;
+}
+
+#content.example ol:last-of-type {
+    counter-reset: list;
+    margin: 0 0 1em;
+}
+#content.example ol:last-of-type > li {
+    list-style: none;
+    position: relative;
+}
+#content.example ol:last-of-type > li:before {
+    counter-increment: list;
+    content: "[" counter(list, decimal) "]";
+    position: absolute;
+    left: -2em;
 }
 
 

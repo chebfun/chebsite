@@ -3,23 +3,23 @@ title: History
 layout: basic
 ---
 
-# The beginnings
+## The beginnings
 
 Chebfun began in Oxford's Numerical Analysis Group, part of the Oxford
 University Mathematical Institute. It started during 2002-2005 as a DPhil
 research investigation by Zachary Battles, a Rhodes Scholar from the USA,
 under the supervision of Nick Trefethen.  (The idea of overloading Matlab's
 vectors to functions was first put in writing in an email from Trefethen to
-Battles of 8 December 2001.)  This led to <a
-href="/chebfun/download/past/chebfun_v1.zip"><b>Version 1</b></a> of Chebfun, for
-smooth functions on the interval [-1,1], described in the 2004 <i>SIAM J. Sci.
+Battles of 8 December 2001.)  This led to Version 1 <a
+href="/chebfun/download/past/chebfun_v1.zip">(.zip)</a> of Chebfun, for smooth
+functions on the interval $[-1,1]$, described in the 2004 <i>SIAM J. Sci.
 Comp.</i> <a href="/chebfun/publications/chebfun_paper.pdf">paper</a> by
 Battles and Trefethen and in Battles' 2006 thesis.</p>
 <center>
     <img class='thumbnail' title="Zachary Battles" src="/images/thomas_zachary.jpg" width="330px" alt="Zachary Battles"/>
 </center>
 
-# Version 2
+## Version 2
 
 The second phase of the project begin in the autumn of 2006 with the beginning
 of research funding from the UK Engineering and Physical Sciences Research
@@ -27,21 +27,21 @@ Council (EPSRC). First to join the team was DPhil student Ricardo Pach&#243;n,
 from Colombia, who extended Chebfun to piecewise continuous functions and
 arbitrary intervals.  Automatic subdivision and edge detection were added by
 Pach&#243;n and further developed in collaboration with Rodrigo Platte, from
-Brazil, a post-doc who arrived in October 2007.  Then beginning January 2008,
+Brazil, a post-doc who arrived in October 2007. Then beginning January 2008,
 linear operators and solution of differential equations were added to Chebfun,
 together with integral operators, eigenvalue problems, and exponentials of
 operators.  This was the work of Toby Driscoll, of the University of Delaware,
 who has led the differential equations side of Chebfun since then.  A key
 collaborator at the beginning of this work was Folkmar Bornemann of the
 Technical University of Munich. All these developments came together with the
-release of Chebfun <b>Version 2</b> in June 2008.
+release of Chebfun Version 2 in June 2008.
 <center>
     <img class='thumbnail' title="Anticlockwise from top left: Trefethen, Driscoll, Pachon, Platte" src="/images/chebteamtaxi.jpg" name="team" width="330px" alt="Version 2 Team" 
     onmousedown="document.images['team'].src='../images/linpack.jpg'" 
     onmouseup="document.images['team'].src='../images/chebteamtaxi.jpg'"/>
 </center>
 
-# Version 3
+## Version 3
 
 After the release of Version 2, the project continued to grow.  We now had a
 logo, a version control system, an expanding test suite, a web site, eight
@@ -59,14 +59,14 @@ student Mark Richardson, and automatic differentiation and related methods for
 solving nonlinear boundary-value problems by DPhil student &Aacute;sgeir
 Birkisson in collaboration with Driscoll.  Pedro Gonnet, Sheehan Olver, Joris
 Van Deun and Alex Townsend also became involved. <a
-href="../notes/notes_V3_1000.shtml"><b>Version 3</b></a>, a major enhancement of
+href="../notes/notes_V3_1000.shtml">Version 3</a>, a major enhancement of
 Version 2 incorporating these and other extensions, was coordinated by Rodrigo
 Platte and Nick Hale and released in December 2009.
 <center>
     <img class='thumbnail' title="Rodrigo Platte &amp; Nick Hale" src="/images/platte_hale.jpg" name="randn" width="330px" alt="Rodrigo Platte &amp; Nick Hale"/>
 </center>
 
-# Version 4
+## Version 4
 
 It was now apparent that Chebfun was more than a software package: it was an
 ongoing and growing software project with half a dozen developers, hundreds of
@@ -88,8 +88,8 @@ a key player based at the University of Delaware).  The open-source Chebfun
 project would be launched with the release of Chebfun Version 4.
 Scientifically, the big new features in Version 4 were related to differential
 equations (led by Driscoll and Hale), the graphical user interface called <a
-href="/chebfun/chebgui/">CHEBGUI</a> (led by Birkisson and Hale), and a new
-collection of <a href="/examples/">Examples</a> to serve as templates
+href="/chebfun/chebgui/">Chebgui</a> (led by Birkisson and Hale), and a new
+collection of <a href="../examples">Examples</a> to serve as templates
 for all kinds of problems (led by Trefethen). Details can be found <a
 href="/chebfun/notes/notes_V4.0.shtml">here</a>.
 
@@ -114,4 +114,5 @@ towards computing with functions in higher dimensions. Below is a picture of
     <img class='thumbnail' title="(Most of the) V4.0 Team" src="/images/team_andbeyond.jpg" width="560px" alt="(Most of the) And Beyond Team"/>
 </center>
 
-For licensing and copyright purposes, a complete list of the Chebfun contributors is maintained <a href="people.html">here</a>.
+For licensing and copyright purposes, we maintain a <a
+href="people.html">complete list of Chebfun contributors</a>.
