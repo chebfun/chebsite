@@ -22,7 +22,7 @@
     {% for egg in page.examples %}
     <li>
         <a href='{{egg.href}}'>
-            <img src='{{egg.img}}' />
+            <div class='thumbwrapper'><img src='{{egg.img}}' /></div>
             <h3>{{egg.title}}</h3>
             <p>{{egg.authordate}}
                 <span class='tags'>

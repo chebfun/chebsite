@@ -282,6 +282,8 @@ class Chebsite:
 
         examples_subindexes = [x.get_data() for x in self.nodes \
                 if x.isa('examples_subindex') and not x.isa('temp')]
+        examples_subindexes = sorted(examples_subindexes, \
+                key=lambda e: e['title'])
 
         examples   = [x.get_data() for x in self.nodes \
                 if x.isa('example') and not x.isa('temp')]
