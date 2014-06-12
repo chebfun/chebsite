@@ -111,7 +111,7 @@ escapeSlashes = @(s) strrep(s, '\', '\\');
 
 for className = classNames
     className = className{1};
-    disp(['Making ' className '...'])
+    disp(['Making doc for @' className '...'])
 
     % Create the directory if it doesn't exist.
     if ~exist([docdir '/' className])

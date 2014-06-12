@@ -22,6 +22,8 @@ examples/roots/*.m
 examples/stats/*.m
 examples/veccalc/*.m
 
+docs/guide/guide*.m
+
 *.pyc
 
 *.pdf
