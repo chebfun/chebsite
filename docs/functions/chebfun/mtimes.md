@@ -1,15 +1,15 @@
 ---
-title: """mtimes"""
+title: "mtimes"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """mtimes"""
-snippet: """CHEBFUN multiplication."""
-qualifiers: """"""
-return_type: """f"""
-arguments: """(f, c)"""
+class_name: "chebfun"
+function_name: "mtimes"
+snippet: "CHEBFUN multiplication."
+qualifiers: ""
+return_type: "f"
+arguments: "(f, c)"
 ---
 
- *   CHEBFUN multiplication.
+<pre class="help-text"> *   CHEBFUN multiplication.
     A*F and F*A multiplies the CHEBFUN F by the scalar A.
  
     If F is an m-by-Inf row CHEBFUN and G is an Inf-by-n column CHEBFUN, F*G
@@ -17,3 +17,4 @@ arguments: """(f, c)"""
     the same domain.
  
     See also TIMES.
+</pre>

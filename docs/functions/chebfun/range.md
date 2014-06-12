@@ -1,15 +1,15 @@
 ---
-title: """range"""
+title: "range"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """range"""
-snippet: """Range of CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "range"
+snippet: "Range of CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- RANGE   Range of CHEBFUN.
+<pre class="help-text"> RANGE   Range of CHEBFUN.
     R = RANGE(F) returns the range R = MAX(F) - MIN(F) of the CHEBFUN F.
  
     R = RANGE(F, DIM) operates along the dimension DIM of the quasimatrix F. If
@@ -19,3 +19,4 @@ arguments: """(rhs1)"""
     continuous variable.
  
   See also CHEBFUN/MINANDMAX.
+</pre>

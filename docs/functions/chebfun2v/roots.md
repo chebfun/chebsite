@@ -1,15 +1,15 @@
 ---
-title: """roots"""
+title: "roots"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """roots"""
-snippet: """Find the common zeros of a CHEBFUN2V object."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2v"
+function_name: "roots"
+snippet: "Find the common zeros of a CHEBFUN2V object."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- ROOTS   Find the common zeros of a CHEBFUN2V object.
+<pre class="help-text"> ROOTS   Find the common zeros of a CHEBFUN2V object.
     r = ROOTS(F) finds the common zeros of the two bivariate functions F(1) and
     F(2) in their domain of definition under the assumption that the solution
     set is zero-dimensional. R is a matrix with two columns storing the x- and
@@ -32,3 +32,4 @@ arguments: """(rhs1)"""
     of two bivariate functions via Bezout resultants, (2013).
  
   See also CHEBFUN2/ROOTS, CHEBFUN/ROOTS.
+</pre>

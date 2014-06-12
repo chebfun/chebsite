@@ -1,15 +1,15 @@
 ---
-title: """plot"""
+title: "plot"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """plot"""
-snippet: """Surface plot of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "plot"
+snippet: "Surface plot of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- PLOT  Surface plot of a CHEBFUN2.
+<pre class="help-text"> PLOT  Surface plot of a CHEBFUN2.
  
     PLOT(F) if F is a real-valued CHEBFUN2 then this is the surface plot and is
     the same as surf(F). If F is a complex valued then this returns a domain
@@ -47,3 +47,4 @@ arguments: """(rhs1)"""
     http://www.visual.wegert.com
   
   See also SURF, MESH.
+</pre>

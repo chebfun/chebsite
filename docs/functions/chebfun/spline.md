@@ -1,15 +1,15 @@
 ---
-title: """spline"""
+title: "spline"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """spline"""
-snippet: """CHEBFUN cubic spline data interpolation."""
-qualifiers: """Static"""
-return_type: """f"""
-arguments: """(x, y, d)"""
+class_name: "chebfun"
+function_name: "spline"
+snippet: "CHEBFUN cubic spline data interpolation."
+qualifiers: "Static"
+return_type: "f"
+arguments: "(x, y, d)"
 ---
 
- SPLINE   CHEBFUN cubic spline data interpolation.
+<pre class="help-text"> SPLINE   CHEBFUN cubic spline data interpolation.
     F = CHEBFUN.SPLINE(X, Y) returns a CHEBFUN F with domain [X(1), X(end)]
     representing the cubic spline interpolant to the data values Y at the data
     sites X. X must be a vector. If Y is a vector, then Y(j) is taken as the
@@ -30,3 +30,4 @@ arguments: """(x, y, d)"""
         plot(x, y, 'o', f)
  
   See also INTERP1, PCHIP.
+</pre>

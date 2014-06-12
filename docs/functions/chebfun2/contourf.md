@@ -1,15 +1,15 @@
 ---
-title: """contourf"""
+title: "contourf"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """contourf"""
-snippet: """Filled contour plot of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "contourf"
+snippet: "Filled contour plot of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CONTOURF   Filled contour plot of a CHEBFUN2.
+<pre class="help-text"> CONTOURF   Filled contour plot of a CHEBFUN2.
     CONTOURF(...) is the same as CONTOUR(...) except that the areas between
     contours are filled with colors according to the Z-value for each level.
     Contour regions with data values at or above a given level are filled with
@@ -29,3 +29,4 @@ arguments: """(rhs1)"""
     [C, H] = CONTOURF(...) also returns a handle H to a CONTOURGROUP object.
  
   See also CONTOUR.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """sphere"""
+title: "sphere"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """sphere"""
-snippet: """Generate a spherical surface. (Not necessarily a sphere!)"""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "sphere"
+snippet: "Generate a spherical surface. (Not necessarily a sphere!)"
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SPHERE   Generate a spherical surface. (Not necessarily a sphere!)
+<pre class="help-text"> SPHERE   Generate a spherical surface. (Not necessarily a sphere!)
     SPHERE(R), where R is a CHEBFUN2 on the domain [0, pi] x [0, 2*pi] plots the
     "sphere" of radius R(th,phi).
  
@@ -31,3 +31,4 @@ arguments: """(rhs1)"""
     F = sphere( r ); surf( F )
   
   See also CYLINDER, ELLIPSOID.
+</pre>

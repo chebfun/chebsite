@@ -1,15 +1,15 @@
 ---
-title: """ode45"""
+title: "ode45"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """ode45"""
-snippet: """Solve stiff differential equations and DAEs. Output a CHEBFUN."""
-qualifiers: """Static"""
-return_type: """[t, y]"""
-arguments: """(varargin)"""
+class_name: "chebfun"
+function_name: "ode45"
+snippet: "Solve stiff differential equations and DAEs. Output a CHEBFUN."
+qualifiers: "Static"
+return_type: "[t, y]"
+arguments: "(varargin)"
 ---
 
- ODE45   Solve stiff differential equations and DAEs. Output a CHEBFUN.
+<pre class="help-text"> ODE45   Solve stiff differential equations and DAEs. Output a CHEBFUN.
     Y = CHEBFUN.ODE45(ODEFUN, D, ...) applies the standard ODE45 method to
     solve an initial-value problem on the domain D. The result is then converted
     to a piecewise-defined CHEBFUN with one column per solution component.

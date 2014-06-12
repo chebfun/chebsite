@@ -1,15 +1,15 @@
 ---
-title: """chebpade"""
+title: "chebpade"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """chebpade"""
-snippet: """Chebyshev-Pade approximation."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "chebpade"
+snippet: "Chebyshev-Pade approximation."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CHEBPADE   Chebyshev-Pade approximation.
+<pre class="help-text"> CHEBPADE   Chebyshev-Pade approximation.
     [P, Q, R_HANDLE] = CHEBPADE(F, M, N) computes polynomials P and Q of degree
     M and N, respectively, such that the rational function P/Q is the type (M,
     N) Chebyshev-Pade approximation of type Clenshaw-Lord to the CHEBFUN F. That
@@ -29,3 +29,4 @@ arguments: """(rhs1)"""
     M, N, K) is shorthand for CHEBPADE(F, M, N, 'clenshawlord', K).
  
   See also PADEAPPROX.
+</pre>

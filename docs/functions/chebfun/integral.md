@@ -1,15 +1,15 @@
 ---
-title: """integral"""
+title: "integral"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """integral"""
-snippet: """Evaluate integral of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "integral"
+snippet: "Evaluate integral of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- INTEGRAL   Evaluate integral of a CHEBFUN.
+<pre class="help-text"> INTEGRAL   Evaluate integral of a CHEBFUN.
     INTEGRAL(F, A, B) evaluates the integral of the CHEBFUN F over the interval
     [A,B] using CHEBFUN/SUM(). If A and B are not given, the integral is
     computed over the domain of F.
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
         integral(@(x) f(x), a, b);
  
   See also SUM.
+</pre>

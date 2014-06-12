@@ -1,15 +1,15 @@
 ---
-title: """mean"""
+title: "mean"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """mean"""
-snippet: """Average or mean value of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "mean"
+snippet: "Average or mean value of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MEAN   Average or mean value of a CHEBFUN2. 
+<pre class="help-text"> MEAN   Average or mean value of a CHEBFUN2. 
     MEAN(F) takes the mean in the y-direction (default), i.e., 
            MEAN(F) = 1/(ymax-ymin) sum(F).
  
@@ -17,3 +17,4 @@ arguments: """(rhs1)"""
     y-direction and if DIM = 2 then it is the x-direction.
  
   See also MEAN2, STD2.
+</pre>

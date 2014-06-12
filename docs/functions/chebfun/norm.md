@@ -1,15 +1,15 @@
 ---
-title: """norm"""
+title: "norm"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """norm"""
-snippet: """Norm of a CHEBFUN object."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "norm"
+snippet: "Norm of a CHEBFUN object."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- NORM   Norm of a CHEBFUN object.
+<pre class="help-text"> NORM   Norm of a CHEBFUN object.
     For scalar-valued column CHEBFUN objects:
         NORM(F) = sqrt(integral of abs(F)^2).
         NORM(F, 2) is the same as NORM(F).
@@ -37,3 +37,4 @@ arguments: """(rhs1)"""
   which the norm is attained.
  
   If F is a row CHEBFUN, NORM(F, TYPE) is equal to NORM(F.', TYPE).
+</pre>

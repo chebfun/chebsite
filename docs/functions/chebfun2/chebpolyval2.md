@@ -1,15 +1,15 @@
 ---
-title: """chebpolyval2"""
+title: "chebpolyval2"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """chebpolyval2"""
-snippet: """Values on a tensor Chebyshev grid."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "chebpolyval2"
+snippet: "Values on a tensor Chebyshev grid."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CHEBPOLYVAL2   Values on a tensor Chebyshev grid.
+<pre class="help-text"> CHEBPOLYVAL2   Values on a tensor Chebyshev grid.
     X = CHEBPOLYVAL2(F) returns the matrix of values of F on a Chebyshev tensor
     grid.
  
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
     Chebyshev tensor grid.
  
   See also CHEBPOLY2, CHEBPOLYPLOT2. 
+</pre>

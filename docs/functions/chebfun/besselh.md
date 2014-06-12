@@ -1,15 +1,15 @@
 ---
-title: """besselh"""
+title: "besselh"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """besselh"""
-snippet: """Bessel function of third kind (Hankel function) of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "besselh"
+snippet: "Bessel function of third kind (Hankel function) of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- BESSELH   Bessel function of third kind (Hankel function) of a CHEBFUN.
+<pre class="help-text"> BESSELH   Bessel function of third kind (Hankel function) of a CHEBFUN.
     H = BESSELH(NU, K, F), for K = 1 or 2, computes the Hankel function H1_NU(F)
     or H2_NU(F) of the nonzero CHEBFUN F. If F passes through the origin in its
     domain, then an error is returned.  The CHEBFUN F may be complex.
@@ -35,3 +35,4 @@ arguments: """(rhs1)"""
  
   Copyright 2014 by The University of Oxford and The Chebfun Developers.
   See http://www.chebfun.org for Chebfun information.
+</pre>

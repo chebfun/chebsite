@@ -1,15 +1,15 @@
 ---
-title: """pol2cart"""
+title: "pol2cart"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """pol2cart"""
-snippet: """Transform polar to Cartesian coordinates for CHEBFUN2 objects."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "pol2cart"
+snippet: "Transform polar to Cartesian coordinates for CHEBFUN2 objects."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- POL2CART   Transform polar to Cartesian coordinates for CHEBFUN2 objects.
+<pre class="help-text"> POL2CART   Transform polar to Cartesian coordinates for CHEBFUN2 objects.
  
     [X,Y] = POL2CART(TH,R) transforms corresponding elements of data stored in
     polar coordinates (angle TH, radius R) to Cartesian coordinates X,Y.  The
@@ -22,3 +22,4 @@ arguments: """(rhs1)"""
     them can be scalar).  TH must be in radians.
   
   See also SPH2CART.
+</pre>

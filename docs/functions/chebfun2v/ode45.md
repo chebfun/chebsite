@@ -1,15 +1,15 @@
 ---
-title: """ode45"""
+title: "ode45"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """ode45"""
-snippet: """Solve autonomous systems defined by a CHEBFUN2V."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2v"
+function_name: "ode45"
+snippet: "Solve autonomous systems defined by a CHEBFUN2V."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
-  ODE45  Solve autonomous systems defined by a CHEBFUN2V.
+<pre class="help-text">  ODE45  Solve autonomous systems defined by a CHEBFUN2V.
  
    [T, Y] = ODE45(F,TSPAN,Y0) with TSPAN = [T0 TFINAL] solves the autonomous
    system of ODE y = f(y,y'), y'=g(y,y'), where f and g are the first and second
@@ -41,3 +41,4 @@ arguments: """(rhs1)"""
    events. If events were detected, SOL.xe is a row vector of points at which
    events occurred. Columns of SOL.ye are the corresponding solutions, and
    indices in vector SOL.ie specify which event occurred.
+</pre>

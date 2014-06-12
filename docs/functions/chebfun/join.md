@@ -1,15 +1,15 @@
 ---
-title: """join"""
+title: "join"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """join"""
-snippet: """Join together two or more CHEBFUN objects."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "join"
+snippet: "Join together two or more CHEBFUN objects."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- JOIN   Join together two or more CHEBFUN objects.
+<pre class="help-text"> JOIN   Join together two or more CHEBFUN objects.
     F = JOIN(F1, F2, ...) joins together the CHEBFUN objects F1, F2, ..., to
     create a piecewise CHEBFUN F on a larger domain. F1, F2, ... must all have
     the same transposition state; the output F will have the same transposition
@@ -23,3 +23,4 @@ arguments: """(rhs1)"""
     error is thrown.
  
   See also HORZCAT, VERTCAT.
+</pre>

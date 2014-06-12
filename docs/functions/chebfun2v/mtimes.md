@@ -1,15 +1,15 @@
 ---
-title: """mtimes"""
+title: "mtimes"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """mtimes"""
-snippet: """mtimes for CHEBFUN2V."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2v"
+function_name: "mtimes"
+snippet: "mtimes for CHEBFUN2V."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- *  mtimes for CHEBFUN2V.
+<pre class="help-text"> *  mtimes for CHEBFUN2V.
  
    c*F or F*c multiplies each component of a CHEBFUN2V by a scalar.
  
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
    size(G,1). If the sizes are appropriate then F*G = dot(F.',G).
  
   See also TIMES.
+</pre>

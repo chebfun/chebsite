@@ -1,11 +1,12 @@
 ---
-title: """exportPDE2mfile"""
+title: "exportPDE2mfile"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """exportPDE2mfile"""
-snippet: """"""
-qualifiers: """"""
-return_type: """"""
-arguments: """(guifile, pathname, filename)"""
+class_name: "chebgui"
+function_name: "exportPDE2mfile"
+snippet: ""
+qualifiers: ""
+return_type: ""
+arguments: "(guifile, pathname, filename)"
 ---
 
+<pre class="help-text"></pre>

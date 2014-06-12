@@ -1,15 +1,15 @@
 ---
-title: """subsref"""
+title: "subsref"
 layout: function-reference-item
-class_name: """chebmatrix"""
-function_name: """subsref"""
-snippet: """Extract part or property of a CHEBMATRIX."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebmatrix"
+function_name: "subsref"
+snippet: "Extract part or property of a CHEBMATRIX."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SUBSREF   Extract part or property of a CHEBMATRIX.
+<pre class="help-text"> SUBSREF   Extract part or property of a CHEBMATRIX.
     A(I,J) returns the slice (submatrix) of A as with an ordinary matrix. The
     result is a CHEBMATRIX.
  
@@ -19,3 +19,4 @@ arguments: """(rhs1)"""
     A.(property) returns a property of the CHEBMATRIX.
  
   See also CHEBMATRIX.SUBSASGN.
+</pre>

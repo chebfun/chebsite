@@ -1,15 +1,15 @@
 ---
-title: """chol"""
+title: "chol"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """chol"""
-snippet: """Cholesky factorization of a chebfun2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "chol"
+snippet: "Cholesky factorization of a chebfun2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CHOL    Cholesky factorization of a chebfun2. 
+<pre class="help-text"> CHOL    Cholesky factorization of a chebfun2. 
  
   R = CHOL( F ), if F is a nonnegative definite chebfun2 then this 
   returns an upper triangular quasimatrix so that R'*R is a
@@ -34,3 +34,4 @@ arguments: """(rhs1)"""
   factorizations, submitted, 2014. 
  
   See also LU, and QR. 
+</pre>

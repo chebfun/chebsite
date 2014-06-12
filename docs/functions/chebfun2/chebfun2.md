@@ -1,15 +1,15 @@
 ---
-title: """chebfun2"""
+title: "chebfun2"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """chebfun2"""
-snippet: """of chebfun2:"""
-qualifiers: """"""
-return_type: """f"""
-arguments: """(varargin)"""
+class_name: "chebfun2"
+function_name: "chebfun2"
+snippet: "of chebfun2:"
+qualifiers: ""
+return_type: "f"
+arguments: "(varargin)"
 ---
 
-Contents of chebfun2:
+<pre class="help-text">Contents of chebfun2:
 
 test_CLA                       - Try out some basic continuous linear algebra. Mainly checking
 test_abs                       - Test abs. 

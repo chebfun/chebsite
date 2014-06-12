@@ -1,15 +1,15 @@
 ---
-title: """minandmax"""
+title: "minandmax"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """minandmax"""
-snippet: """Minimum and maximum values of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "minandmax"
+snippet: "Minimum and maximum values of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MINANDMAX   Minimum and maximum values of a CHEBFUN.
+<pre class="help-text"> MINANDMAX   Minimum and maximum values of a CHEBFUN.
     Y = MINANDMAX(F) returns the range of the CHEBFUN F such that Y(1,1) =
     min(F) and Y(2,1) = max(F).
  
@@ -34,3 +34,4 @@ arguments: """(rhs1)"""
     dimension of F.
  
   See also MAX, MIN.
+</pre>

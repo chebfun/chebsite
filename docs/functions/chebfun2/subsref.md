@@ -1,15 +1,15 @@
 ---
-title: """subsref"""
+title: "subsref"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """subsref"""
-snippet: """CHEBFUN2 subsref."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "subsref"
+snippet: "CHEBFUN2 subsref."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SUBSREF   CHEBFUN2 subsref.
+<pre class="help-text"> SUBSREF   CHEBFUN2 subsref.
   ( )
     F(X, Y) returns the values of the CHEBFUN2 F evaluated at (X,Y). See
     CHEBFUN/FEVAL for further details. F(:, Y) returns a chebfun representing
@@ -28,3 +28,4 @@ arguments: """(rhs1)"""
     supported due to the behaviour of the MATLAB subsref() command.
  
   See also FEVAL, GET, RESTRICT, SUBSREF.
+</pre>

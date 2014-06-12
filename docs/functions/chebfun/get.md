@@ -1,15 +1,15 @@
 ---
-title: """get"""
+title: "get"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """get"""
-snippet: """GET method for the CHEBFUN class"""
-qualifiers: """"""
-return_type: """out"""
-arguments: """(f, prop)"""
+class_name: "chebfun"
+function_name: "get"
+snippet: "GET method for the CHEBFUN class"
+qualifiers: ""
+return_type: "out"
+arguments: "(f, prop)"
 ---
 
- GET   GET method for the CHEBFUN class
+<pre class="help-text"> GET   GET method for the CHEBFUN class
     P = GET(F, PROP) returns the property P specified in the string PROP from
     the CHEBFUN F. Valid entries for the string PROP are:
         'DOMAIN'         - The domain of definintion of F.
@@ -39,3 +39,4 @@ arguments: """(f, prop)"""
         'POINTS'         - The Chebyshev grid used to represent F.
         'VALUES'         - The values of the CHEBFUN on the grid above.
         'COEFFS'         - The corresponding Chebyshev coefficients.
+</pre>

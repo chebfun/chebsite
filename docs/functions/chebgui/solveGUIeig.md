@@ -1,15 +1,15 @@
 ---
-title: """solveGUIeig"""
+title: "solveGUIeig"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """solveGUIeig"""
-snippet: """Solve a eigenvalue problem, specified by a CHEBGUI object."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(guifile, handles)"""
+class_name: "chebgui"
+function_name: "solveGUIeig"
+snippet: "Solve a eigenvalue problem, specified by a CHEBGUI object."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(guifile, handles)"
 ---
 
- SOLVEGUIEIG   Solve a eigenvalue problem, specified by a CHEBGUI object.
+<pre class="help-text"> SOLVEGUIEIG   Solve a eigenvalue problem, specified by a CHEBGUI object.
  
   Calling sequence:
  
@@ -29,3 +29,4 @@ arguments: """(guifile, handles)"""
   object (e.g. [V, D] = SOLVEGUIEIG(GUIFILE) from the command line),
     VARARGOUT{1}:   A diagonal matrix containing the eigenvalues.
     VARARGOUT{2}:   A CHEBMATRIX of the eigenfunctions.
+</pre>

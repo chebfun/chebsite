@@ -1,15 +1,15 @@
 ---
-title: """atan2"""
+title: "atan2"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """atan2"""
-snippet: """Four quadrant inverse tangent of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "atan2"
+snippet: "Four quadrant inverse tangent of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- ATAN2   Four quadrant inverse tangent of a CHEBFUN.
+<pre class="help-text"> ATAN2   Four quadrant inverse tangent of a CHEBFUN.
     ATAN2(Y, X) is the four quadrant arctangent of the real parts of the CHEBFUN
     objects X and Y.  -pi <= ATAN2(Y, X) <= pi.
  
@@ -22,3 +22,4 @@ arguments: """(rhs1)"""
                    { 0,               y = 0,  x = 0
  
   See also ATAN, ATAN2D.
+</pre>

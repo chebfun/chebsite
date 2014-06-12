@@ -1,15 +1,15 @@
 ---
-title: """solveGUI"""
+title: "solveGUI"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """solveGUI"""
-snippet: """Called when a user hits the solve button of the Chebfun GUI."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebgui"
+function_name: "solveGUI"
+snippet: "Called when a user hits the solve button of the Chebfun GUI."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SOLVEGUI    Called when a user hits the solve button of the Chebfun GUI.
+<pre class="help-text"> SOLVEGUI    Called when a user hits the solve button of the Chebfun GUI.
  
   Calling sequence:
  
@@ -19,3 +19,4 @@ arguments: """(rhs1)"""
     
     HANDLES:    A MATLAB handle object to the CHEBGUIWINDOW figure.
     GUIFILE:    A CHEBGUI object.
+</pre>

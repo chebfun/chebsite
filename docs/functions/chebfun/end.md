@@ -1,15 +1,15 @@
 ---
-title: """end"""
+title: "end"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """end"""
-snippet: """Rightmost point of a CHEBFUN domain (or last row/col of quasimatrix)."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "end"
+snippet: "Rightmost point of a CHEBFUN domain (or last row/col of quasimatrix)."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- END   Rightmost point of a CHEBFUN domain (or last row/col of quasimatrix).
+<pre class="help-text"> END   Rightmost point of a CHEBFUN domain (or last row/col of quasimatrix).
     END(F, K, N) This function is called for indexing expressions involving a
     CHEBFUN F when END is part of the K-th index out of N indices.
  
@@ -18,3 +18,4 @@ arguments: """(rhs1)"""
  
     If F is a row CHEBFUN and K is 1, this function returns the index of F's
     last row. If K is 2, it returns the last point in F's domain.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """diff"""
+title: "diff"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """diff"""
-snippet: """Differentiation of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "diff"
+snippet: "Differentiation of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- DIFF   Differentiation of a CHEBFUN.
+<pre class="help-text"> DIFF   Differentiation of a CHEBFUN.
     DIFF(F), when F is a column CHEBFUN, computes a column CHEBFUN whose columns
     are the derivatives of the corresponding columns in F.  At discontinuities,
     DIFF creates a Dirac delta with coefficient equal to the size of the jump.
@@ -27,3 +27,4 @@ arguments: """(rhs1)"""
     F is a column CHEBFUN and the Nth derivative of F if F is a row CHEBFUN.
  
   See also SUM, CUMSUM.
+</pre>

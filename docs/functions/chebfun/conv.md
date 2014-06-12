@@ -1,15 +1,15 @@
 ---
-title: """conv"""
+title: "conv"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """conv"""
-snippet: """Convolution of CHEBFUN objects."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "conv"
+snippet: "Convolution of CHEBFUN objects."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CONV   Convolution of CHEBFUN objects.
+<pre class="help-text"> CONV   Convolution of CHEBFUN objects.
     H = CONV(F, G) produces the convolution of CHEBFUN objects F and G:
                       - 
                      /
@@ -33,3 +33,4 @@ arguments: """(rhs1)"""
       subplot(2, 2, 1), plot(f)
       for j = 2:4, g = conv(f, g); subplot(2, 2, j), plot(g), end
       figure, for j = 1:4, subplot(2,2,j), plot(g), g = diff(g); end
+</pre>

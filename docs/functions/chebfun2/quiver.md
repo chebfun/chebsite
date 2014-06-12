@@ -1,15 +1,15 @@
 ---
-title: """quiver"""
+title: "quiver"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """quiver"""
-snippet: """Quiver plot of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "quiver"
+snippet: "Quiver plot of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- QUIVER   Quiver plot of a CHEBFUN2.
+<pre class="help-text"> QUIVER   Quiver plot of a CHEBFUN2.
     QUIVER(F, G) plots the vector velocity field of (F,G). QUIVER automatically
     attempts to scale the arrows to fit within the grid. The arrows start on a
     uniform grid. This returns the same plot as QUIVER([F ; G]).
@@ -32,3 +32,4 @@ arguments: """(rhs1)"""
     H = QUIVER(...) returns a quivergroup handle.
  
   See also CHEBFUN2V/QUIVER.
+</pre>

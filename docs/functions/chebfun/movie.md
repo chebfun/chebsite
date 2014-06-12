@@ -1,15 +1,15 @@
 ---
-title: """movie"""
+title: "movie"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """movie"""
-snippet: """Animate columns of a CHEBFUN quasimatrix."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "movie"
+snippet: "Animate columns of a CHEBFUN quasimatrix."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MOVIE   Animate columns of a CHEBFUN quasimatrix.
+<pre class="help-text"> MOVIE   Animate columns of a CHEBFUN quasimatrix.
     MOVIE(F) displays an animation of frames produced by plotting the columns
     of the quasimatrix F in sequence.
  

@@ -1,15 +1,15 @@
 ---
-title: """constructor"""
+title: "constructor"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """constructor"""
-snippet: """CHEBFUN constructor."""
-qualifiers: """Static"""
-return_type: """[funs, ends]"""
-arguments: """(op, domain, data, pref)"""
+class_name: "chebfun"
+function_name: "constructor"
+snippet: "CHEBFUN constructor."
+qualifiers: "Static"
+return_type: "[funs, ends]"
+arguments: "(op, domain, data, pref)"
 ---
 
- CONSTRUCTOR   CHEBFUN constructor.
+<pre class="help-text"> CONSTRUCTOR   CHEBFUN constructor.
     FUNS = CONSTRUCTOR(OP, DOM) constructs the piecewise components (known as
     "FUNS") used by a CHEBFUN object to represent the function OP on the
     interval DOM. OP must be a function_handle, string, numerical vector, or a
@@ -44,3 +44,4 @@ arguments: """(op, domain, data, pref)"""
     vertical scales involved in the construction procedure.
  
   See also CHEBFUN, CHEBFUNPREF.
+</pre>

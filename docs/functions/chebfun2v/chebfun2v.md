@@ -1,15 +1,15 @@
 ---
-title: """chebfun2v"""
+title: "chebfun2v"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """chebfun2v"""
-snippet: """of chebfun2v:"""
-qualifiers: """"""
-return_type: """f"""
-arguments: """(varargin)"""
+class_name: "chebfun2v"
+function_name: "chebfun2v"
+snippet: "of chebfun2v:"
+qualifiers: ""
+return_type: "f"
+arguments: "(varargin)"
 ---
 
-Contents of chebfun2v:
+<pre class="help-text">Contents of chebfun2v:
 
 test_arithmetic                - Check the Chebfun2v constructor for simple arithmetic operations.
 test_constructor               - Test the Chebfun2v constructor when performing simple arithmetic
@@ -43,3 +43,4 @@ chebfun2v is both a directory and a function.
   H on the domain [A B] x [C D].
   
   See also CHEBFUN2. 
+</pre>

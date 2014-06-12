@@ -1,15 +1,15 @@
 ---
-title: """ode15s"""
+title: "ode15s"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """ode15s"""
-snippet: """Solve stiff differential equations and DAEs. Output a CHEBFUN."""
-qualifiers: """Static"""
-return_type: """[t, y]"""
-arguments: """(varargin)"""
+class_name: "chebfun"
+function_name: "ode15s"
+snippet: "Solve stiff differential equations and DAEs. Output a CHEBFUN."
+qualifiers: "Static"
+return_type: "[t, y]"
+arguments: "(varargin)"
 ---
 
- ODE15S   Solve stiff differential equations and DAEs. Output a CHEBFUN.
+<pre class="help-text"> ODE15S   Solve stiff differential equations and DAEs. Output a CHEBFUN.
     Y = CHEBFUN.ODE15S(ODEFUN, D, ...) applies the standard ODE15S method to
     solve an initial-value problem on the domain D. The result is then converted
     to a piecewise-defined CHEBFUN with one column per solution component.

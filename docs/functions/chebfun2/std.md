@@ -1,15 +1,15 @@
 ---
-title: """std"""
+title: "std"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """std"""
-snippet: """Standard deviation of a CHEBFUN2 along one variable."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "std"
+snippet: "Standard deviation of a CHEBFUN2 along one variable."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- STD   Standard deviation of a CHEBFUN2 along one variable.
+<pre class="help-text"> STD   Standard deviation of a CHEBFUN2 along one variable.
     G = STD(F) returns the standard deviation of F in the y-variable (default).
     That is, if F is defined on the rectangle [a,b] x [c,d] then
  
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
     this function so the syntax agrees with the Matlab STD command.
  
   See also CHEBFUN/STD, CHEBFUN2/MEAN.
+</pre>

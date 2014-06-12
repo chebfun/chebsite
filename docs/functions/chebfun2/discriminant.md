@@ -1,15 +1,15 @@
 ---
-title: """discriminant"""
+title: "discriminant"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """discriminant"""
-snippet: """the determinant of Hessian of a CHEBFUN2 at (x,y)"""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "discriminant"
+snippet: "the determinant of Hessian of a CHEBFUN2 at (x,y)"
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- DISCRIMINANT the determinant of Hessian of a CHEBFUN2 at (x,y) 
+<pre class="help-text"> DISCRIMINANT the determinant of Hessian of a CHEBFUN2 at (x,y) 
     H = DISCRIMINANT(F,x,y) returns the determinant of the Hessian of F at
     (x,y). The gradient of F should be zero at (x,y).
   
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
     horizontal concatenation of CHEBFUN2 objects.
  
   See also JACOBIAN. 
+</pre>

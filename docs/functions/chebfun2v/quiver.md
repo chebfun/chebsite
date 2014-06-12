@@ -1,15 +1,15 @@
 ---
-title: """quiver"""
+title: "quiver"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """quiver"""
-snippet: """Quiver plot of CHEBFUN2V."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2v"
+function_name: "quiver"
+snippet: "Quiver plot of CHEBFUN2V."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- QUIVER   Quiver plot of CHEBFUN2V.
+<pre class="help-text"> QUIVER   Quiver plot of CHEBFUN2V.
     QUIVER(F) plots the vector velocity field of F. QUIVER automatically
     attempts to scale the arrows to fit within the grid. The arrows are on a
     uniform grid.
@@ -33,3 +33,4 @@ arguments: """(rhs1)"""
     If F is a CHEBFUN2V with three non-zero components then this calls QUIVER3.
  
   See also QUIVER3.
+</pre>

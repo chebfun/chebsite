@@ -1,15 +1,15 @@
 ---
-title: """subspace"""
+title: "subspace"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """subspace"""
-snippet: """Angle between subspaces."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "subspace"
+snippet: "Angle between subspaces."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SUBSPACE   Angle between subspaces.
+<pre class="help-text"> SUBSPACE   Angle between subspaces.
     SUBSPACE(A, B) finds the angle between two subspaces specified by the
     columns (or rows, if A and B are transposed) of the CHEBFUN objects A and B.
  
@@ -25,3 +25,4 @@ arguments: """(rhs1)"""
         in an A-Based Scalar Product: Algorithms and Perturbation Estimates.
         SIAM Journal on Scientific Computing, 23 (2002), no. 6, 2009-2041.
         http://epubs.siam.org:80/sam-bin/dbq/article/37733
+</pre>

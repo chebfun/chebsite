@@ -1,15 +1,15 @@
 ---
-title: """subsasgn"""
+title: "subsasgn"
 layout: function-reference-item
-class_name: """chebfunpref"""
-function_name: """subsasgn"""
-snippet: """Subscripted assignment for CHEBFUNPREF."""
-qualifiers: """"""
-return_type: """pref"""
-arguments: """(pref, ind, val)"""
+class_name: "chebfunpref"
+function_name: "subsasgn"
+snippet: "Subscripted assignment for CHEBFUNPREF."
+qualifiers: ""
+return_type: "pref"
+arguments: "(pref, ind, val)"
 ---
 
- SUBSASGN   Subscripted assignment for CHEBFUNPREF.
+<pre class="help-text"> SUBSASGN   Subscripted assignment for CHEBFUNPREF.
     P.PROP = VAL, where P is a CHEBFUNPREF object, assigns the value
     VAL to the CHEBFUNPREF property PROP stored in P.  If PROP is not a
     CHEBFUNPREF property, the assignment will be made to
@@ -20,3 +20,4 @@ arguments: """(pref, ind, val)"""
  
     CHEBFUNPREF does not support any other subscripted assignment types,
     including '()' and '{}'.
+</pre>

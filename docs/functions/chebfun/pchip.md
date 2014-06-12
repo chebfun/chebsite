@@ -1,15 +1,15 @@
 ---
-title: """pchip"""
+title: "pchip"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """pchip"""
-snippet: """CHEBFUN Cubic Hermite interpolating polynomial."""
-qualifiers: """Static"""
-return_type: """f"""
-arguments: """(x, y, method)"""
+class_name: "chebfun"
+function_name: "pchip"
+snippet: "CHEBFUN Cubic Hermite interpolating polynomial."
+qualifiers: "Static"
+return_type: "f"
+arguments: "(x, y, method)"
 ---
 
- PCHIP   CHEBFUN Cubic Hermite interpolating polynomial.
+<pre class="help-text"> PCHIP   CHEBFUN Cubic Hermite interpolating polynomial.
     F = CHEBFUN.PCHIP(X, Y) returns a CHEBFUN F representing a certain
     shape-preserving piecewise cubic Hermite interpolant to the values Y at the
     sites X. X must be a vector. If Y is a vector, then Y(j) is taken as the
@@ -27,3 +27,4 @@ arguments: """(x, y, method)"""
      legend('pchip', 'spline')
  
   See also SPLINE, INTERP1.
+</pre>

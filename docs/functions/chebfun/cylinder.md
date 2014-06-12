@@ -1,15 +1,15 @@
 ---
-title: """cylinder"""
+title: "cylinder"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """cylinder"""
-snippet: """Generate cylinder. Surface revolution of a chebfun to form a chebfun2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "cylinder"
+snippet: "Generate cylinder. Surface revolution of a chebfun to form a chebfun2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CYLINDER Generate cylinder. Surface revolution of a chebfun to form a chebfun2.
+<pre class="help-text"> CYLINDER Generate cylinder. Surface revolution of a chebfun to form a chebfun2.
  
     [X, Y, Z] = CYLINDER(R) forms the unit cylinder based revolving the 
     function R about the z-axis. X, Y, and Z are chebfun2 objects such that
@@ -22,3 +22,4 @@ arguments: """(rhs1)"""
     plot.
  
   See also CHEBFUN2/SURF, CYLINDER, CHEBFUN2/SPHERE.
+</pre>

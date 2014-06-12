@@ -1,15 +1,15 @@
 ---
-title: """feval"""
+title: "feval"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """feval"""
-snippet: """Evaluate a CHEBFUN."""
-qualifiers: """"""
-return_type: """y"""
-arguments: """(f, x, varargin)"""
+class_name: "chebfun"
+function_name: "feval"
+snippet: "Evaluate a CHEBFUN."
+qualifiers: ""
+return_type: "y"
+arguments: "(f, x, varargin)"
 ---
 
- FEVAL   Evaluate a CHEBFUN.
+<pre class="help-text"> FEVAL   Evaluate a CHEBFUN.
     FEVAL(F, X) evaluates a CHEBFUN F at the points in X.  If F is a quasimatrix
     with columns F1, ..., FN, then the result will be [F1(X), ..., FN(X)], the
     horizontal concatenation of the results of evaluating each column at the
@@ -30,3 +30,4 @@ arguments: """(f, x, varargin)"""
       y = feval(f, linspace(-1, 1, 100).');
  
   See also SUBSREF.
+</pre>

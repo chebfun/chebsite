@@ -1,15 +1,15 @@
 ---
-title: """subsasgn"""
+title: "subsasgn"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """subsasgn"""
-snippet: """Chebfun SUBSASGN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(f, varargin)"""
+class_name: "chebfun"
+function_name: "subsasgn"
+snippet: "Chebfun SUBSASGN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(f, varargin)"
 ---
 
- SUBSASGN   Chebfun SUBSASGN.
+<pre class="help-text"> SUBSASGN   Chebfun SUBSASGN.
   ( )
     F(X) = VAL assigns the values VAL at locations specified by X to the 
     CHEBFUN F. SIZE(X, 1) should be equal to LENGTH(VAL) and SIZE(X, 2) should 
@@ -25,3 +25,4 @@ arguments: """(f, varargin)"""
     CHEBFUN/DEFINEINTERVAL for further details.
  
   See also SUBSREF, DEFINEPOINT, DEFINEINTERVAL.
+</pre>

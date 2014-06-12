@@ -1,15 +1,15 @@
 ---
-title: """quiver3"""
+title: "quiver3"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """quiver3"""
-snippet: """3-D quiver plot of a CHEBFUN2V."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2v"
+function_name: "quiver3"
+snippet: "3-D quiver plot of a CHEBFUN2V."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- QUIVER3   3-D quiver plot of a CHEBFUN2V.
+<pre class="help-text"> QUIVER3   3-D quiver plot of a CHEBFUN2V.
     QUIVER3(F) plots velocity vectors as arrows with components F(1), F(2),
     F(3), which are CHEBFUN2 objects. QUIVER3 automatically scales the arrows to
     fit. The arrows are plotted on a uniform grid.
@@ -40,3 +40,4 @@ arguments: """(rhs1)"""
     CHEBFUN2V/QUIVER.
  
   See also QUIVER.
+</pre>

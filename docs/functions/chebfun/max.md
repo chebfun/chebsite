@@ -1,15 +1,15 @@
 ---
-title: """max"""
+title: "max"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """max"""
-snippet: """Maximum value of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "max"
+snippet: "Maximum value of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MAX   Maximum value of a CHEBFUN.
+<pre class="help-text"> MAX   Maximum value of a CHEBFUN.
     MAX(F) and MAX(F, 'global') return the maximum value of the CHEBFUN F.
  
     [Y, X] = MAX(F) returns also points X such that F(X) = Y.
@@ -35,3 +35,4 @@ arguments: """(rhs1)"""
     quasimatrix with two columns, MAX(F, [], 2) = MAX(F(:,1), F(:,2)).
  
   See also MIN, MINANDMAX, ROOTS.
+</pre>

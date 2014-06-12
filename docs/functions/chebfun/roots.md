@@ -1,15 +1,15 @@
 ---
-title: """roots"""
+title: "roots"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """roots"""
-snippet: """Roots of a CHEBFUN."""
-qualifiers: """"""
-return_type: """r"""
-arguments: """(f, varargin)"""
+class_name: "chebfun"
+function_name: "roots"
+snippet: "Roots of a CHEBFUN."
+qualifiers: ""
+return_type: "r"
+arguments: "(f, varargin)"
 ---
 
- ROOTS   Roots of a CHEBFUN.
+<pre class="help-text"> ROOTS   Roots of a CHEBFUN.
     ROOTS(F) returns the roots of F in its domain of definition. By default,
     roots are returned at jumps in F which pass through zero, and if F is
     identically zero on a part of its domain, then a single root is returned at
@@ -40,3 +40,4 @@ arguments: """(f, varargin)"""
     ROOTS(F, 'all', 'recursion') and ROOTS(F, 'complex','norecursion') can be
     used to activate and deactivate the recursion procedure respectively, to
     compute the roots as explained in the 'all' and 'complex' modes.
+</pre>

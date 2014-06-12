@@ -1,13 +1,14 @@
 ---
-title: """svds"""
+title: "svds"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """svds"""
-snippet: """Find some singular values and vectors of a compact linear CHEBOP."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "svds"
+snippet: "Find some singular values and vectors of a compact linear CHEBOP."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SVDS  Find some singular values and vectors of a compact linear CHEBOP.
+<pre class="help-text"> SVDS  Find some singular values and vectors of a compact linear CHEBOP.
     SVDS of a CHEBOP is currently not supported.
+</pre>

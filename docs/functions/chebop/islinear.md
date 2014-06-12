@@ -1,15 +1,15 @@
 ---
-title: """islinear"""
+title: "islinear"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """islinear"""
-snippet: """Determine linearity of a CHEBOP."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "islinear"
+snippet: "Determine linearity of a CHEBOP."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- ISLINEAR   Determine linearity of a CHEBOP.
+<pre class="help-text"> ISLINEAR   Determine linearity of a CHEBOP.
     OUT = ISLINEAR(N) determines the linearity of the CHEBOP N. In particular:
         OUT(1) = 1 if N.OP is linear, 0 otherwise.
         OUT(2) = 1 if N.LBC is linear, 0 otherwise.
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
     rather than the zero function.
  
   See also LINEARIZE.
+</pre>

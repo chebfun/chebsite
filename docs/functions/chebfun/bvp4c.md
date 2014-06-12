@@ -1,15 +1,15 @@
 ---
-title: """bvp4c"""
+title: "bvp4c"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """bvp4c"""
-snippet: """Solve boundary value problems for ODEs by collocation with CHEBFUN."""
-qualifiers: """"""
-return_type: """[y, t]"""
-arguments: """(fun1, fun2, y0, varargin)"""
+class_name: "chebfun"
+function_name: "bvp4c"
+snippet: "Solve boundary value problems for ODEs by collocation with CHEBFUN."
+qualifiers: ""
+return_type: "[y, t]"
+arguments: "(fun1, fun2, y0, varargin)"
 ---
 
- BVP4C   Solve boundary value problems for ODEs by collocation with CHEBFUN.
+<pre class="help-text"> BVP4C   Solve boundary value problems for ODEs by collocation with CHEBFUN.
     Y = BVP4C(ODEFUN, BCFUN, Y0) applies the standard BVP4C method to solve a
     boundary-value problem. ODEFUN and BCFUN are as in BVP4C. The Y0 argument is
     a CHEBFUN that represents the initial guess to the solution Y. Its domain
@@ -33,3 +33,4 @@ arguments: """(fun1, fun2, y0, varargin)"""
     plot(y)
  
   See also BVPINTI, BVPSET, BVP5C, ODE113.
+</pre>

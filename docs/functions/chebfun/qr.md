@@ -1,15 +1,15 @@
 ---
-title: """qr"""
+title: "qr"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """qr"""
-snippet: """QR factorization of an array-valued CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "qr"
+snippet: "QR factorization of an array-valued CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- QR   QR factorization of an array-valued CHEBFUN.
+<pre class="help-text"> QR   QR factorization of an array-valued CHEBFUN.
     [Q, R] = QR(A) or QR(A, 0), where A is a column CHEBFUN with n columns,
     produces a column CHEBFUN Q with n orthonormal columns and an n x n upper
     triangular matrix R such that A = Q*R.
@@ -19,3 +19,4 @@ arguments: """(rhs1)"""
     (2010).
  
   See also SVD, MRDIVIDE, RANK.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """besseli"""
+title: "besseli"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """besseli"""
-snippet: """Modified Bessel function of first kind of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "besseli"
+snippet: "Modified Bessel function of first kind of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- BESSELI    Modified Bessel function of first kind of a CHEBFUN.
+<pre class="help-text"> BESSELI    Modified Bessel function of first kind of a CHEBFUN.
     I = BESSELI(NU, F) returns I_NU(F), i.e., is the modified Bessel function of
     the first kind, I_NU(Z) composed with the CHEBFUN object F. The order NU
     need not be an integer, but must be a real scalar. The CHEBFUN F can be
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
          I_NU(Z) = 1i^NU * J_NU(1i*Z).
  
   See also AIRY, BESSELH, BESSLJ, BESSELK, BESSELY.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """plus"""
+title: "plus"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """plus"""
-snippet: """CHEBFUN plus."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "plus"
+snippet: "CHEBFUN plus."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- +   CHEBFUN plus.
+<pre class="help-text"> +   CHEBFUN plus.
     F + G adds CHEBFUNs F and G, or a scalar to a CHEBFUN if either F or G is a
     scalar.
  
@@ -17,3 +17,4 @@ arguments: """(rhs1)"""
  
     The dimensions of F and G must be compatible. Note that scalar expansion is
     _not_ supported if both F and G are CHEBFUN objects.
+</pre>

@@ -1,11 +1,12 @@
 ---
-title: """display"""
+title: "display"
 layout: function-reference-item
-class_name: """domain"""
-function_name: """display"""
-snippet: """"""
-qualifiers: """"""
-return_type: """"""
-arguments: """(dom)"""
+class_name: "domain"
+function_name: "display"
+snippet: ""
+qualifiers: ""
+return_type: ""
+arguments: "(dom)"
 ---
 
+<pre class="help-text"></pre>

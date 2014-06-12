@@ -1,15 +1,15 @@
 ---
-title: """and"""
+title: "and"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """and"""
-snippet: """Set boundary conditions for a chebop."""
-qualifiers: """"""
-return_type: """N"""
-arguments: """(N, BC)"""
+class_name: "chebop"
+function_name: "and"
+snippet: "Set boundary conditions for a chebop."
+qualifiers: ""
+return_type: "N"
+arguments: "(N, BC)"
 ---
 
- &   Set boundary conditions for a chebop.
+<pre class="help-text"> &   Set boundary conditions for a chebop.
     N = N & BC sets the boundary conditions of N to those described in BC. BC
     may be a structure with fields 'left', 'right', and other', taking
     values as described below; otherwise both boundaries are assigned the

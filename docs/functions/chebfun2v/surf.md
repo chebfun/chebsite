@@ -1,15 +1,15 @@
 ---
-title: """surf"""
+title: "surf"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """surf"""
-snippet: """Plot of the surface represented by a CHEBFUN2V."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2v"
+function_name: "surf"
+snippet: "Plot of the surface represented by a CHEBFUN2V."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SURF Plot of the surface represented by a CHEBFUN2V.
+<pre class="help-text"> SURF Plot of the surface represented by a CHEBFUN2V.
  
   SURF(F) is the surface plot of F, where F is a CHEBFUN2V with three
   components.
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
   command.
  
   See also CHEBFUN2/SURF.
+</pre>

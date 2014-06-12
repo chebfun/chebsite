@@ -1,15 +1,15 @@
 ---
-title: """lagrange"""
+title: "lagrange"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """lagrange"""
-snippet: """Compute Lagrange basis functions."""
-qualifiers: """Static"""
-return_type: """f"""
-arguments: """(x, varargin)"""
+class_name: "chebfun"
+function_name: "lagrange"
+snippet: "Compute Lagrange basis functions."
+qualifiers: "Static"
+return_type: "f"
+arguments: "(x, varargin)"
 ---
 
- LAGRANGE   Compute Lagrange basis functions.
+<pre class="help-text"> LAGRANGE   Compute Lagrange basis functions.
     F = CHEBFUN.LAGRANGE(X) returns a CHEBFUN object F representing the Lagrange
     polynomials for the points X(0), ..., X(N). That is, each column of F is a
     a polynomial of degree N which satisfies F(X,:) = eye(length(X)).
@@ -18,3 +18,4 @@ arguments: """(x, varargin)"""
     _must_ be passed if X is a scalar.
  
   See also INTERP1, VANDER.
+</pre>

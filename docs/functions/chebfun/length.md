@@ -1,15 +1,15 @@
 ---
-title: """length"""
+title: "length"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """length"""
-snippet: """Length of a Chebfun."""
-qualifiers: """"""
-return_type: """[out, out2]"""
-arguments: """(f)"""
+class_name: "chebfun"
+function_name: "length"
+snippet: "Length of a Chebfun."
+qualifiers: ""
+return_type: "[out, out2]"
+arguments: "(f)"
 ---
 
- LENGTH   Length of a Chebfun.
+<pre class="help-text"> LENGTH   Length of a Chebfun.
     LENGTH(F) returns the length of a scalar-valued CHEBFUN object F, which is
     defined as the sum of the length of F.funs. If F is an quasimatrix, then
     LENGTH(F) returns the maximum length of the columns.
@@ -19,3 +19,4 @@ arguments: """(f)"""
     LENFUNS = NaN.
  
   See also SIZE.
+</pre>

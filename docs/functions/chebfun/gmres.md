@@ -1,15 +1,15 @@
 ---
-title: """gmres"""
+title: "gmres"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """gmres"""
-snippet: """Iterative solution of chebfun operator equations."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "gmres"
+snippet: "Iterative solution of chebfun operator equations."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- GMRES   Iterative solution of chebfun operator equations.
+<pre class="help-text"> GMRES   Iterative solution of chebfun operator equations.
     U = GMRES(A, F) attempts to solve the operator equation A(U) = F, where F
     and U are CHEBFUNs and A is a function handle defining a linear operator
     on CHEBFUN.

@@ -1,7 +1,7 @@
 {% extends "basic.html" %}
 
 {% block title %}
-<h1 class='pull-left-15px'>{{page.title}}</h1>
+<h1 class='pull-left-15px'><a href='../'>Function reference</a><span class='sep'>&raquo;</span>{{page.class_name}}</h1>
 {% endblock %}
 
 {% block sidenav %}
@@ -15,7 +15,7 @@
 {% block content %}
     <ul>
     {% for f in page.function_names %}
-    <li><a href="{{f}}">{{f}} &mdash; {{page.snippets[loop]}}</a></li>
+    <a href="{{f}}.html"><li><strong>{{f}}</strong><span class='sep'>&mdash;</span><span class='function-snippet'>{{page.function_snippets[loop.index]}}</span></li></a>
     {% endfor %}
     </ul>
 {% endblock %}

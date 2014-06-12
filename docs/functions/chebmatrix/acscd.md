@@ -1,11 +1,12 @@
 ---
-title: """acscd"""
+title: "acscd"
 layout: function-reference-item
-class_name: """chebmatrix"""
-function_name: """acscd"""
-snippet: """"""
-qualifiers: """"""
-return_type: """A"""
-arguments: """(A)"""
+class_name: "chebmatrix"
+function_name: "acscd"
+snippet: ""
+qualifiers: ""
+return_type: "A"
+arguments: "(A)"
 ---
 
+<pre class="help-text"></pre>

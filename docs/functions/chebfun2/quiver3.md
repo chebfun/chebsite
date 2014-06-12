@@ -1,15 +1,15 @@
 ---
-title: """quiver3"""
+title: "quiver3"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """quiver3"""
-snippet: """3-D quiver plot of a CHEBFUN2V at data mapped by a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "quiver3"
+snippet: "3-D quiver plot of a CHEBFUN2V at data mapped by a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- QUIVER3  3-D quiver plot of a CHEBFUN2V at data mapped by a CHEBFUN2.
+<pre class="help-text"> QUIVER3  3-D quiver plot of a CHEBFUN2V at data mapped by a CHEBFUN2.
  
   QUIVER3(Z, F) plots velocity vectors at the equally spaced surface points
   specified by the CHEBFUN2 Z. We use Z to map a uniform grid. F should be
@@ -30,3 +30,4 @@ arguments: """(rhs1)"""
   CHEBFUN2 methods take priority over CHEBFUN2V methods.
  
   See also CHEBFUN2V/QUIVER3.
+</pre>

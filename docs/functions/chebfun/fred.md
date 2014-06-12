@@ -1,15 +1,15 @@
 ---
-title: """fred"""
+title: "fred"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """fred"""
-snippet: """Fredholm integral operator."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "fred"
+snippet: "Fredholm integral operator."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- FRED   Fredholm integral operator.
+<pre class="help-text"> FRED   Fredholm integral operator.
  
     F = FRED(K, V) computes the Fredholm integral with kernel K:
  
@@ -28,3 +28,4 @@ arguments: """(rhs1)"""
     representation for increased efficiency in some cases.
  
   See also VOLT, CHEBOP.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """jacpoly"""
+title: "jacpoly"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """jacpoly"""
-snippet: """Jacobi polynomial coefficients of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "jacpoly"
+snippet: "Jacobi polynomial coefficients of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- LEGPOLY   Jacobi polynomial coefficients of a CHEBFUN.
+<pre class="help-text"> LEGPOLY   Jacobi polynomial coefficients of a CHEBFUN.
     A = JACPOLY(F, N, ALPHA, BETA) returns the first N+1 coefficients in the
     Jacobi series expansion of the CHEBFUN F, so that such that F approximately
     equals A(1) J_N(x) + ... + A(N) J_1(x) + A(N+1) J_0(x) where J_N(x) denotes
@@ -26,3 +26,4 @@ arguments: """(rhs1)"""
     JACPOLY does not support quasimatrices.
  
   See also CHEBPOLY, LEFGPOLY.
+</pre>

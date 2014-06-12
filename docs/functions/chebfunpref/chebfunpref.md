@@ -1,15 +1,15 @@
 ---
-title: """chebfunpref"""
+title: "chebfunpref"
 layout: function-reference-item
-class_name: """chebfunpref"""
-function_name: """chebfunpref"""
-snippet: """Class for managing Chebfun construction-time preferences."""
-qualifiers: """"""
-return_type: """outPref"""
-arguments: """(varargin)"""
+class_name: "chebfunpref"
+function_name: "chebfunpref"
+snippet: "Class for managing Chebfun construction-time preferences."
+qualifiers: ""
+return_type: "outPref"
+arguments: "(varargin)"
 ---
 
- CHEBFUNPREF   Class for managing Chebfun construction-time preferences.
+<pre class="help-text"> CHEBFUNPREF   Class for managing Chebfun construction-time preferences.
     CHEBFUNPREF is a class for managing Chebfun construction-time preferences
     such as the construction tolerance, whether or not to perform breakpoint
     and singularity detection, and the various options that those features
@@ -221,3 +221,4 @@ arguments: """(varargin)"""
        pref = chebfunpref(p);
  
   See also CHEBOPPREF.
+</pre>

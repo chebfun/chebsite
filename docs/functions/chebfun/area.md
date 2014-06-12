@@ -1,15 +1,15 @@
 ---
-title: """area"""
+title: "area"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """area"""
-snippet: """Filled CHEBFUN area plot."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "area"
+snippet: "Filled CHEBFUN area plot."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- AREA   Filled CHEBFUN area plot.
+<pre class="help-text"> AREA   Filled CHEBFUN area plot.
     AREA(X, F) or AREA(F) is the same as PLOT(X, F) or PLOT(F) except that the
     area between 0 and F is filled. When F is array-valued, AREA(F) plots the
     columns of Y as filled areas.
@@ -26,3 +26,4 @@ arguments: """(rhs1)"""
     H = AREA(...) returns a vector of handles to areaseries objects.
     
   See also PLOT.
+</pre>

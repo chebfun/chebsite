@@ -1,15 +1,15 @@
 ---
-title: """mtimes"""
+title: "mtimes"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """mtimes"""
-snippet: """CHEBOP composition, multiplication, or application."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "mtimes"
+snippet: "CHEBOP composition, multiplication, or application."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- *    CHEBOP composition, multiplication, or application.
+<pre class="help-text"> *    CHEBOP composition, multiplication, or application.
     C = A*B, where either A or B are scalar, returns a CHEBOP C representing
     scalar multiplication of the original operator. In this case, boundary
     conditions are copied into the new operator (but not scaled).
@@ -23,3 +23,4 @@ arguments: """(rhs1)"""
     supported.
  
   See also CHEBOP/MLDIVIDE, CHEBOP/FEVAL
+</pre>

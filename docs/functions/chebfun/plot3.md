@@ -1,15 +1,15 @@
 ---
-title: """plot3"""
+title: "plot3"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """plot3"""
-snippet: """Plot for CHEBFUN objects in 3-D space."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(f, g, h, varargin)"""
+class_name: "chebfun"
+function_name: "plot3"
+snippet: "Plot for CHEBFUN objects in 3-D space."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(f, g, h, varargin)"
 ---
 
- PLOT3   Plot for CHEBFUN objects in 3-D space.
+<pre class="help-text"> PLOT3   Plot for CHEBFUN objects in 3-D space.
     PLOT3() is a three-dimensional analogue of PLOT().
  
     PLOT3(X, Y, Z), where X, Y, and Z are three CHEBFUN objects, plots a line in
@@ -29,3 +29,4 @@ arguments: """(f, g, h, varargin)"""
     plot3(sin(t), cos(t), t);
  
   See also PLOT, PLOTDATA.
+</pre>

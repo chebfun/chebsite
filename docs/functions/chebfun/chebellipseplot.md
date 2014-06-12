@@ -1,15 +1,15 @@
 ---
-title: """chebellipseplot"""
+title: "chebellipseplot"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """chebellipseplot"""
-snippet: """Plot the Bernstein (aka Chebyshev) ellipses."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "chebellipseplot"
+snippet: "Plot the Bernstein (aka Chebyshev) ellipses."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CHEBELLIPSEPLOT   Plot the Bernstein (aka Chebyshev) ellipses.
+<pre class="help-text"> CHEBELLIPSEPLOT   Plot the Bernstein (aka Chebyshev) ellipses.
     CHEBELLIPSEPLOT(U) plots Bernstein ellipses in the complex plane for each
     piecewise part of U, with foci at points in U.domain and semi-minor and
     major axes summing to rho(k) = C*exp(abs(log(EPS))/N(k)), where C is the
@@ -34,3 +34,4 @@ arguments: """(rhs1)"""
     Example:
         u = chebfun({@sin, @cos, @tan, @cot}, [-2, -1, 0, 1, 2]);
         chebellipseplot(u, sqrt(eps), '--');
+</pre>

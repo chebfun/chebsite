@@ -1,15 +1,15 @@
 ---
-title: """min"""
+title: "min"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """min"""
-snippet: """Minimum values of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "min"
+snippet: "Minimum values of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MIN   Minimum values of a CHEBFUN.
+<pre class="help-text"> MIN   Minimum values of a CHEBFUN.
     MIN(F) and MIN(F, 'global') return the minimum value of the CHEBFUN F.
  
     [Y, X] = MIN(F) returns also points X such that F(X) = Y.
@@ -35,3 +35,4 @@ arguments: """(rhs1)"""
     quasimatrix with two columns, MAX(F, [], 2) = MAX(F(:,1), F(:,2)).
  
   See also MAX, MINANDMAX, ROOTS.
+</pre>

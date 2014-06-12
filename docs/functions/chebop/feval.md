@@ -1,15 +1,15 @@
 ---
-title: """feval"""
+title: "feval"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """feval"""
-snippet: """Evaluate the operator of the CHEBOP at a CHEBFUN or CHEBMATRIX."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "feval"
+snippet: "Evaluate the operator of the CHEBOP at a CHEBFUN or CHEBMATRIX."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- FEVAL   Evaluate the operator of the CHEBOP at a CHEBFUN or CHEBMATRIX.
+<pre class="help-text"> FEVAL   Evaluate the operator of the CHEBOP at a CHEBFUN or CHEBMATRIX.
     OUT = FEVAL(N, U) for a CHEBFUN or CHEBMATRIX U applies the CHEBOP N to U,
     i.e., it returns N(U). Here, N.OP should be of the form @(u) diff(u,2) + ...
     If N.op is of the form @(x, u) diff(u,2) + ... then an x variable is
@@ -32,3 +32,4 @@ arguments: """(rhs1)"""
     the prefered syntax.
  
   See also CHEBOP/SUBSREF, LINOP/MTIMES.
+</pre>

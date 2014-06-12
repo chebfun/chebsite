@@ -1,15 +1,15 @@
 ---
-title: """cumsum"""
+title: "cumsum"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """cumsum"""
-snippet: """Indefinite integral of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "cumsum"
+snippet: "Indefinite integral of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CUMSUM   Indefinite integral of a CHEBFUN.
+<pre class="help-text"> CUMSUM   Indefinite integral of a CHEBFUN.
     G = CUMSUM(F) is the indefinite integral of the column CHEBFUN F. G will
     typically be normalised so that G(F.domain(1)) = 0. The exception to this is
     when computing indefinite integrals of functions whose indefinite integrals
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
     array-valued CHEBFUN or quasimatrix.
  
   See also SUM, INTEGRAL.
+</pre>

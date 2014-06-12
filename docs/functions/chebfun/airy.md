@@ -1,15 +1,15 @@
 ---
-title: """airy"""
+title: "airy"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """airy"""
-snippet: """Airy function of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "airy"
+snippet: "Airy function of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- AIRY   Airy function of a CHEBFUN.
+<pre class="help-text"> AIRY   Airy function of a CHEBFUN.
     AIRY(F) returns the Airy function Ai(F) of a CHEBFUN F.
  
     AIRY(K, F) returns various Airy functions specified by K:
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
           and scaled by EXP(-ABS(2/3.*REAL(F.^(3/2)))) for K = 2, 3.
  
   See also BESSELJ.
+</pre>

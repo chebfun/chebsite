@@ -1,15 +1,15 @@
 ---
-title: """inv"""
+title: "inv"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """inv"""
-snippet: """Invert a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "inv"
+snippet: "Invert a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- INV   Invert a CHEBFUN.
+<pre class="help-text"> INV   Invert a CHEBFUN.
     FINV = INV(F) attempts to compute the inverse of the monotonic CHEBFUN F.
  
     FINV = INV(..., 'ALGORITHM', ALGSTR) selects the algorithm used to compute
@@ -47,3 +47,4 @@ arguments: """(rhs1)"""
     functions, whereas the 'NEWTON' algorithm is good for smooth functions.
  
   See also ROOTS.
+</pre>

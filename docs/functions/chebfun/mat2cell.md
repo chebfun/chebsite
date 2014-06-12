@@ -1,15 +1,15 @@
 ---
-title: """mat2cell"""
+title: "mat2cell"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """mat2cell"""
-snippet: """Convert an array-valued CHEBFUN to a cell array of CHEBFUN objects."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "mat2cell"
+snippet: "Convert an array-valued CHEBFUN to a cell array of CHEBFUN objects."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MAT2CELL   Convert an array-valued CHEBFUN to a cell array of CHEBFUN objects.
+<pre class="help-text"> MAT2CELL   Convert an array-valued CHEBFUN to a cell array of CHEBFUN objects.
     G = MAT2CELL(F, C) breaks up the array-valued CHEBFUN F into a cell array G
     of CHEBFUN objects. C is a vector of sizes and must sum to the number of
     components of F (i.e., the number of columns (rows) of F if F is a column
@@ -34,3 +34,4 @@ arguments: """(rhs1)"""
     g = mat2cell(f, 1, [1, 2, 1])
  
   See also NUM2CELL.
+</pre>

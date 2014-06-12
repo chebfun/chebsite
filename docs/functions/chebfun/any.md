@@ -1,15 +1,15 @@
 ---
-title: """any"""
+title: "any"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """any"""
-snippet: """True if any value of a CHEBFUN is nonzero. ANY ignores entries that are"""
-qualifiers: """"""
-return_type: """a"""
-arguments: """(f, dim)"""
+class_name: "chebfun"
+function_name: "any"
+snippet: "True if any value of a CHEBFUN is nonzero. ANY ignores entries that are"
+qualifiers: ""
+return_type: "a"
+arguments: "(f, dim)"
 ---
 
- ANY   True if any value of a CHEBFUN is nonzero. ANY ignores entries that are
+<pre class="help-text"> ANY   True if any value of a CHEBFUN is nonzero. ANY ignores entries that are
        NaN (Not a Number).
     ANY(X, DIM), where X is an array-valued CHEBFUN, works down the dimension
     DIM. If DIM is the CHEBFUN (continuous) dimension, then ANY returns a
@@ -21,3 +21,4 @@ arguments: """(f, dim)"""
     ANY(X) is shorthand for ANY(X, 1).
  
   See also ALL.
+</pre>

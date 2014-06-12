@@ -1,15 +1,15 @@
 ---
-title: """solveGUIpde"""
+title: "solveGUIpde"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """solveGUIpde"""
-snippet: """Solve a PDE, specified by a CHEBGUI object."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebgui"
+function_name: "solveGUIpde"
+snippet: "Solve a PDE, specified by a CHEBGUI object."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SOLVEGUIPDE   Solve a PDE, specified by a CHEBGUI object.
+<pre class="help-text"> SOLVEGUIPDE   Solve a PDE, specified by a CHEBGUI object.
  
   Calling sequence:
  
@@ -29,3 +29,4 @@ arguments: """(rhs1)"""
   object (e.g. [U, INFO] = SOLVEGUIBVP(GUIFILE) from the command line),
     VARARGOUT{1}:   The time range of the problem specified by GUIFILE.
     VARARGOUT{2}:   The a CHEBMATRIX containing the solution returned by pde15s.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """arcLength"""
+title: "arcLength"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """arcLength"""
-snippet: """the length of the arc defined by a CHEBFUN."""
-qualifiers: """"""
-return_type: """out"""
-arguments: """(f, a, b)"""
+class_name: "chebfun"
+function_name: "arcLength"
+snippet: "the length of the arc defined by a CHEBFUN."
+qualifiers: ""
+return_type: "out"
+arguments: "(f, a, b)"
 ---
 
- ARCLENGTH	Compute the length of the arc defined by a CHEBFUN.
+<pre class="help-text"> ARCLENGTH	Compute the length of the arc defined by a CHEBFUN.
     ARCLENGTH(F) returns the arc length of the curve defined by CHEBFUN F in the
     x-y plane over the interval where it is defined. If F is a CHEBFUN of
     complex values, the output is the arc length of the curve in the complex
@@ -26,3 +26,4 @@ arguments: """(f, a, b)"""
   Examples:
     f = chebfun(@(x) sin(x), [0 1]);
     L = arcLength(f);
+</pre>

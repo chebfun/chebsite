@@ -1,15 +1,15 @@
 ---
-title: """ellipj"""
+title: "ellipj"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """ellipj"""
-snippet: """Jacobi elliptic functions."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "ellipj"
+snippet: "Jacobi elliptic functions."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- ELLIPJ   Jacobi elliptic functions.
+<pre class="help-text"> ELLIPJ   Jacobi elliptic functions.
     [SN, CN, DN] = ELLIPJ(U, M) returns CHEBFUNS for the compositions Sn(U)
     Cn(U), and Dn(U), where Sn, Cn, and Dn are the Jacobi elliptic functions
     with parameter M. U may be a scalar or a CHEBFUN, and M must be a CHEBFUN
@@ -25,3 +25,4 @@ arguments: """(rhs1)"""
     instead of the parameter M. They are related by M = k^2.
  
   See also ELLIPKE.
+</pre>

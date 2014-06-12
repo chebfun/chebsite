@@ -1,15 +1,15 @@
 ---
-title: """paduaVals2coeffs"""
+title: "paduaVals2coeffs"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """paduaVals2coeffs"""
-snippet: """Get Chebyshev coefficients of a Padua interpolant."""
-qualifiers: """Static"""
-return_type: """[C, V, X, Y]"""
-arguments: """(F, dom)"""
+class_name: "chebfun2"
+function_name: "paduaVals2coeffs"
+snippet: "Get Chebyshev coefficients of a Padua interpolant."
+qualifiers: "Static"
+return_type: "[C, V, X, Y]"
+arguments: "(F, dom)"
 ---
 
- CHEBFUN2.PADUAVALS2COEFFS   Get Chebyshev coefficients of a Padua interpolant.
+<pre class="help-text"> CHEBFUN2.PADUAVALS2COEFFS   Get Chebyshev coefficients of a Padua interpolant.
     CHEBFUN2.PADUAVALS2COEFFS(F) returns the bivariate Chebyshev coefficients of
     the Padua interpolant to the data {X, F}, where X is the Padua grid returned
     by PADUAPTS(N) for an appropriately chosen value of N.
@@ -26,3 +26,4 @@ arguments: """(F, dom)"""
        * This code is inspired by the algorithm in [1].
  
   See also PADUAPTS, COEFFS2VALS, VALS2COEFFS.
+</pre>

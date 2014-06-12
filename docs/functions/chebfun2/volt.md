@@ -1,15 +1,15 @@
 ---
-title: """volt"""
+title: "volt"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """volt"""
-snippet: """Volterra integral operator."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "volt"
+snippet: "Volterra integral operator."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- VOLT  Volterra integral operator.
+<pre class="help-text"> VOLT  Volterra integral operator.
     V = VOLT(K, f) returns a row chebfun resulting from the integral
  
        f(x) = (K*v)(x) = int( K(x,y) v(y), y=a..x ),
@@ -23,3 +23,4 @@ arguments: """(rhs1)"""
     f = volt(chebfun2(@(x,y) exp(x-y)),chebfun('x'));
  
   See also FRED.
+</pre>

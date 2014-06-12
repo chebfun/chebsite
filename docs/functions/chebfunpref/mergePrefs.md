@@ -1,15 +1,15 @@
 ---
-title: """mergePrefs"""
+title: "mergePrefs"
 layout: function-reference-item
-class_name: """chebfunpref"""
-function_name: """mergePrefs"""
-snippet: """Merge preference structures."""
-qualifiers: """Static"""
-return_type: """pref1"""
-arguments: """(pref1, pref2, map)"""
+class_name: "chebfunpref"
+function_name: "mergePrefs"
+snippet: "Merge preference structures."
+qualifiers: "Static"
+return_type: "pref1"
+arguments: "(pref1, pref2, map)"
 ---
 
- MERGEPREFS   Merge preference structures.
+<pre class="help-text"> MERGEPREFS   Merge preference structures.
     P = CHEBFUNPREF.MERGEPREFS(P, Q), where P and Q are MATLAB
     structures, "merges" Q into P by replacing the contents of fields
     in P with those of identically-named fields in Q.  If Q has a field
@@ -26,3 +26,4 @@ arguments: """(pref1, pref2, map)"""
     replaced by P.TECHPREFS and Q.TECHPREFS before proceeding, and the
     output is a MATLAB structure suitable for passing as a preference
     argument to a "tech" constructor.
+</pre>

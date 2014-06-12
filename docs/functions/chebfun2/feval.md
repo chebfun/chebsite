@@ -1,15 +1,15 @@
 ---
-title: """feval"""
+title: "feval"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """feval"""
-snippet: """Evaluate a CHEBFUN2 at one or more points."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "feval"
+snippet: "Evaluate a CHEBFUN2 at one or more points."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- FEVAL  Evaluate a CHEBFUN2 at one or more points.
+<pre class="help-text"> FEVAL  Evaluate a CHEBFUN2 at one or more points.
     FEVAL(F,X,Y) evaluates the CHEBFUN2 F and the point(s) in (X,Y), where X and
     Y are doubles.
  
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
     CHEBFUN objects with the same domain.
  
   See also SUBSREF.
+</pre>

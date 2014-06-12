@@ -1,15 +1,15 @@
 ---
-title: """dirac"""
+title: "dirac"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """dirac"""
-snippet: """Dirac delta function."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "dirac"
+snippet: "Dirac delta function."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- DIRAC    Dirac delta function.
+<pre class="help-text"> DIRAC    Dirac delta function.
   D = DIRAC(F) returns a CHEBFUN D which is zero on the domain of the CHEBFUN F
   except at the simple roots of F, where it is infinite.
  
@@ -22,3 +22,4 @@ arguments: """(rhs1)"""
   F can have simple roots at either end points of its domain.
  
   See also HEAVISIDE.
+</pre>

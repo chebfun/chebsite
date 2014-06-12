@@ -1,15 +1,15 @@
 ---
-title: """cdr"""
+title: "cdr"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """cdr"""
-snippet: """decomposition of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "cdr"
+snippet: "decomposition of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CDR decomposition of a CHEBFUN2.
+<pre class="help-text"> CDR decomposition of a CHEBFUN2.
     [C,D,R] = CDR(F) produces a diagonal matrix D of size length(F) by length(F)
     and quasimatrices C and R of size inf by length(F) such that f(x,y) = C(y,:)
     * D * R(x,:)'.
@@ -18,3 +18,4 @@ arguments: """(rhs1)"""
     construction of F.
  
   See also PIVOTS, SVD. 
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """linop"""
+title: "linop"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """linop"""
-snippet: """Convert a CHEBOP to a LINOP."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "linop"
+snippet: "Convert a CHEBOP to a LINOP."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- LINOP   Convert a CHEBOP to a LINOP.
+<pre class="help-text"> LINOP   Convert a CHEBOP to a LINOP.
     L = LINOP(N) converts a CHEBOP N to a linop L if N is a linear operator. If
     N is not linear, an error message is returned.
  
@@ -21,3 +21,4 @@ arguments: """(rhs1)"""
     FALSE.
  
   See also LINOP, CHEBOP/LINEARIZE, CHEBOP/ISLINEAR.
+</pre>

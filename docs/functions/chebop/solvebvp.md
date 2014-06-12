@@ -1,15 +1,15 @@
 ---
-title: """solvebvp"""
+title: "solvebvp"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """solvebvp"""
-snippet: """Solve a linear or nonlinear CHEBOP BVP system."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "solvebvp"
+snippet: "Solve a linear or nonlinear CHEBOP BVP system."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SOLVEBVP  Solve a linear or nonlinear CHEBOP BVP system.
+<pre class="help-text"> SOLVEBVP  Solve a linear or nonlinear CHEBOP BVP system.
  
     U = SOLVEBVP(N, RHS), where N is a CHEBOP and RHS is a CHEBMATRIX, CHEBFUN
     or a vector of doubles attempts to solve the BVP
@@ -59,3 +59,4 @@ arguments: """(rhs1)"""
  
   See also: CHEBOP, CHEBOP/MLDIVIDE, CHEBOPPREF, CHEBOP/SOLVEBVPLINEAR, 
     CHEBOP/SOLVEBVPNONLINEAR, LINOP/MLDIVIDE.
+</pre>

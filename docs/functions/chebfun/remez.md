@@ -1,15 +1,15 @@
 ---
-title: """remez"""
+title: "remez"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """remez"""
-snippet: """Best polynomial or rational approximation."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "remez"
+snippet: "Best polynomial or rational approximation."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- REMEZ   Best polynomial or rational approximation.
+<pre class="help-text"> REMEZ   Best polynomial or rational approximation.
     P = REMEZ(F, M) computes the best polynomial approximation of degree M to
     the CHEBFUN F in the infinity norm using the Remez algorithm.
  
@@ -54,3 +54,4 @@ arguments: """(rhs1)"""
     D. Phil. Thesis, University of Oxford, 2010 (Chapter 6).
  
   See also CF.
+</pre>

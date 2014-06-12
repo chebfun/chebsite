@@ -1,15 +1,15 @@
 ---
-title: """svd"""
+title: "svd"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """svd"""
-snippet: """Singular value decomposition of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "svd"
+snippet: "Singular value decomposition of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SVD    Singular value decomposition of a CHEBFUN2.
+<pre class="help-text"> SVD    Singular value decomposition of a CHEBFUN2.
     SVD(F) returns the singular values of F. The number of singular values
     returned is equal to the rank of the CHEBFUN2.
  
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
     LENGTH(F) is the number of pivots used by the CHEBFUN2 constructor, and
     RANK(F) is the number of significant singular values of F. The relation
     RANK(F) <= LENGTH(F) should always hold.
+</pre>

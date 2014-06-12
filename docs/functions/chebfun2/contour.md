@@ -1,15 +1,15 @@
 ---
-title: """contour"""
+title: "contour"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """contour"""
-snippet: """contour plot of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "contour"
+snippet: "contour plot of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CONTOUR  contour plot of a CHEBFUN2.
+<pre class="help-text"> CONTOUR  contour plot of a CHEBFUN2.
     CONTOUR(F) is a contour plot of F treating the values of F as heights above
     a plane. A contour plot are the level curves of F for some values V. The
     values V are chosen automatically.
@@ -34,3 +34,4 @@ arguments: """(rhs1)"""
     used during constructor.
  
   See also CONTOURF.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """mergePrefs"""
+title: "mergePrefs"
 layout: function-reference-item
-class_name: """cheboppref"""
-function_name: """mergePrefs"""
-snippet: """Merge preference structures."""
-qualifiers: """Static"""
-return_type: """pref1"""
-arguments: """(pref1, pref2, map)"""
+class_name: "cheboppref"
+function_name: "mergePrefs"
+snippet: "Merge preference structures."
+qualifiers: "Static"
+return_type: "pref1"
+arguments: "(pref1, pref2, map)"
 ---
 
- MERGEPREFS   Merge preference structures.
+<pre class="help-text"> MERGEPREFS   Merge preference structures.
     P = CHEBPREF.MERGEPREFS(P, Q), where P and Q are MATLAB structures,
     "merges" Q into P by replacing the contents of fields in P with
     those of identically-named fields in Q.  If Q has a field whose
@@ -23,3 +23,4 @@ arguments: """(pref1, pref2, map)"""
     string stored in MAP.FIELD, one will be added to P.
 
 Help for cheboppref.mergePrefs is inherited from superclass CHEBPREF
+</pre>

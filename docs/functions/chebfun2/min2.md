@@ -1,15 +1,15 @@
 ---
-title: """min2"""
+title: "min2"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """min2"""
-snippet: """Global minimum of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "min2"
+snippet: "Global minimum of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MIN2   Global minimum of a CHEBFUN2. 
+<pre class="help-text"> MIN2   Global minimum of a CHEBFUN2. 
     Y = MIN2(F) returns the global minium of F.
   
     [Y, X] = MIN2(F) returns the global minimum of F and its coordinates in X =
@@ -19,3 +19,4 @@ arguments: """(rhs1)"""
   Toolbox is not available.
  
   See also MAX2, MINANDMAX2.
+</pre>

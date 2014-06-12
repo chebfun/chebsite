@@ -1,15 +1,15 @@
 ---
-title: """polyfit"""
+title: "polyfit"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """polyfit"""
-snippet: """Fit polynomial to a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "polyfit"
+snippet: "Fit polynomial to a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- POLYFIT   Fit polynomial to a CHEBFUN.
+<pre class="help-text"> POLYFIT   Fit polynomial to a CHEBFUN.
     F = POLYFIT(Y, N) returns a CHEBFUN F corresponding to the polynomial of
     degree N that fits the CHEBFUN Y in the least-squares sense.
  
@@ -25,3 +25,4 @@ arguments: """(rhs1)"""
     the way that MATLAB/POLYFIT does.
  
   See also INTERP1.
+</pre>

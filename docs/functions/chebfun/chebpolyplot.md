@@ -1,15 +1,15 @@
 ---
-title: """chebpolyplot"""
+title: "chebpolyplot"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """chebpolyplot"""
-snippet: """Display Chebyshev coefficients graphically."""
-qualifiers: """"""
-return_type: """h"""
-arguments: """(f, varargin)"""
+class_name: "chebfun"
+function_name: "chebpolyplot"
+snippet: "Display Chebyshev coefficients graphically."
+qualifiers: ""
+return_type: "h"
+arguments: "(f, varargin)"
 ---
 
- CHEBPOLYPLOT   Display Chebyshev coefficients graphically.
+<pre class="help-text"> CHEBPOLYPLOT   Display Chebyshev coefficients graphically.
     CHEBPOLYPLOT(F) plots the Chebyshev coefficients of a CHEBFUN F on a
     semilogy scale. A horizontal line at the epslevel of F is also plotted. If
     F is an array-valued CHEBFUN or has breakpoints, then a curve is plotted
@@ -24,3 +24,4 @@ arguments: """(f, varargin)"""
     objects. The final entry is that of the epslevel plot.
  
   See also CHEBFUN/PLOT
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """eigs"""
+title: "eigs"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """eigs"""
-snippet: """Find selected eigenvalues and eigenfunctions of a linear CHEBOP."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(N, varargin)"""
+class_name: "chebop"
+function_name: "eigs"
+snippet: "Find selected eigenvalues and eigenfunctions of a linear CHEBOP."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(N, varargin)"
 ---
 
- EIGS   Find selected eigenvalues and eigenfunctions of a linear CHEBOP.
+<pre class="help-text"> EIGS   Find selected eigenvalues and eigenfunctions of a linear CHEBOP.
     D = EIGS(A) returns a vector of 6 eigenvalues of the linear CHEBOP A. EIGS
     will attempt to return the eigenvalues corresponding to the least
     oscillatory eigenfunctions. (This is unlike the built-in EIGS, which returns

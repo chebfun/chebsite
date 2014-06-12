@@ -1,15 +1,15 @@
 ---
-title: """chebgui"""
+title: "chebgui"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """chebgui"""
-snippet: """of chebgui:"""
-qualifiers: """"""
-return_type: """c"""
-arguments: """(varargin)"""
+class_name: "chebgui"
+function_name: "chebgui"
+snippet: "of chebgui:"
+qualifiers: ""
+return_type: "c"
+arguments: "(varargin)"
 ---
 
-Contents of chebgui:
+<pre class="help-text">Contents of chebgui:
 
 test_multipleOutputs           - This test ensures that the STRINGPARSER class is doing the correct thing when
 test_parSimp                   - Copyright 2011 by The University of Oxford and The Chebfun Developers. 
@@ -125,3 +125,4 @@ chebgui is both a directory and a function.
     [1] A. Birkisson and T. A. Driscoll, “Automatic Fréchet Differentiation for
     the Numerical Solution of Boundary-Value Problems,” ACM Transactions on
     Mathematical Software, vol. 38, no. 4, Article 26, Aug. 2012.
+</pre>

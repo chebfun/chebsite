@@ -1,15 +1,15 @@
 ---
-title: """cf"""
+title: "cf"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """cf"""
-snippet: """Caratheodory-Fejer approximation"""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "cf"
+snippet: "Caratheodory-Fejer approximation"
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CF   Caratheodory-Fejer approximation
+<pre class="help-text"> CF   Caratheodory-Fejer approximation
     [P, Q, R_HANDLE] = CF(F, M, N) computes a type (M, N) rational CF
     approximant to CHEBFUN F defined on [a, b], which must consist of just a
     single FUN. P and Q are CHEBFUNs representing the numerator and denominator
@@ -57,3 +57,4 @@ arguments: """(rhs1)"""
         real rational approximation", SIAM J. Numer. Anal. 20 (1983), 420-436.
  
   See also REMEZ.
+</pre>

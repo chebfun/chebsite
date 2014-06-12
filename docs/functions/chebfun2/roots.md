@@ -1,15 +1,15 @@
 ---
-title: """roots"""
+title: "roots"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """roots"""
-snippet: """Zero contours of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "roots"
+snippet: "Zero contours of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- ROOTS   Zero contours of a CHEBFUN2.
+<pre class="help-text"> ROOTS   Zero contours of a CHEBFUN2.
     R = ROOTS(F), returns the zero contours of F as a quasimatrix of chebfuns.
     Each column of R is one zero contour. This command only finds contours when
     there is a change of sign and it can also group intersecting contours in a
@@ -31,3 +31,4 @@ arguments: """(rhs1)"""
     documentation to see which algorithm is used when no METHOD is passed.
    
   See also CHEBFUN2V/ROOTS.
+</pre>

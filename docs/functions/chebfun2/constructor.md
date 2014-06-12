@@ -1,15 +1,15 @@
 ---
-title: """constructor"""
+title: "constructor"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """constructor"""
-snippet: """The main CHEBFUN2 constructor."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "constructor"
+snippet: "The main CHEBFUN2 constructor."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CONSTRUCTOR   The main CHEBFUN2 constructor.
+<pre class="help-text"> CONSTRUCTOR   The main CHEBFUN2 constructor.
  
   This code is when functions of two variables are represented as CHEBFUN2
   objects. A CHEBFUN2 object is a low rank representation and expresses a
@@ -33,3 +33,4 @@ arguments: """(rhs1)"""
    SISC, 35 (2013), C495-C518.
  
   See also CHEBFUN2.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """subsref"""
+title: "subsref"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """subsref"""
-snippet: """Evaluate a CHEBOP or reference its fields."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "subsref"
+snippet: "Evaluate a CHEBOP or reference its fields."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SUBSREF   Evaluate a CHEBOP or reference its fields.
+<pre class="help-text"> SUBSREF   Evaluate a CHEBOP or reference its fields.
       ( )
     N(X, U) and N(U) are equaivalent to FEVAL(N, X, U) and FEVAL(N, U),
     respectively.
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
     N{ ... } is not supported.
  
   See also CHEBOP/FEVAL
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """spy"""
+title: "spy"
 layout: function-reference-item
-class_name: """chebmatrix"""
-function_name: """spy"""
-snippet: """Visualize a CHEBMATRIX."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebmatrix"
+function_name: "spy"
+snippet: "Visualize a CHEBMATRIX."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SPY    Visualize a CHEBMATRIX.
+<pre class="help-text"> SPY    Visualize a CHEBMATRIX.
     SPY(A) creates a picture of the nonzero pattern of the default
     discretization of the CHEBMATRIX A. Block boundaries are indicated by gray
     lines.
@@ -28,3 +28,4 @@ arguments: """(rhs1)"""
     spy(f, 'xr', 15, 'disc', @ultraS, 'dom', [-1 0 1], 'dim', 18)
  
   See also CHEBMATRIX, CHEBMATRIX.MATRIX, CHEBOPPREF.
+</pre>

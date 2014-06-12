@@ -1,15 +1,15 @@
 ---
-title: """sum"""
+title: "sum"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """sum"""
-snippet: """Definite integral of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "sum"
+snippet: "Definite integral of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SUM   Definite integral of a CHEBFUN.
+<pre class="help-text"> SUM   Definite integral of a CHEBFUN.
     SUM(F) is the integral of a column CHEBFUN F over its domain of definition.
  
     SUM(F, A, B), where A and B are scalars, integrates a column CHEBFUN F over
@@ -37,3 +37,4 @@ arguments: """(rhs1)"""
     CHEBFUN F.
  
   See also CUMSUM, DIFF.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """residue"""
+title: "residue"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """residue"""
-snippet: """Partial-fraction expansion (residues)."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "residue"
+snippet: "Partial-fraction expansion (residues)."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- RESIDUE   Partial-fraction expansion (residues).
+<pre class="help-text"> RESIDUE   Partial-fraction expansion (residues).
     [R, P, K] = RESIDUE(B, A) finds the residues, poles and direct term of a
     partial fraction expansion of the ratio of two CHEBFUN objects B(s)/A(s).
     If there are no multiple roots,
@@ -38,3 +38,4 @@ arguments: """(rhs1)"""
     data, including roundoff errors, can make arbitrarily large changes in the
     resulting poles and residues. Problem formulations making use of state-space
     or zero-pole representations are preferable.
+</pre>

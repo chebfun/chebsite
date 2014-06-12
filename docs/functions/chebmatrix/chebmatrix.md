@@ -1,15 +1,15 @@
 ---
-title: """chebmatrix"""
+title: "chebmatrix"
 layout: function-reference-item
-class_name: """chebmatrix"""
-function_name: """chebmatrix"""
-snippet: """of chebmatrix:"""
-qualifiers: """"""
-return_type: """A"""
-arguments: """(data, dom)"""
+class_name: "chebmatrix"
+function_name: "chebmatrix"
+snippet: "of chebmatrix:"
+qualifiers: ""
+return_type: "A"
+arguments: "(data, dom)"
 ---
 
-Contents of chebmatrix:
+<pre class="help-text">Contents of chebmatrix:
 
 test_chebpolyplot              - This test just ensures that chebmatrix chebpolyplot() does not crash.
 test_flip                      - GBW, 7 May 2014

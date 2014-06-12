@@ -1,15 +1,15 @@
 ---
-title: """quantumstates"""
+title: "quantumstates"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """quantumstates"""
-snippet: """Compute and plot Schroedinger eigenstates."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "quantumstates"
+snippet: "Compute and plot Schroedinger eigenstates."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- QUANTUMSTATES    Compute and plot Schroedinger eigenstates.
+<pre class="help-text"> QUANTUMSTATES    Compute and plot Schroedinger eigenstates.
     This program computes and plots eigenvalues lambda and eigenfunctions u
     for the equation Lu = lambda*u, where L is the Schroedinger operator
     defined by Lu(x) = -h^2*u"(u) + V(x)*u(x).  Here h is a small parameter

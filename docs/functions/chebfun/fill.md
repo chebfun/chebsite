@@ -1,15 +1,15 @@
 ---
-title: """fill"""
+title: "fill"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """fill"""
-snippet: """Filled 2-D CHEBFUN plots."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "fill"
+snippet: "Filled 2-D CHEBFUN plots."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- FILL  Filled 2-D CHEBFUN plots.
+<pre class="help-text"> FILL  Filled 2-D CHEBFUN plots.
     FILL(F, G, C) fills the 2-D region defined by CHEBFUN objects F and G with
     the color specified by C. If necessary, the region is closed by connecting
     the first and last point of the curve defined by F and G.
@@ -31,3 +31,4 @@ arguments: """(rhs1)"""
     pairs to specify additional properties of the patches.
  
   See also AREA, PLOT.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """diffy"""
+title: "diffy"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """diffy"""
-snippet: """Differentiate a CHEBFUN2 with respect to its second argument."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "diffy"
+snippet: "Differentiate a CHEBFUN2 with respect to its second argument."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- DIFFY   Differentiate a CHEBFUN2 with respect to its second argument.
+<pre class="help-text"> DIFFY   Differentiate a CHEBFUN2 with respect to its second argument.
  
     G = DIFFY(F) returns a CHEBFUN2 representing the derivative of F in its 
     second argument. This is the same as DIFF(F,1,1).
@@ -21,3 +21,4 @@ arguments: """(rhs1)"""
     DIFF command for matrices, can be confusing.
   
   See also DIFFX, DIFF. 
+</pre>

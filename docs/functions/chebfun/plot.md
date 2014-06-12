@@ -1,15 +1,15 @@
 ---
-title: """plot"""
+title: "plot"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """plot"""
-snippet: """Basic linear plot for CHEBFUN objects."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(f, varargin)"""
+class_name: "chebfun"
+function_name: "plot"
+snippet: "Basic linear plot for CHEBFUN objects."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(f, varargin)"
 ---
 
- PLOT   Basic linear plot for CHEBFUN objects.
+<pre class="help-text"> PLOT   Basic linear plot for CHEBFUN objects.
     PLOT(F) plots the CHEBFUN object F.
  
     PLOT(F, S) allows various line types, plot symbols, and colors to be used
@@ -69,3 +69,4 @@ arguments: """(f, varargin)"""
     call now has no effect.
  
   See also PLOTDATA, PLOT3.
+</pre>

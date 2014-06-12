@@ -1,15 +1,15 @@
 ---
-title: """displayBVPinfo"""
+title: "displayBVPinfo"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """displayBVPinfo"""
-snippet: """Show information on the CHEBGUI figure when solving BVPs."""
-qualifiers: """Static"""
-return_type: """[dummy, displayTimer]"""
-arguments: """(handles, mode, varargin)"""
+class_name: "chebgui"
+function_name: "displayBVPinfo"
+snippet: "Show information on the CHEBGUI figure when solving BVPs."
+qualifiers: "Static"
+return_type: "[dummy, displayTimer]"
+arguments: "(handles, mode, varargin)"
 ---
 
- DISPLAYBVPINFO   Show information on the CHEBGUI figure when solving BVPs.
+<pre class="help-text"> DISPLAYBVPINFO   Show information on the CHEBGUI figure when solving BVPs.
  
   Calling sequence:
     VARARGOUT = DISPLAYBVPINFO(HANDLES, MODE, VARARGIN)
@@ -27,3 +27,4 @@ arguments: """(handles, mode, varargin)"""
                         described in 'help chebop/displayInfo)
  
   See also: chebop/displayInfo
+</pre>

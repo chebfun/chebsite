@@ -1,15 +1,15 @@
 ---
-title: """restrict"""
+title: "restrict"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """restrict"""
-snippet: """Restrict a CHEBFUN object to a subinterval."""
-qualifiers: """"""
-return_type: """f"""
-arguments: """(f, newDomain)"""
+class_name: "chebfun"
+function_name: "restrict"
+snippet: "Restrict a CHEBFUN object to a subinterval."
+qualifiers: ""
+return_type: "f"
+arguments: "(f, newDomain)"
 ---
 
- RESTRICT   Restrict a CHEBFUN object to a subinterval.
+<pre class="help-text"> RESTRICT   Restrict a CHEBFUN object to a subinterval.
     G = RESTRICT(F, [S1, S2]) returns a CHEBFUN G defined on the interval [S1,
     S2] which agrees with F on that interval. Any interior breakpoints in
     F.DOMAIN within [S1, S2] are kept in G.DOMAIN.
@@ -25,3 +25,4 @@ arguments: """(f, newDomain)"""
     SIMPLIFY(RESTRICT(F)), or G = F{S}.
  
   See also OVERLAP, SUBSREF, DEFINE, SIMPLIFY.
+</pre>

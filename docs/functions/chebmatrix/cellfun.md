@@ -1,15 +1,15 @@
 ---
-title: """cellfun"""
+title: "cellfun"
 layout: function-reference-item
-class_name: """chebmatrix"""
-function_name: """cellfun"""
-snippet: """Apply an operation to each block of a CHEBMATRIX."""
-qualifiers: """"""
-return_type: """A"""
-arguments: """(A, op)"""
+class_name: "chebmatrix"
+function_name: "cellfun"
+snippet: "Apply an operation to each block of a CHEBMATRIX."
+qualifiers: ""
+return_type: "A"
+arguments: "(A, op)"
 ---
 
- CELLFUN   Apply an operation to each block of a CHEBMATRIX.
+<pre class="help-text"> CELLFUN   Apply an operation to each block of a CHEBMATRIX.
     CELLFUN(A, OP) applies the operator OP to each of the blocks of
     A. If OP is not defined for one of the block entry types, then an
     error is thrown.
@@ -24,3 +24,4 @@ arguments: """(A, op)"""
         LOG2(), REAL(), REALLOG(), SEC(), SECD(), SECH(), SIGN(), SIN(),
         SINC(), SIND(), SINH(), SQRT(), SUM(), TAN(), TAND(), TANH(),
         UMINUS(), UPLUS().
+</pre>

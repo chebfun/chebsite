@@ -1,15 +1,15 @@
 ---
-title: """interp1"""
+title: "interp1"
 layout: function-reference-item
-class_name: """domain"""
-function_name: """interp1"""
-snippet: """CHEBFUN polynomial interpolant at any distribution of points."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "domain"
+function_name: "interp1"
+snippet: "CHEBFUN polynomial interpolant at any distribution of points."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- INTERP1   CHEBFUN polynomial interpolant at any distribution of points.
+<pre class="help-text"> INTERP1   CHEBFUN polynomial interpolant at any distribution of points.
     P = INTERP1(X, Y, D), where X and Y are vectors, returns the CHEBFUN P
     defined on the domain D([1, end]) corresponding to the polynomial
     interpolant through the data Y(j) at points X(j).
@@ -37,3 +37,4 @@ arguments: """(rhs1)"""
         'poly'     - polynomial interpolation, as described above
  
   See also SPLINE, PCHIP.
+</pre>

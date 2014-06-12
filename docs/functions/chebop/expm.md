@@ -1,15 +1,15 @@
 ---
-title: """expm"""
+title: "expm"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """expm"""
-snippet: """Exponential semigroup of a linear CHEBOP."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebop"
+function_name: "expm"
+snippet: "Exponential semigroup of a linear CHEBOP."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- EXPM    Exponential semigroup of a linear CHEBOP.
+<pre class="help-text"> EXPM    Exponential semigroup of a linear CHEBOP.
     U = EXPM(L, T, U0) uses matrix exponentiation to propagate an initial
     condition U0 for time T through the differential equation u' = L*u, where L
     is a linear CHEBOP. Formally, the solution is given by u(t) = exp(t*L)*u0,
@@ -43,3 +43,4 @@ arguments: """(rhs1)"""
     as described above is the prefered syntax.
  
   See also LINOP/EXPM.
+</pre>

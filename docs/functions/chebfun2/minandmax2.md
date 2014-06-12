@@ -1,15 +1,15 @@
 ---
-title: """minandmax2"""
+title: "minandmax2"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """minandmax2"""
-snippet: """Find global minimum and maximum of a CHEBFUN2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "minandmax2"
+snippet: "Find global minimum and maximum of a CHEBFUN2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MINANDMAX2   Find global minimum and maximum of a CHEBFUN2.
+<pre class="help-text"> MINANDMAX2   Find global minimum and maximum of a CHEBFUN2.
     Y = minandmax2(F) returns the minimum and maximum value of a CHEBFUN2 over
     its domain. Y is a vector of length 2 such that Y(1) = min(f(x,y)) and Y(2)
     = max(f(x,y)).
@@ -19,3 +19,4 @@ arguments: """(rhs1)"""
         F(X(1,1),X(1,2)) = Y(1)     and      F(X(2,1),X(2,2)) = Y(2)
  
   See also MAX2, MIN2, NORM.
+</pre>

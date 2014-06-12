@@ -1,15 +1,15 @@
 ---
-title: """chebfun"""
+title: "chebfun"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """chebfun"""
-snippet: """of chebfun:"""
-qualifiers: """"""
-return_type: """f"""
-arguments: """(varargin)"""
+class_name: "chebfun"
+function_name: "chebfun"
+snippet: "of chebfun:"
+qualifiers: ""
+return_type: "f"
+arguments: "(varargin)"
 ---
 
-Contents of chebfun:
+<pre class="help-text">Contents of chebfun:
 
 adchebfun                      - A class for supporting automatic differentiation in Chebfun.
 blockFunction                  - Convert linear operator to callable function.
@@ -286,3 +286,4 @@ chebfun is both a directory and a function.
 
     Overloaded methods:
        chebmatrix/chebfun
+</pre>

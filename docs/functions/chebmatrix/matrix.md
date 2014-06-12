@@ -1,15 +1,15 @@
 ---
-title: """matrix"""
+title: "matrix"
 layout: function-reference-item
-class_name: """chebmatrix"""
-function_name: """matrix"""
-snippet: """Discretize a CHEBMATRIX as an ordinary matrix."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebmatrix"
+function_name: "matrix"
+snippet: "Discretize a CHEBMATRIX as an ordinary matrix."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- MATRIX   Discretize a CHEBMATRIX as an ordinary matrix.
+<pre class="help-text"> MATRIX   Discretize a CHEBMATRIX as an ordinary matrix.
     M = MATRIX(A, DIM) discretizes each block in the chebmatrix A using the
     dimension vector DIM for all functions. In case the domain of A has
     breakpoints, the vector DIM must specify the desired discretization
@@ -28,3 +28,4 @@ arguments: """(rhs1)"""
       matrix(A, 5, @ultraS)
  
   See also CHEBOPPREF, CHEBDISCRETIZATION, CHEBDISCRETIZATION/MATRIX. 
+</pre>

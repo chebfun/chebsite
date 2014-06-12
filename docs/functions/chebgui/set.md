@@ -1,15 +1,15 @@
 ---
-title: """set"""
+title: "set"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """set"""
-snippet: """Set CHEBGUI properties."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebgui"
+function_name: "set"
+snippet: "Set CHEBGUI properties."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SET   Set CHEBGUI properties.
+<pre class="help-text"> SET   Set CHEBGUI properties.
  
     'type' - 'bvp','pde','eig'
     'domain' - spatial domain of BVP/PDE
@@ -32,3 +32,4 @@ arguments: """(rhs1)"""
         'fixyaxisupper' - fix y axis on plots (upper)
         'discretization' -  whether we want ultraS or colloc discretization for
                             ODEs
+</pre>

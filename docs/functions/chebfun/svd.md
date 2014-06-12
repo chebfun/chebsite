@@ -1,15 +1,15 @@
 ---
-title: """svd"""
+title: "svd"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """svd"""
-snippet: """Singular value decomposition of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "svd"
+snippet: "Singular value decomposition of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SVD   Singular value decomposition of a CHEBFUN.
+<pre class="help-text"> SVD   Singular value decomposition of a CHEBFUN.
     [U, S, V] = SVD(A) or SVD(A, 0), where A is an array-valued column CHEBFUN
     with N columns, produces an N x N diagonal matrix S with nonnegative
     diagonal elements in nonincreasing order, a column CHEBFUN U with N
@@ -27,3 +27,4 @@ arguments: """(rhs1)"""
     D. Phil. thesis, University of Oxford, 2005.
  
   See also QR, MRDIVIDE, RANK.
+</pre>

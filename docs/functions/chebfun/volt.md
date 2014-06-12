@@ -1,15 +1,15 @@
 ---
-title: """volt"""
+title: "volt"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """volt"""
-snippet: """Volterra integral operator."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "volt"
+snippet: "Volterra integral operator."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- VOLT   Volterra integral operator.
+<pre class="help-text"> VOLT   Volterra integral operator.
     V = VOLT(K,D) constructs a chebop representing the Volterra integral
     operator with kernel K for functions in domain D=[a,b]:
  
@@ -33,3 +33,4 @@ arguments: """(rhs1)"""
     u = V \ sin(exp(3*x));
  
   See also FRED, CHEBOP.
+</pre>

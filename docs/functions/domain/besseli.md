@@ -1,11 +1,12 @@
 ---
-title: """besseli"""
+title: "besseli"
 layout: function-reference-item
-class_name: """domain"""
-function_name: """besseli"""
-snippet: """"""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(varargin)"""
+class_name: "domain"
+function_name: "besseli"
+snippet: ""
+qualifiers: ""
+return_type: "varargout"
+arguments: "(varargin)"
 ---
 
+<pre class="help-text"></pre>

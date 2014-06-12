@@ -1,15 +1,15 @@
 ---
-title: """chebpolyplot"""
+title: "chebpolyplot"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """chebpolyplot"""
-snippet: """Display the CHEBPOLYPLOT of the column and row slices."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "chebpolyplot"
+snippet: "Display the CHEBPOLYPLOT of the column and row slices."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CHEBPOLYPLOT   Display the CHEBPOLYPLOT of the column and row slices.
+<pre class="help-text"> CHEBPOLYPLOT   Display the CHEBPOLYPLOT of the column and row slices.
     CHEBPOLYPLOT(F) plots the Chebyshev coefficients of the one-dimensional
     slices that form F on a semilogy scale. It returns two figures one for the
     row slices and one for the column slices. By default only the first six row
@@ -20,3 +20,4 @@ arguments: """(rhs1)"""
     displayed on a log-log scale.
  
   See also CHEBPOLYPLOT2, CHEBPOLY2.
+</pre>

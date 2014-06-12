@@ -1,15 +1,15 @@
 ---
-title: """norm"""
+title: "norm"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """norm"""
-snippet: """Norm of a CHEBFUN2"""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "norm"
+snippet: "Norm of a CHEBFUN2"
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- NORM   Norm of a CHEBFUN2
+<pre class="help-text"> NORM   Norm of a CHEBFUN2
   For CHEBFUN2 objects:
      NORM(F) = sqrt(integral of abs(F)^2).
      NORM(F, 2) = largest singular value of F.
@@ -21,3 +21,4 @@ arguments: """(rhs1)"""
  
   Furthermore, the inf norm for CHEBFUN2 objects also returns a second output,
   giving a position where the max occurs.
+</pre>

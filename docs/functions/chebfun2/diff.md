@@ -1,15 +1,15 @@
 ---
-title: """diff"""
+title: "diff"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """diff"""
-snippet: """Derivative of a CHEBFUN2s."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "diff"
+snippet: "Derivative of a CHEBFUN2s."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- DIFF   Derivative of a CHEBFUN2s.
+<pre class="help-text"> DIFF   Derivative of a CHEBFUN2s.
     DIFF(F) is the derivative of F along the y direction.
  
     DIFF(F, N) is the Nth derivative of F in the y direction.
@@ -23,3 +23,4 @@ arguments: """(rhs1)"""
     d^3F/dxd^2y.
  
   See also GRADIENT, SUM, PROD.
+</pre>

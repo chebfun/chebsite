@@ -1,15 +1,15 @@
 ---
-title: """find"""
+title: "find"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """find"""
-snippet: """Find locations of nonzeros in a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "find"
+snippet: "Find locations of nonzeros in a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- FIND   Find locations of nonzeros in a CHEBFUN.
+<pre class="help-text"> FIND   Find locations of nonzeros in a CHEBFUN.
     FIND(F) returns a vector of all values at which the CHEBFUN F is nonzero.
  
     [R, C] = FIND(F) returns two column vectors of the same length such that
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
     format long, find(f == 1/2) / pi
  
   See also ROOTS, EQ.
+</pre>

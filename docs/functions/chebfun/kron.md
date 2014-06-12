@@ -1,15 +1,15 @@
 ---
-title: """kron"""
+title: "kron"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """kron"""
-snippet: """Kronecker/outer product of two chebfuns."""
-qualifiers: """"""
-return_type: """out"""
-arguments: """(f, g)"""
+class_name: "chebfun"
+function_name: "kron"
+snippet: "Kronecker/outer product of two chebfuns."
+qualifiers: ""
+return_type: "out"
+arguments: "(f, g)"
 ---
 
- KRON   Kronecker/outer product of two chebfuns.
+<pre class="help-text"> KRON   Kronecker/outer product of two chebfuns.
     H = KRON(F,G) where F and G are array-valued CHEBFUN objects constructs a
     CHEBFUN2.  If size(F) = [Inf, K] and size(G) = [K, Inf] then H is a rank K
     CHEBFUN2 such that
@@ -19,3 +19,4 @@ arguments: """(f, g)"""
         H(x,y) = G(y,1)F(x,1) + ... + G(y,K)F(x,K).
  
   See also KRON.
+</pre>

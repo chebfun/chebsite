@@ -1,15 +1,15 @@
 ---
-title: """linearize"""
+title: "linearize"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """linearize"""
-snippet: """Linearize a CHEBOP."""
-qualifiers: """"""
-return_type: """[L, res, isLinear, u]"""
-arguments: """(N, u, x, flag)"""
+class_name: "chebop"
+function_name: "linearize"
+snippet: "Linearize a CHEBOP."
+qualifiers: ""
+return_type: "[L, res, isLinear, u]"
+arguments: "(N, u, x, flag)"
 ---
 
- LINEARIZE   Linearize a CHEBOP.
+<pre class="help-text"> LINEARIZE   Linearize a CHEBOP.
     L = LINEARIZE(N) returns a LINOP that corresponds to linearising the CHEBOP
     N around the zero function on N.DOMAIN. The linop L will both include the
     linearised differential equation, as well as linearised boundary conditions
@@ -48,3 +48,4 @@ arguments: """(N, u, x, flag)"""
     objects and doubles, rather than just CHEBFUNs.
  
   See also LINOP.
+</pre>

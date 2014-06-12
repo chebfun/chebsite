@@ -1,15 +1,15 @@
 ---
-title: """setupFields"""
+title: "setupFields"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """setupFields"""
-snippet: """Convert input from GUI window to format useful for Chebfun."""
-qualifiers: """"""
-return_type: """[field, allVarString, indVarName, pdeVarNames, pdeflag, eigVarNames, allVarNames]"""
-arguments: """(guifile, input, type, allVarString)"""
+class_name: "chebgui"
+function_name: "setupFields"
+snippet: "Convert input from GUI window to format useful for Chebfun."
+qualifiers: ""
+return_type: "[field, allVarString, indVarName, pdeVarNames, pdeflag, eigVarNames, allVarNames]"
+arguments: "(guifile, input, type, allVarString)"
 ---
 
- SETUPFIELDS   Convert input from GUI window to format useful for Chebfun.
+<pre class="help-text"> SETUPFIELDS   Convert input from GUI window to format useful for Chebfun.
  
   Calling sequence:
  
@@ -42,3 +42,4 @@ arguments: """(guifile, input, type, allVarString)"""
                     in the problem, that is, either l, lam or lambda.
     ALLVARNAMES:    A cell array of string, containing the name of all variables
                     that appear in a problem.
+</pre>

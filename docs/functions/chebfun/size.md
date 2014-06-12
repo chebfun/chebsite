@@ -1,15 +1,15 @@
 ---
-title: """size"""
+title: "size"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """size"""
-snippet: """Size of a CHEBFUN."""
-qualifiers: """"""
-return_type: """[s1, s2]"""
-arguments: """(f, dim)"""
+class_name: "chebfun"
+function_name: "size"
+snippet: "Size of a CHEBFUN."
+qualifiers: ""
+return_type: "[s1, s2]"
+arguments: "(f, dim)"
 ---
 
- SIZE   Size of a CHEBFUN.
+<pre class="help-text"> SIZE   Size of a CHEBFUN.
     S = SIZE(F) returns a two-element row vector S = [S1, S2]. If F is a column
     CHEBFUN, then S1 is infinity and S2 is the number of columns. For a row
     CHEBFUN, S1 is the number of rows and S2 is infinity. If the finite
@@ -20,3 +20,4 @@ arguments: """(f, dim)"""
     S = SIZE(F, DIM) returns the dimension specified by the scalar DIM.
  
   See also LENGTH.
+</pre>

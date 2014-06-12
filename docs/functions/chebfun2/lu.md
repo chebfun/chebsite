@@ -1,15 +1,15 @@
 ---
-title: """lu"""
+title: "lu"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """lu"""
-snippet: """LU factorization of a chebfun2."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "lu"
+snippet: "LU factorization of a chebfun2."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- LU   LU factorization of a chebfun2.
+<pre class="help-text"> LU   LU factorization of a chebfun2.
   [L, U] = LU( F ) returns two quasimatrices L and U of size inf by k and 
   k by inf, respectively, where k is the rank of the chebfun2 F. 
   The quasimatrices L and U are "psychologically" lower and upper triangular.
@@ -29,3 +29,4 @@ arguments: """(rhs1)"""
   factorizations, submitted, 2014. 
  
   See also CHOL, QR. 
+</pre>

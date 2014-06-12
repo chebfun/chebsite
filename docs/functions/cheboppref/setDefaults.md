@@ -1,15 +1,15 @@
 ---
-title: """setDefaults"""
+title: "setDefaults"
 layout: function-reference-item
-class_name: """cheboppref"""
-function_name: """setDefaults"""
-snippet: """Set default preferences."""
-qualifiers: """Static"""
-return_type: """"""
-arguments: """(varargin)"""
+class_name: "cheboppref"
+function_name: "setDefaults"
+snippet: "Set default preferences."
+qualifiers: "Static"
+return_type: ""
+arguments: "(varargin)"
 ---
 
- SETDEFAULTS   Set default preferences.
+<pre class="help-text"> SETDEFAULTS   Set default preferences.
     CHEBOPPREF.SETDEFAULTS(PREF1, VAL1, PREF2, VAL2, ...) sets the
     default values for the preferences whose names are stored in the
     strings PREF1, PREF2, ..., etc. to VAL1, VAL2, ..., etc.  All
@@ -26,3 +26,4 @@ arguments: """(varargin)"""
     their factory values.
  
   See also GETFACTORYDEFAULTS.
+</pre>

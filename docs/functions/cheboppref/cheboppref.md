@@ -1,15 +1,15 @@
 ---
-title: """cheboppref"""
+title: "cheboppref"
 layout: function-reference-item
-class_name: """cheboppref"""
-function_name: """cheboppref"""
-snippet: """Class for managing preferences for the Chebfun ODE suite."""
-qualifiers: """"""
-return_type: """outPref"""
-arguments: """(inPref, varargin)"""
+class_name: "cheboppref"
+function_name: "cheboppref"
+snippet: "Class for managing preferences for the Chebfun ODE suite."
+qualifiers: ""
+return_type: "outPref"
+arguments: "(inPref, varargin)"
 ---
 
- CHEBOPPREF   Class for managing preferences for the Chebfun ODE suite.
+<pre class="help-text"> CHEBOPPREF   Class for managing preferences for the Chebfun ODE suite.
     CHEBOPPREF is a class for managing CHEBOP construction-time and solver
     preferences, such as what solver is used for linear problem, the error or
     residual tolerance for nonlinear problems, whether damped Newton iteration
@@ -106,3 +106,4 @@ arguments: """(inPref, varargin)"""
     P = CHEBOPPREF(Q), where Q is a CHEBOPPREF, sets P to be a copy of Q.
  
   See also CHEBFUNPREF.
+</pre>

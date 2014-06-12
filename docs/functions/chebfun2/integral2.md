@@ -1,15 +1,15 @@
 ---
-title: """integral2"""
+title: "integral2"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """integral2"""
-snippet: """Double integral of a CHEBFUN2 over its domain."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2"
+function_name: "integral2"
+snippet: "Double integral of a CHEBFUN2 over its domain."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- INTEGRAL2  Double integral of a CHEBFUN2 over its domain.
+<pre class="help-text"> INTEGRAL2  Double integral of a CHEBFUN2 over its domain.
     I = INTEGRAL2(F) returns a value representing the double integral of a
     CHEBFUN2.
  
@@ -22,3 +22,4 @@ arguments: """(rhs1)"""
     bivariate polynomials.
  
   See also INTEGRAL, SUM2, QUAD2D.
+</pre>

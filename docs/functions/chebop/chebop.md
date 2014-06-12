@@ -1,15 +1,15 @@
 ---
-title: """chebop"""
+title: "chebop"
 layout: function-reference-item
-class_name: """chebop"""
-function_name: """chebop"""
-snippet: """of chebop:"""
-qualifiers: """"""
-return_type: """N"""
-arguments: """(op, dom, lbcIn, rbcIn, init)"""
+class_name: "chebop"
+function_name: "chebop"
+snippet: "of chebop:"
+qualifiers: ""
+return_type: "N"
+arguments: "(op, dom, lbcIn, rbcIn, init)"
 ---
 
-Contents of chebop:
+<pre class="help-text">Contents of chebop:
 
 test_bc                        - Solve two simple linear BVPs, check the residual and the precision of the
 test_bcsyntax                  - Test whether the various syntaxes for BC settings are valid. They are NOT

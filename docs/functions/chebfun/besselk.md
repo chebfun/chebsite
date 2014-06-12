@@ -1,15 +1,15 @@
 ---
-title: """besselk"""
+title: "besselk"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """besselk"""
-snippet: """Modified Bessel function of second kind of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "besselk"
+snippet: "Modified Bessel function of second kind of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- BESSELK   Modified Bessel function of second kind of a CHEBFUN.
+<pre class="help-text"> BESSELK   Modified Bessel function of second kind of a CHEBFUN.
     K = BESSELK(NU, F) computes the modified Bessel function of second kind
     K_NU(F) of the nonzero CHEBFUN F. If F passes through the origin in its
     domain, then an error is returned. The order NU need not be an integer but
@@ -26,3 +26,4 @@ arguments: """(rhs1)"""
  
   Copyright 2014 by The University of Oxford and The Chebfun Developers.
   See http://www.chebfun.org for Chebfun information.
+</pre>

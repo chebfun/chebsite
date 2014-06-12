@@ -1,15 +1,15 @@
 ---
-title: """chebpts2"""
+title: "chebpts2"
 layout: function-reference-item
-class_name: """chebfun2"""
-function_name: """chebpts2"""
-snippet: """Chebyshev tensor points"""
-qualifiers: """Static"""
-return_type: """[xx, yy]"""
-arguments: """(nx, ny, domain)"""
+class_name: "chebfun2"
+function_name: "chebpts2"
+snippet: "Chebyshev tensor points"
+qualifiers: "Static"
+return_type: "[xx, yy]"
+arguments: "(nx, ny, domain)"
 ---
 
- CHEBPTS2 Chebyshev tensor points
+<pre class="help-text"> CHEBPTS2 Chebyshev tensor points
     [XX YY] = CHEBPTS2(N) constructs an N by N grid of Chebyshev tensor points
     on [-1 1]^2.
  
@@ -20,3 +20,4 @@ arguments: """(nx, ny, domain)"""
     points on the rectangle [a b] x [c d], where D = [a b c d].
  
   See also CHEBPTS.
+</pre>

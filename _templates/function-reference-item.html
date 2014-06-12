@@ -1,7 +1,7 @@
 {% extends "basic.html" %}
 
 {% block title %}
-<h1 class='pull-left-15px'>{{page.title}}</h1>
+<h1 class='pull-left-15px'><a href='../'>Function reference</a><span class='sep'>&raquo;</span><a href='./'>{{page.class_name}}</a><span class='sep'>/</span>{{page.function_name}}</h1>
 {% endblock %}
 
 {% block sidenav %}
@@ -13,13 +13,13 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{page.class_name}}<span class='sep'>/</span><a href="{{f}}">{{f}}</a></h1>
+    <h1><a href='./'>{{page.class_name}}</a><span class='sep'>/</span><strong>{{page.function_name}}</strong></h1>
     <p>{{page.snippet}}</p>
 
-    <h2>Usage</h2>
-    <p>{{page.return_type}} = {{page.function_name}}({{page.arguments}})</p>
+    <!--<h2>Usage</h2>
+    <pre>{{page.return_type}} = {{page.function_name}}{{page.arguments}}</pre>-->
 
     <h2>Documentation</h2>
-    <pre>{{page.body}}</pre>
+    {{page.body}} {# The help text comes in a <pre> already.... #}
 
 {% endblock %}

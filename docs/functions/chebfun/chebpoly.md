@@ -1,15 +1,15 @@
 ---
-title: """chebpoly"""
+title: "chebpoly"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """chebpoly"""
-snippet: """Chebyshev polynomial coefficients of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "chebpoly"
+snippet: "Chebyshev polynomial coefficients of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- CHEBPOLY   Chebyshev polynomial coefficients of a CHEBFUN.
+<pre class="help-text"> CHEBPOLY   Chebyshev polynomial coefficients of a CHEBFUN.
     A = CHEBPOLY(F, N) returns the first N Chebyshev coefficients of F, i.e.,
     the row vector such that F = ... + A(1) T_N(x) + ... + A(N) T_1(x) +
     A(N+1) T_0(x), where T_M(x) denotes the M-th Chebyshev polynomial.
@@ -27,3 +27,4 @@ arguments: """(rhs1)"""
     computes the CHEBFUN corresponding to the Chebyshev polynomial T_M(x).
  
   See also LEGPOLY.
+</pre>

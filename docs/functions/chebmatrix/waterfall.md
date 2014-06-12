@@ -1,15 +1,15 @@
 ---
-title: """waterfall"""
+title: "waterfall"
 layout: function-reference-item
-class_name: """chebmatrix"""
-function_name: """waterfall"""
-snippet: """Waterfall plot for CHEBMATRIX object."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebmatrix"
+function_name: "waterfall"
+snippet: "Waterfall plot for CHEBMATRIX object."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- WATERFALL   Waterfall plot for CHEBMATRIX object.
+<pre class="help-text"> WATERFALL   Waterfall plot for CHEBMATRIX object.
     WATERFALL(U), or WATERFALL(U, T) where LENGTH(T) = MIN(SIZE(U)), plots a
     "waterfall" plot of the CHEBMATRIX U. If U cannot be converted to a
     QUASIMATRIX (i.e., if it contains INFxINF blocks), then an error is thrown.
@@ -24,3 +24,4 @@ arguments: """(rhs1)"""
     is plotted in the color COLS{k} or COLS(k,:).
  
   See also PLOT, PLOT3.
+</pre>

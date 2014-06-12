@@ -1,15 +1,15 @@
 ---
-title: """subsref"""
+title: "subsref"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """subsref"""
-snippet: """CHEBFUN subsref."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(f, index)"""
+class_name: "chebfun"
+function_name: "subsref"
+snippet: "CHEBFUN subsref."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(f, index)"
 ---
 
- SUBSREF   CHEBFUN subsref.
+<pre class="help-text"> SUBSREF   CHEBFUN subsref.
   ( )
     F(X) returns the values of the CHEBFUN F evaluated on the array X. If X
     falls on a breakpoint of F, the corresponding value from F.IMPULSES is
@@ -35,3 +35,4 @@ arguments: """(f, index)"""
     subsref() command.
  
   See also FEVAL, COMPOSE, GET, RESTRICT, SIMPLIFY.
+</pre>

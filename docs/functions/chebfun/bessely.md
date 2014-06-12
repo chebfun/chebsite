@@ -1,15 +1,15 @@
 ---
-title: """bessely"""
+title: "bessely"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """bessely"""
-snippet: """Bessel function of second kind of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "bessely"
+snippet: "Bessel function of second kind of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- BESSELY   Bessel function of second kind of a CHEBFUN.
+<pre class="help-text"> BESSELY   Bessel function of second kind of a CHEBFUN.
     Y = BESSELY(NU, F) computes the Bessel function of the second kind Y_NU(F)
     of the nonzero CHEBFUN F. The order NU need not be an integer but must be
     real. The argument F can be complex but must not pass through the origin.
@@ -26,3 +26,4 @@ arguments: """(rhs1)"""
  
   Copyright 2014 by The University of Oxford and The Chebfun Developers.
   See http://www.chebfun.org for Chebfun information.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """atan2d"""
+title: "atan2d"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """atan2d"""
-snippet: """Four quadrant inverse tangent (in degrees) of a CHEBFUN."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun"
+function_name: "atan2d"
+snippet: "Four quadrant inverse tangent (in degrees) of a CHEBFUN."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- ATAN2   Four quadrant inverse tangent (in degrees) of a CHEBFUN.
+<pre class="help-text"> ATAN2   Four quadrant inverse tangent (in degrees) of a CHEBFUN.
     ATAN2D(Y, X) is the four quadrant arctangent (in degrees) of the real parts
     of the CHEBFUN objects X and Y.  -180 <= ATAN2(Y, X) <= 180.
  
@@ -22,3 +22,4 @@ arguments: """(rhs1)"""
                    { 0,               y = 0,  x = 0
  
   See also ATAN, ATAN2.
+</pre>

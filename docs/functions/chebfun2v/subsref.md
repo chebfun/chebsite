@@ -1,15 +1,15 @@
 ---
-title: """subsref"""
+title: "subsref"
 layout: function-reference-item
-class_name: """chebfun2v"""
-function_name: """subsref"""
-snippet: """CHEBFUN2V subsref."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(rhs1)"""
+class_name: "chebfun2v"
+function_name: "subsref"
+snippet: "CHEBFUN2V subsref."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(rhs1)"
 ---
 
- SUBSREF   CHEBFUN2V subsref.
+<pre class="help-text"> SUBSREF   CHEBFUN2V subsref.
   
   ( )
     F(X,Y) returns the values of the CHEBFUN2 F evaluated on the array (X,Y).
@@ -21,3 +21,4 @@ arguments: """(rhs1)"""
    
   { }
      Throws an error.
+</pre>

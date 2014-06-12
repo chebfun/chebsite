@@ -1,15 +1,15 @@
 ---
-title: """merge"""
+title: "merge"
 layout: function-reference-item
-class_name: """chebfun"""
-function_name: """merge"""
-snippet: """Remove unnecessary breakpoints in from a CHEBFUN."""
-qualifiers: """"""
-return_type: """[f, mergedPts]"""
-arguments: """(f, index, pref)"""
+class_name: "chebfun"
+function_name: "merge"
+snippet: "Remove unnecessary breakpoints in from a CHEBFUN."
+qualifiers: ""
+return_type: "[f, mergedPts]"
+arguments: "(f, index, pref)"
 ---
 
- MERGE   Remove unnecessary breakpoints in from a CHEBFUN.
+<pre class="help-text"> MERGE   Remove unnecessary breakpoints in from a CHEBFUN.
     F = MERGE(F, PREF) removes unnecessary breakpoints from a CHEBFUN F. In
     particular the kth breakpoint is removed if the resulting FUN on the
     interval [x_{k-1}, x_{k+1}] can be represented with a fewer than
@@ -34,3 +34,4 @@ arguments: """(f, index, pref)"""
         [g, mergedPts] = merge(f.^2);
  
   See also CHEBFUNPREF.
+</pre>

@@ -1,15 +1,15 @@
 ---
-title: """solveGUIbvp"""
+title: "solveGUIbvp"
 layout: function-reference-item
-class_name: """chebgui"""
-function_name: """solveGUIbvp"""
-snippet: """Solve a BVP, specified by a CHEBGUI object."""
-qualifiers: """"""
-return_type: """varargout"""
-arguments: """(guifile, handles)"""
+class_name: "chebgui"
+function_name: "solveGUIbvp"
+snippet: "Solve a BVP, specified by a CHEBGUI object."
+qualifiers: ""
+return_type: "varargout"
+arguments: "(guifile, handles)"
 ---
 
- SOLVEGUIBVP   Solve a BVP, specified by a CHEBGUI object.
+<pre class="help-text"> SOLVEGUIBVP   Solve a BVP, specified by a CHEBGUI object.
  
   Calling sequence:
  
@@ -29,3 +29,4 @@ arguments: """(guifile, handles)"""
   object (e.g. [U, INFO] = SOLVEGUIBVP(GUIFILE) from the command line),
     VARARGOUT{1}:   The solution to the problem specified by GUIFILE.
     VARARGOUT{2}:   The INFO struct returned by the chebop/solvebvp() method.
+</pre>
