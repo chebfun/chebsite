@@ -1,0 +1,21 @@
+{% extends "basic.html" %}
+
+{% block title %}
+<h1 class='pull-left-15px'>{{page.title}}</h1>
+{% endblock %}
+
+{% block sidenav %}
+    <ul class='sidenav'>
+    <li><a href="#">Some thing</a></li>
+    <li><a href="#">Other derp</a></li>
+    <li><a href="#">Final</a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <ul>
+    {% for f in page.function_names %}
+    <li><a href="{{f}}">{{f}} &mdash; {{page.snippets[loop]}}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

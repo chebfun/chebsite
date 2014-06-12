@@ -1,0 +1,11 @@
+---
+title: """isinf"""
+layout: function-reference-item
+class_name: """domain"""
+function_name: """isinf"""
+snippet: """"""
+qualifiers: """"""
+return_type: """varargout"""
+arguments: """(varargin)"""
+---
+

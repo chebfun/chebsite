@@ -1,0 +1,25 @@
+{% extends "basic.html" %}
+
+{% block title %}
+<h1 class='pull-left-15px'>{{page.title}}</h1>
+{% endblock %}
+
+{% block sidenav %}
+    <ul class='sidenav'>
+    <li><a href="#">Some thing</a></li>
+    <li><a href="#">Other derp</a></li>
+    <li><a href="#">Final</a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <h1>{{page.class_name}}<span class='sep'>/</span><a href="{{f}}">{{f}}</a></h1>
+    <p>{{page.snippet}}</p>
+
+    <h2>Usage</h2>
+    <p>{{page.return_type}} = {{page.function_name}}({{page.arguments}})</p>
+
+    <h2>Documentation</h2>
+    <pre>{{page.body}}</pre>
+
+{% endblock %}

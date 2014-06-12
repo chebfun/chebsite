@@ -1,0 +1,45 @@
+---
+title: """chebfunpref"""
+layout: function-reference-index
+class_name: """chebfunpref"""
+function_names: 
+    - """chebfunpref"""
+    - """display"""
+    - """getFactoryDefaults"""
+    - """mergePrefs"""
+    - """setDefaults"""
+    - """subsasgn"""
+    - """subsref"""
+function_snippets: 
+    - """Class for managing Chebfun construction-time preferences."""
+    - """Display a CHEBFUNPREF object."""
+    - """Get factory default preferences."""
+    - """Merge preference structures."""
+    - """Set default preferences."""
+    - """Subscripted assignment for CHEBFUNPREF."""
+    - """Subscripted referencing for CHEBFUNPREF."""
+function_qualifiers: 
+    - """"""
+    - """"""
+    - """Static"""
+    - """Static"""
+    - """Static"""
+    - """"""
+    - """"""
+function_return_types: 
+    - """outPref"""
+    - """"""
+    - """pref"""
+    - """pref1"""
+    - """"""
+    - """pref"""
+    - """out"""
+function_arguments: 
+    - """(varargin)"""
+    - """(pref)"""
+    - """"""
+    - """(pref1, pref2, map)"""
+    - """(varargin)"""
+    - """(pref, ind, val)"""
+    - """(pref, ind)"""
+---

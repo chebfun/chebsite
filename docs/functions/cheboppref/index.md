@@ -1,0 +1,45 @@
+---
+title: """cheboppref"""
+layout: function-reference-index
+class_name: """cheboppref"""
+function_names: 
+    - """cheboppref"""
+    - """display"""
+    - """getFactoryDefaults"""
+    - """mergePrefs"""
+    - """setDefaults"""
+    - """subsasgn"""
+    - """subsref"""
+function_snippets: 
+    - """Class for managing preferences for the Chebfun ODE suite."""
+    - """Display a CHEBOPPREF object."""
+    - """Get factory default preferences."""
+    - """Merge preference structures."""
+    - """Set default preferences."""
+    - """Subscripted assignment for CHEBPREF."""
+    - """Subscripted referencing for CHEBPREF."""
+function_qualifiers: 
+    - """"""
+    - """"""
+    - """Static"""
+    - """Static"""
+    - """Static"""
+    - """"""
+    - """"""
+function_return_types: 
+    - """outPref"""
+    - """"""
+    - """pref"""
+    - """pref1"""
+    - """"""
+    - """pref"""
+    - """out"""
+function_arguments: 
+    - """(inPref, varargin)"""
+    - """(pref)"""
+    - """"""
+    - """(pref1, pref2, map)"""
+    - """(varargin)"""
+    - """(pref, ind, val)"""
+    - """(pref, ind)"""
+---
