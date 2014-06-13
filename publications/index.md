@@ -6,12 +6,17 @@ order: title
 
 To cite Chebfun in a publication, we recommend the following:
 
-> The Chebfun Team, *Chebfun Version 5*, 2014, http://www.chebfun.org/.
+<blockquote>
+T. A. Driscoll, N. Hale, and L. N. Trefethen, editors,
+<em>Chebfun Guide</em>, Pafnuty Publications, Oxford, 2014.
+</blockquote>
 
 Below is a list of Chebfun-related papers written by members of the Chebfun
-Team. For convenience, [a BibTeX file is available](../chebfun.bib). If you
-use Chebfun in a book, paper, website, or other project, [we'd love to hear
-about it](../support)!
+Team. For convenience, [a BibTeX file is available](../chebfun.bib). There are
+also many Chebfun-related [publications by
+others](http://scholar.google.com/scholar?as_ylo=2012&q=chebfun). If you use
+Chebfun in a book, paper, website, or other project, [we'd love to hear about
+it](../support)!
 
 <div class='row'>
 <div class='col-sm-6'>
