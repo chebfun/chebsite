@@ -9,11 +9,44 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> CHEBPOLYPLOT2   Display bivariate Chebyshev coefficients graphically.
-    CHEBPOLYPLOT2(F) plots the bivariate Chebyshev coefficients in a stem3 plot
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun2/chebpolyplot2</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun2/chebpolyplot2</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun2/chebpolyplot2">View code for chebfun2/chebpolyplot2</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun2/chebpolyplot2</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">chebpolyplot2</span>   Display bivariate Chebyshev coefficients graphically.
+    <span class="helptopic">chebpolyplot2</span>(F) plots the bivariate Chebyshev coefficients in a stem3 plot
     with a semilogy scale.
  
-    H = CHEBPOLYPLOT2(F) returns a handle H to the figure.
- 
-  See also CHEBPOLYPLOT, CHEBPOLY2.
-</pre>
+    H = <span class="helptopic">chebpolyplot2</span>(F) returns a handle H to the figure.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/chebpolyplot">chebpolyplot</a>, <a href="matlab:helpwin chebfun2/chebpoly2">chebpoly2</a>.
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -9,11 +9,44 @@ return_type: "g"
 arguments: "(f)"
 ---
 
-<pre class="help-text"> ROUND   Round a CHEBFUN pointwise to nearest integer.
-    G = ROUND(F) returns the CHEBFUN G such that G(x) = ROUND(F(x)) for each x
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun/round</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun/round</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun/round">View code for chebfun/round</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun/round</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">round</span>   Round a CHEBFUN pointwise to nearest integer.
+    G = <span class="helptopic">round</span>(F) returns the CHEBFUN G such that G(x) = <span class="helptopic">round</span>(F(x)) for each x
     in F.domain.
  
-    If F is complex, then the G = ROUND(REAL(F)) + 1i*ROUND(IMAG(F)).
- 
-  See also FIX, FLOOR, CEIL.
-</pre>
+    If F is complex, then the G = <span class="helptopic">round</span>(REAL(F)) + 1i*<span class="helptopic">round</span>(IMAG(F)).</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/fix">fix</a>, <a href="matlab:helpwin chebfun/floor">floor</a>, <a href="matlab:helpwin chebfun/ceil">ceil</a>.
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

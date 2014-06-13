@@ -26,11 +26,9 @@
 
         {%- if self.sidenav() -%}
         <div class="row main noleftpadding">
-            <div class="col-sm-4 noleftpadding">
                 {%- block sidenav -%}
                 {%- endblock -%}
-            </div>
-            <div id='content' class="col-sm-8" role="main">
+                {# sidenav must decare <div id='content'> at the end! #}
         {%- else -%}
         <div class="row main">
             {% block begincontent %}

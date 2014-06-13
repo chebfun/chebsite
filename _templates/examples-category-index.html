@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block sidenav %}
+<div class="col-sm-4 noleftpadding">
     <ul class='sidenav'>
     {% for sub in site.examples_subindexes %}
         {% if sub.category == page.category %}
@@ -14,6 +15,8 @@
         {% endif %}
     {% endfor %}
     </ul>
+</div>
+<div id='content' class="col-sm-8" role="main">
 {% endblock %}
 
 {% block content %}

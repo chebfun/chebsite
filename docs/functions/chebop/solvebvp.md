@@ -9,14 +9,31 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> SOLVEBVP  Solve a linear or nonlinear CHEBOP BVP system.
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebop/solvebvp</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebop/solvebvp</td>
+            <td class="subheader-left"><a href="matlab:edit chebop/solvebvp">View code for chebop/solvebvp</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebop/solvebvp</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">solvebvp</span>  Solve a linear or nonlinear CHEBOP BVP system.
  
-    U = SOLVEBVP(N, RHS), where N is a CHEBOP and RHS is a CHEBMATRIX, CHEBFUN
+    U = <span class="helptopic">solvebvp</span>(N, RHS), where N is a CHEBOP and RHS is a CHEBMATRIX, CHEBFUN
     or a vector of doubles attempts to solve the BVP
  
         N(U) = RHS + boundary conditions specified by N
  
-    Observe that U = SOLVEBVP(N, RHS) has the same effect as U = N\RHS, but this
+    Observe that U = <span class="helptopic">solvebvp</span>(N, RHS) has the same effect as U = N\RHS, but this
     method allows greater flexibility than CHEBOP backslash, as described below.
  
     If successful, the solution returned, U, is a CHEBFUN if N specifies a
@@ -27,10 +44,10 @@ arguments: "(rhs1)"
     where each linear problem arising is solved via a spectral/pseudospectral
     method.
  
-    U = SOLVEBVP(N, RHS, PREF) is the same as above, using the preferences
+    U = <span class="helptopic">solvebvp</span>(N, RHS, PREF) is the same as above, using the preferences
     specified by the CHEBOPPREF variable PREF.
  
-    [U, INFO] = SOLVEBVP(N, RHS, PREF) is the same as above, but also returns
+    [U, INFO] = <span class="helptopic">solvebvp</span>(N, RHS, PREF) is the same as above, but also returns
     the MATLAB struct INFO, which contains useful information about the solution
     process. The fields of INFO are as follows:
         ISLINEAR: A vector with four entries containing linearity information
@@ -55,8 +72,24 @@ arguments: "(rhs1)"
         N.bc = @(x, u, v) [u(-1) ; v(1)];
         uv = solvebvp(N, 0);
     and
-        uv = solvebvp(N, [0; 0]);
- 
-  See also: CHEBOP, CHEBOP/MLDIVIDE, CHEBOPPREF, CHEBOP/SOLVEBVPLINEAR, 
-    CHEBOP/SOLVEBVPNONLINEAR, LINOP/MLDIVIDE.
-</pre>
+        uv = solvebvp(N, [0; 0]);</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebop">chebop</a>, <a href="matlab:helpwin chebop/mldivide">chebop/mldivide</a>, <a href="matlab:helpwin cheboppref">cheboppref</a>, <a href="matlab:helpwin chebop/solvebvpLinear">chebop/solvebvpLinear</a>, 
+    <a href="matlab:helpwin chebop/solvebvpNonlinear">chebop/solvebvpNonlinear</a>, <a href="matlab:helpwin linop/mldivide">linop/mldivide</a>.
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

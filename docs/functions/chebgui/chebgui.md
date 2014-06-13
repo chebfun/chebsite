@@ -3,25 +3,42 @@ title: "chebgui"
 layout: function-reference-item
 class_name: "chebgui"
 function_name: "chebgui"
-snippet: "of chebgui:"
+snippet: "The chebgui constructor."
 qualifiers: ""
 return_type: "c"
 arguments: "(varargin)"
 ---
 
-<pre class="help-text">Contents of chebgui:
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebgui</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebgui</td>
+            <td class="subheader-left"><a href="matlab:edit chebgui">View code for chebgui</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebgui</div>
+      <div class="helptext"><pre><!--helptext -->Contents of chebgui:
 
-test_multipleOutputs           - This test ensures that the STRINGPARSER class is doing the correct thing when
-test_parSimp                   - Copyright 2011 by The University of Oxford and The Chebfun Developers. 
-test_stringParser              - This test ensures that the STRINGPARSER class is doing the correct thing in a
-test_toFileBVP                 - Test exporting all BVP demos to an .m-file.
-test_toFileEIG                 - Test exporting all EIG demos to an .m-file.
-test_toFilePDE                 - Test exporting all PDE demos to an .m-file.
+<a href="matlab:helpwin test_multipleOutputs">test_multipleOutputs</a>           - This test ensures that the STRINGPARSER class is doing the correct thing when
+<a href="matlab:helpwin test_parSimp">test_parSimp</a>                   - Copyright 2011 by The University of Oxford and The Chebfun Developers. 
+<a href="matlab:helpwin test_stringParser">test_stringParser</a>              - This test ensures that the STRINGPARSER class is doing the correct thing in a
+<a href="matlab:helpwin test_toFileBVP">test_toFileBVP</a>                 - Test exporting all BVP demos to an .m-file.
+<a href="matlab:helpwin test_toFileEIG">test_toFileEIG</a>                 - Test exporting all EIG demos to an .m-file.
+<a href="matlab:helpwin test_toFilePDE">test_toFilePDE</a>                 - Test exporting all PDE demos to an .m-file.
 
 
 chebgui is both a directory and a function.
 
-  INTRODUCTION TO CHEBGUI
+  INTRODUCTION TO <span class="helptopic">chebgui</span>
  
   Chebgui is a graphical user interface to Chebfun's capabilities for solving
   ODEs and PDEs (ordinary and partial differential equations) and eigenvalue
@@ -57,7 +74,7 @@ chebgui is both a directory and a function.
  
   Here is a three-sentence sketch of how the solutions are computed.  The ODE
   and eigenvalue problems are solved by Chebfun's automated Chebyshev spectral
-  methods underlying the Chebfun commands <backslash> and SOLVEBVP.  The
+  methods underlying the Chebfun commands &lt;backslash&gt; and SOLVEBVP.  The
   discretizations involved will be described in a forthcoming paper by Driscoll
   and Hale, and the Newton and damped Newton iterations used to handle
   nonlinearity is described in [1]. The PDE problems are solved by Chebfun's
@@ -113,16 +130,228 @@ chebgui is both a directory and a function.
   into an M-file in standard Chebfun syntax.  This is a great starting point for
   more serious explorations.
  
-  CHEBGUI is also the constructor for chebgui objects. For example
+  <span class="helptopic">chebgui</span> is also the constructor for chebgui objects. For example
      chebg = chebgui('type','bvp','domain','[-1,1]', ...
                      'de','u" = sin(u)','lbc','u = 1','rbc','u = 0')
      show(chebg)
  
-  See also chebop/solvebvp, chebop/eigs, chebfun/pde15s, chebfun/ode45,
-  chebfun/ode113, chebfun/ode15s, chebfun/bvp4c, chebfun/bvp5c.
+  
  
   References:
-    [1] A. Birkisson and T. A. Driscoll, “Automatic Fréchet Differentiation for
-    the Numerical Solution of Boundary-Value Problems,” ACM Transactions on
-    Mathematical Software, vol. 38, no. 4, Article 26, Aug. 2012.
-</pre>
+    [1] A. Birkisson and T. A. Driscoll, &#xE2;&#x80;&#x9C;Automatic Fr&#xC3;&#xA9;chet Differentiation for
+    the Numerical Solution of Boundary-Value Problems,&#xE2;&#x80;&#x9D; ACM Transactions on
+    Mathematical Software, vol. 38, no. 4, Article 26, Aug. 2012.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebop/solvebvp">chebop/solvebvp</a>, <a href="matlab:helpwin chebop/eigs">chebop/eigs</a>, <a href="matlab:helpwin chebfun/pde15s">chebfun/pde15s</a>, <a href="matlab:helpwin chebfun.ode45">chebfun.ode45</a>,
+  <a href="matlab:helpwin chebfun.ode113">chebfun.ode113</a>, <a href="matlab:helpwin chebfun.ode15s">chebfun.ode15s</a>, <a href="matlab:helpwin chebfun/bvp4c">chebfun/bvp4c</a>, <a href="matlab:helpwin chebfun/bvp5c">chebfun/bvp5c</a>.</div>
+      <!--Class-->
+      <div class="sectiontitle">Class Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Construct on load</td>
+            <td>false</td>
+         </tr>
+      </table>
+      <!--Constructors-->
+      <div class="sectiontitle"><a name="constructors"></a>Constructor Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.chebgui')">chebgui</a></td>
+            <td class="m-help">The CHEBGUI constructor&nbsp;</td>
+         </tr>
+      </table>
+      <!--Properties-->
+      <div class="sectiontitle"><a name="properties"></a>Property Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.BC')">BC</a></td>
+            <td class="m-help">Interior / nonstandard BCs&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.DE')">DE</a></td>
+            <td class="m-help">Differential equation, or rhs in u_t = ... for PDEs&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.LBC')">LBC</a></td>
+            <td class="m-help">Left BCs&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.RBC')">RBC</a></td>
+            <td class="m-help">Right BCs&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.domain')">domain</a></td>
+            <td class="m-help">Spacial domain (may contain breakpoints)&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.init')">init</a></td>
+            <td class="m-help">Initial guess/condition for nonlin BVPs/PDEs&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.options')">options</a></td>
+            <td class="m-help">This initalises the OPTIONS struct for CHEBGUI. It containts a list of&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.sigma')">sigma</a></td>
+            <td class="m-help">Third input to an EIGS call&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.timedomain')">timedomain</a></td>
+            <td class="m-help">Time domain (should include breakpoints)&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.tol')">tol</a></td>
+            <td class="m-help">Solution tolerance&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebgui.type')">type</a></td>
+            <td class="m-help">Type of chebgui (bvp, pde, or eig)&nbsp;</td>
+         </tr>
+      </table>
+      <!--Methods-->
+      <div class="sectiontitle"><a name="methods"></a>Method Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.demo')">demo</a></td>
+            <td class="m-help">Return a random BVP CHEBGUI demo.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.demo2chebgui')">demo2chebgui</a></td>
+            <td class="m-help">Load a demo stored in a .guifile to a CHEBGUI object&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.display')">display</a></td>
+            <td class="m-help">DISP   Display information of a chebgui object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.displayBVPinfo')">displayBVPinfo</a></td>
+            <td class="m-help">Show information on the CHEBGUI figure when solving BVPs.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.exportBVP2mfile')">exportBVP2mfile</a></td>
+            <td class="m-help">&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.exportEIG2mfile')">exportEIG2mfile</a></td>
+            <td class="m-help">&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.exportPDE2mfile')">exportPDE2mfile</a></td>
+            <td class="m-help">&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.initialiseFigures')">initialiseFigures</a></td>
+            <td class="m-help">Reset figures in the CHEBGUI window.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.set')">set</a></td>
+            <td class="m-help">Set CHEBGUI properties.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.setupFields')">setupFields</a></td>
+            <td class="m-help">Convert input from GUI window to format useful for Chebfun.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.show')">show</a></td>
+            <td class="m-help">Display a chebgui in the GUI window.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.solve')">solve</a></td>
+            <td class="m-help">Called when a user hits calls the solve method for a CHEBGUI object&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.solveGUI')">solveGUI</a></td>
+            <td class="m-help">Called when a user hits the solve button of the Chebfun GUI.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.solveGUIbvp')">solveGUIbvp</a></td>
+            <td class="m-help">Solve a BVP, specified by a CHEBGUI object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.solveGUIeig')">solveGUIeig</a></td>
+            <td class="m-help">Solve a eigenvalue problem, specified by a CHEBGUI object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.solveGUIpde')">solveGUIpde</a></td>
+            <td class="m-help">Solve a PDE, specified by a CHEBGUI object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebgui.subsasgn')">subsasgn</a></td>
+            <td class="m-help">Modify a CHEBGUI object.&nbsp;</td>
+         </tr>
+      </table>
+   </body>
+</html>

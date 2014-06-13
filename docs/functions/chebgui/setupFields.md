@@ -9,12 +9,29 @@ return_type: "[field, allVarString, indVarName, pdeVarNames, pdeflag, eigVarName
 arguments: "(guifile, input, type, allVarString)"
 ---
 
-<pre class="help-text"> SETUPFIELDS   Convert input from GUI window to format useful for Chebfun.
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebgui/setupFields</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebgui/setupFields</td>
+            <td class="subheader-left"><a href="matlab:edit chebgui/setupFields">View code for chebgui/setupFields</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebgui/setupFields</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">setupFields</span>   Convert input from GUI window to format useful for Chebfun.
  
   Calling sequence:
  
     [FIELD, ALLVARSTRING, INDVARNAME, PDEVARNAMES, PDEFLAG,  EIGVARNAMES, ...
-        ALLVARNAMES] = SETUPFIELDS(GUIFILE, INPUT, TYPE, ALLVARSTRING)
+        ALLVARNAMES] = <span class="helptopic">setupFields</span>(GUIFILE, INPUT, TYPE, ALLVARSTRING)
  
   Here, the inputs are:
  
@@ -41,5 +58,22 @@ arguments: "(guifile, input, type, allVarString)"
     EIGVARNAMES:    A string that indicates how the eigenvalue parameter appears
                     in the problem, that is, either l, lam or lambda.
     ALLVARNAMES:    A cell array of string, containing the name of all variables
-                    that appear in a problem.
-</pre>
+                    that appear in a problem.</pre></div><!--after help -->
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

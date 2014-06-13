@@ -9,9 +9,42 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> MEAN    Average or mean value of a CHEBFUN.
-    MEAN(F) is the mean value of the CHEBFUN F in its continuous dimension.
-    MEAN(F, G) is the average CHEBFUN between CHEBFUN objects F and G.
- 
-  See also SUM.
-</pre>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun/mean</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun/mean</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun/mean">View code for chebfun/mean</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun/mean</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">mean</span>    Average or mean value of a CHEBFUN.
+    <span class="helptopic">mean</span>(F) is the mean value of the CHEBFUN F in its continuous dimension.
+    <span class="helptopic">mean</span>(F, G) is the average CHEBFUN between CHEBFUN objects F and G.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/sum">sum</a>.
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

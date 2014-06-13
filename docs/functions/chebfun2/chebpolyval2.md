@@ -9,15 +9,48 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> CHEBPOLYVAL2   Values on a tensor Chebyshev grid.
-    X = CHEBPOLYVAL2(F) returns the matrix of values of F on a Chebyshev tensor
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun2/chebpolyval2</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun2/chebpolyval2</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun2/chebpolyval2">View code for chebfun2/chebpolyval2</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun2/chebpolyval2</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">chebpolyval2</span>   Values on a tensor Chebyshev grid.
+    X = <span class="helptopic">chebpolyval2</span>(F) returns the matrix of values of F on a Chebyshev tensor
     grid.
  
-    [U, D, V] = CHEBPOLYVAL2(F) returns the low rank representation of the
+    [U, D, V] = <span class="helptopic">chebpolyval2</span>(F) returns the low rank representation of the
     values of F on a tensor Chebyshev grid. X = U * D * V'.
  
-    [U, D, V] = CHEBPOLYVAL2(F,M,N) returns the values of F on a M-by-N
-    Chebyshev tensor grid.
- 
-  See also CHEBPOLY2, CHEBPOLYPLOT2. 
-</pre>
+    [U, D, V] = <span class="helptopic">chebpolyval2</span>(F,M,N) returns the values of F on a M-by-N
+    Chebyshev tensor grid.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/chebpoly2">chebpoly2</a>, <a href="matlab:helpwin chebfun2/chebpolyplot2">chebpolyplot2</a>. 
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

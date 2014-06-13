@@ -9,9 +9,42 @@ return_type: "h"
 arguments: "(f, varargin)"
 ---
 
-<pre class="help-text"> LOGLOG  log-log scale plot of a CHEBFUN.
-    LOGLOG(...) is the same as PLOT(...), except a logarithmic (base 10) scale
-    is used for the X- and Y-axes.
- 
-  See also PLOT, SEMILOGX, SEMILOGY.
-</pre>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun/loglog</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun/loglog</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun/loglog">View code for chebfun/loglog</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun/loglog</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">loglog</span>  log-log scale plot of a CHEBFUN.
+    <span class="helptopic">loglog</span>(...) is the same as PLOT(...), except a logarithmic (base 10) scale
+    is used for the X- and Y-axes.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/plot">plot</a>, <a href="matlab:helpwin chebfun/semilogx">semilogx</a>, <a href="matlab:helpwin chebfun/semilogy">semilogy</a>.
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -22,7 +22,7 @@ function_names:
     - "svds"
 function_snippets: 
     - "Set boundary conditions for a chebop."
-    - "of chebop:"
+    - "The chebop constructor."
     - "Find selected eigenvalues and eigenfunctions of a linear CHEBOP."
     - "Exponential semigroup of a linear CHEBOP."
     - "Evaluate the operator of the CHEBOP at a CHEBFUN or CHEBMATRIX."

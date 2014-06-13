@@ -3,14 +3,31 @@ title: "chebfunpref"
 layout: function-reference-item
 class_name: "chebfunpref"
 function_name: "chebfunpref"
-snippet: "Class for managing Chebfun construction-time preferences."
+snippet: "The chebfunpref constructor."
 qualifiers: ""
 return_type: "outPref"
 arguments: "(varargin)"
 ---
 
-<pre class="help-text"> CHEBFUNPREF   Class for managing Chebfun construction-time preferences.
-    CHEBFUNPREF is a class for managing Chebfun construction-time preferences
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfunpref</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfunpref</td>
+            <td class="subheader-left"><a href="matlab:edit chebfunpref">View code for chebfunpref</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfunpref</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">chebfunpref</span>   Class for managing Chebfun construction-time preferences.
+    <span class="helptopic">chebfunpref</span> is a class for managing Chebfun construction-time preferences
     such as the construction tolerance, whether or not to perform breakpoint
     and singularity detection, and the various options that those features
     require.  These objects can be supplied to the CHEBFUN constructor (as well
@@ -165,14 +182,14 @@ arguments: "(varargin)"
          ensure that behavior hasn't been missed, e.g., due to undersampling.
  
   The default values for any of these preferences may be globally overridden
-  using CHEBFUNPREF.SETDEFAULTS(); see the documentation for that function for
+  using <span class="helptopic">chebfunpref</span>.SETDEFAULTS(); see the documentation for that function for
   further details.
  
   Constructor inputs:
-    P = CHEBFUNPREF() creates a CHEBFUNPREF object with the default values of
+    P = <span class="helptopic">chebfunpref</span>() creates a <span class="helptopic">chebfunpref</span> object with the default values of
     the preferences.  For a list of all available preferences, see above.
  
-    P = CHEBFUNPREF(Q), where Q is a MATLAB structure uses the field/value pairs
+    P = <span class="helptopic">chebfunpref</span>(Q), where Q is a MATLAB structure uses the field/value pairs
     in Q to set the properties of P.  If a field of Q has a name which matches
     a property of P, the value of that property of P is set to the value
     associated to that field in Q.  Any fields of Q that are not properties of
@@ -181,32 +198,32 @@ arguments: "(varargin)"
     this are the fields BREAKPOINTPREFS, SINGPREFS, and TECHPREFS.  If Q has
     fields with these names, they will be assumed to be MATLAB structures and
     will be "merged" with the structures of default preferences stored in the
-    properties of the same names in P using CHEBFUNPREF.MERGEPREFS().
+    properties of the same names in P using <span class="helptopic">chebfunpref</span>.MERGEPREFS().
  
-    P = CHEBFUNPREF(Q), where Q is a CHEBFUNPREF, sets P to be a copy of Q.
+    P = <span class="helptopic">chebfunpref</span>(Q), where Q is a <span class="helptopic">chebfunpref</span>, sets P to be a copy of Q.
  
-    R = CHEBFUNPREF(P, Q), where P is a CHEBFUNPREF and Q is a MATLAB
-    structure, is similar to CHEBFUNPREF(Q) except that the preferences in P
+    R = <span class="helptopic">chebfunpref</span>(P, Q), where P is a <span class="helptopic">chebfunpref</span> and Q is a MATLAB
+    structure, is similar to <span class="helptopic">chebfunpref</span>(Q) except that the preferences in P
     are used as the base set of preferences instead of the currently stored
-    defaults.  The output R will be a CHEBFUNPREF with the preferences of P
+    defaults.  The output R will be a <span class="helptopic">chebfunpref</span> with the preferences of P
     overridden by the field/value pairs in the structure Q.
  
-    R = CHEBFUNPREF(P, Q), where P and Q are both CHEBFUNPREF objects is
-    similar to the previous syntax.  The output R is a CHEBFUNPREF with the
+    R = <span class="helptopic">chebfunpref</span>(P, Q), where P and Q are both <span class="helptopic">chebfunpref</span> objects is
+    similar to the previous syntax.  The output R is a <span class="helptopic">chebfunpref</span> with the
     preferences of P overridden by those in Q.  This is equivalent to setting R
     to be a copy of Q plus any additional TECHPREFS stored in P that were not
     stored in Q.
  
   Notes:
-    When building a CHEBFUNPREF from a structure using the second calling
+    When building a <span class="helptopic">chebfunpref</span> from a structure using the second calling
     syntax above, one should take care to ensure that preferences for the
     underlying representation technology are specified once and only once;
     e.g., do not simultaneously set Q.MYPREF = 1 and Q.TECHPREFS.MYPREF = 2.
-    The value of P.TECHPREFS.MYPREF that gets set from P = CHEBFUNPREF(Q) in
+    The value of P.TECHPREFS.MYPREF that gets set from P = <span class="helptopic">chebfunpref</span>(Q) in
     this circumstance is implementation-defined.
  
   Examples:
-    Create a CHEBFUNPREF for building a CHEBFUN based on CHEBTECH (default) with
+    Create a <span class="helptopic">chebfunpref</span> for building a CHEBFUN based on CHEBTECH (default) with
     breakpoint detection, a splitting length of 257 (pieces of polynomial degree
     256, and a custom CHEBTECH refinement function:
        p.enableBreakpointDetection = true;
@@ -218,7 +235,94 @@ arguments: "(varargin)"
        p.enableBreakpointDetection = true;
        p.breakpointPrefs.splitLength = 257;
        p.refinementFunction = @custom;
-       pref = chebfunpref(p);
- 
-  See also CHEBOPPREF.
-</pre>
+       pref = chebfunpref(p);</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin cheboppref">cheboppref</a>.
+</div>
+      <!--Class-->
+      <div class="sectiontitle">Class Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Superclasses</td>
+            <td><a href="matlab:helpwin('chebpref')">chebpref</a></td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Construct on load</td>
+            <td>false</td>
+         </tr>
+      </table>
+      <!--Constructors-->
+      <div class="sectiontitle"><a name="constructors"></a>Constructor Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebfunpref.chebfunpref')">chebfunpref</a></td>
+            <td class="m-help">Class for managing Chebfun construction-time preferences.&nbsp;</td>
+         </tr>
+      </table>
+      <!--Properties-->
+      <div class="sectiontitle"><a name="properties"></a>Property Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('chebfunpref.prefList')">prefList</a></td>
+            <td class="m-help">MATLAB struct to hold a list of preferences for a given subsystem.&nbsp;</td>
+         </tr>
+      </table>
+      <!--Methods-->
+      <div class="sectiontitle"><a name="methods"></a>Method Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.display')">display</a></td>
+            <td class="m-help">Display a CHEBFUNPREF object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.getFactoryDefaults')">getFactoryDefaults</a></td>
+            <td class="m-help">Get factory default preferences.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.mergePrefs')">mergePrefs</a></td>
+            <td class="m-help">Merge preference structures.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.setDefaults')">setDefaults</a></td>
+            <td class="m-help">Set default preferences.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.subsasgn')">subsasgn</a></td>
+            <td class="m-help">Subscripted assignment for CHEBFUNPREF.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.subsref')">subsref</a></td>
+            <td class="m-help">Subscripted referencing for CHEBFUNPREF.&nbsp;</td>
+         </tr>
+      </table>
+   </body>
+</html>

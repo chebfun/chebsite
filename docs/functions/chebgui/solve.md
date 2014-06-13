@@ -9,6 +9,40 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> SOLVE   Called when a user hits calls the solve method for a CHEBGUI object
-         outside the GUI (i.e. SOLVE(CG), where CG is a CHEBGUI object).
-</pre>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebgui/solve</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebgui/solve</td>
+            <td class="subheader-left"><a href="matlab:edit chebgui/solve">View code for chebgui/solve</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebgui/solve</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">solve</span>   Called when a user hits calls the solve method for a CHEBGUI object
+         outside the GUI (i.e. <span class="helptopic">solve</span>(CG), where CG is a CHEBGUI object).</pre></div><!--after help -->
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

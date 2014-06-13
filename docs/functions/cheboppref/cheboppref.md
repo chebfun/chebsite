@@ -3,14 +3,31 @@ title: "cheboppref"
 layout: function-reference-item
 class_name: "cheboppref"
 function_name: "cheboppref"
-snippet: "Class for managing preferences for the Chebfun ODE suite."
+snippet: "The cheboppref constructor."
 qualifiers: ""
 return_type: "outPref"
 arguments: "(inPref, varargin)"
 ---
 
-<pre class="help-text"> CHEBOPPREF   Class for managing preferences for the Chebfun ODE suite.
-    CHEBOPPREF is a class for managing CHEBOP construction-time and solver
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: cheboppref</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: cheboppref</td>
+            <td class="subheader-left"><a href="matlab:edit cheboppref">View code for cheboppref</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">cheboppref</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">cheboppref</span>   Class for managing preferences for the Chebfun ODE suite.
+    <span class="helptopic">cheboppref</span> is a class for managing CHEBOP construction-time and solver
     preferences, such as what solver is used for linear problem, the error or
     residual tolerance for nonlinear problems, whether damped Newton iteration
     should be performed for nonlinear problems, and how much information is to
@@ -90,20 +107,107 @@ arguments: "(inPref, varargin)"
     = 'off', no plots are shown during the Newton iteration.
  
   The default values for any of these preferences may be globally overridden
-  using CHEBOPPREF.SETDEFAULTS(); see the documentation for that function for
+  using <span class="helptopic">cheboppref</span>.SETDEFAULTS(); see the documentation for that function for
   further details.
  
   Constructor inputs:
-    P = CHEBOPPREF() creates a CHEBOPPREF object with the default values of the
+    P = <span class="helptopic">cheboppref</span>() creates a <span class="helptopic">cheboppref</span> object with the default values of the
     preferences.  For a list of all available preferences, see above.
  
-    P = CHEBOPPREF(Q), where Q is a MATLAB structure uses the field/value pairs
+    P = <span class="helptopic">cheboppref</span>(Q), where Q is a MATLAB structure uses the field/value pairs
     in Q to set the properties of P.  If a field of Q has a name which matches
     a property of P, the value of that property of P is set to the value
     associated to that field in Q.  If a field of Q has a name that does not
     correspond to a known preference, then an error is thrown.
  
-    P = CHEBOPPREF(Q), where Q is a CHEBOPPREF, sets P to be a copy of Q.
- 
-  See also CHEBFUNPREF.
-</pre>
+    P = <span class="helptopic">cheboppref</span>(Q), where Q is a <span class="helptopic">cheboppref</span>, sets P to be a copy of Q.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfunpref">chebfunpref</a>.
+</div>
+      <!--Class-->
+      <div class="sectiontitle">Class Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Superclasses</td>
+            <td><a href="matlab:helpwin('chebpref')">chebpref</a></td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Construct on load</td>
+            <td>false</td>
+         </tr>
+      </table>
+      <!--Constructors-->
+      <div class="sectiontitle"><a name="constructors"></a>Constructor Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('cheboppref.cheboppref')">cheboppref</a></td>
+            <td class="m-help">Class for managing preferences for the Chebfun ODE suite.&nbsp;</td>
+         </tr>
+      </table>
+      <!--Properties-->
+      <div class="sectiontitle"><a name="properties"></a>Property Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="name"><a href="matlab:helpwin('cheboppref.prefList')">prefList</a></td>
+            <td class="m-help">MATLAB struct to hold a list of preferences for a given subsystem.&nbsp;</td>
+         </tr>
+      </table>
+      <!--Methods-->
+      <div class="sectiontitle"><a name="methods"></a>Method Summary
+      </div>
+      <table class="summary-list">
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('cheboppref.display')">display</a></td>
+            <td class="m-help">Display a CHEBOPPREF object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('cheboppref.getFactoryDefaults')">getFactoryDefaults</a></td>
+            <td class="m-help">Get factory default preferences.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('cheboppref.mergePrefs')">mergePrefs</a></td>
+            <td class="m-help">Merge preference structures.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('cheboppref.setDefaults')">setDefaults</a></td>
+            <td class="m-help">Set default preferences.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('cheboppref.subsasgn')">subsasgn</a></td>
+            <td class="m-help">Subscripted assignment for CHEBPREF.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('cheboppref.subsref')">subsref</a></td>
+            <td class="m-help">Subscripted referencing for CHEBPREF.&nbsp;</td>
+         </tr>
+      </table>
+   </body>
+</html>

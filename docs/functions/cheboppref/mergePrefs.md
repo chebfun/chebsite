@@ -9,18 +9,56 @@ return_type: "pref1"
 arguments: "(pref1, pref2, map)"
 ---
 
-<pre class="help-text"> MERGEPREFS   Merge preference structures.
-    P = CHEBPREF.MERGEPREFS(P, Q), where P and Q are MATLAB structures,
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: cheboppref.mergePrefs</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: cheboppref.mergePrefs</td>
+            <td class="subheader-left"><a href="matlab:edit cheboppref.mergePrefs">View code for cheboppref.mergePrefs</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">cheboppref.mergePrefs</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">mergePrefs</span>   Merge preference structures.
+    P = CHEBPREF.<span class="helptopic">mergePrefs</span>(P, Q), where P and Q are MATLAB structures,
     "merges" Q into P by replacing the contents of fields in P with
     those of identically-named fields in Q.  If Q has a field whose
     name does not match any of those in P, it is added to P.
  
-    P = CHEBPREF.MERGEPREFS(P, Q, MAP) does the same but uses the
+    P = CHEBPREF.<span class="helptopic">mergePrefs</span>(P, Q, MAP) does the same but uses the
     structure MAP to "translate" the names of fields of Q into names of
     fields of P.  If Q has a field FIELD and MAP has a field of the
     same name, then the value of P.(MAP.FIELD) will be replaced by the
     contents of Q.FIELD.  If P does not have a field matching the
     string stored in MAP.FIELD, one will be added to P.
 
-Help for cheboppref.mergePrefs is inherited from superclass CHEBPREF
-</pre>
+Help for <span class="helptopic">cheboppref.mergePrefs</span> is inherited from superclass <a href="matlab:helpwin chebpref">chebpref</a></pre></div><!--after help -->
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Defining Class</td>
+            <td>chebpref</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>true</td>
+         </tr>
+      </table>
+   </body>
+</html>

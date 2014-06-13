@@ -5,17 +5,32 @@
 {% endblock %}
 
 {% block sidenav %}
+<div class="col-sm-3 noleftpadding">
     <ul class='sidenav'>
-    <li><a href="#">Some thing</a></li>
-    <li><a href="#">Other derp</a></li>
-    <li><a href="#">Final</a></li>
+    {% for item in site.functions_class_names %}
+        {% if item == page.class_name %}
+        <li class='active'><a href="../{{item}}">{{item}}</a></li>
+        {% else %}
+        <li><a href="../{{item}}">{{item}}</a></li>
+        {% endif %}
+    {% endfor %}
     </ul>
+</div>
+<div id='content' class="col-sm-9" role="main">
 {% endblock %}
 
 {% block content %}
-    <ul>
+    <dl>
     {% for f in page.function_names %}
-    <a href="{{f}}.html"><li><strong>{{f}}</strong><span class='sep'>&mdash;</span><span class='function-snippet'>{{page.function_snippets[loop.index]}}</span></li></a>
+    <a href="{{f}}.html"><dt><strong>{{f}}</strong></dt><dd><span class='function-snippet'>{{page.function_snippets[loop.index-1]}}</span></dd></a>
     {% endfor %}
-    </ul>
+    </dl>
 {% endblock %}
+
+
+<dl>
+  <dt>Coffee</dt>
+    <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+    <dd>White cold drink</dd>
+</dl>

@@ -9,9 +9,42 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> LOG2   Base 2 logarithm of a CHEBFUN.
-    LOG2(F) returns the base 2 logarithm of F. If F has an roots in its domain,
-    then the representation is likely to be inaccurate.
- 
-  See also LOG, LOG10, POW2, NEXTPOW2, REALMAX, REALMIN.
-</pre>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun/log2</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun/log2</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun/log2">View code for chebfun/log2</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun/log2</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">log2</span>   Base 2 logarithm of a CHEBFUN.
+    <span class="helptopic">log2</span>(F) returns the base 2 logarithm of F. If F has an roots in its domain,
+    then the representation is likely to be inaccurate.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/log">log</a>, <a href="matlab:helpwin chebfun/log10">log10</a>, <a href="matlab:helpwin chebfun/pow2">pow2</a>, <a href="matlab:helpwin chebfun/nextpow2">nextpow2</a>, <a href="matlab:helpwin realmax">realmax</a>, <a href="matlab:helpwin realmin">realmin</a>.
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

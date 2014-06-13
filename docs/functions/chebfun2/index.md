@@ -122,7 +122,7 @@ function_names:
 function_snippets: 
     - "Absolute value of a CHEBFUN2."
     - "decomposition of a CHEBFUN2."
-    - "of chebfun2:"
+    - "The chebfun2 constructor."
     - "bivariate Chebyshev coefficients"
     - "Display the CHEBPOLYPLOT of the column and row slices."
     - "Display bivariate Chebyshev coefficients graphically."

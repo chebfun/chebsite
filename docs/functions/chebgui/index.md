@@ -22,7 +22,7 @@ function_names:
     - "solveGUIpde"
     - "subsasgn"
 function_snippets: 
-    - "of chebgui:"
+    - "The chebgui constructor."
     - "Return a random BVP CHEBGUI demo."
     - "Load a demo stored in a .guifile to a CHEBGUI object"
     - "Display information of a chebgui object."

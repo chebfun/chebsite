@@ -6,7 +6,7 @@
 # .build().
 
 # import pdb; pdb.set_trace()
-import os, shutil, fnmatch, re
+import os, shutil, fnmatch, re, markdown
 import dateutil.parser as dateparser
 import processors
 
@@ -167,6 +167,9 @@ class Chebsite:
         # Now we look at examples only.
         tag_pattern = re.compile("#([^,\]\n]+)")    # Regex pattern for hashtags.
         examples = [x for x in self.nodes if x.isa('example')]
+
+        md = markdown.Markdown()
+        tagpattern = re.compile('<p>(.*)</p>')
         for node in examples:
 
             # The 'meta' field includes both the tags and the example location.
@@ -188,11 +191,16 @@ class Chebsite:
             dateobj  = dateparser.parse(fuzzystr, fuzzy=True)
             date     = dateobj.strftime("%Y-%m-%d")
 
+            # Some of the titles have code blocks and need to be parsed.
+            title = md.convert(node.data.title)
+            title = tagpattern.sub(r'\1', title)
+
             # Update the node's data fields.
             node.data.update({
                 'tags':     tags,
                 'img':      imghref,
-                'date':     date
+                'date':     date,
+                'title':    title
                 })
 
 
@@ -201,7 +209,7 @@ class Chebsite:
 
         # Some variables for Guide chapters.
         guidechaps = [x for x in self.nodes if x.isa('guidechap')]
-        guidechaps = sort_alphanum(guidechaps, lam=lambda a: a.data.title)
+        guidechaps = sort_alphanum(guidechaps, key=lambda a: a.data.title)
 
         pattern = re.compile('(\d+)\.\s(.+)\s*')
         for (i, node) in enumerate(guidechaps):
@@ -228,6 +236,12 @@ class Chebsite:
                 'link_next':      link_next,
                 'img':            imghref
                 })
+
+
+        #---------------------------------------------------------------------
+        # FUNCTION REFERENCE
+
+        # f_items = [x for x in self.nodes if x.isa('functions_item')]
 
 
         #---------------------------------------------------------------------
@@ -278,35 +292,40 @@ class Chebsite:
 
         # These are site-wide variables.
         guidechaps = [x.get_data() for x in self.nodes if x.isa('guidechap')]
-        guidechaps = sort_alphanum(guidechaps, lam=lambda a: a['title'])
+        guidechaps = sort_alphanum(guidechaps, key=lambda a: a['title'])
 
         examples_subindexes = [x.get_data() for x in self.nodes \
                 if x.isa('examples_subindex') and not x.isa('temp')]
         examples_subindexes = sorted(examples_subindexes, \
                 key=lambda e: e['title'])
 
-        examples   = [x.get_data() for x in self.nodes \
+        examples = [x.get_data() for x in self.nodes \
                 if x.isa('example') and not x.isa('temp')]
-        examples   = sorted(examples, key=lambda e: e['date'], reverse=True)
+        examples = sorted(examples, key=lambda e: e['date']+e['title'], reverse=True)
 
         examples_count = sum(1 for x in self.nodes \
                 if x.isa('example') and not x.isa('index'))
 
+        functions_refs = [x for x in self.nodes if x.isa('functions_item')]
+        functions_class_names = list(set(x.data.class_name for x in functions_refs))
+        functions_class_names = sorted(functions_class_names)
+
         news_items = [x.get_data() for x in self.nodes if x.isa('news_item')]
 
-        self.data.update({'guidechaps':          guidechaps,
-                          'examples_subindexes': examples_subindexes,
-                          'examples':            examples,
-                          'examples_count':      examples_count,
-                          'news_items':          news_items
+        self.data.update({'guidechaps':            guidechaps,
+                          'examples_subindexes':   examples_subindexes,
+                          'examples':              examples,
+                          'examples_count':        examples_count,
+                          'functions_class_names': functions_class_names,
+                          'news_items':            news_items
                         })
 
         # Each Examples subindex needs a list of its contents.
         examples_subindexes = [x for x in self.nodes if x.isa('examples_subindex')]
         for sub in examples_subindexes:
-            # import pdb; pdb.set_trace()
             eggs = [eg.get_data() for eg in self.nodes if eg.isa('example') \
                                               and eg.data.category == sub.data.category]
+            eggs = sort_alphanum(eggs, key=lambda e: e['date']+e['title'], reverse=True)
             sub.data.update({'examples': eggs})
 
     def render_site(self):
@@ -411,6 +430,11 @@ class FileNode:
             if not self.isa('index'):
                 self.keys = self.keys.union(['news_item'])
 
+        if 'functions' in self.pathlist:
+            self.keys = self.keys.union('functions')
+            if not self.isa('index'):
+                self.keys = self.keys.union(['functions_item'])
+
     def has(self, s):
         return s in self.data.__dict__
 
@@ -475,10 +499,12 @@ def pathlist(path):
 # A function for better (alphanum) sorting. Obfuscated code, but it works. Ug.
 # Modified from  <http://nedbatchelder.com/blog/200712/human_sorting.html#comments>
 
-def sort_alphanum(l, lam):
-    return sorted(l, key=lambda a: zip( \
-                                    re.split("(\\d+)", \
-                                        lam(a).lower())[0::2], \
-                                    map(int, re.split("(\\d+)", \
-                                        lam(a).lower())[1::2])) \
-                                    )
+def sort_alphanum(l, key, reverse=False):
+    return sorted(l, reverse=reverse,
+                     key=lambda a: \
+                         zip( \
+                            re.split("(\\d+)", \
+                                key(a).lower())[0::2], \
+                            map(int, re.split("(\\d+)", \
+                                key(a).lower())[1::2])) \
+                            )

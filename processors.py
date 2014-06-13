@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from io import open
-import os, yaml, jinja2, markdown
+from textwrap import dedent
+import os, yaml, jinja2, markdown, re
 
 #-----------------------------------------------------------------------------
 def get_yaml_frontmatter(fn):
@@ -36,6 +37,41 @@ def skip_yamlfm(fn):
             found = True
     return ''.join(lines)
 
+def process_helptext(s):
+
+    phrase = 'is both a directory and a function.'
+    index  = s.find(phrase)
+
+    if index != -1:
+        # This is a constructor.
+        nextline = s.find('\n', index) + 2
+        lastline = s.find('<!--Methods-->')
+        prefix = '<div class="helptext"><pre><!--helptext -->'
+        s = prefix + s[nextline:lastline]
+
+    else:
+        # This is probably not a constructor.
+        phrase = '<div class="title">'
+        index  = s.find(phrase)
+        nextline = s.find('\n', index)
+        lastline = s.find('<\\body>')
+        s = s[nextline:lastline]
+
+    # Now rewrite the links. This feels dirty.
+    pattern = re.compile('<a href="matlab:helpwin\((\'|").*?(\'|")\)">(.*?)</a>')
+    repl    = r'\3'
+    s       = pattern.sub(repl, s)
+
+    pattern = re.compile('<a href="matlab:helpwin ([^/]+?)">')
+    repl    = r'<a href="../\1/\1.html">'
+    s       = pattern.sub(repl, s)
+
+    pattern = re.compile('<a href="matlab:helpwin (.+?)">')
+    repl    = r'<a href="../\1.html">'
+    s       = pattern.sub(repl, s)
+
+    return s
+
 #-----------------------------------------------------------------------------
 class ContentProcessor:
     def __init__(self, nodes, sitedata, template_dir, build_dir, out_ext='.html'):
@@ -50,14 +86,21 @@ class ContentProcessor:
         self.build_dir     = build_dir
         self.out_extension = out_ext
 
-        extensions        = ['extra', 'codehilite', 'headerid', 'toc']
-        extension_configs = { 'codehilite': [('guess_lang', 'False'), ('linenums', 'False')],
-                              'headerid':   [('level', 2)] }
+        # extensions        = ['extra', 'codehilite', 'headerid', 'toc']
+        # extension_configs = { 'codehilite': [('guess_lang', 'False'), ('linenums', 'False')],
+        #                       'headerid':   [('level', 2)] }
+        extensions        = ['extra', 'headerid', 'toc']
+        extension_configs = { 'headerid':   [('level', 2)] }
         self.md  = markdown.Markdown(extensions=extensions,
                                      extension_configs=extension_configs)
         self.env = jinja2.Environment(loader=jinja2.FileSystemLoader([self.template_dir]),
                                       lstrip_blocks=True,
                                       trim_blocks=True)
+
+        # Add filters.
+        self.env.filters['dedent'] = dedent
+        self.env.filters['process_helptext'] = process_helptext
+
         self.templates = self.get_templates()
 
     def get_templates(self):
@@ -80,7 +123,10 @@ class ContentProcessor:
                src = skip_yamlfm(inf)
 
             # self.md.this = node.something # necessary?
-            node.data.update({'body': self.md.convert(src)})
+            node.data.update({
+                'body_src': src,
+                'body': self.md.convert(src)
+                })
             self.md.reset()
 
     def render_templates(self):

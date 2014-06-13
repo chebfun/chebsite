@@ -11,7 +11,7 @@ function_names:
     - "subsasgn"
     - "subsref"
 function_snippets: 
-    - "Class for managing Chebfun construction-time preferences."
+    - "The chebfunpref constructor."
     - "Display a CHEBFUNPREF object."
     - "Get factory default preferences."
     - "Merge preference structures."

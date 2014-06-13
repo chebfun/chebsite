@@ -50,7 +50,7 @@ function_names:
     - "uplus"
     - "vertcat"
 function_snippets: 
-    - "of chebfun2v:"
+    - "The chebfun2v constructor."
     - "Complex conjugate of a CHEBFUN2V."
     - "CHEBFUN2V constructor"
     - "Vector cross product."

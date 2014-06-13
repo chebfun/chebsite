@@ -310,7 +310,7 @@ function_snippets:
     - "Differentiation operator."
     - ""
     - ""
-    - "of domain:"
+    - "The domain constructor."
     - ""
     - ""
     - ""

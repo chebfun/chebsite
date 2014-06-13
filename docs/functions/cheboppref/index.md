@@ -11,7 +11,7 @@ function_names:
     - "subsasgn"
     - "subsref"
 function_snippets: 
-    - "Class for managing preferences for the Chebfun ODE suite."
+    - "The cheboppref constructor."
     - "Display a CHEBOPPREF object."
     - "Get factory default preferences."
     - "Merge preference structures."

@@ -11,8 +11,7 @@ layout: basic
     Anthony Austin started as a DPhil student at Oxford in 2012. When not
     doing research related to contour integrals, large-scale linear algebra,
     and rational approximation, he is our code guru, keeping us honest with
-    object-oriented programming and Git. After Nick Hale, he is the team
-    member responsible for the most lines of code in Chebfun v5.
+    object-oriented programming and Git.
     </div>
 
     <div class="col-xs-6 col-sm-3">
@@ -163,8 +162,8 @@ layout: basic
     <h3>Nick Trefethen</h3>
     Nick Trefethen invented Chebfun in 2002 and has been involved in the
     project ever since.  Nick wrote most of the Chebfun Guide, many of the
-    Examples, and the Chebfun-based book Approximation Theory and
-    Approximation Practice.  He also invented <code>scribble</code>.
+    Examples, and the Chebfun-based book <em>Approximation Theory and
+    Approximation Practice</em>. He also invented <code>scribble</code>.
     </div>
 
 </div>

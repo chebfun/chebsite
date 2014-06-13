@@ -5,21 +5,26 @@
 {% endblock %}
 
 {% block sidenav %}
+<div class="col-sm-2 noleftpadding">
     <ul class='sidenav'>
-    <li><a href="#">Some thing</a></li>
-    <li><a href="#">Other derp</a></li>
-    <li><a href="#">Final</a></li>
+    {% for item in site.functions_class_names %}
+        {% if item == page.class_name %}
+        <li class='active'><a href="../{{item}}">{{item}}</a></li>
+        {% else %}
+        <li><a href="../{{item}}">{{item}}</a></li>
+        {% endif %}
+    {% endfor %}
     </ul>
+</div>
+<div id='content' class="col-sm-10" role="main">
 {% endblock %}
 
 {% block content %}
+<!-- 
     <h1><a href='./'>{{page.class_name}}</a><span class='sep'>/</span><strong>{{page.function_name}}</strong></h1>
     <p>{{page.snippet}}</p>
-
-    <!--<h2>Usage</h2>
-    <pre>{{page.return_type}} = {{page.function_name}}{{page.arguments}}</pre>-->
-
-    <h2>Documentation</h2>
-    {{page.body}} {# The help text comes in a <pre> already.... #}
+ -->
+    <div class="sectiontitle">Documentation</div>
+    {{page.body_src|process_helptext|trim}}
 
 {% endblock %}

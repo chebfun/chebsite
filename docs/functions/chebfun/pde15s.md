@@ -9,7 +9,24 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> PDE15S   Solve PDEs using the CHEBFUN system.
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun/pde15s</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun/pde15s</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun/pde15s">View code for chebfun/pde15s</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun/pde15s</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">pde15s</span>   Solve PDEs using the CHEBFUN system.
     UU = PDE15s(PDEFUN, TT, U0, BC) where PDEFUN is a handle to a function with
     arguments u, t, x, and D, TT is a vector, U0 is a CHEBFUN or a CHEBMATRIX,
     and BC is a chebop boundary condition structure will solve the PDE dUdt =
@@ -78,7 +95,23 @@ arguments: "(rhs1)"
         opts = pdeset('Ylim', [0 2], 'PlotStyle', {'LineWidth', 2});
         uu = pde15s(f, 0:.1:2, u, bc, opts);
         waterfall(uu);
-    with the input format being the same as PDEFUN described above.
- 
-  See also PDESET, ODE15S.
-</pre>
+    with the input format being the same as PDEFUN described above.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin pdeset">pdeset</a>, <a href="matlab:helpwin chebfun.ode15s">ode15s</a>.
+</div>
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

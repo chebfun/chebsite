@@ -9,9 +9,43 @@ return_type: "varargout"
 arguments: "(rhs1)"
 ---
 
-<pre class="help-text"> ISEQUAL Equality test for CHEBFUN2.  
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
+      <title>MATLAB File Help: chebfun2/isequal</title>
+   </head>
+   <body>
+      <!--Single-page help-->
+      <table border="0" cellspacing="0" width="100%">
+         <tr class="subheader">
+            <td class="headertitle">MATLAB File Help: chebfun2/isequal</td>
+            <td class="subheader-left"><a href="matlab:edit chebfun2/isequal">View code for chebfun2/isequal</a></td>
+            <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
+         </tr>
+      </table>
+      <div class="title">chebfun2/isequal</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">isequal</span> Equality test for CHEBFUN2.  
   
-  BOL = ISEQUAL(F, G) returns 0 or 1. If returns 1 then F and G are the same
+  BOL = <span class="helptopic">isequal</span>(F, G) returns 0 or 1. If returns 1 then F and G are the same
   CHEBFUN2, up to relative machine precision. If returns 0 then F and G are
-  not the same up to relative machine precision. 
-</pre>
+  not the same up to relative machine precision.</pre></div><!--after help -->
+      <!--Method-->
+      <div class="sectiontitle">Method Details</div>
+      <table class="class-details">
+         <tr>
+            <td class="class-detail-label">Access</td>
+            <td>public</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Sealed</td>
+            <td>false</td>
+         </tr>
+         <tr>
+            <td class="class-detail-label">Static</td>
+            <td>false</td>
+         </tr>
+      </table>
+   </body>
+</html>

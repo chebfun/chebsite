@@ -128,7 +128,7 @@ function_snippets:
     - "Concatenation of CHEBMATRIX objects."
     - "Apply an operation to each block of a CHEBMATRIX."
     - "Convert a CHEBMATRIX to an array-valued CHEBFUN, if possible."
-    - "of chebmatrix:"
+    - "The chebmatrix constructor."
     - "CHEBPOLYPLOT for CHEBMATRIX objects."
     - ""
     - ""

@@ -276,7 +276,7 @@ function_snippets:
     - "Convert columns of a quasimatrix or array-valued CHEBFUN to a cell."
     - "Convert an array-valued CHEBFUN to a quasimatrix."
     - "Plot the Bernstein (aka Chebyshev) ellipses."
-    - "of chebfun:"
+    - "The chebfun constructor."
     - "Chebyshev-Pade approximation."
     - "Chebyshev polynomial coefficients of a CHEBFUN."
     - "Display Chebyshev coefficients graphically."

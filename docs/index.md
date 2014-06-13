@@ -12,7 +12,7 @@ tagline:
         <h3>Chebfun Guide</h3>
         <p>An in-depth tour of Chebfun's mathematical capabilities and
         wide-ranging applications. The Guide serves an essential reference
-        for all of Chebfun's users.</p>
+        for all Chebfun users.</p>
     </a>
     </div>
 
