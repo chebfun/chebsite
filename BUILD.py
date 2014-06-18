@@ -17,7 +17,7 @@ from chebsite import Chebsite
 config = {
     'build_dir':    '_build',
     'template_dir': '_templates',
-    'base_url':     '',
+    'base_url':     '',    #  /chebfun
     'out_ext':      '.html'
 }
 

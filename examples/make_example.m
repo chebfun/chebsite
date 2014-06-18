@@ -32,6 +32,17 @@ opts.stylesheet = fullfile(pwd, 'custom_example2md.xsl');
 % Move into the containing folder, publish the example, make a bare MarkDown
 % template file, then move back out.
 cd(folder)
+
+% This is really inelegant. Must override `snapnow` in the code
+% in order to get pretty pictures, so create a file `snapnow.m`
+% that redirects to `chebexample_snapnow`.
+snapfile = which('snapnow');
+if ~strcmp(fileparts(snapfile), pwd)
+    fh = fopen('snapnow.m', 'w');
+    fprintf(fh, 'function snapnow(varargin), chebexample_snapnow(varargin{:}), return');
+    fclose(fh);
+end
+
 try
     mypublish(examplename, opts);
     cd('..')
@@ -68,7 +79,7 @@ set(0, 'defaultaxeslinewidth',  0.5);
 set(0, 'defaultaxesfontsize',   13);
 set(0, 'defaultlinelinewidth',  1.6);
 set(0, 'defaultpatchlinewidth', 1.6);
-set(0, 'defaultlinemarkersize', 6);
+set(0, 'defaultlinemarkersize', 14);
 set(0, 'defaultfigurecolor',    'none');
 set(0, 'defaultaxescolor',      'none');
 
@@ -78,6 +89,17 @@ warning('off', 'MATLAB:gui:latexsup:UnableToInterpretLaTeXString');
 warning('off', 'MATLAB:gui:latexsup:UnsupportedFont');
 
 chebexample_publish(varargin{:});
+
+set(0, 'defaultfigureposition', 'factory');
+set(0, 'defaultaxeslinewidth',  'factory');
+set(0, 'defaultaxesfontsize',   'factory');
+set(0, 'defaultlinelinewidth',  'factory');
+set(0, 'defaultpatchlinewidth', 'factory');
+set(0, 'defaultlinemarkersize', 'factory');
+set(0, 'defaultfigurecolor',    'w');
+set(0, 'defaultaxescolor',      'factory');
+
+chebfunpref.setDefaults('factory'), cheboppref.setDefaults('factory')
 close all
 
 return

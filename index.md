@@ -3,6 +3,10 @@ title: "Numerical computing with functions"
 layout: homepage
 ---
 
+<div class='description' style='background-color:#900;padding:1em;color:#fafafa;'>
+Homepage &amp; function reference are out for maintenance. They will be up soon.
+</div>
+
 <div class="row widgets">
   <div class="col col-sm-6 col-md-3">
     <a class="widget" href="docs/guide">

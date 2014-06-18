@@ -51,6 +51,7 @@ close all
 evalin('base','clear all');
 guideFormats;
 chebexample_publish(varargin{:});
+guideFormats('factory');
 close all
 
 return

@@ -1,7 +1,6 @@
 ---
 title: About
 layout: basic
-order: title
 ---
 
 What is Chebfun?
@@ -9,9 +8,9 @@ What is Chebfun?
 
 Chebfun is an open-source software system for numerical computing with
 functions. The mathematical basis of Chebfun is piecewise polynomial
-interpolation implemented with what we call "Chebyshev technology". The
-foundations are described, with Chebfun examples, in _Approximation Theory and
-Approximation Practice_. Chebfun has extensive capabilities for dealing with
+interpolation implemented with what we call “Chebyshev technology”. The
+foundations are described, with Chebfun examples, in _[Approximation Theory and
+Approximation Practice](../ATAP/)_. Chebfun has extensive capabilities for dealing with
 linear and nonlinear differential and integral operators, and it also includes
 continuous analogues of linear algebra notions like QR and singular value
 decomposition. The [Chebfun2](../docs/guide/guide11.html) extension works with
@@ -31,7 +30,7 @@ looking at our [Examples](../examples).
     <div class="col-sm-6 col-md-6">
     <a href='people.html' class='widget'>
         <h3>People</h3>
-        <p>A list of the major contributors to Chebfun over the years.</p>
+        <p>A gallery of some of the contributors to Chebfun over the years.</p>
     </a>
     </div>
 
@@ -48,7 +47,7 @@ looking at our [Examples](../examples).
     <div class="col-sm-6 col-md-6">
     <a href='sponsors.html' class='widget'>
         <h3>Sponsors</h3>
-        <p>Chebfun is sponsored by EPSRC, ERC, Mathworks, and OCCAM.</p>
+        <p>Chebfun has been supported by EPSRC, ERC, MathWorks, and OCCAM.</p>
     </a>
     </div>
 

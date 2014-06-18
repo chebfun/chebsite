@@ -11,7 +11,7 @@ tagline:
     <a href='guide' class='widget'>
         <h3>Chebfun Guide</h3>
         <p>An in-depth tour of Chebfun's mathematical capabilities and
-        wide-ranging applications. The Guide serves an essential reference
+        wide-ranging applications. The Guide serves as an essential reference
         for all Chebfun users.</p>
     </a>
     </div>
@@ -20,8 +20,8 @@ tagline:
     <a href='../examples' class='widget'>
         <h3>Examples</h3>
         <p>Chebfun Examples illustrate everything from rootfinding to
-        optimization to nonlinear differential equations. Many users use
-        them as templates for their own problems.</p>
+        optimization to nonlinear differential equations and vector calculus.
+        Many users use them as templates for their own problems.</p>
     </a>
     </div>
 </div>
@@ -32,7 +32,7 @@ tagline:
     <a href='functions' class='widget'>
         <h3>Function reference</h3>
         <p>A catalogue of technical documentation for each of Chebfun's
-        more than 200 standard functions.</p>
+        more than 200 functions.</p>
     </a>
     </div>
 
@@ -57,5 +57,10 @@ tagline:
     </div>
 
     <div class="col-sm-6 col-md-6">
+    <a href='../publications' class='widget'>
+        <h3>Publications</h3>
+        <p>There are many Chebfun-related mathematical publications, including
+        a book.</p>
+    </a>
     </div>
 </div>

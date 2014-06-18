@@ -10,13 +10,14 @@ University Mathematical Institute. It started during 2002-2005 as a DPhil
 research investigation by Zachary Battles, a Rhodes Scholar from the USA,
 under the supervision of Nick Trefethen.  (The idea of overloading Matlab's
 vectors to functions was first put in writing in an email from Trefethen to
-Battles of 8 December 2001.)  This led to Version 1 <a
-href="/chebfun/download/past/chebfun_v1.zip">(.zip)</a> of Chebfun, for smooth
-functions on the interval $[-1,1]$, described in the 2004 <i>SIAM J. Sci.
-Comp.</i> <a href="/chebfun/publications/chebfun_paper.pdf">paper</a> by
-Battles and Trefethen and in Battles' 2006 thesis.</p>
+Battles of 8 December 2001.)  This led to Version 1
+<a href="/chebfun/download/past/chebfun_v1.zip">(.zip)</a> of Chebfun, for
+smooth functions on the interval $[-1,1]$, described in the 2004 _SIAM J. Sci.
+Comp._ <a href="/chebfun/publications/chebfun_paper.pdf">paper</a> by Battles
+and Trefethen and in Battles' 2006 thesis.
+
 <center>
-    <img class='thumbnail' title="Zachary Battles" src="/images/thomas_zachary.jpg" width="330px" alt="Zachary Battles"/>
+<img class='thumbnail' title="Zachary Battles" src="/images/thomas_zachary.jpg" width="330px" alt="Zachary Battles"/>
 </center>
 
 ## Version 2
@@ -35,10 +36,11 @@ who has led the differential equations side of Chebfun since then.  A key
 collaborator at the beginning of this work was Folkmar Bornemann of the
 Technical University of Munich. All these developments came together with the
 release of Chebfun Version 2 in June 2008.
+
 <center>
-    <img class='thumbnail' title="Anticlockwise from top left: Trefethen, Driscoll, Pachon, Platte" src="/images/chebteamtaxi.jpg" name="team" width="330px" alt="Version 2 Team" 
-    onmousedown="document.images['team'].src='../images/linpack.jpg'" 
-    onmouseup="document.images['team'].src='../images/chebteamtaxi.jpg'"/>
+<img class='thumbnail' title="Anticlockwise from top left: Trefethen, Driscoll, Pachon, Platte" src="/images/chebteamtaxi.jpg" name="team" width="330px" alt="Version 2 Team" 
+onmousedown="document.images['team'].src='../images/linpack.jpg'" 
+onmouseup="document.images['team'].src='../images/chebteamtaxi.jpg'"/>
 </center>
 
 ## Version 3
@@ -62,8 +64,9 @@ Van Deun and Alex Townsend also became involved. <a
 href="../notes/notes_V3_1000.shtml">Version 3</a>, a major enhancement of
 Version 2 incorporating these and other extensions, was coordinated by Rodrigo
 Platte and Nick Hale and released in December 2009.
+
 <center>
-    <img class='thumbnail' title="Rodrigo Platte &amp; Nick Hale" src="/images/platte_hale.jpg" name="randn" width="330px" alt="Rodrigo Platte &amp; Nick Hale"/>
+<img class='thumbnail' title="Rodrigo Platte &amp; Nick Hale" src="/images/platte_hale.jpg" name="randn" width="330px" alt="Rodrigo Platte &amp; Nick Hale"/>
 </center>
 
 ## Version 4
@@ -84,7 +87,7 @@ system</a>, our <a href="https://svn.maths.ox.ac.uk/pub/chebfun/">svn software
 repository</a>, and <a href="/chebfun/lists">discussion groups</a> for
 communication among interested parties.  In particular we would open the door
 to developers outside Oxford (in addition to Toby Driscoll, who had long been
-a key player based at the University of Delaware).  The open-source Chebfun
+a key player based at the University of Delaware). The open-source Chebfun
 project would be launched with the release of Chebfun Version 4.
 Scientifically, the big new features in Version 4 were related to differential
 equations (led by Driscoll and Hale), the graphical user interface called <a
@@ -94,7 +97,7 @@ for all kinds of problems (led by Trefethen). Details can be found <a
 href="/chebfun/notes/notes_V4.0.shtml">here</a>.
 
 <center style="margin-bottom:10px;">
-    <img class='thumbnail' title="(Most of the) V4.0 Team" src="/images/team_v4.jpg" width="560px" alt="(Most of the) V4.0 Team" style="margin-bottom:10px;"/>
+<img class='thumbnail' title="(Most of the) V4.0 Team" src="/images/team_v4.jpg" width="560px" alt="Most of the) V4.0 Team" style="margin-bottom:10px;"/>
 </center>
 
 <b>Version 4</b> was released on 28 February 2011 under a <a
@@ -111,8 +114,8 @@ towards computing with functions in higher dimensions. Below is a picture of
 (most of) the team present at the workshop.
 
 <center>
-    <img class='thumbnail' title="(Most of the) V4.0 Team" src="/images/team_andbeyond.jpg" width="560px" alt="(Most of the) And Beyond Team"/>
+<img class='thumbnail' title="(Most of the) V4.0 Team" src="/images/team_andbeyond.jpg" width="560px" alt="(Most of the) And Beyond Team"/>
 </center>
 
-For licensing and copyright purposes, we maintain a <a
-href="people.html">complete list of Chebfun contributors</a>.
+For licensing and copyright purposes, we maintain a
+<a href="people.html">complete list of Chebfun contributors</a>.
