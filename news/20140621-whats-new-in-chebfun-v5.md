@@ -28,7 +28,6 @@ site has also been created.
 
 * A single email address [help@chebfun.org](mailto:help@chebfun.org) for all
   queries
-* First official release of Chebfun2
 * Powerful new Chebfun2/roots for bivariate rootfinding
 * Big speedups of `conv`, `polyfit`, `abs`, `inv`, and `pde15s`
 * New commands `leg2cheb`, `cheb2leg`

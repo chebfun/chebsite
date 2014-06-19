@@ -10,33 +10,72 @@
 
     <div class="container main">
         <div class="row">
-            <div class='description'>
-                <div class='col-sm-9'>
-                    <p>Chebfun is an open-source MATLAB package for computing
-                    with functions to 15-digit accuracy. Most Chebfun commands
-                    are overloads of familiar MATLAB commands &mdash; for
-                    example <code>sum(f)</code> computes an integral,
-                    <code>roots(f)</code> finds zeros, and <code>u =
-                    L\f</code> solves a differential equation.</p>
-                </div>
-                <div class='col-sm-3'>
-                    <div class="btn-group-vertical">
-                    <button class='btn btn-lg btn-success btn-download'>Download</button>
-                    <button class='btn btn-lg btn-primary btn-browsesource'>Browse source</button>
-                    </div>
-                </div>
+            <div class='description col-sm-12'>
+                <p>Chebfun is an open-source MATLAB package for computing
+                with functions to 15-digit accuracy. Most Chebfun commands
+                are overloads of familiar MATLAB commands &mdash; for
+                example <code>sum(f)</code> computes an integral,
+                <code>roots(f)</code> finds zeros, and <code>u =
+                L\f</code> solves a differential equation.</p>
+            </div>
+            <div class="links">
+                <a href='download' class='download'>DOWNLOAD V5</a><span class='sep'></span><a href='//github.com/chebfun/chebfun' class='browse-source'>BROWSE SOURCE</a>
             </div>
         </div>
+    </div><!-- div.main -->
 
-        <div class="hidden flexslider billboard">
-          <ul class="slides">
-          {% include 'homepage-snippets.html' %}
-          </ul>
-        </div>
+    <div class="container flexslider">
+      <ul class="slides">
+      {% include 'homepage-snippets.html' %}
+      </ul>
+    </div>
+
+    <div class="container main detached">
 
         <div class="row">
             <div class="col-md-12" role="main">
-                {{page.body}}
+                <h2>Latest news</h2>
+                <ol class='news slats'>
+                {%- for item in site.news_items -%}
+                    {%- if loop.index < 3 -%}
+                    <li>
+                        <a href='{{item.href}}'>
+                            <span class='read-more'>read more &raquo;</span>
+                            <h3><span class='date'>{{item.date}}</span><span class='sep'>/</span>{{item.title}}</h3>
+                            <p class='oneline'>{{item.snip}}</p>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                {% endfor %}
+                </ol>
+
+                <div class="row widgets">
+                  <div class="col col-sm-6 col-md-3">
+                    <a class="widget" href="docs/guide">
+                      <h3>Get started &raquo;<span class="glyphicon glyphicon-off" style='float:right'></span></h3>
+                      <p>Browse the Chebfun Guide, an in-depth introduction to Chebfun's capabilities.</p>
+                    </a>
+                  </div>
+                  <div class="col col-sm-6 col-md-3">
+                    <a class="widget" href="download">
+                      <h3>Download &raquo;<span class="glyphicon glyphicon-download" style='float:right'></span></h3>
+                      <p>Chebfun runs in standard Matlab with no toolboxes required. You'll be up and running in seconds.</p>
+                    </a>
+                  </div>
+                  <div class="col col-sm-6 col-md-3">
+                    <a class="widget" href="examples">
+                      <h3>View Examples &raquo;<span class="glyphicon glyphicon-th" style='float:right'></span></h3>
+                      <p>The gallery contains hundreds of examples of Chebfun's mathematical applications.</p>
+                    </a>
+                  </div>
+                  <div class="col col-sm-6 col-md-3">
+                    <a class="widget" href="develop">
+                      <h3></span>Contribute &raquo;<span class="glyphicon glyphicon-wrench" style='float:right'></span></h3>
+                      <p>Chebfun is open-source and hosted on Github. We're always looking for new developers.</p>
+                    </a>
+                  </div>
+                </div>
+
             </div>
         </div>
     </div>

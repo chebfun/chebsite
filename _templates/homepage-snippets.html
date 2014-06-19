@@ -1,36 +1,41 @@
 <li>
-<div class='row'>
-<div class='col-md-6 codewrap'><div class='code'>
-<pre class='mcode-input'>x = chebfun('x');
-
-% Define two functions
-f = exp(-x).*tanh(4*sin(40*x)).*(2 + sin(7*x)) / 16;
-g = (exp(sin(12*x) - x) + x - 2) / 12;
-
-rr = roots(f - g);      % Compute their intersections
-
-plot([f g]), hold on    % Plot the functions
-plot(rr, f(rr), 'o')    % and their intersections
-</pre>
-</div></div>
-<div class='col-md-6 image'><img src='demo1.png' style='margin-top: 33px' /></div>
-</div>
+<div class='codewrap'><pre class='code'><span class='comment'>% Define two functions</span>
+f = chebfun(@(x) sin(x.^2)+sin(x).^2, [0,10]);
+g = chebfun(@(x) exp((5-x).^2/10), [0,10]);
+<span class='comment'>% Compute their intersections</span>
+rr = roots(f - g);
+<span class='comment'>% Plot the functions</span>
+plot([f g]), hold on
+<span class='comment'>% Plot their intersections</span>
+plot(rr, f(rr), 'o')
+</pre></div><div class='imagewrap'><img src='demo1.png' /></div>
 </li>
 
 
 <li>
-<div class='row'>
-<div class='col-md-6 codewrap'><div class='code'>
-<pre class='mcode-input'>% Airy operator
-L = chebop(@(x,u) 0.01*diff(u,2) - x.*u, [-5,5]);
+<div class='codewrap'><pre class='code'><span class='comment'>% Airy operator</span>
+op = @(x,u) 0.01*diff(u,2) - x.*u;
+<span class='comment'>% Create a chebop</span>
+L = chebop(op, [-5,5]);
+<span class='comment'>% Apply boundary conditions</span>
 L.bc = 'dirichlet';
-
-% Solve the differential equation
+<span class='comment'>% Solve the differential equation</span>
 u = L \ 1;
-
 plot(u)
-</pre>
-</div></div>
-<div class='col-md-6 image'><img src='demo2.png' style='margin-top: 40px' /></div>
-</div>
+</pre></div><div class='imagewrap'><img src='demo2.png' /></div>
 </li>
+
+
+<li>
+<div class='codewrap'><pre class='code'><span class='comment'>% The Dixon-Szego function</span>
+f = @(x,y) (4-2.1*x.^2+ x.^4/3).*x.^2 ...
+            + x.*y + 4*(y.^2-1).*y.^2;
+<span class='comment'>% Create a chebfun2</span>
+F = chebfun2(f, [-2,2,-1.25,1.25]);
+<span class='comment'>% Find the minimum and plot it</span>
+[minf,minx] = min2(F);
+contour(F,30), hold on
+plot(minx(1),minx(2),'.w')
+</pre></div><div class='imagewrap'><img src='demo3.png' /></div>
+</li>
+

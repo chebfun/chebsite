@@ -58,8 +58,10 @@ class Chebsite:
 
         #---- ii.
         # Extra processing, e.g. creating the examples gallery.
-        self.crunch_page_vars()     # Tags and author/date info, etc.
-        self.crunch_site_vars()     # Guide chapters list, etc.
+        # Order is important here.
+        self.crunch_page_vars()          # Tags and author/date info, etc.
+        self.crunch_site_vars()          # Guide chapters list, etc.
+        self.write_examples_inventory()  # This is needed for nightly testing.
 
         #---- iii.
         # Convert .md -> .html and do all templating via jinja2.
@@ -157,12 +159,16 @@ class Chebsite:
             category = os.path.split(node.dir)[1]
             node.data.update({'category': category})
 
-        for cat in examplefiles:
-            if cat.isa('index'):
+        for node in examplefiles:
+            if node.isa('index'):
                 num = sum(1 for x in examplefiles \
-                        if x.data.category == cat.data.category \
+                        if x.data.category == node.data.category \
                         and not x.isa('index'))
-                cat.data.update({'examples_count': num})
+                node.data.update({'examples_count': num})
+
+            else:
+                example_id = node.data.category + '/' + node.data.slug
+                node.data.update({'example_id': example_id})
 
         # Now we look at examples only.
         tag_pattern = re.compile("#([^,\]\n]+)")    # Regex pattern for hashtags.
@@ -269,6 +275,8 @@ class Chebsite:
         self.give_macro_breadcrumbs('about/sponsors', ['about/index'])
         self.give_macro_breadcrumbs('publications/index', ['about/index'])
 
+        self.give_macro_breadcrumbs('download/past', ['download/index'])
+
         for node in news_items:
             self.give_macro_breadcrumbs(node.data.id, ['news/index'])
 
@@ -327,6 +335,14 @@ class Chebsite:
                                               and eg.data.category == sub.data.category]
             eggs = sort_alphanum(eggs, key=lambda e: e['date']+e['title'], reverse=True)
             sub.data.update({'examples': eggs})
+
+    def write_examples_inventory(self):
+        examples = [x for x in self.nodes if x.isa('example')]
+        text = '\n'.join(e.data.example_id + '.m' for e in examples)
+
+        fh = open('examples/inventory.txt', 'w')
+        fh.write(text)
+        fh.close()
 
     def render_site(self):
         """ Converts Markdown to HTML and then renders templates with jinja2.

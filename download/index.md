@@ -5,14 +5,11 @@ layout: basic
 
 Chebfun is compatible with MATLAB 7.8 (R2009a) or later, and is freely
 available subject to [our license][license]. Chebfun's code is open source and
-[available on Github][chebfun-github].
+[available on Github][chebfun-github]. To keep track of news about major
+releases, events, and other Chebfun-related, [subscribe to our mailing
+list][subscribelink].
 
-To keep track of news about major releases, events, and other
-Chebfun-related, [subscribe to our mailing list][subscribelink].
-
-## Direct download `.zip`
-
-The following is a link to the latest Chebfun version packaged as a `.zip`.
+## Direct download
 
 - **[Download Chebfun v5 (.zip)][github-zip]**
 
@@ -36,25 +33,21 @@ prefer to clone the Chebfun repository from Github. If you don't have Git,
     git clone https://github.com/chebfun/chebfun.git
 
 
-## Past versions
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+    <a href='//github.com/chebfun/chebfun' class='widget'>
+        <h3>Browse source</h3>
+        <p>Chebfun's source code is publicly available on Github.</p>
+    </a>
+    </div>
 
-All versions are compatible with MATLAB 7.4 (R2007a) through 7.12 (R2010b) and are freely available subject to [our license][license].
-
-- **Chebfun Version 4.3.2987** (November 2013): [chebfun_v4.3.2987.zip](chebfun_v4.3.2987.zip)
-- **Chebfun Version 4.2.2889** (March 2012): [chebfun_v4.2.2889.zip](chebfun_v4.2.2889.zip)
-- **Chebfun Version 4.1.1864** (September 2011): [chebfun_v4.1.1864.zip](chebfun_v4.1.1864.zip)
-- **Chebfun Version 4.0.1678** (April 2011): [chebfun_v4.0.1678.zip](chebfun_v4.0.1678.zip)
-- **Chebfun Version 4.0.1666** (March 2011): [chebfun_v4.0.1666.zip](chebfun_v4.0.1666.zip)
-- **Chebfun Version 3.1111** (May 2009): [chebfun_v3_1111.zip](chebfun_v3_1111.zip)
-- **Chebfun Version 3.1000** (December 2009): [chebfun_v3_1000.zip](chebfun_v3_1000.zip)
-- **Chebfun Version 2.0501** (June 2009): [chebfun_v2_0501.zip](chebfun_v2_0501.zip)
-- **Chebfun Version 2.0440** (April 2009): [chebfun_v2_0440.zip](chebfun_v2_0440.zip)
-- **Chebfun Version 2.0399** (January 2009): [chebfun_v2_0399.zip](chebfun_v2_0399.zip)
-- **Chebfun Version 2.0330** (December 2008): [chebfun_v2_0330.zip](chebfun_v2_0330.zip)
-- **Chebfun Version 2.0296** (June 2008): [chebfun_v2_0296.zip](chebfun_v2_0296.zip)
-- **Chebfun Version 1.0** (2005): [chebfun_v1.zip](chebfun_v1.zip)
-
-
+    <div class="col-sm-6 col-md-6">
+    <a href='past.html' class='widget'>
+        <h3>Past versions</h3>
+        <p>Previous Chebfun releases are also available for download.</p>
+    </a>
+    </div>
+</div>
 
 
 [license]: //github.com/chebfun/chebfun/blob/development/LICENSE.txt
@@ -66,3 +59,4 @@ All versions are compatible with MATLAB 7.4 (R2007a) through 7.12 (R2010b) and a
 [mailto]: mailto:help@chebfun.org
 [announce]: chebfun-announce+subscribe@googlegroups.com
 [git]: http://git-scm.com/
+[subscribelink]: https://groups.google.com/forum/#!forum/chebfun-announce/join
