@@ -6,7 +6,7 @@
 # .build().
 
 # import pdb; pdb.set_trace()
-import os, shutil, fnmatch, re, markdown
+import os, datetime, shutil, fnmatch, re, markdown
 import dateutil.parser as dateparser
 import processors
 
@@ -22,7 +22,10 @@ class Chebsite:
         self.base_url         = base_url
 
         # This will be the `site` variable
-        self.data         = Struct(**{'base_url': base_url})
+        self.data         = Struct(**{
+            'base_url': base_url,
+            'timestamp': datetime.datetime.now().strftime("%A, %d %B %Y at %H:%M"),
+            })
 
         # The paths all are absolute here.
         self.work_dir     = os.getcwd()
