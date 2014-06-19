@@ -44,6 +44,9 @@ class Chebsite:
         # move the PUBLISH'd Example & Guide files to have a proper .md
         # extension, then move to the build_dir.
 
+        # Before anything, create missing files.
+        self.create_examples_indexes()
+
         # A full build copies over the entire working directory.
         self.copy_to_build_dir()
         self.rename_examples_and_guide_chapters()
@@ -77,7 +80,7 @@ class Chebsite:
         """
         # What not to copy to _build directory.
         ignore_patterns = re.compile('\.+|.+\.pyc?|.+_eq.+\.png')
-        ignore_dirs     = ['_build', '_templates', '.git', 'functions-mjunk']
+        ignore_dirs     = ['_build', '_templates', '.git']
 
         # Walk through the directory and copy appropriate files.
         for dirpath, dirnames, filenames in os.walk(self.work_dir):
@@ -127,6 +130,41 @@ class Chebsite:
                     # Move the file.
                     shutil.copyfile(htmlfull, mdfull)
 
+
+    def create_examples_indexes(self):
+        categories = {
+            'approx':       'Approximation (1D)',
+            'approx2':      'Approximation (2D)',
+            'calc':         'Calculus',
+            'cheb':         'Chebyshev expansions',
+            'complex':      'Complex variables',
+            'fun':          'Fun stuff',
+            'geom':         'Geometry',
+            'integro':      'Integral equations',
+            'linalg':       'Linear algebra',
+            'ode-eig':      'ODE eigenvalue problems',
+            'ode-linear':   'ODEs (linear)',
+            'ode-nonlin':   'ODEs (nonlinear)',
+            'opt':          'Optimization',
+            'pde':          'Partial differential equations',
+            'quad':         'Quadrature',
+            'roots':        'Rootfinding',
+            'stats':        'Statistics and probability',
+            # 'temp':         'Temporary',
+            'veccalc':      'Vector calculus'
+            }
+
+        for key in categories:
+            # Create the directory if it does not exist
+            thedir = os.path.join('examples', key)
+            if not os.path.exists(thedir):
+                os.makedirs(thedir)
+
+            yaml = '---\ntitle: %s\nlayout: examples-category-index\n---\n'
+            thefile = 'index.md'
+            fh = open(os.path.join(thedir, thefile), 'w')
+            fh.write(yaml % categories[key])
+            fh.close()
 
     def load_nodes(self):
         """ Loads up self.nodes as a list of FileNodes, each representing a .md
@@ -215,7 +253,7 @@ class Chebsite:
 
         # Some variables for Guide chapters.
         guidechaps = [x for x in self.nodes if x.isa('guidechap')]
-        guidechaps = sort_alphanum(guidechaps, key=lambda a: a.data.title)
+        guidechaps = sort_alphanum(guidechaps, key=lambda a: a.data.slug)
 
         pattern = re.compile('(\d+)\.\s(.+)\s*')
         for (i, node) in enumerate(guidechaps):
