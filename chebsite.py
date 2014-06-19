@@ -150,7 +150,7 @@ class Chebsite:
             'quad':         'Quadrature',
             'roots':        'Rootfinding',
             'stats':        'Statistics and probability',
-            # 'temp':         'Temporary',
+            'temp':         'Temporary',
             'veccalc':      'Vector calculus'
             }
 
