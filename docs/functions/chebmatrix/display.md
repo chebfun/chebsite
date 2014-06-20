@@ -3,7 +3,7 @@ title: "display"
 layout: function-reference-item
 class_name: "chebmatrix"
 function_name: "display"
-snippet: "Print summary of CHEBMATRIX contents."
+snippet: "Display information about a CHEBMATRIX."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,10 +26,10 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebmatrix/display</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">display</span>   Print summary of CHEBMATRIX contents.
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">display</span>   Display information about a CHEBMATRIX.
     <span class="helptopic">display</span>(L) prints the size of the CHEBMATRIX L and a list of the block class
     types. If java is enabled, the class types for each block are hyperlinked,
-    and clicking them will call the display method for the item in that block.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebmatrix/spy">chebmatrix/spy</a>.
+    and clicking them will call the display method for the item in that block.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebmatrix/disp">disp</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

@@ -3,7 +3,7 @@ title: "display"
 layout: function-reference-item
 class_name: "chebfun"
 function_name: "display"
-snippet: "2014 by The University of Oxford and The Chebfun Developers."
+snippet: "Display information about a CHEBFUN."
 qualifiers: ""
 return_type: ""
 arguments: "(f)"
@@ -26,8 +26,15 @@ arguments: "(f)"
          </tr>
       </table>
       <div class="title">chebfun/display</div>
-      <div class="helptext"><pre><!--helptext -->  Copyright 2014 by The University of Oxford and The Chebfun Developers. 
-  See <a href="http://www.chebfun.org/">http://www.chebfun.org/</a> for Chebfun information.</pre></div><!--after help -->
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">display</span>   Display information about a CHEBFUN.
+    <span class="helptopic">display</span>(F) outputs important information about the CHEBFUN F to the command
+    window, including its domain of definition, its length (number of sample
+    values used to represent it), and a summary of its values at its endpoints.
+    <span class="helptopic">display</span>(F) is called automatically when the semicolon is not used at the end
+    of a statement that results in a CHEBFUN.
+ 
+    Note that the VSCALE displayed is that returned by VSCALE(F, 'SUP').</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/disp">disp</a>.
+</div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

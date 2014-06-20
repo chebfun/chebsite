@@ -27,7 +27,11 @@ arguments: "(rhs1)"
       </table>
       <div class="title">chebfun/vertcat</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">vertcat</span>   Vertical concatenation of CHEBFUN objects.
-    <span class="helptopic">vertcat</span> of a CHEBFUN is not yet supported.</pre></div><!--after help -->
+    <span class="helptopic">vertcat</span>(F1, F2, ...) of column CHEBFUNs F1, F2, ... produces a CHEBMATRIX.
+ 
+    <span class="helptopic">vertcat</span>(F1, F2, ...) of row CHEBFUNs F1, F2, ... produces a quasimatrix.
+ 
+  See alos HORZCAT, CAT, CHEBMATRIX, QUASIMATRIX.</pre></div><!--after help -->
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

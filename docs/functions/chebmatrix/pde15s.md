@@ -3,7 +3,7 @@ title: "pde15s"
 layout: function-reference-item
 class_name: "chebmatrix"
 function_name: "pde15s"
-snippet: "Solve PDEs using the CHEBFUN system."
+snippet: "Solve PDEs using Chebfun."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,7 +26,8 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebmatrix/pde15s</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">pde15s</span>   Solve PDEs using the CHEBFUN system.
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">pde15s</span>   Solve PDEs using Chebfun.
+ 
     UU = PDE15s(PDEFUN, TT, U0, BC) where PDEFUN is a handle to a function with
     arguments u, t, x, and D, TT is a vector, U0 is a CHEBMATRIX, and BC is a
     chebop boundary condition structure will solve the PDE dUdt = PDEFUN(UU, t,

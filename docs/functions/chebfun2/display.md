@@ -3,7 +3,7 @@ title: "display"
 layout: function-reference-item
 class_name: "chebfun2"
 function_name: "display"
-snippet: "Display a CHEBFUN2 to the command line."
+snippet: "Display information about a CHEBFUN2."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,14 +26,14 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun2/display</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">display</span>   Display a CHEBFUN2 to the command line.
-  
-  <span class="helptopic">display</span>(F) outputs important information about the CHEBFUN2 F to the
-  command window, including its domain of definition, length (number of 
-  pivots used to represent it), and a summary of its structure. 
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">display</span>   Display information about a CHEBFUN2.
+    <span class="helptopic">display</span>(F) outputs important information about the CHEBFUN2 F to the command
+    window, including its domain of definition, length (number of pivots used to
+    represent it), and a summary of its structure.
  
-  It is called automatically when the semicolon is not used at the
-  end of a statement that results in a CHEBFUN2.</pre></div><!--after help -->
+    It is called automatically when the semicolon is not used at the end of a
+    statement that results in a CHEBFUN2.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/disp">disp</a>.
+</div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

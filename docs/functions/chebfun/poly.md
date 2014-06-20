@@ -32,7 +32,7 @@ arguments: "(rhs1)"
     <span class="helptopic">poly</span>(F, N) returns the polynomial coefficients of the Nth FUN of F. 
  
     For numerical work, the Chebyshev polynomial coefficients returned by
-    CHEBPOLY() are more useful.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/chebpoly">chebpoly</a>.
+    CHEBCOEFFS() are more useful.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/chebcoeffs">chebcoeffs</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

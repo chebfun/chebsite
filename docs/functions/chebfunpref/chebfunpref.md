@@ -28,11 +28,12 @@ arguments: "(varargin)"
       <div class="title">chebfunpref</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">chebfunpref</span>   Class for managing Chebfun construction-time preferences.
     <span class="helptopic">chebfunpref</span> is a class for managing Chebfun construction-time preferences
-    such as the construction tolerance, whether or not to perform breakpoint
-    and singularity detection, and the various options that those features
-    require.  These objects can be supplied to the CHEBFUN constructor (as well
-    as the constructors of other classes in the Chebfun system), which will
-    interpret them and adjust the construction process accordingly.
+    such as the construction tolerance, whether or not to perform breakpoint and
+    singularity detection, and the various options that those features require.
+    These objects can be supplied to the CHEBFUN constructor (as well as the
+    constructors of other classes in Chebfun), which will interpret them and
+    adjust the construction process accordingly. Note that all preferences _are_
+    case sensitive.
  
   Available Preferences:
  
@@ -43,7 +44,7 @@ arguments: "(varargin)"
        construction if no domain argument is explicitly passed to the
        constructor.
  
-    enableBreakpointDetection  - Enable/disable breakpoint detection.
+    splitting                  - Enable/disable breakpoint detection.
       true
      [false]
  
@@ -53,9 +54,9 @@ arguments: "(varargin)"
       introduced only at points where discontinuities are being created (e.g.,
       by ABS(F) at points where a CHEBFUN F passes through zero).
  
-    breakpointPrefs            - Preferences for breakpoint detection.
+    splitPrefs                 - Preferences for breakpoint detection.
  
-       splitMaxLength          - Maximum FUN length.
+       splitLength             - Maximum FUN length.
         [160]
  
           This is the maximum length of a single FUN (e.g., the number of
@@ -63,14 +64,14 @@ arguments: "(varargin)"
           interpolation) allowed by the constructor when breakpoint detection
           is enabled.
  
-       splitMaxTotalLength     - Maximum total CHEBFUN length.
+       splitMaxLength          - Maximum total CHEBFUN length.
         [6000]
  
           This is the maximum total length of the CHEBFUN (i.e., the sum of the
           lengths of all the FUNs) allowed by the constructor when breakpoint
           detection is enabled.
  
-    enableSingularityDetection - Enable/disable singularity detection.
+    blowup                     - Enable/disable singularity detection.
       true
      [false]
  
@@ -80,35 +81,7 @@ arguments: "(varargin)"
        singularities are being created, (e.g., by SQRT(F) at points where a
        CHEBFUN F passes through zero). See SINGFUN for more information.
  
-    enableDeltaFunctions - Enable delta functions.
-      true
-     [false]
-        
-       If true, the deltafun class will be invoked to manage any delta 
-       functions present in the object.
- 
-    deltaPrefs                 - Preferences for delta functions.
- 
-       deltaTol                - Tolerance for magnitude of delta functions.
-        [1e-11]
- 
-          This is the tolerance up to which delta functions will be negligible.
- 
-       proximityTol            - Minimum distance between delta functions.
-        [1e-11]
- 
-          If two delta functions are located closer than this tolerance, they 
-          will be merged.
- 
-    scale                      - The vertical scale constructor should use.
-     [0]
- 
-       Typically the CHEBFUN constructor will resolve relative to a vertical
-       scale determined by it's own function evaluations. However, in some
-       situations one would like to the resolve relative to a fixed vertical
-       scale. This can be set using this preference.
- 
-    singPrefs                  - Preferences for singularity detection.
+    blowupPrefs                - Preferences for blowup / singularity detection.
  
        exponentTol             - Tolerance for exponents.
         [1.1*1e-11]
@@ -126,13 +99,25 @@ arguments: "(varargin)"
           The default singularity type to be used when singularity detection is
           enabled and no singType is provided.
  
-    scale                      - The vertical scale the constructor should use.
-     [0]
+    enableDeltaFunctions - Enable delta functions.
+      true
+     [false]
+        
+       If true, the DELTAFUN class will be invoked to manage any delta 
+       functions present in the object.
  
-       Typically the CHEBFUN constructor will resolve relative to a vertical
-       scale determined by it's own function evaluations. However, in some
-       situations one would like to the resolve relative to a fixed vertical
-       scale. This can be set using this preference.
+    deltaPrefs                 - Preferences for delta functions.
+ 
+       deltaTol                - Tolerance for magnitude of delta functions.
+        [1e-11]
+ 
+          This is the tolerance up to which delta functions will be negligible.
+ 
+       proximityTol            - Minimum distance between delta functions.
+        [1e-11]
+ 
+          If two delta functions are located closer than this tolerance, they 
+          will be merged.
  
     tech                       - Representation technology.
      ['chebtech2']
@@ -158,7 +143,7 @@ arguments: "(varargin)"
  
          Maximum length of the underlying representation.
  
-       exactLength             - Exact representation length.
+       fixedLength             - Exact representation length.
         [NaN]
  
          Exact length of the underlying representation to be used.  A NaN value
@@ -195,7 +180,7 @@ arguments: "(varargin)"
     associated to that field in Q.  Any fields of Q that are not properties of
     P are interpreted as preferences for the constructor of the underlying
     representation technology and are placed in P.TECHPREFS.  The exceptions to
-    this are the fields BREAKPOINTPREFS, SINGPREFS, and TECHPREFS.  If Q has
+    this are the fields SPLITPREFS, BLOWUPPREFS, and TECHPREFS.  If Q has
     fields with these names, they will be assumed to be MATLAB structures and
     will be "merged" with the structures of default preferences stored in the
     properties of the same names in P using <span class="helptopic">chebfunpref</span>.MERGEPREFS().
@@ -214,7 +199,7 @@ arguments: "(varargin)"
     to be a copy of Q plus any additional TECHPREFS stored in P that were not
     stored in Q.
  
-  Notes:
+  Notes: Creating preferences from structures.
     When building a <span class="helptopic">chebfunpref</span> from a structure using the second calling
     syntax above, one should take care to ensure that preferences for the
     underlying representation technology are specified once and only once;
@@ -222,18 +207,38 @@ arguments: "(varargin)"
     The value of P.TECHPREFS.MYPREF that gets set from P = <span class="helptopic">chebfunpref</span>(Q) in
     this circumstance is implementation-defined.
  
+  Notes: Relationship to V4 preferences.
+    All V4 preference names are supported in calls to the CHEBFUN constructor
+    (although support for this may be removed in a future release). Here is a
+    rough guide to how the new V5 preferences relate to the old V4 ones. Note
+    that the V5 names _must_ be used in <span class="helptopic">chebfunpref</span>(), which does _not_ support
+    the V4 names.
+         V4                  V5
+     'maxdegree'   --&gt;   'maxLength'
+     'maxlength'   --&gt;  {'splitPrefs', 'splitMaxLength'}
+     'splitdegree' --&gt;  {'splitPrefs', 'splitLength'}
+     'resampling'  --&gt;  'refinementFunction'
+     'sampletest'  --&gt;  'sampleTest'
+     'chebkind'    --&gt;  'tech'
+     'plot_numpts'       removed
+     'polishroots'       removed
+     'ADdepth'           removed
+    (Note that when setting preferences directly via the constructor, one should
+    only include the second entry in those preferences given as cell arrays
+    above. For example, chebfun(@abs, 'splitLength', 10);.)
+ 
   Examples:
     Create a <span class="helptopic">chebfunpref</span> for building a CHEBFUN based on CHEBTECH (default) with
     breakpoint detection, a splitting length of 257 (pieces of polynomial degree
     256, and a custom CHEBTECH refinement function:
-       p.enableBreakpointDetection = true;
-       p.breakpointPrefs.splitLength = 257;
+       p.splitting = true;
+       p.splitPrefs.splitLength = 257;
        p.techPrefs.refinementFunction = @custom;
        pref = chebfunpref(p);
  
     Same thing with a slightly shorter syntax:
-       p.enableBreakpointDetection = true;
-       p.breakpointPrefs.splitLength = 257;
+       p.splitting = true;
+       p.splitPrefs.splitLength = 257;
        p.refinementFunction = @custom;
        pref = chebfunpref(p);</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin cheboppref">cheboppref</a>.
 </div>
@@ -296,8 +301,16 @@ arguments: "(varargin)"
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebfunpref.mergePrefs')">mergePrefs</a></td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.mergePrefStructs')">mergePrefStructs</a></td>
             <td class="m-help">Merge preference structures.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">Static 
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfunpref.mergeTechPrefs')">mergeTechPrefs</a></td>
+            <td class="m-help">Merge tech preference structures.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">Static 

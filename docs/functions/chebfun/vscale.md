@@ -6,7 +6,7 @@ function_name: "vscale"
 snippet: "Vertical scale of a CHEBFUN object."
 qualifiers: ""
 return_type: "out"
-arguments: "(f)"
+arguments: "(f, s)"
 ---
 
 <html>
@@ -30,7 +30,14 @@ arguments: "(f)"
     <span class="helptopic">vscale</span>(F) returns an estimate of the maximum absolute value of F. <span class="helptopic">vscale</span>
     always returns a scalar, even when F is an array-valued CHEBFUN or a
     quasimatrix. Vertical scales of each of the piecewise components and columns
-    of F are given by get(F, 'vscale-local');</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/max">max</a>, MINANADMAX.
+    of F are given by get(F, 'vscale-local'); Values of F at its break points
+    are ignored by <span class="helptopic">vscale</span>(F).
+  
+    <span class="helptopic">vscale</span>(F, 'ess-sup') is the same as <span class="helptopic">vscale</span>(F)
+  
+    <span class="helptopic">vscale</span>(F, 'sup') also takes into account the point values of the object 
+    F at its break points while computing its <span class="helptopic">vscale</span>. This is the vscale
+    returned in CHEBFUN/DISPLAY.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/max">max</a>, MINANADMAX.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

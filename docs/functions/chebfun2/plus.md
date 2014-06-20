@@ -26,7 +26,7 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun2/plus</div>
-      <div class="helptext"><pre><!--helptext --> +	  Plus for CHEBFUN2 objects.
+      <div class="helptext"><pre><!--helptext --> +   Plus for CHEBFUN2 objects.
  
   F + G adds F and G. F and G can be scalars or CHEBFUN2 objects.</pre></div><!--after help -->
       <!--Method-->

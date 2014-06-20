@@ -238,7 +238,7 @@ chebgui is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebgui.display')">display</a></td>
-            <td class="m-help">DISP   Display information of a chebgui object.&nbsp;</td>
+            <td class="m-help">DISP   Display information of a CHEBGUI object.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">Static 

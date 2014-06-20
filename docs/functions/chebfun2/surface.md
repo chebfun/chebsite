@@ -32,9 +32,8 @@ arguments: "(rhs1)"
     <span class="helptopic">surface</span>(X, Y, Z) uses C = Z, so color is proportional to surface height. 
  
     See SURF for a complete description of the various forms that X,Y,Z,C can
-    take.
-  
-  See SURF.</pre></div><!--after help -->
+    take.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/surf">surf</a>. 
+</div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

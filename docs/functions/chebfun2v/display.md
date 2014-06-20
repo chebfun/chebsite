@@ -26,14 +26,13 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun2v/display</div>
-      <div class="helptext"><pre><!--helptext -->  <span class="helptopic">display</span>   Display a CHEBFUN2V.
-  
-  <span class="helptopic">display</span>(F) outputs important information about the CHEBFUN2V F to the
-  command window, including its domain of definition, length (number of 
-  pivots used to represent it), and a summary of its structure. 
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">display</span>   Display a CHEBFUN2V.
+    <span class="helptopic">display</span>(F) outputs important information about the CHEBFUN2V F to the
+    command window, including its domain of definition, length (number of pivots
+    used to represent it), and a summary of its structure.
  
-  It is called automatically when the semicolon is not used at the
-  end of a statement that results in a CHEBFUN2V.</pre></div><!--after help -->
+    It is called automatically when the semicolon is not used at the end of a
+    statement that results in a CHEBFUN2V.</pre></div><!--after help -->
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

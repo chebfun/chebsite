@@ -30,10 +30,9 @@ arguments: "(f, index, pref)"
     F = <span class="helptopic">merge</span>(F, PREF) removes unnecessary breakpoints from a CHEBFUN F. In
     particular the kth breakpoint is removed if the resulting FUN on the
     interval [x_{k-1}, x_{k+1}] can be represented with a fewer than
-    PREF.MAXLENGTH points when PREF.ENABLEBREAKPOINTDETECTION = 0 and
-    PREF.BREAKPOINTPREFS.SPLITMAXLENGTH points when
-    PREF.ENABLEBREAKPOINTDETECTION = 1. If a PREF is not passed, then the
-    default CHEBFUN.PREF() is used.
+    PREF.MAXLENGTH points when PREF.SPLITTING = 0 and
+    PREF.SPLITPREFS.SPLITLENGTH points when PREF.SPLITTING = 1. If a PREF is
+    not passed, then the default CHEBFUN.PREF() is used.
  
     [F, MERGEDPTS] = <span class="helptopic">merge</span>(F) returns the index of the merged endpoints in the
     vector MERGEDPTS.

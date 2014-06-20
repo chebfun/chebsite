@@ -28,7 +28,9 @@ arguments: "(rhs1)"
       <div class="title">chebfun2v/divgrad</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">divgrad</span>   Laplacian of a CHEBFUN2V.
     F = <span class="helptopic">divgrad</span>(F) returns the Laplacian of a CHEBFUN2V i.e.,
-        divgrad(f) = f_xx + f_yy 
+        divgrad(F) = F(1)_xx + F(2)_yy
+ 
+  This command is not defined for a chebfun2v with 3 components. 
  
   Also see CHEBFUN2V/LAP.</pre></div><!--after help -->
       <!--Method-->

@@ -42,7 +42,7 @@ arguments: "(rhs1)"
   
  
   Copyright 2014 by The University of Oxford and The Chebfun Developers.
-  See <a href="http://www.chebfun.org">http://www.chebfun.org</a> for Chebfun information.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/airy">airy</a>, <a href="matlab:helpwin chebfun/besselh">besselh</a>, <a href="matlab:helpwin chebfun/besseli">besseli</a>, <a href="matlab:helpwin chebfun/besselj">besselj</a>, <a href="matlab:helpwin chebfun/bessely">bessely</a>.</div>
+  See <a href="http://www.chebfun.org/">http://www.chebfun.org/</a> for Chebfun information.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/airy">airy</a>, <a href="matlab:helpwin chebfun/besselh">besselh</a>, <a href="matlab:helpwin chebfun/besseli">besseli</a>, <a href="matlab:helpwin chebfun/besselj">besselj</a>, <a href="matlab:helpwin chebfun/bessely">bessely</a>.</div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

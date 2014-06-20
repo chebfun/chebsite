@@ -26,7 +26,7 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebgui/subsasgn</div>
-      <div class="helptext"><pre><!--helptext -->  <span class="helptopic">subsasgn</span>   Modify a CHEBGUI object.</pre></div><!--after help -->
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">subsasgn</span>   Modify a CHEBGUI object.</pre></div><!--after help -->
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

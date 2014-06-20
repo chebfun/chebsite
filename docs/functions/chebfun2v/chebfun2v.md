@@ -5,7 +5,7 @@ class_name: "chebfun2v"
 function_name: "chebfun2v"
 snippet: "The chebfun2v constructor."
 qualifiers: ""
-return_type: "f"
+return_type: "F"
 arguments: "(varargin)"
 ---
 
@@ -29,11 +29,31 @@ arguments: "(varargin)"
       <div class="helptext"><pre><!--helptext -->Contents of chebfun2v:
 
 <a href="matlab:helpwin test_arithmetic">test_arithmetic</a>                - Check the Chebfun2v constructor for simple arithmetic operations.
+<a href="matlab:helpwin test_conj">test_conj</a>                      - Test CONJ
 <a href="matlab:helpwin test_constructor">test_constructor</a>               - Test the Chebfun2v constructor when performing simple arithmetic
+<a href="matlab:helpwin test_cross">test_cross</a>                     - Test CROSS
+<a href="matlab:helpwin test_curl">test_curl</a>                      - Test CURL
+<a href="matlab:helpwin test_divergence">test_divergence</a>                - Test DIVERGENCE
+<a href="matlab:helpwin test_divgrad">test_divgrad</a>                   - Test DIVGRAD 
+<a href="matlab:helpwin test_dot">test_dot</a>                       - Test DOT
 <a href="matlab:helpwin test_empty">test_empty</a>                     - For empty chebfun2v objects, does each command deal with them
-<a href="matlab:helpwin test_roots1">test_roots1</a>                    - Check that the marching squares and Bezoutian agree with each other. 
-<a href="matlab:helpwin test_roots2">test_roots2</a>                    - Check that the marching squares and Bezoutian agree with each other. 
-<a href="matlab:helpwin test_roots3">test_roots3</a>                    - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_imag">test_imag</a>                      - Test IMAG
+<a href="matlab:helpwin test_jacobian">test_jacobian</a>                  - Test Jacobian
+<a href="matlab:helpwin test_laplacian">test_laplacian</a>                 - Test LAPLACIAN 
+<a href="matlab:helpwin test_plotting">test_plotting</a>                  - Check that the very basic plotting commands do not crash in Chebfun2v
+<a href="matlab:helpwin test_real">test_real</a>                      - Test REAL
+<a href="matlab:helpwin test_roots01">test_roots01</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots02">test_roots02</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots03">test_roots03</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots04">test_roots04</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots05">test_roots05</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots06">test_roots06</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots07">test_roots07</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots08">test_roots08</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots09">test_roots09</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots10">test_roots10</a>                   - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_roots_slow">test_roots_slow</a>                - Check that the marching squares and Bezoutian agree with each other. 
+<a href="matlab:helpwin test_size">test_size</a>                      - Test SIZE
 <a href="matlab:helpwin test_syntax">test_syntax</a>                    - Check the Chebfun2v constructor for different syntax.
 <a href="matlab:helpwin test_threecomponents">test_threecomponents</a>           - A chebfun2v test for checking that chebfun2v objects with three 
 <a href="matlab:helpwin test_times">test_times</a>                     - Check the Chebfun2v constructor for simple arithmetic operations.
@@ -43,11 +63,12 @@ arguments: "(varargin)"
 
 chebfun2v is both a directory and a function.
 
-  <span class="helptopic">chebfun2v</span> Class constructor for <span class="helptopic">chebfun2v</span> objects
+ <span class="helptopic">chebfun2v</span>   Class constructor for <span class="helptopic">chebfun2v</span> objects.
   
-  <span class="helptopic">chebfun2v</span>(F,G) constructs a <span class="helptopic">chebfun2v</span> with two components from the function handles F
-  and G.  F and G can also be CHEBFUN2 objects or any other object that the
-  CHEBFUN2 constructor accepts.  Each component is represented as a CHEBFUN2. 
+  <span class="helptopic">chebfun2v</span>(F,G) constructs a <span class="helptopic">chebfun2v</span> with two components from the function
+  handles F and G.  F and G can also be CHEBFUN2 objects or any other object
+  that the CHEBFUN2 constructor accepts.  Each component is represented as a
+  CHEBFUN2.
  
   <span class="helptopic">chebfun2v</span>(F,G,H) constructs a <span class="helptopic">chebfun2v</span> with three components from the
   function handles F, G, and H.  F, G, and H can also be CHEBFUN2 objects 
@@ -86,7 +107,7 @@ chebfun2v is both a directory and a function.
       <table class="summary-list">
          <tr class="summary-item">
             <td class="name"><a href="matlab:helpwin('chebfun2v.components')">components</a></td>
-            <td class="m-help">Array of CHEBFUN2 objects. &nbsp;</td>
+            <td class="m-help">Array of CHEBFUN2 objects.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="name"><a href="matlab:helpwin('chebfun2v.isTransposed')">isTransposed</a></td>
@@ -108,14 +129,6 @@ chebfun2v is both a directory and a function.
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun2v.conj')">conj</a></td>
             <td class="m-help">Complex conjugate of a CHEBFUN2V.&nbsp;</td>
-         </tr>
-         <tr class="summary-item">
-            <td class="attributes">
-               &nbsp;
-               
-            </td>
-            <td class="name"><a href="matlab:helpwin('chebfun2v.constructor')">constructor</a></td>
-            <td class="m-help">CTOR  CHEBFUN2V constructor&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -170,7 +183,7 @@ chebfun2v is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebfun2v.display')">display</a></td>
+            <td class="name"><a href="matlab:helpwin('chebfun2v.disp')">disp</a></td>
             <td class="m-help">Display a CHEBFUN2V.&nbsp;</td>
          </tr>
          <tr class="summary-item">
@@ -178,8 +191,8 @@ chebfun2v is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebfun2v.div')">div</a></td>
-            <td class="m-help">Divergence of a CHEBFUN2V.&nbsp;</td>
+            <td class="name"><a href="matlab:helpwin('chebfun2v.display')">display</a></td>
+            <td class="m-help">Display a CHEBFUN2V.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -260,14 +273,6 @@ chebfun2v is both a directory and a function.
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun2v.jacobian')">jacobian</a></td>
             <td class="m-help">Jacobian determinant of a CHEBFUN2V.&nbsp;</td>
-         </tr>
-         <tr class="summary-item">
-            <td class="attributes">
-               &nbsp;
-               
-            </td>
-            <td class="name"><a href="matlab:helpwin('chebfun2v.lap')">lap</a></td>
-            <td class="m-help">Vector Laplacian of a CHEBFUN2V.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">

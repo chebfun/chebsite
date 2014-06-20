@@ -28,10 +28,11 @@ arguments: "(data, dom)"
       <div class="title">chebmatrix</div>
       <div class="helptext"><pre><!--helptext -->Contents of chebmatrix:
 
-<a href="matlab:helpwin test_chebpolyplot">test_chebpolyplot</a>              - This test just ensures that chebmatrix chebpolyplot() does not crash.
 <a href="matlab:helpwin test_flip">test_flip</a>                      - GBW, 7 May 2014
 <a href="matlab:helpwin test_norm">test_norm</a>                      - HM, 30 Apr 2014
 <a href="matlab:helpwin test_plot">test_plot</a>                      - This test just ensures that chebmatrix plot() does not crash.
+<a href="matlab:helpwin test_plotcoeffs">test_plotcoeffs</a>                - This test just ensures that <span class="helptopic">chebmatrix</span>/PLOTCOEFFS() does not crash.
+<a href="matlab:helpwin test_times">test_times</a>                     - This test comers from #806.
 <a href="matlab:helpwin test_waterfall">test_waterfall</a>                 - Test file for @chebmatrix/waterfall.m.
 
 
@@ -339,14 +340,6 @@ chebmatrix is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebmatrix.chebpolyplot')">chebpolyplot</a></td>
-            <td class="m-help">CHEBPOLYPLOT for CHEBMATRIX objects.&nbsp;</td>
-         </tr>
-         <tr class="summary-item">
-            <td class="attributes">
-               &nbsp;
-               
-            </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.cos')">cos</a></td>
             <td class="m-help">&nbsp;</td>
          </tr>
@@ -435,8 +428,16 @@ chebmatrix is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebmatrix.display')">display</a></td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.disp')">disp</a></td>
             <td class="m-help">Print summary of CHEBMATRIX contents.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.display')">display</a></td>
+            <td class="m-help">Display information about a CHEBMATRIX.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -635,8 +636,24 @@ chebmatrix is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.loglog')">loglog</a></td>
+            <td class="m-help">Log-log plot of a CHEBMATRIX.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.matrix')">matrix</a></td>
             <td class="m-help">Discretize a CHEBMATRIX as an ordinary matrix.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.max')">max</a></td>
+            <td class="m-help">&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">protected Static 
@@ -645,6 +662,14 @@ chebmatrix is both a directory and a function.
             </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.mergeDomains')">mergeDomains</a></td>
             <td class="m-help">Merge domains of CHEBMATRIX blocks.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.min')">min</a></td>
+            <td class="m-help">&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -667,6 +692,14 @@ chebmatrix is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.mrdivide')">mrdivide</a></td>
+            <td class="m-help">&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.mtimes')">mtimes</a></td>
             <td class="m-help">*   Composition of CHEBMATRICES.&nbsp;</td>
          </tr>
@@ -683,8 +716,16 @@ chebmatrix is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.num2cell')">num2cell</a></td>
+            <td class="m-help">Extract block entries of a CHEBMATRIX:&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.pde15s')">pde15s</a></td>
-            <td class="m-help">Solve PDEs using the CHEBFUN system.&nbsp;</td>
+            <td class="m-help">Solve PDEs using Chebfun.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -699,8 +740,32 @@ chebmatrix is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.plotcoeffs')">plotcoeffs</a></td>
+            <td class="m-help">PLOTCOEFFS for CHEBMATRIX objects.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.plus')">plus</a></td>
             <td class="m-help">+   Sum of CHEBMATRIX objects or a CHEBMATRIX and another compatible object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.power')">power</a></td>
+            <td class="m-help">&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.rdivide')">rdivide</a></td>
+            <td class="m-help">&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -755,8 +820,32 @@ chebmatrix is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.semilogx')">semilogx</a></td>
+            <td class="m-help">Semilogx plot of a CHEBMATRIX.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.semilogy')">semilogy</a></td>
+            <td class="m-help">Semilogy plot of a CHEBMATRIX.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.sign')">sign</a></td>
             <td class="m-help">&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.simplify')">simplify</a></td>
+            <td class="m-help">Simplify CHEBFUN components in a CHEBMATRIX.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -860,6 +949,14 @@ chebmatrix is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebmatrix.tanh')">tanh</a></td>
+            <td class="m-help">&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebmatrix.times')">times</a></td>
             <td class="m-help">&nbsp;</td>
          </tr>
          <tr class="summary-item">

@@ -6,7 +6,7 @@ function_name: "chebpts2"
 snippet: "Chebyshev tensor points"
 qualifiers: "Static"
 return_type: "[xx, yy]"
-arguments: "(nx, ny, domain)"
+arguments: "(nx, ny, domain, kind)"
 ---
 
 <html>
@@ -34,7 +34,13 @@ arguments: "(nx, ny, domain)"
     points on [-1 1]^2.
  
     [XX YY] = <span class="helptopic">chebpts2</span>(NX,NY,D) constructs an NX by NY grid of Chebyshev tensor
-    points on the rectangle [a b] x [c d], where D = [a b c d].</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebpts">chebpts</a>.
+    points on the rectangle [a b] x [c d], where D = [a b c d].
+  
+    The particular tensor grid that is returned is based on the currently
+    underlying technology. 
+ 
+    [XX YY] = <span class="helptopic">chebpts2</span>(NX,NY,D,KIND) constructor Chebyshev tensor grid of
+    the kind KIND. KIND = 2 is default.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebpts">chebpts</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

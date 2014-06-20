@@ -3,7 +3,7 @@ title: "min2"
 layout: function-reference-item
 class_name: "chebfun2"
 function_name: "min2"
-snippet: "Global minimum of a CHEBFUN2."
+snippet: "Global maximum of a CHEBFUN2."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,14 +26,12 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun2/min2</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">min2</span>   Global minimum of a CHEBFUN2. 
-    Y = <span class="helptopic">min2</span>(F) returns the global minium of F.
-  
-    [Y, X] = <span class="helptopic">min2</span>(F) returns the global minimum of F and its coordinates in X =
-    (X(1), X(2)).
+      <div class="helptext"><pre><!--helptext --> MAX2   Global maximum of a CHEBFUN2.
+    Y = <span class="helptopic">min2</span>(F) returns the global minimum of F over its domain. 
+    
+    [Y, X] = <span class="helptopic">min2</span>(F) returns the global minimum in Y and its location in X.  
  
-  For certain problems this problem can be slow if the MATLAB Optimization
-  Toolbox is not available.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/max2">max2</a>, <a href="matlab:helpwin chebfun2/minandmax2">minandmax2</a>.
+   This command may be faster if the OPTIMIZATION TOOLBOX is installed.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin min2">min2</a>, <a href="matlab:helpwin chebfun2/minandmax2">minandmax2</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

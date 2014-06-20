@@ -3,7 +3,7 @@ title: "pde15s"
 layout: function-reference-item
 class_name: "chebfun"
 function_name: "pde15s"
-snippet: "Solve PDEs using the CHEBFUN system."
+snippet: "Solve PDEs using Chebfun."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,17 +26,18 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun/pde15s</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">pde15s</span>   Solve PDEs using the CHEBFUN system.
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">pde15s</span>   Solve PDEs using Chebfun.
+ 
     UU = PDE15s(PDEFUN, TT, U0, BC) where PDEFUN is a handle to a function with
     arguments u, t, x, and D, TT is a vector, U0 is a CHEBFUN or a CHEBMATRIX,
-    and BC is a chebop boundary condition structure will solve the PDE dUdt =
+    and BC is a CHEBOP boundary condition structure will solve the PDE dUdt =
     PDEFUN(UU, t, x) with the initial condition U0 and boundary conditions BC
     over the time interval TT.
  
     PDEFUN should take the form @(T, X, U1, U2, ..., UN), where U1, ..., UN are
     the unknown dependent variables to be solved for, T is time, and X is space.
  
-    For backwards compatability, the syntax @(U1, U2, ..., UN, T, X, D, S, C)
+    For backwards compatibility, the syntax @(U1, U2, ..., UN, T, X, D, S, C)
     for PDEFUN, where U1, ..., UN are the unknown dependent variables to be
     solved for, T is time, X is space, D is the differential operator, S is the
     definite integral operator (i.e., 'sum'), and C the indefinite integral

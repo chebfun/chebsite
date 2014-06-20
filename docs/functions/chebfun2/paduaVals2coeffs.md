@@ -32,8 +32,8 @@ arguments: "(F, dom)"
     by PADUAPTS(N) for an appropriately chosen value of N.
  
     [C, V, X, Y] = <span class="helptopic">chebfun2.paduaVals2coeffs</span>(F) returns also the values V of the
-    same interpolant evaluated at an (N+1)x(N+1) point Chebyshev tensor product
-    grid, {X, Y}.
+    same interpolant evaluated at an (N+1)x(N+1) point 2nd-kind Chebyshev tensor
+    product grid, {X, Y}.
  
     ... = <span class="helptopic">chebfun2.paduaVals2coeffs</span>(F, [a, b, c, d]) is as above, but when F is
     given by PADUAPTS(N, [a, b, c, d]).

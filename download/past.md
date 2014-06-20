@@ -23,4 +23,4 @@ All versions are compatible with MATLAB 7.4 (R2007a) through 7.12 (R2010b) and a
 - **Chebfun Version 1.0** (2005): [chebfun_v1.zip](chebfun_v1.zip)
 
 
-[license]: //github.com/chebfun/chebfun/blob/development/LICENSE.txt
+[license]: https://raw.githubusercontent.com/chebfun/chebfun/master/LICENSE.txt

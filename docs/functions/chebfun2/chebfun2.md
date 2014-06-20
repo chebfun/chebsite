@@ -32,13 +32,16 @@ arguments: "(varargin)"
 <a href="matlab:helpwin test_abs">test_abs</a>                       - Test abs. 
 <a href="matlab:helpwin test_battery">test_battery</a>                   - A large battery of functions. 
 <a href="matlab:helpwin test_cdr">test_cdr</a>                       - Test CDR 
-<a href="matlab:helpwin test_chebpoly2">test_chebpoly2</a>                 - Test chebpoly2 
+<a href="matlab:helpwin test_chebcoeffs2">test_chebcoeffs2</a>               - Test chebpoly2 
 <a href="matlab:helpwin test_chebpolyval2">test_chebpolyval2</a>              - Check the chebpolyval2 commands in trunk and @chebfun2 folder 
+<a href="matlab:helpwin test_chebpts2">test_chebpts2</a>                  - Test CHEBPTS2 
 <a href="matlab:helpwin test_chol">test_chol</a>                      - Test for Cholesky decomposition of a chebfun2. 
 <a href="matlab:helpwin test_coefficients">test_coefficients</a>              - Test to check that Chebfun2 can compute its bivariate tensor Chebyshev 
 <a href="matlab:helpwin test_complex">test_complex</a>                   - Test complex
 <a href="matlab:helpwin test_composition_operators">test_composition_operators</a>     - Check that composition operations are working. 
+<a href="matlab:helpwin test_conj">test_conj</a>                      - Test CONJ
 <a href="matlab:helpwin test_constructor">test_constructor</a>               - This tests the chebfun2 constructor.  
+<a href="matlab:helpwin test_constructor2">test_constructor2</a>              - This tests the chebfun2 constructor. 
 <a href="matlab:helpwin test_contour">test_contour</a>                   - Test contour
 <a href="matlab:helpwin test_ctorsyntax">test_ctorsyntax</a>                - This tests the Chebfun2 constructor for different syntax.
 <a href="matlab:helpwin test_diag">test_diag</a>                      - Test diag
@@ -47,7 +50,10 @@ arguments: "(varargin)"
 <a href="matlab:helpwin test_emptyObjects">test_emptyObjects</a>              - For empty chebfun2 objects, does each command deal with them
 <a href="matlab:helpwin test_feval">test_feval</a>                     - Test feval
 <a href="matlab:helpwin test_get">test_get</a>                       - Test GET.
+<a href="matlab:helpwin test_gradys_function1">test_gradys_function1</a>          - This tests the chebfun2 constructor.  
+<a href="matlab:helpwin test_gradys_function2">test_gradys_function2</a>          - This tests the chebfun2 constructor.  
 <a href="matlab:helpwin test_guide">test_guide</a>                     - Test Chebfun2 guide commands. This is not exclusive by checks the main 
+<a href="matlab:helpwin test_imag">test_imag</a>                      - Test IMAG
 <a href="matlab:helpwin test_integralEqns">test_integralEqns</a>              - Test fred and volt
 <a href="matlab:helpwin test_interpaccuracy">test_interpaccuracy</a>            - Test the Chebfun2 constructor with a few functions.
 <a href="matlab:helpwin test_lu">test_lu</a>                        - Test for LU decomposition of a chebfun2. 
@@ -55,18 +61,23 @@ arguments: "(varargin)"
 <a href="matlab:helpwin test_mean">test_mean</a>                      - Check the commands mean
 <a href="matlab:helpwin test_min">test_min</a>                       - Test the chebfun2/min command. 
 <a href="matlab:helpwin test_minus">test_minus</a>                     - This tests the basic arithmetic operations on chebfun2 objects.
+<a href="matlab:helpwin test_ode45">test_ode45</a>                     - A large battery of functions. 
 <a href="matlab:helpwin test_optimization">test_optimization</a>              - Can we do global optimization?
 <a href="matlab:helpwin test_plotting">test_plotting</a>                  - Check that the very basic plotting commands do not crash. 
 <a href="matlab:helpwin test_plus">test_plus</a>                      - This tests the basic arithmetic operations on chebfun2 objects.
 <a href="matlab:helpwin test_qr">test_qr</a>                        - Test for QR decomposition of a chebfun2. 
 <a href="matlab:helpwin test_rank">test_rank</a>                      - Try some pretty functions and ensure k &lt;= min(m,n)
+<a href="matlab:helpwin test_repeatedArithmetic">test_repeatedArithmetic</a>        - In version 4 repeated arithmetric lost quite a bit of accurate. 
 <a href="matlab:helpwin test_restriction">test_restriction</a>               - This script checks the restriction of a chebfun2 to a smaller domain. 
 <a href="matlab:helpwin test_roots_syntax">test_roots_syntax</a>              - Check the syntax to chebfun2/roots.
 <a href="matlab:helpwin test_scl">test_scl</a>                       - Check correct vertical scaling. 
+<a href="matlab:helpwin test_squeeze">test_squeeze</a>                   - Test SQUEEZE
 <a href="matlab:helpwin test_sum">test_sum</a>                       - Test for integration of a fun2 object. 
 <a href="matlab:helpwin test_surf">test_surf</a>                      - Test surf
+<a href="matlab:helpwin test_techs">test_techs</a>                     - Check that Chebfun2 can work with the different techs. 
 <a href="matlab:helpwin test_times">test_times</a>                     - Test contour
 <a href="matlab:helpwin test_transpose">test_transpose</a>                 - Test transpose
+<a href="matlab:helpwin test_trig">test_trig</a>                      - Test TRIG commands
 <a href="matlab:helpwin test_uminus">test_uminus</a>                    - This tests the basic arithmetic operations on chebfun2 objects.
 <a href="matlab:helpwin test_uplus">test_uplus</a>                     - This tests the basic arithmetic operations on chebfun2 objects.
 <a href="matlab:helpwin test_vectoriseFlag">test_vectoriseFlag</a>             - Test the vectorise flag in the constructor. 
@@ -76,7 +87,7 @@ arguments: "(varargin)"
 
 chebfun2 is both a directory and a function.
 
-  <span class="helptopic">chebfun2</span> <span class="helptopic">chebfun2</span> class for constructing functions on [a,b]x[c,d].
+ <span class="helptopic">chebfun2</span>   <span class="helptopic">chebfun2</span> class for constructing functions on [a,b]x[c,d].
   
     Class for approximating functions defined on finite rectangles. The 
     functions should be smooth.
@@ -128,23 +139,23 @@ chebfun2 is both a directory and a function.
       <table class="summary-list">
          <tr class="summary-item">
             <td class="name"><a href="matlab:helpwin('chebfun2.cols')">cols</a></td>
-            <td class="m-help">: column slices used in low rank representation&nbsp;</td>
+            <td class="m-help">: column slices used in low rank representation.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="name"><a href="matlab:helpwin('chebfun2.domain')">domain</a></td>
-            <td class="m-help">: rectangle of CHEBFUN2, default is [-1,1] x [-1,1]&nbsp;</td>
+            <td class="m-help">: rectangle of CHEBFUN2, default is [-1,1] x [-1,1].&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="name"><a href="matlab:helpwin('chebfun2.pivotLocations')">pivotLocations</a></td>
-            <td class="m-help">: pivot locations used in GE&nbsp;</td>
+            <td class="m-help">: pivot locations used in GE.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="name"><a href="matlab:helpwin('chebfun2.pivotValues')">pivotValues</a></td>
-            <td class="m-help">: pivot values used in low rank representation&nbsp;</td>
+            <td class="m-help">: pivot values used in low rank representation.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="name"><a href="matlab:helpwin('chebfun2.rows')">rows</a></td>
-            <td class="m-help">: rows slices used in low rank representation&nbsp;</td>
+            <td class="m-help">: row slices used in low rank representation.&nbsp;</td>
          </tr>
       </table>
       <!--Methods-->
@@ -172,7 +183,7 @@ chebfun2 is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebfun2.chebpoly2')">chebpoly2</a></td>
+            <td class="name"><a href="matlab:helpwin('chebfun2.chebcoeffs2')">chebcoeffs2</a></td>
             <td class="m-help">bivariate Chebyshev coefficients&nbsp;</td>
          </tr>
          <tr class="summary-item">
@@ -182,14 +193,6 @@ chebfun2 is both a directory and a function.
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun2.chebpolyplot')">chebpolyplot</a></td>
             <td class="m-help">Display the CHEBPOLYPLOT of the column and row slices.&nbsp;</td>
-         </tr>
-         <tr class="summary-item">
-            <td class="attributes">
-               &nbsp;
-               
-            </td>
-            <td class="name"><a href="matlab:helpwin('chebfun2.chebpolyplot2')">chebpolyplot2</a></td>
-            <td class="m-help">Display bivariate Chebyshev coefficients graphically.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -372,8 +375,16 @@ chebfun2 is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebfun2.display')">display</a></td>
+            <td class="name"><a href="matlab:helpwin('chebfun2.disp')">disp</a></td>
             <td class="m-help">Display a CHEBFUN2 to the command line.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfun2.display')">display</a></td>
+            <td class="m-help">Display information about a CHEBFUN2.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -629,7 +640,7 @@ chebfun2 is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun2.min')">min</a></td>
-            <td class="m-help">Minimum value of a CHEBFUN2.&nbsp;</td>
+            <td class="m-help">Minimum value of a CHEBFUN in one direction.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -637,7 +648,7 @@ chebfun2 is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun2.min2')">min2</a></td>
-            <td class="m-help">Global minimum of a CHEBFUN2. &nbsp;</td>
+            <td class="m-help">MAX2   Global maximum of a CHEBFUN2.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -732,8 +743,24 @@ chebfun2 is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebfun2.plotcoeffs')">plotcoeffs</a></td>
+            <td class="m-help">Display the PLOTCOEFFS of the column and row slices.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfun2.plotcoeffs2')">plotcoeffs2</a></td>
+            <td class="m-help">Display bivariate coefficients graphically.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebfun2.plus')">plus</a></td>
-            <td class="m-help">+	  Plus for CHEBFUN2 objects.&nbsp;</td>
+            <td class="m-help">+   Plus for CHEBFUN2 objects.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">

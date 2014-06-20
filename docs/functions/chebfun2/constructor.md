@@ -45,6 +45,8 @@ arguments: "(rhs1)"
   Sampling along each slice is increased until the Chebyshev coefficients of the
   slice fall below machine precision.
  
+  Chebfun2 does not currently work with Chebyshev grids of the 1st kind.
+ 
   The algorithm is fully described in:
    A. Townsend and L. N. Trefethen, An extension of Chebfun to two dimensions,
    SISC, 35 (2013), C495-C518.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2">chebfun2</a>.

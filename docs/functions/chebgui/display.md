@@ -3,7 +3,7 @@ title: "display"
 layout: function-reference-item
 class_name: "chebgui"
 function_name: "display"
-snippet: "Display information of a chebgui object."
+snippet: "Display information of a CHEBGUI object."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,7 +26,7 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebgui/display</div>
-      <div class="helptext"><pre><!--helptext --> DISP   Display information of a chebgui object.
+      <div class="helptext"><pre><!--helptext --> DISP   Display information of a CHEBGUI object.
    Chebgui objects do not return information to the command window, so this
    .m-file does nothing. It is however necessary to surpress output from when a
    user types 'chebgui' in the command window to start chebgui. The information

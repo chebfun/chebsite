@@ -27,10 +27,15 @@ arguments: "(rhs1)"
       </table>
       <div class="title">chebfun/sinc</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">sinc</span>   Sinc function of a CHEBFUN.
-    <span class="helptopic">sinc</span>(F) computes the sinc function of the CHEBFUN F, i.e., sin(pi*F)/(pi*F).
+    <span class="helptopic">sinc</span>(F) computes the sinc function of the CHEBFUN F, i.e., 
+        sinc(F) := sin(F)/(F).
  
-    <span class="helptopic">sinc</span>(F, PREF) does the same but uses the CHEBFUNPREF object PREF when computing
-    the composition.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/sin">sin</a>.
+    <span class="helptopic">sinc</span>(F, PREF) does the same but uses the CHEBFUNPREF object PREF when
+    computing the composition.
+ 
+    Note that this definition of the <span class="helptopic">sinc</span> function differs from the MATLAB
+    implementation in the Signal Processing toolbox, which uses
+        sinc(F) := sin(pi*F)/(pi*F).</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/sin">sin</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

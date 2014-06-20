@@ -34,8 +34,8 @@ arguments: "(varargin)"
     as the defaults.
  
     To set defaults for second tier preferences, such as
-    breakpointPrefs.splitMaxLength, one can use the syntax
-    CHEBFUNPREF.SETDEFAULT({'breakpointPrefs', 'splitMaxLength'}, 257).
+    splitPrefs.splitLength, one can use the syntax
+    CHEBFUNPREF.SETDEFAULT({'splitPrefs', 'splitLength'}, 257).
     However, this syntax is still experimental.
  
     <span class="helptopic">chebfunpref.setDefaults</span>(PREF) sets the default values to the

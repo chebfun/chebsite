@@ -27,7 +27,7 @@ arguments: "(rhs1)"
       </table>
       <div class="title">chebfun2v/laplacian</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">laplacian</span> Vector Laplacian of a CHEBFUN2V.
-    <span class="helptopic">laplacian</span>(F) returns a CHEBFUN2V representing the vector Laplacian of F.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2v/lap">chebfun2v/lap</a>.
+    <span class="helptopic">laplacian</span>(F) returns a CHEBFUN2V representing the vector Laplacian of F.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> CHEBFUN2V/LAP.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

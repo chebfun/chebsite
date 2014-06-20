@@ -26,90 +26,23 @@ arguments: "(varargin)"
          </tr>
       </table>
       <div class="title">chebfun</div>
-      <div class="helptext"><pre><!--helptext -->Contents of chebfun:
-
-<a href="matlab:helpwin adchebfun">adchebfun</a>                      - A class for supporting automatic differentiation in Chebfun.
-<a href="matlab:helpwin blockFunction">blockFunction</a>                  - Convert linear operator to callable function.
-<a href="matlab:helpwin bndfun">bndfun</a>                         - Represent global functions on a bounded interval [a, b].
-<a href="matlab:helpwin chebDiscretization">chebDiscretization</a>             - Convert a chebmatrix or linop to discrete form.
-<a href="matlab:helpwin chebfun">chebfun</a>                        - <span class="helptopic">chebfun</span> class for representing functions on [a,b].
-<a href="matlab:helpwin chebfun2">chebfun2</a>                       - CHEBFUN2 class for constructing functions on [a,b]x[c,d].
-<a href="matlab:helpwin chebfun2v">chebfun2v</a>                      - Class constructor for CHEBFUN2V objects
-<a href="matlab:helpwin chebgui">chebgui</a>                        - INTRODUCTION TO CHEBGUI
-<a href="matlab:helpwin chebguiController">chebguiController</a>              - Control the layout of CHEBGUI.
-<a href="matlab:helpwin chebguiExporterBVP">chebguiExporterBVP</a>             - Export a BVP from CHEBGUI.
-<a href="matlab:helpwin chebguiExporterEIG">chebguiExporterEIG</a>             - Export an EIG problem from CHEBGUI.
-<a href="matlab:helpwin chebguiExporterPDE">chebguiExporterPDE</a>             - Export a PDE from CHEBGUI.
-<a href="matlab:helpwin chebmatrix">chebmatrix</a>                     - Compound matrix for operators, CHEBFUNs, and scalars.
-<a href="matlab:helpwin chebop">chebop</a>                         - CHEBOP class for representing operators on functions defined on [a,b].
-<a href="matlab:helpwin chebtech">chebtech</a>                       - Approximate smooth functions on [-1,1] with Chebyshev interpolants.
-<a href="matlab:helpwin chebtech1">chebtech1</a>                      - Approximate smooth functions on [-1,1] with Chebyshev interpolants.
-<a href="matlab:helpwin chebtech2">chebtech2</a>                      - Approximate smooth functions on [-1,1] with Chebyshev interpolants.
-<a href="matlab:helpwin classicfun">classicfun</a>                     - Represent global functions on an interval [a, b].
-<a href="matlab:helpwin colloc">colloc</a>                         - Abstract class for collocation discretization of operators.
-<a href="matlab:helpwin colloc1">colloc1</a>                        - Collocation discretization on 1st kind points.
-<a href="matlab:helpwin colloc2">colloc2</a>                        - Collocation discretization on 2nd kind points.
-<a href="matlab:helpwin deltafun">deltafun</a>                       - Class for distributions based on Dirac-deltas on arbitrary intervals
-<a href="matlab:helpwin domain">domain</a>                         - Utility class for <span class="helptopic">chebfun</span>. Mostly for backward compatability.
-<a href="matlab:helpwin fun">fun</a>                            - Approximate functions on arbitrary domains.
-<a href="matlab:helpwin linop">linop</a>                          - Linear operator with boundary and side conditions.
-<a href="matlab:helpwin singfun">singfun</a>                        - Class for functions with singular endpoint behavior.
-<a href="matlab:helpwin stringParser">stringParser</a>                   - Parse strings for CHEBGUI.
-<a href="matlab:helpwin ultraS">ultraS</a>                         - ULTRASPHERICAL class for discretizating differential operators 
-<a href="matlab:helpwin unbndfun">unbndfun</a>                       - Represent global functions on an unbounded interval [-inf inf] or
-<a href="matlab:helpwin ATAPformats">ATAPformats</a>                    - Set default formats for Trefethen's book 
-<a href="matlab:helpwin abstractQR">abstractQR</a>                     - Abstract implementation of Householder QR factorisation algorithm.
-<a href="matlab:helpwin baryWeights">baryWeights</a>                    - Barycentric weights.
-<a href="matlab:helpwin barymat">barymat</a>                        - Barycentric Interpolation Matrix.
-<a href="matlab:helpwin blockCoeff">blockCoeff</a>                     - Convert linear operator to derivative coefficents.
-<a href="matlab:helpwin blowup">blowup</a>                         - <span class="helptopic">chebfun</span> blowup option.
-<a href="matlab:helpwin cheb2leg">cheb2leg</a>                       - LEG2CHEB convert Legendre coefficients to Chebyshev coefficients. 
-<a href="matlab:helpwin chebdouble">chebdouble</a>                     - Chebyshev double class. For example, DIFF means Chebyshev difference.
-<a href="matlab:helpwin chebfunpref">chebfunpref</a>                    - Class for managing Chebfun construction-time preferences.
-<a href="matlab:helpwin chebguiEdit">chebguiEdit</a>                    - CHEBGUI edittor.
-<a href="matlab:helpwin chebguiExporter">chebguiExporter</a>                - Export a problem from CHEBGUI.
-<a href="matlab:helpwin chebguiWindow">chebguiWindow</a>                  - Driver file for Chebfun's CHEBGUI
-<a href="matlab:helpwin chebkind">chebkind</a>                       - Set the default Chebyshev grid type.
-<a href="matlab:helpwin cheblogo">cheblogo</a>                       - Plot the Chebfun logo.
-<a href="matlab:helpwin cheboppref">cheboppref</a>                     - Class for managing preferences for the Chebfun ODE suite.
-<a href="matlab:helpwin chebpoly">chebpoly</a>                       - Chebyshev polynomial.
-<a href="matlab:helpwin chebpolyvalm">chebpolyvalm</a>                   - Evaluate polynomial with matrix argument. 
-<a href="matlab:helpwin chebpref">chebpref</a>                       - Abstract class for Chebfun system preferences.
-<a href="matlab:helpwin chebpts">chebpts</a>                        - Chebyshev points.
-<a href="matlab:helpwin chebsnake">chebsnake</a>                      - Chebfun snake game.
-<a href="matlab:helpwin chebsnake2">chebsnake2</a>                     - Chebfun2 snake game on a surface.
-<a href="matlab:helpwin chebtest">chebtest</a>                       - Run Chebfun test suite.
-<a href="matlab:helpwin chebvar">chebvar</a>                        - Short-cut for constructing <span class="helptopic">chebfun</span> variables.
-<a href="matlab:helpwin fov">fov</a>                            - Field of values (numerical range) of matrix A.
-<a href="matlab:helpwin functionalBlock">functionalBlock</a>                - Linear map of function to scalar.
-<a href="matlab:helpwin hermpoly">hermpoly</a>                       - Hermite polynomial of degree n.
-<a href="matlab:helpwin hermpts">hermpts</a>                        - Hermite points and Gauss-Hermite Quadrature Weights.
-<a href="matlab:helpwin jacpoly">jacpoly</a>                        - Jacobi polynomials.
-<a href="matlab:helpwin jacpts">jacpts</a>                         - Gauss-Jacobi Quadrature Nodes and Weights.
-<a href="matlab:helpwin lagpoly">lagpoly</a>                        - Chebfun representation of Laguerre polynomials.
-<a href="matlab:helpwin lagpts">lagpts</a>                         - Laguerre points and Gauss-Laguerre Quadrature Weights.
-<a href="matlab:helpwin lebesgue">lebesgue</a>                       - Lebesgue function for a set of interpolation points.
-<a href="matlab:helpwin leg2cheb">leg2cheb</a>                       - Convert Legendre coefficients to Chebyshev coefficients. 
-<a href="matlab:helpwin legpoly">legpoly</a>                        - Legendre polynomials.
-<a href="matlab:helpwin legpts">legpts</a>                         - Legendre points and Gauss-Legendre Quadrature Weights.
-<a href="matlab:helpwin linBlock">linBlock</a>                       - Linear operator on a single function.
-<a href="matlab:helpwin linopConstraint">linopConstraint</a>                - Constraint class for linops.
-<a href="matlab:helpwin lobpts">lobpts</a>                         - Gauss-Legendre-Lobatto Quadrature Nodes and Weights.
-<a href="matlab:helpwin onefun">onefun</a>                         - Approximate smooth functions on [-1,1].
-<a href="matlab:helpwin operatorBlock">operatorBlock</a>                  - Linear map of function to function.
-<a href="matlab:helpwin padeapprox">padeapprox</a>                     - Pade approximation to a function or Taylor series.
-<a href="matlab:helpwin paduapts">paduapts</a>                       - Padua points.
-<a href="matlab:helpwin pdeset">pdeset</a>                         - Set options for PDE15S
-<a href="matlab:helpwin quasimatrix">quasimatrix</a>                    - A quasimatrix is an array of <span class="helptopic">chebfun</span> objects.
-<a href="matlab:helpwin radaupts">radaupts</a>                       - Gauss-Legendre-Radau Quadrature Nodes and Weights.
-<a href="matlab:helpwin ratinterp">ratinterp</a>                      - Robust rational interpolation or least-squares approximation.
-<a href="matlab:helpwin resampling">resampling</a>                     - <span class="helptopic">chebfun</span> 'resampling' option.
-<a href="matlab:helpwin scribble">scribble</a>                       - Write text with a complex-valued <span class="helptopic">chebfun</span>.
-<a href="matlab:helpwin scribble2">scribble2</a>                      - Writing text with chebfun2 objects
-<a href="matlab:helpwin seedRNG">seedRNG</a>                        - Seed the MATLAB random number generator.
-<a href="matlab:helpwin sing">sing</a>                           - A basic keyboard for MATLAB using CHEBFUNs.
-<a href="matlab:helpwin smoothfun">smoothfun</a>                      - Approximate smooth functions on [-1,1]. 
-<a href="matlab:helpwin splitting">splitting</a>                      - <span class="helptopic">chebfun</span> splitting option.
+      <div class="helptext"><pre><!--helptext -->  Chebfun
+  Version 5.0.0000 21-Jun-2014
+ 
+  Chebfun is an open-source software system for numerical computing with
+  functions. The mathematical basis of Chebfun is piecewise polynomial
+  interpolation implemented with what we call "Chebyshev technology". The
+  foundations are described, with Chebfun examples, in the book Approximation
+  Theory and Approximation Practice. Chebfun has extensive capabilities for
+  dealing with linear and nonlinear differential and integral operators, and
+  it also includes continuous analogues of linear algebra notions like QR and
+  singular value decomposition. The Chebfun2 extension works with functions of
+  two variables defined on a rectangle in the x-y plane. To get a sense of the
+  breadth and power of Chebfun, a great place to start is by looking at our
+  Examples.
+ 
+  To get started with Chebfun, see the user guide and Examples gallery at
+  <a href="http://www.chebfun.org/">http://www.chebfun.org/</a>.
 
 
 Contents of chebfun:
@@ -128,13 +61,14 @@ Contents of chebfun:
 <a href="matlab:helpwin test_cf">test_cf</a>                        - Test function for @chebfun/cf.m.
 <a href="matlab:helpwin test_chebfun_lu">test_chebfun_lu</a>                - Test Chebfun LU command. 
 <a href="matlab:helpwin test_chebpade">test_chebpade</a>                  - Test for @chebfun/chebpade.m.
-<a href="matlab:helpwin test_chebpolyplot">test_chebpolyplot</a>              - Tests for @chebfun/chebpolyplot.m.
+<a href="matlab:helpwin test_circconv">test_circconv</a>                  - Test file for chebfun/circconv
 <a href="matlab:helpwin test_comet">test_comet</a>                     - Test for @chebfun/comet.m and @chebfun/comet3.m.
 <a href="matlab:helpwin test_complex">test_complex</a>                   - Test file for @chebfun/complex.m.
 <a href="matlab:helpwin test_compose_binary">test_compose_binary</a>            - Test file for @chebfun/compose.m (binary operators).
 <a href="matlab:helpwin test_compose_chebfuns">test_compose_chebfuns</a>          - Test file for @chebfun/compose.m (composition of chebfuns).
 <a href="matlab:helpwin test_compose_unary">test_compose_unary</a>             - Test file for @chebfun/compose.m (unary operators.
 <a href="matlab:helpwin test_constructor_basic">test_constructor_basic</a>         - Test file for chebfun constructor (basic).
+<a href="matlab:helpwin test_constructor_basic_periodic">test_constructor_basic_periodic</a> - Test file for chebfun constructor (periodic).
 <a href="matlab:helpwin test_constructor_singfun">test_constructor_singfun</a>       - Test file for chebfun constructor for singular function.
 <a href="matlab:helpwin test_constructor_splitting">test_constructor_splitting</a>     - Test file for chebfun constructor (splitting).
 <a href="matlab:helpwin test_constructor_unbndfun">test_constructor_unbndfun</a>      - Test file for chebfun constructor for functions defined in unbounded domain.
@@ -142,7 +76,6 @@ Contents of chebfun:
 <a href="matlab:helpwin test_cov">test_cov</a>                       - Test file for @chebfun/cov.m.
 <a href="matlab:helpwin test_cumsum">test_cumsum</a>                    - Test file for @chebfun/cumsum.m.
 <a href="matlab:helpwin test_deltaOps">test_deltaOps</a>                  - Test some operations involving chebfuns with delta functions.
-<a href="matlab:helpwin test_detectEdge">test_detectEdge</a>                - Test file for @chebfun/detectEdge.m.
 <a href="matlab:helpwin test_diag">test_diag</a>                      - Test for <span class="helptopic">chebfun</span>/DIAG()
 <a href="matlab:helpwin test_diff">test_diff</a>                      - Test file for @chebfun/diff.m.
 <a href="matlab:helpwin test_ellipj">test_ellipj</a>                    - Test file for @chebfun/ellipj.m.
@@ -155,6 +88,7 @@ Contents of chebfun:
 <a href="matlab:helpwin test_fliplr">test_fliplr</a>                    - Test file for @chebfun/fliplr.m.
 <a href="matlab:helpwin test_flipud">test_flipud</a>                    - Test file for @chebfun/flipud.m.
 <a href="matlab:helpwin test_floor">test_floor</a>                     - Test file for @chebfun/floor.m
+<a href="matlab:helpwin test_get">test_get</a>                       - Test for @chebfun/get.m.
 <a href="matlab:helpwin test_getValuesAtBreakpoints">test_getValuesAtBreakpoints</a>    - Test file for @chebfun/test_getValuesAtBreakpoints.m.
 <a href="matlab:helpwin test_gmres">test_gmres</a>                     - Test the Chebfun implementation of GMRES for solving Lu = f, where L is an
 <a href="matlab:helpwin test_horzcat">test_horzcat</a>                   - Test file for @chebfun/horzcat.m.
@@ -170,7 +104,7 @@ Contents of chebfun:
 <a href="matlab:helpwin test_join">test_join</a>                      - Test file for @chebfun/join.m.
 <a href="matlab:helpwin test_kron">test_kron</a>                      - Test the chebfun/kron() command. 
 <a href="matlab:helpwin test_le">test_le</a>                        - Test file for @chebfun/le.m.
-<a href="matlab:helpwin test_legpoly">test_legpoly</a>                   - Test file for @chebfun/legpoly.m.
+<a href="matlab:helpwin test_legcoeffs">test_legcoeffs</a>                 - Test file for @chebfun/legpoly.m.
 <a href="matlab:helpwin test_log">test_log</a>                       - Test file for chebfun log() and related functions.
 <a href="matlab:helpwin test_logical">test_logical</a>                   - Test file for @chebfun/logical.m.
 <a href="matlab:helpwin test_lt">test_lt</a>                        - Test file for @chebfun/lt.m.
@@ -192,6 +126,8 @@ Contents of chebfun:
 <a href="matlab:helpwin test_pchip">test_pchip</a>                     - Test a scalar function:
 <a href="matlab:helpwin test_pinv">test_pinv</a>                      - Test file for @chebfun/pinv.m.
 <a href="matlab:helpwin test_plot">test_plot</a>                      - Tests for chebfun plotting functions.
+<a href="matlab:helpwin test_plot_xylim">test_plot_xylim</a>                - Tests for chebfun plotting functions.
+<a href="matlab:helpwin test_plotcoeffs">test_plotcoeffs</a>                - Tests for @chebfun/plotcoeffs.m.
 <a href="matlab:helpwin test_plus">test_plus</a>                      - Test file for @chebfun/plus.m.
 <a href="matlab:helpwin test_polyfit">test_polyfit</a>                   - Test file for POLYFIT.
 <a href="matlab:helpwin test_qr">test_qr</a>                        - Test QR factorization of Chebfun quasimatrices.
@@ -297,7 +233,14 @@ chebfun is both a directory and a function.
  
   <span class="helptopic">chebfun</span>(F, 'trunc', N) returns a smooth N-point <span class="helptopic">chebfun</span> constructed by
   computing the first N Chebyshev coefficients from their integral form, rather
-  than by interpolation at Chebyshev points.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfunpref">chebfunpref</a>, <a href="matlab:helpwin chebpts">chebpts</a>.</div><!--overloaded--><div class="footerlinktitle">
+  than by interpolation at Chebyshev points.
+ 
+  <span class="helptopic">chebfun</span>(F, 'periodic') constructs a <span class="helptopic">chebfun</span> object representing a smooth and
+  periodic function F on the interval [-1,1]. The resulting <span class="helptopic">chebfun</span> is
+  represented using a Fourier series. All operation done of F should preserve
+  smoothness and periodicity or the results may be inaccurate. Similar options
+  as discussed above may be combined with the 'periodic' flag, with exception to
+  the 'chebkind' and 'splitting' flags.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfunpref">chebfunpref</a>, <a href="matlab:helpwin chebpts">chebpts</a>.</div><!--overloaded--><div class="footerlinktitle">
     Overloaded methods:
 </div><div class="footerlink">       <a href="matlab:helpwin chebmatrix/chebfun">chebmatrix/chebfun</a>
 </div>
@@ -672,6 +615,14 @@ chebfun is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebfun.chebcoeffs')">chebcoeffs</a></td>
+            <td class="m-help">Chebyshev polynomial coefficients of a CHEBFUN.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebfun.chebellipseplot')">chebellipseplot</a></td>
             <td class="m-help">Plot the Bernstein (aka Chebyshev) ellipses.&nbsp;</td>
          </tr>
@@ -689,15 +640,7 @@ chebfun is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun.chebpoly')">chebpoly</a></td>
-            <td class="m-help">Chebyshev polynomial coefficients of a CHEBFUN.&nbsp;</td>
-         </tr>
-         <tr class="summary-item">
-            <td class="attributes">
-               &nbsp;
-               
-            </td>
-            <td class="name"><a href="matlab:helpwin('chebfun.chebpolyplot')">chebpolyplot</a></td>
-            <td class="m-help">Display Chebyshev coefficients graphically.&nbsp;</td>
+            <td class="m-help">Chebyshev polynomial coefficients.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -706,6 +649,14 @@ chebfun is both a directory and a function.
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun.chebtune')">chebtune</a></td>
             <td class="m-help">CHEBFUN melody player.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfun.circconv')">circconv</a></td>
+            <td class="m-help">Circular convolution of a Fourier-based CHEBFUNs.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -905,7 +856,7 @@ chebfun is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun.disp')">disp</a></td>
-            <td class="m-help">DISPLAY   Display a chebfun object.&nbsp;</td>
+            <td class="m-help">Display a CHEBFUN object.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -913,7 +864,7 @@ chebfun is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun.display')">display</a></td>
-            <td class="m-help">Copyright 2014 by The University of Oxford and The Chebfun Developers. &nbsp;</td>
+            <td class="m-help">Display information about a CHEBFUN.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -1080,6 +1031,14 @@ chebfun is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebfun.fourcoeffs')">fourcoeffs</a></td>
+            <td class="m-help">Fourier coefficients of a CHEBFUN.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebfun.fred')">fred</a></td>
             <td class="m-help">Fredholm integral operator.&nbsp;</td>
          </tr>
@@ -1097,7 +1056,7 @@ chebfun is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun.get')">get</a></td>
-            <td class="m-help">GET method for the CHEBFUN class&nbsp;</td>
+            <td class="m-help">GET method for the CHEBFUN class.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -1224,6 +1183,14 @@ chebfun is both a directory and a function.
                &nbsp;
                
             </td>
+            <td class="name"><a href="matlab:helpwin('chebfun.ishappy')">ishappy</a></td>
+            <td class="m-help">Happiness state of a CHEBFUN object.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
             <td class="name"><a href="matlab:helpwin('chebfun.isinf')">isinf</a></td>
             <td class="m-help">Test if a CHEBFUN is infinite.&nbsp;</td>
          </tr>
@@ -1264,7 +1231,7 @@ chebfun is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebfun.jacpoly')">jacpoly</a></td>
+            <td class="name"><a href="matlab:helpwin('chebfun.jaccoeffs')">jaccoeffs</a></td>
             <td class="m-help">LEGPOLY   Jacobi polynomial coefficients of a CHEBFUN.&nbsp;</td>
          </tr>
          <tr class="summary-item">
@@ -1320,8 +1287,16 @@ chebfun is both a directory and a function.
                &nbsp;
                
             </td>
-            <td class="name"><a href="matlab:helpwin('chebfun.legpoly')">legpoly</a></td>
+            <td class="name"><a href="matlab:helpwin('chebfun.legcoeffs')">legcoeffs</a></td>
             <td class="m-help">Legendre polynomial coefficients of a CHEBFUN.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfun.legpoly')">legpoly</a></td>
+            <td class="m-help">&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -1641,7 +1616,7 @@ chebfun is both a directory and a function.
                
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun.pde15s')">pde15s</a></td>
-            <td class="m-help">Solve PDEs using the CHEBFUN system.&nbsp;</td>
+            <td class="m-help">Solve PDEs using Chebfun.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">
@@ -1674,6 +1649,14 @@ chebfun is both a directory and a function.
             </td>
             <td class="name"><a href="matlab:helpwin('chebfun.plot3')">plot3</a></td>
             <td class="m-help">Plot for CHEBFUN objects in 3-D space.&nbsp;</td>
+         </tr>
+         <tr class="summary-item">
+            <td class="attributes">
+               &nbsp;
+               
+            </td>
+            <td class="name"><a href="matlab:helpwin('chebfun.plotcoeffs')">plotcoeffs</a></td>
+            <td class="m-help">Display coefficients graphically.&nbsp;</td>
          </tr>
          <tr class="summary-item">
             <td class="attributes">

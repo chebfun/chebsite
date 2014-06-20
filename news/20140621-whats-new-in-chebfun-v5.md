@@ -16,8 +16,8 @@ Today we are very pleased to announce the release of Chebfun Version 5!
 Chebfun Version 5 is a complete rewrite of the Chebfun code and a transition
 from an svn repository at Oxford to a [public
 repository](http://github.com/chebfun/chebfun) and issue tracker at GitHub. We
-are a fully open source project. We invite all our users to [learn more and
-get involved](../develop).
+are a fully open source project. We invite all our users to learn more and
+get involved.
 
 The main purpose of the code rewrite has been greater modularity, clarity, and
 consistency, to make it easier for new developers to get involved and new
@@ -33,7 +33,7 @@ site has also been created.
 * New commands `leg2cheb`, `cheb2leg`
 * Algorithms based on Chebyshev points of the first kind
 * A Chebfun constructor option `'equi'` for equispaced data
-* A `periodic` option for Fourier instead of Chebyshev
+* A `'periodic'` option for Fourier instead of Chebyshev
 * Ultraspherical spectral methods for ODEs
 * `epslevel` estimates of accuracy, still under development
 

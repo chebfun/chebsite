@@ -31,7 +31,8 @@ arguments: "(rhs1)"
     and G both have two components, then it returns the CHEBFUN2 representing
         <span class="helptopic">cross</span>(F,G) = F(1) * G(2) - F(2) * G(1)
     where F = (F(1); F(2)) and G = (G(1); G(2)). If F and G have three
-    components then it returns the CHEBFUN2V representing the 3D cross product.</pre></div><!--after help -->
+    components then it returns the CHEBFUN2V representing the 3D cross 
+    product.</pre></div><!--after help -->
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

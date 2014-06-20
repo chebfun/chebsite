@@ -27,7 +27,7 @@ arguments: "(rhs1)"
       </table>
       <div class="title">chebfun/mesh</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">mesh</span>   Surface mesh plot for array-valued CHEBFUN objects.
-    <span class="helptopic">mesh</span>(U) or <span class="helptopic">mesh</span>(U, T) where LENGTH(T) = MIN(SIZE(U)) plots a suface mesh
+    <span class="helptopic">mesh</span>(U) or <span class="helptopic">mesh</span>(U, T) where LENGTH(T) = MIN(SIZE(U)) plots a surface mesh
     plot of the CHEBFUN object U.</pre></div><!--after help -->
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

@@ -27,7 +27,11 @@ arguments: "(f, varargin)"
       </table>
       <div class="title">chebfun/plot</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">plot</span>   Basic linear plot for CHEBFUN objects.
-    <span class="helptopic">plot</span>(F) plots the CHEBFUN object F.
+    <span class="helptopic">plot</span>(F) plots the CHEBFUN object F in the interval where it is defined. If F
+    is complex valued, <span class="helptopic">plot</span>(F) is equivalent to <span class="helptopic">plot</span>(real(F), imag(F)).
+ 
+    <span class="helptopic">plot</span>(F, G) plots the CHEBFUN G versus the CHEBFUN F. Quasimatrices and
+    array-valued CHEBUFUN objects are also supported in the natural way.
  
     <span class="helptopic">plot</span>(F, S) allows various line types, plot symbols, and colors to be used
     when S is a character string made from one element from any or all the
@@ -68,19 +72,19 @@ arguments: "(f, varargin)"
     can be useful when the domain of F is infinite, or for 'zooming in' on, say,
     oscillatory CHEBFUN objects. If plotting an array-valued CHEBFUN or more
     than one CHEBFUN in a call like <span class="helptopic">plot</span>(F, 'b', G, '--r', 'interval', [A, B])
-    this property is applied globally.
+    this property is applied globally. Markers, such as 'o', or '.', are ignored
+    if the interval flag is used.
  
     Besides the usual parameters that control the specifications of lines (see
-    linespec), the parameter JumpLine and DeltaLine determines the linestyle 
-    for the discontinuities and the delta functions of the CHEBFUN F, 
-    respetively. For example, <span class="helptopic">plot</span>(F, 'JumpLine', '-r') will plot 
-    discontinuities as solid red lines and <span class="helptopic">plot</span>(F, 'deltaline', '-r') will 
-    plot the delta functions as solid red lines. By default the plotting style
-    for JumpLine is ':', and '-' for delta functions and colours are chosen 
-    to match the lines they correspond to. It is possible to modify other 
-    properties of JumpLines syntax like 
-    <span class="helptopic">plot</span>(F, 'JumpLine', {'color', 'r', 'LineWidth', 5}). 
-    JumpLines and deltaLines can be suppresse with the argument 'none'.
+    linespec), the parameter JumpLine and DeltaLine determines the linestyle for
+    the discontinuities and the delta functions of the CHEBFUN F, respetively.
+    For example, <span class="helptopic">plot</span>(F, 'JumpLine', '-r') will plot discontinuities as solid
+    red lines and <span class="helptopic">plot</span>(F, 'deltaline', '-r') will plot the delta functions as
+    solid red lines. By default the plotting style for JumpLine is ':', and '-'
+    for delta functions and colours are chosen to match the lines they
+    correspond to. It is possible to modify other properties of JumpLines syntax
+    like <span class="helptopic">plot</span>(F, 'JumpLine', {'color', 'r', 'LineWidth', 5}). JumpLines and
+    deltaLines can be suppressed with the argument 'none'.
  
     Note that the <span class="helptopic">plot</span>(F, 'numpts', N) option for V4 is deprecated, and this
     call now has no effect.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin @chebfun/plotData">plotData</a>, <a href="matlab:helpwin chebfun/plot3">plot3</a>.

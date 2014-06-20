@@ -34,7 +34,7 @@ arguments: "(rhs1)"
     values of F on a tensor Chebyshev grid. X = U * D * V'.
  
     [U, D, V] = <span class="helptopic">chebpolyval2</span>(F,M,N) returns the values of F on a M-by-N
-    Chebyshev tensor grid.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/chebpoly2">chebpoly2</a>, <a href="matlab:helpwin chebfun2/chebpolyplot2">chebpolyplot2</a>. 
+    Chebyshev tensor grid.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/chebcoeffs2">chebcoeffs2</a>, <a href="matlab:helpwin chebfun2/plotcoeffs2">plotcoeffs2</a>. 
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

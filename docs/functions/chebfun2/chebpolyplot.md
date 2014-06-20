@@ -34,7 +34,7 @@ arguments: "(rhs1)"
  
     <span class="helptopic">chebpolyplot</span>(F, S) allows further plotting options, such as linestyle,
     linecolor, etc. If S contains a string 'LOGLOG', the coefficients will be
-    displayed on a log-log scale.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/chebpolyplot2">chebpolyplot2</a>, <a href="matlab:helpwin chebfun2/chebpoly2">chebpoly2</a>.
+    displayed on a log-log scale.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> CHEBPOLYPLOT2, CHEBPOLY2.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

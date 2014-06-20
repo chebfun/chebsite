@@ -3,7 +3,7 @@ title: "chebpoly"
 layout: function-reference-item
 class_name: "chebfun"
 function_name: "chebpoly"
-snippet: "Chebyshev polynomial coefficients of a CHEBFUN."
+snippet: "Chebyshev polynomial coefficients."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,22 +26,8 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun/chebpoly</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">chebpoly</span>   Chebyshev polynomial coefficients of a CHEBFUN.
-    A = <span class="helptopic">chebpoly</span>(F, N) returns the first N Chebyshev coefficients of F, i.e.,
-    the row vector such that F = ... + A(1) T_N(x) + ... + A(N) T_1(x) +
-    A(N+1) T_0(x), where T_M(x) denotes the M-th Chebyshev polynomial.
- 
-    If F is a smooth CHEBFUN (i.e., with no breakpoints), then <span class="helptopic">chebpoly</span>(F) is
-    equivalent to <span class="helptopic">chebpoly</span>(F, LENGTH(F)).
-  
-    If F is array-valued with M columns, then A is an MxN matrix.
- 
-    C = <span class="helptopic">chebpoly</span>(F, N, 'kind', 2) returns the vector of coefficients for the
-    Chebyshev expansion of F in 2nd-kind Chebyshev polynomials F = ... + C(1)
-    U_N(x) + ... + C(N) U_1(x) + C(N+1) U_0(x).
- 
-    There is also a <span class="helptopic">chebpoly</span> command in the Chebfun trunk directory, which
-    computes the CHEBFUN corresponding to the Chebyshev polynomial T_M(x).</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/legpoly">legpoly</a>.
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">chebpoly</span>   Chebyshev polynomial coefficients.
+    <span class="helptopic">chebpoly</span>(F) is deprecated. Please use CHEBCOEFFS().</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/plotcoeffs">plotcoeffs</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

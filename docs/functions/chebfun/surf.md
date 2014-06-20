@@ -27,7 +27,7 @@ arguments: "(rhs1)"
       </table>
       <div class="title">chebfun/surf</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">surf</span>   Surface plot for array-valued CHEBFUN objects.
-    <span class="helptopic">surf</span>(U) or <span class="helptopic">surf</span>(U, T) where LENGTH(T) = MIN(SIZE(U)) plots a suface plot of
+    <span class="helptopic">surf</span>(U) or <span class="helptopic">surf</span>(U, T) where LENGTH(T) = MIN(SIZE(U)) plots a surface plot of
     the CHEBFUN object U.</pre></div><!--after help -->
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

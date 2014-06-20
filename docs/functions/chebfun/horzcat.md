@@ -27,10 +27,18 @@ arguments: "(rhs1)"
       </table>
       <div class="title">chebfun/horzcat</div>
       <div class="helptext"><pre><!--helptext --> <span class="helptopic">horzcat</span>   Horizontal concatenation of CHEBFUN objects.
-    [A B] horizontally concatenates the CHEBFUN objects A and B to form an
-    array-valued CHEBFUN or an array of CHEBFUN objects (depending on whether
+    [A B] horizontally concatenates the column CHEBFUN objects A and B to form
+    an array-valued CHEBFUN or an array of CHEBFUN objects (depending on whether
     the interior breakpoints of A and B match or not). [A,B] does the same. Any
-    number of CHEBFUN objects can be concatenated within one pair of brackets.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/vertcat">vertcat</a>, <a href="matlab:helpwin chebfun/cat">cat</a>.
+    number of CHEBFUN objects can be concatenated within one pair of brackets.
+ 
+    If one of A or B is a scalar or a row vector, it is cast to a constant
+    CHEBFUN.
+ 
+    If A and B are row CHEBFUN objects then C = [A B] will be a CHEBMATRIX. See
+    CHEBFUN/VERTCAT for more details.
+ 
+    [A1, A2, ...] concatenates multiple objects.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/vertcat">vertcat</a>, <a href="matlab:helpwin chebfun/cat">cat</a>, <a href="matlab:helpwin quasimatrix">quasimatrix</a>, <a href="matlab:helpwin chebmatrix">chebmatrix</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>

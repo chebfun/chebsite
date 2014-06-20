@@ -45,11 +45,10 @@ arguments: "(op, domain, data, pref)"
     construction preferences to be passed to the constructor.  See CHEBFUNPREF
     for more details on preferences.
  
-    In particular, if PREF.ENABLEBREAKPOINTDETECTION = TRUE and OP is a
-    function_handle or a string, then the constructor adaptively introduces
-    additional breakpoints into the domain so as to better represent the
-    function. These are returned as the second output argument in [FUNS, END] =
-    <span class="helptopic">constructor</span>(OP, DOM).
+    In particular, if PREF.SPLITTING = TRUE and OP is a function_handle or a
+    string, then the constructor adaptively introduces additional breakpoints
+    into the domain so as to better represent the function. These are returned
+    as the second output argument in [FUNS, END] = <span class="helptopic">constructor</span>(OP, DOM).
  
     The DATA structure input contains information which needs to be passed to
     the lower layers about parameters which may affect the construction process.

@@ -3,7 +3,7 @@ title: "legpoly"
 layout: function-reference-item
 class_name: "chebfun"
 function_name: "legpoly"
-snippet: "Legendre polynomial coefficients of a CHEBFUN."
+snippet: "Legendre polynomials."
 qualifiers: ""
 return_type: "c_leg"
 arguments: "(f, n)"
@@ -14,47 +14,35 @@ arguments: "(f, n)"
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    
       <link rel="stylesheet" href="file:////Applications/MATLAB_R2013a.app/toolbox/matlab/helptools/private/helpwin.css">
-      <title>MATLAB File Help: chebfun/legpoly</title>
+      <title>MATLAB File Help: legpoly</title>
    </head>
    <body>
       <!--Single-page help-->
       <table border="0" cellspacing="0" width="100%">
          <tr class="subheader">
-            <td class="headertitle">MATLAB File Help: chebfun/legpoly</td>
-            <td class="subheader-left"><a href="matlab:edit chebfun/legpoly">View code for chebfun/legpoly</a></td>
+            <td class="headertitle">MATLAB File Help: legpoly</td>
+            <td class="subheader-left"><a href="matlab:edit legpoly">View code for legpoly</a></td>
             <td class="subheader-right"><a href="matlab:helpwin">Default Topics</a></td>
          </tr>
       </table>
-      <div class="title">chebfun/legpoly</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">legpoly</span>    Legendre polynomial coefficients of a CHEBFUN.
-    A = <span class="helptopic">legpoly</span>(F, N) returns the first N+1 coefficients in the Legendre series
-    expansion of the CHEBFUN F, so that such that F approximately equals A(1)
-    P_N(x) + ... + A(N) P_1(x) + A(N+1) P_0(x) where P_N(x) denotes the N-th
-    Legendre polynomial. A is a row vector.
+      <div class="title">legpoly</div>
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">legpoly</span>   Legendre polynomials.
+    P = <span class="helptopic">legpoly</span>(N) computes a CHEBFUN of the Legendre polynomial of degree N on
+    the interval [-1,1]. N can be a vector of integers, in which case the output
+    is an array-valued CHEBFUN.
  
-    If F is smooth (i.e., numel(f.funs) == 1), then A = <span class="helptopic">legpoly</span>(F) will assume
-    that N = length(F) - 1;
+    P = <span class="helptopic">legpoly</span>(N, D) computes the Legendre polynomials as above, but on the
+    interval given by the domain D, which must be bounded.
  
-    There is also a <span class="helptopic">legpoly</span> command in the Chebfun trunk directory which
-    computes the CHEBFUN corresponding to the Legendre polynomial P_n(x).
+    P = <span class="helptopic">legpoly</span>(N, D, 'norm') or P = <span class="helptopic">legpoly</span>(N, 'norm') normalises so that
+    integrate(P(:,j).*P(:,k)) = delta_{j,k}.
  
-    <span class="helptopic">legpoly</span> does not support quasimatrices.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/chebpoly">chebpoly</a>.
+    For N &lt;= 1000 <span class="helptopic">legpoly</span> uses a weighted QR factorisation of a 2*(N+1) x
+    2*(N+1) Chebyshev Vandermonde matrix. For scalar N &gt; 1000 (or a short
+    vector) it uses the LEG2CHEB method and for a vector of N with any entry &gt;
+    1000 it uses the standard recurrence relation. This default can be
+    overwritten by passing a fourth input <span class="helptopic">legpoly</span>(N, D, NORM, METHOD), where
+    METHOD is 1, 2, or 3 respectively.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebpoly">chebpoly</a>, <a href="matlab:helpwin legpts">legpts</a>, and <a href="matlab:helpwin leg2cheb">leg2cheb</a>.
 </div>
-      <!--Method-->
-      <div class="sectiontitle">Method Details</div>
-      <table class="class-details">
-         <tr>
-            <td class="class-detail-label">Access</td>
-            <td>public</td>
-         </tr>
-         <tr>
-            <td class="class-detail-label">Sealed</td>
-            <td>false</td>
-         </tr>
-         <tr>
-            <td class="class-detail-label">Static</td>
-            <td>false</td>
-         </tr>
-      </table>
    </body>
 </html>

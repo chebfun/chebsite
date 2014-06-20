@@ -20,8 +20,7 @@ code below to your MATLAB command window:
     addpath(fullfile(cd,'chebfun')), savepath
 
 If this is your first look at Chebfun, we suggest that you check out the
-[Chebfun Guide][guide] and then some of the many [Examples][examples]. A complete
-[function reference][function-reference] is also available.
+[Chebfun Guide][guide] and then some of the many [Examples][examples].
 
 
 ## For developers
@@ -50,13 +49,12 @@ prefer to clone the Chebfun repository from Github. If you don't have Git,
 </div>
 
 
-[license]: //github.com/chebfun/chebfun/blob/development/LICENSE.txt
-[chebfun-github]: //github.com/chebfun/chebfun
-[github-zip]: //github.com/chebfun/chebfun/archive/master.zip
+[license]: https://raw.githubusercontent.com/chebfun/chebfun/master/LICENSE.txt
+[chebfun-github]: https://github.com/chebfun/chebfun
+[github-zip]: https://github.com/chebfun/chebfun/archive/master.zip
 [guide]: ../docs/guide/
 [examples]: ../examples/
 [function-reference]: ../docs/functions/
 [mailto]: mailto:help@chebfun.org
-[announce]: chebfun-announce+subscribe@googlegroups.com
 [git]: http://git-scm.com/
 [subscribelink]: https://groups.google.com/forum/#!forum/chebfun-announce/join

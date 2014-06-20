@@ -26,12 +26,12 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun2/vertcat</div>
-      <div class="helptext"><pre><!--helptext --> <span class="helptopic">vertcat</span> Vertical concatenation of CHEBFUN2 objects.
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">vertcat</span>   Vertical concatenation of CHEBFUN2 objects.
  
   <span class="helptopic">vertcat</span>(F, G) is the vertical concatenation of CHEBFUN2 objects F and G. 
   This function returns a CHEBFUN2V object. 
   
-  [F ; G] is equivalent to <span class="helptopic">vertcat</span>(F, G).
+  [F; G] is equivalent to <span class="helptopic">vertcat</span>(F, G).
  
   <span class="helptopic">vertcat</span>(F) returns the CHEBFUN2 F.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2v">chebfun2v</a>.
 </div>

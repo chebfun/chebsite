@@ -3,7 +3,7 @@ title: "disp"
 layout: function-reference-item
 class_name: "chebfun"
 function_name: "disp"
-snippet: "Display a chebfun object."
+snippet: "Display a CHEBFUN object."
 qualifiers: ""
 return_type: "varargout"
 arguments: "(rhs1)"
@@ -26,12 +26,8 @@ arguments: "(rhs1)"
          </tr>
       </table>
       <div class="title">chebfun/disp</div>
-      <div class="helptext"><pre><!--helptext --> DISPLAY   Display a chebfun object.
-    DISPLAY(F) outputs important information about the chebfun F to the command
-    window, including its domain of definition, its length (number of sample
-    values used to represent it), and a summary of its values at its endpoints.
-    DISPLAY(F) is called automatically when the semicolon is not used at the end
-    of a statement that results in a CHEBFUN.</pre></div><!--after help -->
+      <div class="helptext"><pre><!--helptext --> <span class="helptopic">disp</span>   Display a CHEBFUN object.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun/display">display</a>.
+</div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
       <table class="class-details">

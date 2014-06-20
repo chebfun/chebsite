@@ -34,8 +34,9 @@ arguments: "(rhs1)"
     DIM direction. If DIM = 1 is along the y-direction and DIM = 2 is along the
     x-direction.
  
-    This function is not considered highly accurate. Expect no more than five
-    or six digits of precision. For the global maximum use MAX2.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/min">min</a>, <a href="matlab:helpwin chebfun2/max2">max2</a>, <a href="matlab:helpwin chebfun2/min2">min2</a>, <a href="matlab:helpwin chebfun2/minandmax2">minandmax2</a>.
+    WARNING: This function is not always accurate to full machine precision. 
+  
+    For the global maximum use MAX2.</pre></div><!--after help --><!--seeAlso--><div class="footerlinktitle">See also</div><div class="footerlink"> <a href="matlab:helpwin chebfun2/min">min</a>, <a href="matlab:helpwin chebfun2/max2">max2</a>, <a href="matlab:helpwin chebfun2/min2">min2</a>, <a href="matlab:helpwin chebfun2/minandmax2">minandmax2</a>.
 </div>
       <!--Method-->
       <div class="sectiontitle">Method Details</div>
