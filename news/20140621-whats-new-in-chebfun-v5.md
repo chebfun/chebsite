@@ -2,14 +2,14 @@
 title: What's new in Chebfun Version 5
 layout: news-item
 snip:
-    Today we are very pleased to announce the release of Chebfun Version 5!
+    Today we are very pleased to announce the release of Chebfun Version 5.
     Chebfun Version 5 represents a complete rewrite of the Chebfun code and a
     transition from an svn repository at Oxford to a public repository and
     issue tracker at GitHub. We are a fully open source project. We invite all
     our users to learn more and get involved.
 ---
 
-Today we are very pleased to announce the release of Chebfun Version 5!
+Today we are very pleased to announce the release of Chebfun Version 5.
 
 ## What v5 represents
 
