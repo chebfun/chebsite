@@ -119,11 +119,11 @@ href="../news/20140621-whats-new-in-chebfun-v5.html">new features</a> and most
 importantly, a design more flexible for
 future extensions and enhancements.
 
-Chebfun Version 5 was released on June 21, 2014. This effort, led by Nick
-Hale, proved enormous! The web site has been completely redesigned (by
-Hrothgar). The software is now publicly hosted on GitHub with already a
-sizeable development history and a issue tracker for input from all interested
-parties. We welcome new users and developers from around the world.
+Chebfun Version 5 was released on June 21, 2014. The web site has been
+completely redesigned (by Hrothgar). The software is now publicly hosted on
+GitHub with already a sizeable development history and a issue tracker for
+input from all interested parties. We welcome new users and developers from
+around the world.
 
 For licensing and copyright purposes, we maintain a
 <a href="people.html">complete list of Chebfun contributors</a>.
