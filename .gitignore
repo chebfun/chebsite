@@ -2,19 +2,20 @@
 _build
 examples/*/img/*.html
 docs/guide/img/*.html
-docs/guide2/img/*.html
 docs/functions/*.html
-docs/functions-mjunk/*
 
 examples/approx/*.m
+examples/approx2/*.m
 examples/calc/*.m
+examples/cheb/*.m
 examples/complex/*.m
 examples/fun/*.m
 examples/geom/*.m
 examples/integro/*.m
 examples/linalg/*.m
-examples/ode/*.m
 examples/ode-eig/*.m
+examples/ode-linear/*.m
+examples/ode-nonlin/*.m
 examples/opt/*.m
 examples/pde/*.m
 examples/quad/*.m
