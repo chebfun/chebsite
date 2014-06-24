@@ -1,7 +1,7 @@
 <li>
 <div class='codewrap'><pre class='code'><span class='comment'>% Define two functions</span>
 f = chebfun(@(x) sin(x.^2)+sin(x).^2, [0,10]);
-g = chebfun(@(x) exp((5-x).^2/10), [0,10]);
+g = chebfun(@(x) exp(-(x-5).^2/10), [0,10]);
 <span class='comment'>% Compute their intersections</span>
 rr = roots(f - g);
 <span class='comment'>% Plot the functions</span>
