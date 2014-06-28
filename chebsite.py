@@ -163,11 +163,12 @@ class Chebsite:
             if not os.path.exists(thedir):
                 os.makedirs(thedir)
 
-            yaml = '---\ntitle: %s\nlayout: examples-category-index\n---\n' % categories[key]
-            thefile = 'index.md'
-            fh = open(os.path.join(thedir, thefile), 'w')
-            fh.write(yaml)
-            fh.close()
+            ### Uncomment these lines to regenerate the index.md files:
+            # yaml = '---\ntitle: %s\nlayout: examples-category-index\n---\n' % categories[key]
+            # thefile = 'index.md'
+            # fh = open(os.path.join(thedir, thefile), 'w')
+            # fh.write(yaml)
+            # fh.close()
 
     def load_nodes(self):
         """ Loads up self.nodes as a list of FileNodes, each representing a .md

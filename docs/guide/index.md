@@ -4,10 +4,12 @@ layout: guide-index
 key: guide-index
 ---
 
+<a href='chebfun_guide.pdf'><img src='chebguide.jpg' style='float:right; height:213px; width:163px; border:1px solid #333; margin: 0 0 0 2em;' /></a>
+
 To cite Chebfun in a publication, we recommend the following:
 
 <blockquote>
-T. A. Driscoll, N. Hale, and L. N. Trefethen, editors, Chebfun Guide, Pafnuty Publications, Oxford, 2014.
+T. A. Driscoll, N. Hale, and L. N. Trefethen, editors, <em>Chebfun Guide</em>, Pafnuty Publications, Oxford, 2014.
 </blockquote>
 
 A **[PDF of the Guide][pdflink]** is freely available. In addition, bound hardcopies of the
