@@ -17,7 +17,7 @@ Alternatively you can install Chebfun to your current directory by pasting the
 code below to your MATLAB command window:
 
     unzip('https://github.com/chebfun/chebfun/archive/master.zip')
-    addpath(fullfile(cd,'chebfun')), savepath
+    movefile('chebfun-master', 'chebfun'), addpath(fullfile(cd,'chebfun')), savepath
 
 If this is your first look at Chebfun, we suggest that you check out the
 [Chebfun Guide][guide] and then some of the many [Examples][examples].
