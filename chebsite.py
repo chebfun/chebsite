@@ -302,7 +302,7 @@ class Chebsite:
             dateobj = dateparser.parse(datestr, fuzzy=True)
             date    = dateobj.strftime("%e %B %Y")  # e.g. 21 June 2014
 
-            node.data.update({ 'date': date })
+            node.data.update({ 'date': date, 'datestr': datestr })
 
 
         #---------------------------------------------------------------------
@@ -361,6 +361,7 @@ class Chebsite:
         functions_class_names = sorted(functions_class_names)
 
         news_items = [x.get_data() for x in self.nodes if x.isa('news_item')]
+        news_items = sorted(news_items, key=lambda e: e['datestr'], reverse=True)
 
         self.data.update({'guidechaps':            guidechaps,
                           'examples_subindexes':   examples_subindexes,
