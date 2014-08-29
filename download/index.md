@@ -11,13 +11,22 @@ list][subscribelink].
 
 ## Direct download
 
-- **[Download Chebfun v5 (.zip)][github-zip]**
+- **[Download Chebfun v5.0.1 (.zip)][github-zip]**
 
 Alternatively you can install Chebfun to your current directory by pasting the
 code below to your MATLAB command window:
 
     unzip('https://github.com/chebfun/chebfun/archive/master.zip')
     movefile('chebfun-master', 'chebfun'), addpath(fullfile(cd,'chebfun')), savepath
+
+Note that the `savepath` command above will not work if you don't have write
+permissions to the MATLAB system file `pathdef.m`, which may be the case if,
+for example, you're working on a network computer at a university. Because
+MATLAB may be installed in different places on a given computer, there is no
+generic solution to the problem. To use Chebfun, its path must be added each
+time you start MATLAB; this can either be done manually, or it can be done
+automatically with a custom `startup.m` file that lives in the default MATLAB
+path. [Contact us](mailto:help@chebfun.org) if you have trouble installing.
 
 If this is your first look at Chebfun, we suggest that you check out the
 [Chebfun Guide][guide] and then some of the many [Examples][examples].

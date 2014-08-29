@@ -484,7 +484,8 @@ class FileNode:
             if not self.isa('index'):
                 self.keys = self.keys.union(['guidechap'])
 
-        if 'news' in self.pathlist:
+        # This is kind of hacky, but you know what?
+        if 'news' == ([''] + self.pathlist)[-2]:
             self.keys = self.keys.union('news')
             if not self.isa('index'):
                 self.keys = self.keys.union(['news_item'])
