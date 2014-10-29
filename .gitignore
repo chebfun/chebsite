@@ -22,6 +22,7 @@ examples/quad/*.m
 examples/roots/*.m
 examples/stats/*.m
 examples/veccalc/*.m
+examples/temp/*.m
 
 docs/guide/guide*.m
 
