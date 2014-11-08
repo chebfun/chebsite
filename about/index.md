@@ -52,3 +52,17 @@ looking at our [Examples](../examples).
     </div>
 
 </div>
+
+<div class="row">
+
+    <div class="col-sm-6 col-md-6">
+    <a href='projects.html' class='widget'>
+        <h3>Chebfun-related projects</h3>
+        <p>A list of projects related to or inspired by Chebfun, including implementations of parts of Chebfun in other languages.</p>
+    </a>
+    </div>
+
+    <div class="col-sm-6 col-md-6">
+    </div>
+
+</div>
