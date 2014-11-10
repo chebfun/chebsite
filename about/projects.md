@@ -16,22 +16,35 @@ should be added to this list.
   [https://github.com/dlfivefifty/ApproxFun.jl](https://github.com/dlfivefifty/ApproxFun.jl)
 
 
-+ **libchebfun**, an unmaintained project in C
-  by Pedro Gonnet (Durham) and Nick Hale (Stellenbosch).
-  <br/>
-  [https://github.com/nickhale/libchebfun](https://github.com/nickhale/libchebfun)
-
-
 + **pychebfun**, a project in Python
   started by Christopher Swierczewski (Washington) and currently maintained by Olivier Verdier (Ume&aring;).
   <br/>
   [https://github.com/olivierverdier/pychebfun](https://github.com/olivierverdier/pychebfun)
 
 
++ **CHEBINT**, a MATLAB/Octave toolbox
+  by Koen Poppe (KU Leuven)
+  <br/>
+  [http://nines.cs.kuleuven.be/software/CHEBINT/](http://nines.cs.kuleuven.be/software/CHEBINT/)
+
+
++ **PaCAL**, a package for probabilistic calculation in Python
+  by Szymon Jaroszewicz (Polish Academy of Sciences) and Marcin Korzen (West Pomeranian U. of Technology)
+  <br/>
+  [http://pacal.sourceforge.net/](http://pacal.sourceforge.net/)
+
+
 + **Chebfun-like facilities in LISP**, an implementation using a computer algebra system
   by Richard J. Fateman (Berkeley).
   <br/>
   [http://www.cs.berkeley.edu/~fateman/papers/cheby.pdf](http://www.cs.berkeley.edu/~fateman/papers/cheby.pdf)
+
+
++ **libchebfun**, an unmaintained project in C
+  by Pedro Gonnet (Durham) and Nick Hale (Stellenbosch).
+  <br/>
+  [https://github.com/nickhale/libchebfun](https://github.com/nickhale/libchebfun)
+
 
 <!-- 
 Please also read the following page:
