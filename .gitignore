@@ -4,6 +4,7 @@ examples/*/img/*.html
 docs/guide/img/*.html
 docs/functions/*.html
 
+examples/applics/*.m
 examples/approx/*.m
 examples/approx2/*.m
 examples/calc/*.m

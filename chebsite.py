@@ -136,6 +136,7 @@ class Chebsite:
 
     def create_examples_indexes(self):
         categories = {
+            'applics':      'Applications',
             'approx':       'Approximation (1D)',
             'approx2':      'Approximation (2D)',
             'calc':         'Calculus',
