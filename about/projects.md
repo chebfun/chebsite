@@ -22,6 +22,12 @@ should be added to this list.
   [https://github.com/olivierverdier/pychebfun](https://github.com/olivierverdier/pychebfun)
 
 
++ **Fourfun**, a MATLAB package by Kristyn McLeod (ASU)
+  for computation with periodic functions.
+  <br/>
+  [http://uk.mathworks.com/matlabcentral/fileexchange/46999-fourfun](http://uk.mathworks.com/matlabcentral/fileexchange/46999-fourfun)
+
+
 + **CHEBINT**, a MATLAB/Octave toolbox
   by Koen Poppe (KU Leuven)
   <br/>
