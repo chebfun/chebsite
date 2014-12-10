@@ -29,7 +29,7 @@ should be added to this list.
 
 
 + **CHEBINT**, a MATLAB/Octave toolbox
-  by Koen Poppe (KU Leuven)
+  by Ronald Cools and Koen Poppe (KU Leuven)
   <br/>
   [http://nines.cs.kuleuven.be/software/CHEBINT/](http://nines.cs.kuleuven.be/software/CHEBINT/)
 
