@@ -39,6 +39,10 @@ should be added to this list.
   <br/>
   [http://pacal.sourceforge.net/](http://pacal.sourceforge.net/)
 
++ **sincfun**, a sinc function analogue of Chebfun
+  by Mark Richardson (Oxford)
+  <br/>
+  [https://github.com/markrichardson/sincfun](https://github.com/markrichardson/sincfun)
 
 + **Chebfun-like facilities in LISP**, an implementation using a computer algebra system
   by Richard J. Fateman (Berkeley).
