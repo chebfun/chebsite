@@ -22,7 +22,7 @@ class Chebsite:
         self.base_url         = base_url
 
         # This will be the `site` variable
-        self.data         = Struct(**{
+        self.data = Struct(**{
             'base_url': base_url,
             'timestamp': datetime.datetime.now().strftime("%A, %d %B %Y at %H:%M"),
             })
