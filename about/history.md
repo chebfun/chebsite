@@ -125,5 +125,7 @@ GitHub with already a sizeable development history and a issue tracker for
 input from all interested parties. We welcome new users and developers from
 around the world.
 
+Version 5.1 was released on December 12, 2014.
+
 For licensing and copyright purposes, we maintain a
 <a href="people.html">complete list of Chebfun contributors</a>.
