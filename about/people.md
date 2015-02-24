@@ -6,6 +6,17 @@ layout: basic
 <div class="row chebpeople">
 
     <div class="col-xs-6 col-sm-3">
+    <img class="thumbnail profile" src="images/ja.jpg" />
+    <h3>Jared Aurentz</h3>
+    Jared Aurentz did a PhD with David Watkins at Washington State University
+    on matrix eigenvalue problems associated with polynomial rootfinding,
+    collaborating also with colleagues at KU Leuven. He arrived as a postdoc
+    at Oxford in 2014 and is working on continuous analogues of Krylov
+    iterations: methods like CG, Arnoldi, and GMRES for operators instead of
+    matrices.
+    </div>
+
+    <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/apa.png" />
     <h3>Anthony Austin</h3>
     Anthony Austin started as a DPhil student at Oxford in 2012. He
@@ -33,6 +44,9 @@ layout: basic
     also wrote Chebgui.
     </div>
 
+</div>
+<div class="row chebpeople">
+
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/tad.jpg" />
     <h3>Toby Driscoll</h3>
@@ -44,9 +58,6 @@ layout: basic
     led Chebfun's movement to more advanced linear and nonlinear block
     structures.
     </div>
-
-</div>
-<div class="row chebpeople">
 
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/pg.png" />
@@ -78,6 +89,18 @@ layout: basic
     2014 and managed the creation of Chebfun version 5.
     </div>
 
+</div>
+<div class="row chebpeople">
+
+    <div class="col-xs-6 col-sm-3">
+    <img class="thumbnail profile" src="images/bh.jpeg" />
+    <h3>Behnam Hashemi</h3>
+    Behnam Hashemi, from Shiraz in Iran, joined the Chebfun team as a postdoc
+    in 2014, with background especially in numerical linear algebra, fuzzy
+    systems, and interval arithmetic.  Behnam is exploring Chebfun extensions
+    to 3D.
+    </div>
+
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/h.png" />
     <h3>Hrothgar</h3>
@@ -85,9 +108,6 @@ layout: basic
     Chebfun web site introduced in 2014.  He is working on algorithms related
     to block operators, adjoints, and optimization.
     </div>
-
-</div>
-<div class="row chebpeople">
 
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/mj.jpeg" />
@@ -104,6 +124,9 @@ layout: basic
     was a postdoc at Oxford during 2012 and 2013. He introduced the
     <code>'equi'</code> operation in the Chebfun constructor.
     </div>
+
+</div>
+<div class="row chebpeople">
 
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/hm.png" />
@@ -123,9 +146,6 @@ layout: basic
     <code>chebpade</code>, and <code>lebesgue</code>.
     </div>
 
-</div>
-<div class="row chebpeople">
-
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/rpl.png" />
     <h3>Rodrigo Platte</h3>
@@ -143,6 +163,9 @@ layout: basic
     2013. Mark introduced <code>blowup on</code> and other features to enable
     Chebfun to treat poles and other singularities.
     </div>
+
+</div>
+<div class="row chebpeople">
 
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/at.png" />
@@ -165,9 +188,6 @@ layout: basic
     Approximation Practice</em>. He also invented <code>scribble</code>.
     </div>
 
-</div>
-<div class="row chebpeople">
-
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/gw.png" />
     <h3>Grady Wright</h3>
@@ -185,10 +205,12 @@ layout: basic
     he wrote the Chebfun v5 code for handling unbounded intervals.
     </div>
 
+</div><!-- <div class="row chebpeople">
     <div class="col-xs-6 col-sm-3"></div>
     <div class="col-xs-6 col-sm-3"></div>
-
-</div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+</div> -->
 
 + **Jean-Paul Berrut**, a professor at the University of Fribourg, has been a
   tireless advocate of the power of barycentric formulas for polynomial
@@ -208,6 +230,12 @@ layout: basic
 + **Sheehan Olver**, now at the University of Sydney, was a Junior Research
   Fellow at Oxford from 2007 to 2011.  He and Alex Townsend created the
   ultrapherical spectral methods for ODEs introduced in Chebfun version 5.
+
++ **Richard Mikael Slevinsky**, From Alberta in Canada, Mikael joined us via
+  eight months at the University of Sydney to spend two years at Oxford funded
+  by Canada's NSERC. He is interested in quadrature, ultraspherical spectral
+  methods, and singular integral equations, and is also our link to the
+  ApproxFun project.
 
 + **Joris Van Deun** spent three months with the Chebfun team in 2010. He
   wrote the code `cf` for Caratheodory-Fejer approximation.
