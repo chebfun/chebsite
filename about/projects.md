@@ -51,7 +51,7 @@ should be added to this list.
 
 
 + **libchebfun**, an unmaintained project in C
-  by Pedro Gonnet (Durham) and Nick Hale (Stellenbosch).
+  by Pedro Gonnet (Google) and Nick Hale (Stellenbosch).
   <br/>
   [https://github.com/nickhale/libchebfun](https://github.com/nickhale/libchebfun)
 

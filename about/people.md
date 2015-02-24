@@ -231,7 +231,7 @@ layout: basic
   Fellow at Oxford from 2007 to 2011.  He and Alex Townsend created the
   ultrapherical spectral methods for ODEs introduced in Chebfun version 5.
 
-+ **Richard Mikael Slevinsky**, From Alberta in Canada, Mikael joined us via
++ **Richard Mikael Slevinsky**, from Alberta in Canada, Mikael joined us via
   eight months at the University of Sydney to spend two years at Oxford funded
   by Canada's NSERC. He is interested in quadrature, ultraspherical spectral
   methods, and singular integral equations, and is also our link to the
