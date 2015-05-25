@@ -1,5 +1,5 @@
 ---
-title: "Chebfun minisymposia at upcoming conferences"
+title: "Chebfun minisymposia at Strathclyde and ICIAM"
 layout: news-item
 snip:
     There will be Chebfun minisymposia at the upcoming Biennial Numerical
