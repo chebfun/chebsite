@@ -3,15 +3,15 @@ function make_example(folder, examplename, varargin)
 %   MAKE_EXAMPLE(FOLDER, NAME) publishes the example FOLDER/NAME.
 %   For instance,
 %       >> make_example('linalg', 'NonnormalQuiz');
-
-% TODO: make this robust to other people's machines
-%       and figure out the process for updating existing examples.
+%
+%   This function works as part of the Chebfun website suite, and
+%   it assumes that directory structure.
 
 if exist(folder) ~= 7
     mkdir(folder)
 end
 
-pathpath = '/Users/hrothgar/chebfun/examples/';
+pathpath = '../../examples/';
 egname = [folder '/' examplename '.m'];
 copyfile([pathpath egname], egname);
 

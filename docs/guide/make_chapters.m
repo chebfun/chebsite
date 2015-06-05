@@ -4,10 +4,11 @@ function make_chapters(N)
 %   by the vector N.
 %
 %   Example:   >> make_chapters([1 2 3])
+%
+%   This function works as part of the Chebfun website suite, and
+%   it assumes that directory structure.
 
-% TODO: make this robust to other people's machines
-%       and figure out the process for updating existing examples.
-pathpath = '/Users/hrothgar/chebfun/guide/';
+pathpath = '../../guide/';
 slug     = 'guide';
 
 % Make each chapter the user has requested
