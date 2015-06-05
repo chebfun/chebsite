@@ -11,7 +11,7 @@ list][subscribelink].
 
 ## Direct download
 
-- **[Download Chebfun v5.1 (.zip)][github-zip]**
+- **[Download Chebfun v5.2.0 (.zip)][github-zip]**
 
 Alternatively you can install Chebfun to your current directory by pasting the
 code below to your MATLAB command window:
