@@ -8,7 +8,7 @@ function make_chapters(N)
 %   This function works as part of the Chebfun website suite, and
 %   it assumes that directory structure.
 
-pathpath = '../../guide/';
+pathpath = '../../../guide/';
 slug     = 'guide';
 
 % Make each chapter the user has requested
