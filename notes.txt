@@ -10,9 +10,6 @@ content is regenerated, we will know where to reintervene.
                 in the HTML.
 
 
-
-
-
 -------------------------------------------------------
 
 TO DO:
@@ -74,6 +71,7 @@ find . -name "*.md" -type f -delete
 
 /Applications/MATLAB_R2013a.app/toolbox/matlab/codetools/private/mxdom2simplehtml.xsl
 /Applications/MATLAB_R2013a.app/toolbox/matlab/codetools/+internal/+matlab/+publish/chebexample_PublishFigures.m
+/Applications/MATLAB_R2014b.app/toolbox/matlab/codetools/publish.m
 
 is both a directory and a function
 
@@ -84,7 +82,3 @@ We can hope that no one ever finds out, but:
 1. If you have an ordered list in an example AND no references section, the
    numbering on the ordered list will have brackets like the references
    should.
-
-2. A figure with multiple subpots, one of which has a surface or patch
-   element, but which one is not the last subplot plotted, will render
-   incorrectly (i.e. it will use Painters instead of openGL).
