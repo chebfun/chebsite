@@ -82,7 +82,7 @@ class Chebsite:
             to the build directory.
         """
         # What not to copy to _build directory.
-        ignore_patterns = re.compile('\.+|.+\.pyc?|.+_eq.+\.png')
+        ignore_patterns = re.compile('\.+|.+\.pyc?|.+\.pl|.+_eq.+\.png')
         ignore_dirs     = ['_build', '_templates', '.git']
 
         # Walk through the directory and copy appropriate files.
