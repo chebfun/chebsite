@@ -7,7 +7,7 @@ function make_example(folder, examplename, varargin)
 %   This function works as part of the Chebfun website suite, and
 %   it assumes that directory structure.
 
-if exist(folder) ~= 7
+if exist(folder, 'dir') ~= 7
     mkdir(folder)
 end
 
