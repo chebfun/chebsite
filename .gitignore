@@ -10,6 +10,7 @@ examples/approx2/*.m
 examples/calc/*.m
 examples/cheb/*.m
 examples/complex/*.m
+examples/fourier/*.m
 examples/fun/*.m
 examples/geom/*.m
 examples/integro/*.m
