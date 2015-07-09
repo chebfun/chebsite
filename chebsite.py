@@ -143,6 +143,7 @@ class Chebsite:
             'cheb':         'Chebyshev expansions',
             'complex':      'Complex variables',
             'fun':          'Fun stuff',
+            'fourier':      'Fourier analysis',
             'geom':         'Geometry',
             'integro':      'Integral equations',
             'linalg':       'Linear algebra',
