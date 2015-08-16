@@ -55,6 +55,12 @@ should be added to this list.
   <br/>
   [https://github.com/nickhale/libchebfun](https://github.com/nickhale/libchebfun)
 
++ **rktoolbox**, the Rational Krylov Toolbox for MATLAB
+  by Stefan Guettel (Manchester)
+  <br/>
+  [http://www.guettel.com/rktoolbox](http://www.guettel.com/rktoolbox)
+
+
 
 <!-- 
 Please also read the following page:
