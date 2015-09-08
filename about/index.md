@@ -13,7 +13,7 @@ foundations are described, with Chebfun examples, in _[Approximation Theory and
 Approximation Practice](../ATAP/)_. Chebfun has extensive capabilities for dealing with
 linear and nonlinear differential and integral operators, and it also includes
 continuous analogues of linear algebra notions like QR and singular value
-decomposition. The [Chebfun2](../docs/guide/guide11.html) extension works with
+decomposition. The [Chebfun2](../docs/guide/guide12.html) extension works with
 functions of two variables defined on a rectangle in the $x$-$y$ plane. To get
 a sense of the breadth and power of Chebfun, a great place to start is by
 looking at our [Examples](../examples).
