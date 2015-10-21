@@ -1,6 +1,6 @@
 ---
 title: Download
-layout: basic
+layout: download
 ---
 
 Chebfun is compatible with MATLAB 7.8 (R2009a) or later, and is freely
@@ -11,7 +11,9 @@ list][subscribelink].
 
 ## Direct download
 
-- **[Download Chebfun v5.2.1 (.zip)][github-zip]**
+<ul>
+    <li><strong><a href="https://github.com/chebfun/chebfun/archive/master.zip" id="download">Download Chebfun v5.2.1 (.zip)</a></strong></li>
+</ul>
 
 Alternatively you can install Chebfun to your current directory by pasting the
 code below to your MATLAB command window:
@@ -60,7 +62,6 @@ prefer to clone the Chebfun repository from Github. If you don't have Git,
 
 [license]: https://raw.githubusercontent.com/chebfun/chebfun/master/LICENSE.txt
 [chebfun-github]: https://github.com/chebfun/chebfun
-[github-zip]: https://github.com/chebfun/chebfun/archive/master.zip
 [guide]: ../docs/guide/
 [examples]: ../examples/
 [function-reference]: ../docs/functions/

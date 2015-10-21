@@ -1,0 +1,7 @@
+{% extends "basic.html" %}
+
+{% block page_specific_js %}
+    <script>
+        $("#download").click(function () { ga('send', 'event', 'Download', 'clicked'); });
+    </script>
+{% endblock %}
