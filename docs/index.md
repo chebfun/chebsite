@@ -48,7 +48,7 @@ tagline:
     <div class="col-sm-6 col-md-6">
     <a href='videos' class='widget'>
         <h3>Videos</h3>
-        <p>A growing collection of bite-size instructional videos
+        <p>Bite-sized instructional videos
         exploring various uses and capabilities of Chebfun.</p>
     </a>
     </div>
