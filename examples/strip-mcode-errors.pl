@@ -35,6 +35,10 @@ while ($raw_doc =~ s/(<http:\/\/[^>]*>)/[[URL:$i]]/s) {
 	$URLs[$i++] = $1;
 }
 
+# Insert placeholders for ampersands so that the libXML parser doesn't choke on
+# them as invalid HTML entities.
+$raw_doc =~ s/\&/[[AMP]]/sg;
+
 # Parse the "HTML".
 my $parser = XML::LibXML->new();
 my $doc = $parser->parse_html_string($raw_doc);
@@ -62,15 +66,16 @@ while (defined($n)) {
 	$n = $n->nextSibling();
 }
 
-# Write the fixed document back out, replacing URLs as we go.  We loop through
-# the children of <body> instead of just doing $doc->toString() because we
-# don't want the <html> and <body> tags themselves to show up.
+# Write the fixed document back out, replacing URLs and ampersands as we go.
+# We loop through the children of <body> instead of just doing $doc->toString()
+# because we don't want the <html> and <body> tags themselves to show up.
 open (my $fout, ">", $file)
 	or die("Could not open $file:  $!");
 
 for ($n = $bodyTag->firstChild(); $n; $n = $n->nextSibling()) {
 	my $nextChunk = $n->toString();
 	$nextChunk =~ s/\[\[URL:([0-9]+)\]\]/$URLs[$1]/gs;
+	$nextChunk =~ s/\[\[AMP\]\]/&/gs;
 	print $fout $nextChunk;
 }
 
