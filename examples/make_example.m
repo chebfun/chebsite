@@ -83,14 +83,15 @@ chebfunpref.setDefaults('factory'), cheboppref.setDefaults('factory')
 
 % The Example Formats. This is not a separate file because this script shifts
 % directories, and we don't want a copy of the file in each category directory.
-set(0, 'defaultfigureposition', [0 0 600 270]);
-set(0, 'defaultaxeslinewidth',  0.5);
-set(0, 'defaultaxesfontsize',   13);
-set(0, 'defaultlinelinewidth',  1.6);
-set(0, 'defaultpatchlinewidth', 1.6);
-set(0, 'defaultlinemarkersize', 8);
-set(0, 'defaultfigurecolor',    'none');
-set(0, 'defaultaxescolor',      'none');
+set(0, 'defaultfigureposition',      [0 0 600 270]);
+set(0, 'defaultaxeslinewidth',       0.5);
+set(0, 'defaultaxesfontsize',        10);
+set(0, 'defaultaxestitlefontweight', 'normal');
+set(0, 'defaultlinelinewidth',       1.6);
+set(0, 'defaultpatchlinewidth',      1.6);
+set(0, 'defaultlinemarkersize',      8);
+set(0, 'defaultfigurecolor',         'none');
+set(0, 'defaultaxescolor',           'none');
 
 format compact
 format long
@@ -100,14 +101,15 @@ warning('off', 'MATLAB:gui:latexsup:UnsupportedFont');
 % chebexample_publish(varargin{:});
 publish(varargin{:});
 
-set(0, 'defaultfigureposition', 'factory');
-set(0, 'defaultaxeslinewidth',  'factory');
-set(0, 'defaultaxesfontsize',   'factory');
-set(0, 'defaultlinelinewidth',  'factory');
-set(0, 'defaultpatchlinewidth', 'factory');
-set(0, 'defaultlinemarkersize', 'factory');
-set(0, 'defaultfigurecolor',    'w');
-set(0, 'defaultaxescolor',      'factory');
+set(0, 'defaultfigureposition',      'factory');
+set(0, 'defaultaxeslinewidth',       'factory');
+set(0, 'defaultaxesfontsize',        'factory');
+set(0, 'defaultaxestitlefontweight', 'factory');
+set(0, 'defaultlinelinewidth',       'factory');
+set(0, 'defaultpatchlinewidth',      'factory');
+set(0, 'defaultlinemarkersize',      'factory');
+set(0, 'defaultfigurecolor',         'w');
+set(0, 'defaultaxescolor',           'factory');
 
 chebfunpref.setDefaults('factory'), cheboppref.setDefaults('factory')
 close all
