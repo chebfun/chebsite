@@ -7,7 +7,7 @@ Chebfun is compatible with MATLAB 7.8 (R2009a) or later, and is freely
 available subject to [our license][license]. Chebfun's code is open source and
 [available on Github][chebfun-github]. To keep track of news about major
 releases, events, and other Chebfun-related, [subscribe to our mailing
-list][subscribelink].
+list](../support/subscribe.html).
 
 ## Direct download
 
@@ -67,4 +67,3 @@ prefer to clone the Chebfun repository from Github. If you don't have Git,
 [function-reference]: ../docs/functions/
 [mailto]: mailto:help@chebfun.org
 [git]: http://git-scm.com/
-[subscribelink]: https://groups.google.com/forum/#!forum/chebfun-announce/join
