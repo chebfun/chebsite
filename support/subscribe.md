@@ -17,7 +17,7 @@ little more effort.  As of December 2015, you can do it like this:
 2. Respond to the confirmation e-mail you then receive with a further blank
 message.
 
-Thanks from the Chebfun team, and gemember that you can always contact us with
+Thanks from the Chebfun team, and remember that you can always contact us with
 questions or suggestions at [help@chebfun.org][help].
 
 
