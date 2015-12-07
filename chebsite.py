@@ -68,6 +68,7 @@ class Chebsite:
         self.crunch_page_vars()          # Tags and author/date info, etc.
         self.crunch_site_vars()          # Guide chapters list, etc.
         self.write_examples_inventory()  # This is needed for nightly testing.
+        self.write_guide_inventory()     # So is this.
 
         #---- iii.
         # Convert .md -> .html and do all templating via jinja2.
@@ -386,6 +387,14 @@ class Chebsite:
         text = '\n'.join(e.data.example_id + '.m' for e in examples)
 
         fh = open('examples/inventory.txt', 'w')
+        fh.write(text)
+        fh.close()
+
+    def write_guide_inventory(self):
+        chaps = [x for x in self.nodes if x.isa('guidechap')]
+        text = '\n'.join('guide' + c.data.chapter_number.zfill(2) + '.m' for c in chaps)
+
+        fh = open('docs/guide/inventory.txt', 'w')
         fh.write(text)
         fh.close()
 
