@@ -17,7 +17,7 @@ should be added to this list.
 
 
 + **pychebfun**, a project in Python
-  started by Christopher Swierczewski (Washington) and currently maintained by Olivier Verdier (Ume&aring;).
+  started by Christopher Swierczewski (Washington) and currently maintained by Olivier Verdier (Bergen).
   <br/>
   [https://github.com/olivierverdier/pychebfun](https://github.com/olivierverdier/pychebfun)
 
