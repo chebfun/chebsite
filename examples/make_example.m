@@ -85,7 +85,14 @@ chebfunpref.setDefaults('factory'), cheboppref.setDefaults('factory')
 % directories, and we don't want a copy of the file in each category directory.
 set(0, 'defaultfigureposition',      [0 0 600 270]);
 set(0, 'defaultaxeslinewidth',       0.5);
-set(0, 'defaultaxesfontsize',        10);
+if ( ~verLessThan('matlab', '8.6') )
+    % Specify font size in pixels on MATLAB R2015b and later to (hopefully)
+    % obtain display-independent results now that MATLAB is "DPI-aware".
+    set(0, 'defaultaxesfontunits',       'pixels');
+    set(0, 'defaultaxesfontsize',        13.3333);
+else
+    set(0, 'defaultaxesfontsize',        10);
+end
 set(0, 'defaultaxestitlefontweight', 'normal');
 set(0, 'defaultlinelinewidth',       1.6);
 set(0, 'defaultpatchlinewidth',      1.6);
@@ -103,6 +110,9 @@ publish(varargin{:});
 
 set(0, 'defaultfigureposition',      'factory');
 set(0, 'defaultaxeslinewidth',       'factory');
+if ( ~verLessThan('matlab', '8.6') )
+    set(0, 'defaultaxesfontunits',       'factory');
+end
 set(0, 'defaultaxesfontsize',        'factory');
 set(0, 'defaultaxestitlefontweight', 'factory');
 set(0, 'defaultlinelinewidth',       'factory');
