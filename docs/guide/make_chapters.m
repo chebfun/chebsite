@@ -50,10 +50,12 @@ function mypublish(varargin)
 
 close all
 evalin('base','clear all');
+addpath('../../mlib');
 guideFormats;
 % chebexample_publish(varargin{:});
 publish(varargin{:});
 guideFormats('factory');
+rmpath('../../mlib');
 close all
 
 return

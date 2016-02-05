@@ -81,6 +81,10 @@ close all
 evalin('base','clear all');
 chebfunpref.setDefaults('factory'), cheboppref.setDefaults('factory')
 
+% Extra M-files that we need for building the examples (some of which override
+% MATLAB built-ins).
+addpath('../../mlib');
+
 % The Example Formats. This is not a separate file because this script shifts
 % directories, and we don't want a copy of the file in each category directory.
 set(0, 'defaultfigureposition',      [0 0 600 270]);
@@ -125,6 +129,8 @@ set(0, 'defaultpatchlinewidth',      'factory');
 set(0, 'defaultlinemarkersize',      'factory');
 set(0, 'defaultfigurecolor',         'w');
 set(0, 'defaultaxescolor',           'factory');
+
+rmpath('../../mlib');
 
 chebfunpref.setDefaults('factory'), cheboppref.setDefaults('factory')
 close all
