@@ -90,8 +90,11 @@ if ( ~verLessThan('matlab', '8.6') )
     % obtain display-independent results now that MATLAB is "DPI-aware".
     set(0, 'defaultaxesfontunits',       'pixels');
     set(0, 'defaultaxesfontsize',        13.3333);
+    set(0, 'defaulttextfontunits',       'pixels');
+    set(0, 'defaulttextfontsize',        13.3333);
 else
     set(0, 'defaultaxesfontsize',        10);
+    set(0, 'defaulttextfontsize',        10);
 end
 set(0, 'defaultaxestitlefontweight', 'normal');
 set(0, 'defaultlinelinewidth',       1.6);
@@ -112,8 +115,10 @@ set(0, 'defaultfigureposition',      'factory');
 set(0, 'defaultaxeslinewidth',       'factory');
 if ( ~verLessThan('matlab', '8.6') )
     set(0, 'defaultaxesfontunits',       'factory');
+    set(0, 'defaulttextfontunits',       'factory');
 end
 set(0, 'defaultaxesfontsize',        'factory');
+set(0, 'defaulttextfontsize',        'factory');
 set(0, 'defaultaxestitlefontweight', 'factory');
 set(0, 'defaultlinelinewidth',       'factory');
 set(0, 'defaultpatchlinewidth',      'factory');
