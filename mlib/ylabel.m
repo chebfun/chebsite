@@ -4,6 +4,13 @@ function varargout = ylabel(varargin)
 %   This function is meant to be called only when running
 %   examples/make_example.m or docs/guide/make_chapters.m and not otherwise.
 
+if ( isa(varargin{1}, 'matlab.graphics.axis.Axes') )
+	axes = varargin{1};
+	varargin = varargin(2:end);
+else
+	axes = gca();
+end
+
 str = varargin{1};
 props = varargin(2:end);
 axes = gca();
