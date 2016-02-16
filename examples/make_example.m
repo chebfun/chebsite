@@ -104,7 +104,7 @@ set(0, 'defaultaxestitlefontweight', 'normal');
 set(0, 'defaultlinelinewidth',       1.6);
 set(0, 'defaultpatchlinewidth',      1.6);
 set(0, 'defaultlinemarkersize',      8);
-set(0, 'defaultfigurecolor',         'none');
+set(0, 'defaultfigurecolor',        'w');
 set(0, 'defaultaxescolor',           'none');
 
 format compact
@@ -127,7 +127,7 @@ set(0, 'defaultaxestitlefontweight', 'factory');
 set(0, 'defaultlinelinewidth',       'factory');
 set(0, 'defaultpatchlinewidth',      'factory');
 set(0, 'defaultlinemarkersize',      'factory');
-set(0, 'defaultfigurecolor',         'w');
+set(0, 'defaultfigurecolor',         'factory');
 set(0, 'defaultaxescolor',           'factory');
 
 rmpath('../../mlib');
