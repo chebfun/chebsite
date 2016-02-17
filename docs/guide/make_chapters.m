@@ -34,28 +34,12 @@ for n = N(:)'
     opts.stylesheet = fullfile(pwd, 'custom_guide2md.xsl');
 
     % Publish the chapter.
-    mypublish(chapname, opts);
+    addpath('../../mlib');
+    webPublish(chapname, opts);
+    rmpath('../../mlib');
 
     % Let the user know we're done.
     fprintf(1, 'Done.\n')
 end
 
-return
-
-
-%-----------------------------------------------------------------------------
-function mypublish(varargin)
-%MYPUBLISH   Publish a Chebfun example from a safe clean workspace.
-%   Credit to nick Hale for this.
-
-close all
-evalin('base','clear all');
-addpath('../../mlib');
-guideFormats;
-% chebexample_publish(varargin{:});
-publish(varargin{:});
-guideFormats('factory');
-rmpath('../../mlib');
-close all
-
-return
+end
