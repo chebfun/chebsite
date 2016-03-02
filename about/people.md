@@ -220,6 +220,10 @@ layout: basic
   proposed the lazy evaluation idea that enabled Chebfun to represent linear
   operators and thereby solve ODEs.
 
++ **Louren&ccedil;o Peixoto**, a student in Minas Gerais in Brazil, contributed
+  `ultrapts` and improvements to `jacpts` and other codes related to
+  orthogonal polynomials.
+
 + **Yuji Nakatsukasa**, now at the University of Tokyo, worked with Vanni
   Noferini and Alex Townsend on the fast rootfinding algorithms for Chebfun2.
 
