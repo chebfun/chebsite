@@ -65,5 +65,11 @@ tagline:
     </div>
 
     <div class="col-sm-6 col-md-6">
+    <a href='http://tobydriscoll.net/newdirections2015/' class='widget'>
+        <h3>Conference</h3>
+        <p>Trefethen's 60th birthday conference was held in Oxford in August,
+        2015, with many Chebfun contributors and users among the participants.
+        </p>
+    </a>
     </div>
 </div>
