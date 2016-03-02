@@ -220,10 +220,6 @@ layout: basic
   proposed the lazy evaluation idea that enabled Chebfun to represent linear
   operators and thereby solve ODEs.
 
-+ **Louren&ccedil;o Peixoto**, a student in Minas Gerais in Brazil, contributed
-  `ultrapts` and improvements to `jacpts` and other codes related to
-  orthogonal polynomials.
-
 + **Yuji Nakatsukasa**, now at the University of Tokyo, worked with Vanni
   Noferini and Alex Townsend on the fast rootfinding algorithms for Chebfun2.
 
@@ -234,6 +230,10 @@ layout: basic
 + **Sheehan Olver**, now at the University of Sydney, was a Junior Research
   Fellow at Oxford from 2007 to 2011.  He and Alex Townsend created the
   ultrapherical spectral methods for ODEs introduced in Chebfun version 5.
+
++ **Louren&ccedil;o Peixoto**, a student in Minas Gerais in Brazil, contributed
+  `ultrapts` and improvements to `jacpts` and other codes related to
+  orthogonal polynomials.
 
 + **Richard Mikael Slevinsky**, from Alberta in Canada, Mikael joined us via
   eight months at the University of Sydney to spend two years at Oxford funded
