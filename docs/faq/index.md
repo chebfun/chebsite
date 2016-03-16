@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 layout: basic
 ---
 
-If you have a Chebfun-related question that doesn't appear on this list, please ask us at <a href="mailto:help@chebfun.org">help@chebfun.org</a>.
+If you have a Chebfun-related question that doesn't appear on this list, please check out the Chebfun users group <a href="http://groups.google.com/forum/#!forum/chebfun-users">chebfun-users</a>.
 
 ----
 

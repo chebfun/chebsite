@@ -3,6 +3,10 @@ title: Support
 layout: basic
 ---
 
+## Chebfun users group
+
+The first place for help and to ask questions is the Chebfun users group <a href="http://groups.google.com/forum/#!forum/chebfun-users">chebfun-users</a>.
+
 ## Feedback
 
 We're eager to hear what you think about Chebfun. Contact us at
