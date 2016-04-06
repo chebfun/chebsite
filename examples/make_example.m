@@ -51,7 +51,9 @@ cd(folder)
 try
     % Publish the example.
     addpath('../../mlib');
+    addpath(['../' pathpath folder]);
     webPublish(examplename, opts);
+    rmpath(['../' pathpath folder]);
     rmpath('../../mlib');
 
     % Strip any MATLAB error messages from the output.
