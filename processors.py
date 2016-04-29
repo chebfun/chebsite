@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from io import open
 from textwrap import dedent
+import chebsitemd
 import os, yaml, jinja2, markdown, re
 
 #-----------------------------------------------------------------------------
@@ -89,7 +90,9 @@ class ContentProcessor:
         # extensions        = ['extra', 'codehilite', 'headerid', 'toc']
         # extension_configs = { 'codehilite': [('guess_lang', 'False'), ('linenums', 'False')],
         #                       'headerid':   [('level', 2)] }
-        extensions        = ['extra', 'headerid', 'toc']
+
+	chebmdext         = chebsitemd.ChebsiteExtension()
+        extensions        = ['extra', 'headerid', 'toc', chebmdext]
         extension_configs = { 'headerid':   [('level', 2)] }
         self.md  = markdown.Markdown(extensions=extensions,
                                      extension_configs=extension_configs)
