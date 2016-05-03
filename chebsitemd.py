@@ -19,7 +19,7 @@ from markdown.inlinepatterns import SimpleTagPattern
 
 # This is a modified version of the EMPHASIS_2_RE regex in the
 # inlinepatterns.py module that ships as part of Python-Markdown.
-EMPHASIS_2_RE = r'(?<=[\s(])(_)(?!_)(.+?)(?<!_)\2(?=[\s,.:;!?)])'
+EMPHASIS_2_RE = r'(?<![\w)}])(_)(?!_)(.+?)(?<!_)\2(?![\w({])'
 
 class ChebsiteExtension(Extension):
     """ Extensions to Markdown for the Chebfun website. """
