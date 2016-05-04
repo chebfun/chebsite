@@ -13,7 +13,7 @@ found in the release announcements on the [news page](../news/index.html).
 ## Direct download
 
 <ul>
-    <li><strong><a href="https://github.com/chebfun/chebfun/archive/master.zip" id="download">Download Chebfun v5.3.0 (.zip)</a></strong></li>
+    <li><strong><a href="https://github.com/chebfun/chebfun/archive/master.zip" id="download">Download Chebfun v5.4.0 (.zip)</a></strong></li>
 </ul>
 
 Alternatively you can install Chebfun to your current directory by pasting the
