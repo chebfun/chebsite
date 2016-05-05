@@ -56,9 +56,6 @@ try
     rmpath(['../' pathpath folder]);
     rmpath('../../mlib');
 
-    % Strip any MATLAB error messages from the output.
-    system(['../strip-mcode-errors.pl img/' examplename '.' opts.format]);
-
     cd('..')
 
     % Let the user know we're done.
