@@ -23,7 +23,7 @@ looking at our [Examples](../examples).
     <a href='history.html' class='widget'>
         <h3>History</h3>
         <p>Chebfun was invented in 2002 as part of Zachary Battles' DPhil thesis
-        and has since grown into a much larger project.</p>
+        and has grown into a large open-source project hosted on GitHub.</p>
     </a>
     </div>
 
