@@ -43,7 +43,7 @@ layout: basic
     of Chebfun's ODE capabilities.  His contributions included automatic differentiation
     for nonlinear boundary-value problems (with Toby Driscoll), automatic detection of
     linearity of chebops, extension of the backslash syntax to IVPs as well as
-    BVPs, and, single-handedly, the graphical user interface Chebgui.
+    BVPs, and the graphical user interface Chebgui.
     &#193;sgeir is coauthor with Trefethen
     and Driscoll of the book in preparation <em>Exploring ODEs</em>.
     </div>
@@ -117,8 +117,8 @@ layout: basic
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/mj.jpeg" />
     <h3>Mohsin Javed</h3>
-    Mohsin Javed, an MSc and DPhil student at Oxford from 2011, introduced
-    the <code>dirac</code> command for working with delta functions.  
+    Mohsin Javed, an MSc and DPhil student at Oxford from 2011, wrote the
+    <code>dirac</code> code for working with delta functions.  
     He introduced <code>trigremez</code> and other contributions for
     polynomial, rational, and trigonometric approximation.
     </div>
@@ -184,7 +184,7 @@ layout: basic
     fast algorithms based on orthogonal polynomials of codes including
     <code>legpts</code>, <code>sum</code>, <code>conv</code>, and
     <code>cheb2leg</code>.  Since leaving Oxford he has been an active Chebfun
-    alumnus, and is one of the authors of Spherefun.
+    team alumnus, and is one of the authors of Spherefun.
     </div>
 
     <div class="col-xs-6 col-sm-3">
@@ -195,7 +195,7 @@ layout: basic
     Examples, and the Chebfun-based book <em>Approximation Theory and
     Approximation Practice</em>, and he is coauthor with Birkisson and
     Driscoll of the book in preparation <em>Exploring ODEs</em>.
-    He also invented <code>scribble</code>.
+    He also created <code>scribble</code>.
     </div>
 
     <div class="col-xs-6 col-sm-3">
@@ -206,7 +206,7 @@ layout: basic
     new direction for Chebfun: periodic functions, or "trigfuns", based
     on trigonometric expansions.  Periodic functions are now part of Chebfun,
     Chebfun2, and Chebfun3, and have also made possible the new Spherefun
-    and Diskfun classes based on trigonometric representations.
+    and Diskfun classes.
     </div>
 
     <div class="col-xs-6 col-sm-3">
@@ -236,7 +236,7 @@ layout: basic
 
 + When he was at the University of Manchester, **Yuji Nakatsukasa** worked with Vanni
   Noferini and Alex Townsend on the fast rootfinding algorithms for Chebfun2.
-  Now he is a visiting researcher at Oxford and developing algorithms for
+  Now he is a visiting researcher at Oxford, developing algorithms for
   rational approximation.
 
 + **Vanni Noferini**, a postdoc at the University of Manchester, worked with
@@ -262,3 +262,6 @@ layout: basic
 + **Marcus Webb** spent six months with the Chebfun team at the end of his
   undergraduate studies at Oxford in 2012. He showed how Chebfun can be used
   for analytic continuation in the complex plane and improved `bary`.
+
++ **Heather Wilber**, a master's student of Grady Wright at Boise State University,
+  worked with Wright and Alex Townsend during 2015-16 to create Spherefun and Diskfun.
