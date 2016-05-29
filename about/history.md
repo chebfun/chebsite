@@ -208,17 +208,22 @@ try `spin('kdv')`, `spin('ks')`, `spin2('gss')`, or
 
 ## Chebfun3
 
-...will be released in 2016, written by Behnam Hashemi.
+A 3D extension of Chebfun, written by Behnam Hashemi, will be released in 2016.
 
 <br>
 <br>
+
+Here is a photo of many of the team as of 28 May 2016. 
+Standing: Mikael Slevinsky, J&eacute;r&eacute;my Fleury, Nick
+Trefethen, Hrothgar, Anthony Austin, Jared Aurentz, Hadrien Montanelli,
+Mohsin Javed, Olivier S&egrave;te.
+Kneeling: Yuji Nakatsukasa, Behnam Hashemi, Klaus (Zuoxin) Wang. 
+
+<center>
+<img class='thumbnail' title="Chebfun team on 28 May 2016" src="/images/taxi2016-edit.jpg" width="560px" alt="Chebfun team on 28 May 2016"/>
+</center>
 
 The Chebfun project
 welcomes new users and developers from around the world.
 For licensing and copyright purposes, we maintain a
 <a href="people.html">complete list of Chebfun contributors</a>.
-Here is a photo of many of the team as of 28 May 2016.
-Standing: Mikael Slevinsky, J&eacute;r&eacute;my Fleury, Nick
-Trefethen, Hrothgar, Anthony Austin, Jared Aurentz, Hadrien Montanelli,
-Mohsin Javed, Olivier S&egrave;te.
-Kneeling: Yuji Nakatsukasa, Behnam Hashemi, Klaus (Zuoxin) Wang. 
