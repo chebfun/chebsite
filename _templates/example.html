@@ -2,7 +2,7 @@
 
 {% block title %}
 <h1>{{page.title}}</h1>
-<h2>{{page.authordate}}<span><a href='{{page.slughref}}.m'>download</a><span class='sep-sm'>&middot;</span><a href='//github.com/chebfun/examples/tree/development/{{page.category}}/{{page.slug}}.m'>view on GitHub</a></span></h2>
+<h2>{{page.authordate}} in <a href='/examples/{{page.category}}/'>{{page.category}}</a><span><a href='{{page.slughref}}.m'>download</a><span class='sep-sm'>&middot;</span><a href='//github.com/chebfun/examples/tree/development/{{page.category}}/{{page.slug}}.m'>view on GitHub</a></span></h2>
 {% endblock %}
 
 {% block begincontent %}

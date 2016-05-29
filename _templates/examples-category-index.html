@@ -27,13 +27,13 @@
         <a href='{{egg.href}}'>
             <div class='thumbwrapper'><img src='{{egg.img}}' /></div>
             <h3>{{egg.title}}</h3>
-            <p>{{egg.authordate}}
+            <p>{{egg.authordate}}<!--
                 <span class='tags'>
                 {%- for tag in egg.tags -%}
                 <span href='#' class='tag'>#{{tag}}</span>{% if not loop.last %}, {% endif -%}
                 {%- endfor -%}
                 </span>
-            </p>
+         --></p>
         </a>
     </li>
     {% endfor %}
