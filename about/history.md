@@ -73,7 +73,7 @@ coordinated by Rodrigo Platte and Nick Hale and released in December 2009.
 ## Version 4
 
 It was now apparent that Chebfun was more than a software package: it was an
-ongoing and growing software project with half a dozen developers, hundreds of
+ongoing and growing project with half a dozen developers, hundreds of
 programs, and tens of thousands of lines of code.  How could we ensure that it
 would continue to grow and remain available and up-to-date for a long time to
 help people solve problems?  We were committed to the vision of numerical
@@ -94,7 +94,7 @@ problems (led by Trefethen).
 
 ## Version 5
 
-Major new funding for the Chebfun project arrived in 2015 with a 
+Major new funding for the Chebfun project arrived in 2012 with a 
 five-year Advanced Grant to Trefethen from the European
 Research Council.  This enabled us to bring on
 board new DPhil students (Anthony Austin, Mohsin Javed,
@@ -131,9 +131,9 @@ completely redesigned by Hrothgar.
 Throughout the history of the project, Chebfun has 
 blended the practical and the theoretical.  Although it can be used
 simply as a tool for computing with functions, it also provides an excellent
-environment for exploring all kinds of issues of approximation theory and
-associated numerical algorithms such as rootfinding and quadrature, both
-for newcomers and experts.
+environment for both newcomers and experts
+to explore issues of approximation theory and
+associated numerical algorithms such as rootfinding and quadrature.
 Prompted by this opportunity, in 2011 Trefethen began writing a textbook
 _Approximation Theory and Approximation Practice_ to
 present approximation theory, and especially "Chebyshev technology",
@@ -157,50 +157,52 @@ with special algorithms for optimization and rootfinding.
 ## Unifying ODE IVPs and BVPs
 
 Numerical analysts solve boundary-value and initial-value problems
-by different algorithms (for good reasons) and using different
-codes (a headache for users).  We wanted Chebfun to be as
+by different algorithms using different
+codes, a headache for users.  We wanted Chebfun to be as
 headache-free as possible, so in 2013 we decided to unify the IVP 
 and BVP syntaxes at the user level, allowing `u = N\f` in both 
 cases to solve an ODE $N(u) = f$, even though BVPs are treated
 by spectral discretizations and IVPs by time-steppers.  This was done by
-&Aacute;sgeir Birkisson during 2014-15
+&Aacute;sgeir Birkisson during 2014-15,
 and it was a significant effort, requiring
 the automated conversion of higher-order IVPs to first-order form for
-calling Matlab's time-steppers.  The result is very satisfying and
+input to Matlab's time-steppers.  The result is very satisfying and
 has opened the door to a new
 book being written by Trefethen, Birkisson, and Driscoll,
 *Exploring ODEs*, which will be Chebfun-enabled on
-every page but _not_ a book of algorithms.
+every page but _not_ a book of algorithms or numerical analysis.
 _Exploring ODEs_ will be published as a print book and also
 freely available online, probably from late 2017, and we hope
-it will become everyone's hands-on guide to ODEs.
+it will become everyone's favorite hands-on guide to ODEs.
 
 ## Periodic functions, Spherefun, and Diskfun
 
 From the begining of the Chebfun project, we had been aware that
-in principle one might write an analogous "trigfun" package for periodic functions,
+in principle one might write an analogous 
+"fourfun" or "trigfun" package for periodic functions,
 based on trigonometric (=Fourier) rather than Chebyshev representations.
 In 2014, Grady Wright of Boise State Oxford visited Oxford for six months and
 did exactly this.  From this point, the Chebfun constructor
 has had a `'trig'` option,
-and it has surprises what interesting doors
+and it has surprised us what interesting doors
 this has opened.  A big one has been Spherefun, for computing
 on spheres, based on periodic representations in two directions,
-written by Wright and Townsend and Wilber and released with Version 5.4 in
-May 2016.  Diskfun, for computing on a disk, by Heather Wilber,
+written by Wright, Townsend, and Heather Wilber and released with Version 5.4 in
+May 2016.  Diskfun, for computing on a disk, by Wilber,
 is on the way.
 
 ## Time-dependent PDEs
 
-For years, Chebfun has had a command `pde15s` for solving general time-dependent
+As mentioned earlier, since Version 3
+Chebfun has had a command `pde15s` for solving time-dependent
 PDEs in one space dimension, which can be explored through
 `chebgui`.  With the release of Version 5.4, Chebfun additionally
 acquired more specialized state-of-the-art codes `spin`/`spin2`/`spin3`
 for solving reaction-diffusion and
 other stiff PDEs not just in 1D but also in 2D and 3D (the latter after
-Chebfun3 is released).  These capabilities, introduced by
+Chebfun3 is released).  These powerful capabilities, introduced by
 Hadrien Montanelli, are based on exponential integrator formulas,
-by default the ETDRK4 formula of Cox and Matthews.  To get the idea
+the default being the ETDRK4 formula of Cox and Matthews.  To get the idea
 try `spin('kdv')`, `spin('ks')`, `spin2('gss')`, or 
 `spin2('gl2')`.  `spinsphere` for stiff PDEs on a sphere is coming soon.
 
@@ -208,12 +210,15 @@ try `spin('kdv')`, `spin('ks')`, `spin2('gss')`, or
 
 ...will be released in 2016, written by Behnam Hashemi.
 
-\ 
-
-\ 
+<br>
+<br>
 
 The Chebfun project
 welcomes new users and developers from around the world.
 For licensing and copyright purposes, we maintain a
 <a href="people.html">complete list of Chebfun contributors</a>.
-
+Here is a photo of many of the team as of 28 May 2016.
+Standing: Mikael Slevinsky, J&eacute;r&eacute;my Fleury, Nick
+Trefethen, Hrothgar, Anthony Austin, Jared Aurentz, Hadrien Montanelli,
+Mohsin Javed, Olivier S&egrave;te.
+Kneeling: Yuji Nakatsukasa, Behnam Hashemi, Klaus (Zuoxin) Wang. 
