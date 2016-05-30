@@ -206,7 +206,8 @@ layout: basic
     new direction for Chebfun: periodic functions, or "trigfuns", based
     on trigonometric expansions.  Periodic functions are now part of Chebfun,
     Chebfun2, and Chebfun3, and have also made possible the new Spherefun
-    and Diskfun classes.
+    and Diskfun classes.  The Spherefun project was initiated and led 
+    by Wright.
     </div>
 
     <div class="col-xs-6 col-sm-3">
@@ -264,4 +265,5 @@ layout: basic
   for analytic continuation in the complex plane and improved `bary`.
 
 + **Heather Wilber**, a master's student of Grady Wright at Boise State University,
-  worked with Wright and Alex Townsend during 2015-16 to create Spherefun and Diskfun.
+  worked with Wright and Alex Townsend during 2015-16 to create Spherefun.  She then
+  led the creation of the related project Diskfun.
