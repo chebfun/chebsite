@@ -192,11 +192,11 @@ written in IEEE arithmetic, so it is limited to 16 digits.
     <div id="speedup" class="panel-collapse collapse">
       <div class="panel-body">
 <p>You can loosen the precision with a command
-like `chebfunpref.setDefaults('chepfuneps',1e-8)`, but we
+like <code>chebfunpref.setDefaults('chebfuneps',1e-8)</code>, but we
 do not recommend this in general for computations in 1D: the speedup
 is generally not large enough.  In 2D and 3D, however, it is often
-worthwhile to loosen the precision.  See section 18.10 of
-the <a href='../guide/'>Chebfun Guide</a>.
+worthwhile to loosen the precision.  See <a href='../guide/guide18.html#1810-changing-the-accuracy-with-chebfun3eps'>section 18.10</a>
+of the <a href='../guide/'>Chebfun Guide</a>.
       </div>
     </div>
   </div>
@@ -209,10 +209,10 @@ the <a href='../guide/'>Chebfun Guide</a>.
         </a>
       </h4>
     </div>
-    <div id="noisyprecision" class="panel-collapse collapse">
+    <div id="noisy" class="panel-collapse collapse">
       <div class="panel-body">
 <p>To work with data accurate only to, say, 6 digits, you should
-set the Chebfun `chebfuneps` parameter to 1e-6.  See the Chebfun
+set the Chebfun <code>chebfuneps</code> parameter to 1e-6.  See the Chebfun
 example <a href=www.chebfun.org/examples/approx/Noisy.html>"Noisy
 functions in Chebfun"</a>.
       </div>
@@ -230,7 +230,8 @@ functions in Chebfun"</a>.
     <div id="how-do-i-get-involved" class="panel-collapse collapse">
       <div class="panel-body">
 The starting place for Chebfun users to get involved is the Google group
-chebfun-users.  Questions for the Chebfun developers can be sent to
+<a href='http://groups.google.com/forum/#!forum/chebfun-users'>chebfun-users</a>.
+Questions for the Chebfun developers can be sent to
 <a href="mailto:help@chebfun.org">help@chebfun.org</a>, and we usually
 respond quickly. We are always happy to receive drafts of
 proposed new <a href='../../examples'>Examples</a> for inclusion in our
@@ -274,8 +275,8 @@ $[a,b]$. See <a href='../guide/guide01.html'>Chapter 1</a> of the
 A trigfun is a chebfun for a periodic function whose
 representation involves trigonometric polynomials rather than
 Chebyshev polynomials (i.e., a Fourier representation).  Trigfuns
-are created with commands like `chebfun(@(x) sin(pi*x),'trig')`; see
-Chapter 11 of the <a href='../guide/'>Chebfun Guide</a>.
+are created with commands like <code>chebfun(@(x) sin(pi*x),'trig')</code>; see
+<a href='../guide/guide11.html'>Chapter 11</a> of the <a href='../guide/'>Chebfun Guide</a>.
       </div>
     </div>
   </div>
@@ -351,7 +352,7 @@ See <a href='../guide/guide07.html'>Chapter 7</a> and
       <div class="panel-body">
 Citing software projects is a universal problem to which there
 is no generally-accepted solution.  Some journals will permit
-a citation like "The Chebfun Project, `www.chebfun.org`", but others
+a citation like "The Chebfun Project, www.chebfun.org", but others
 insist on authors' names and a standard publication.  See the top of our
 <a href="../../publications">publications page</a> for our recommended format.
       </div>
