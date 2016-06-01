@@ -220,9 +220,9 @@ Mohsin Javed, Olivier S&egrave;te.
 Kneeling: Yuji Nakatsukasa, Behnam Hashemi, Klaus (Zuoxin) Wang. 
 
 <center>
-<img class='thumbnail' title="Chebfun team on 28 May 2016" src="../images/taxi2016-edit.jpg" width="560px" alt="Chebfun team on 28 May 2016"
-onmousedown="document.images['team'].src='../images/chebriver-edit.jpg'" 
-onmouseup="document.images['team'].src='../images/taxi2016-edit.jpg'" />
+<img class='thumbnail' title="Chebfun team on 28 May 2016" src="../images/taxi2016-edit.jpg" width="560px" alt="Chebfun team on 28 May 2016" name="team2016"
+onmousedown="document.images['team2016'].src='../images/chebriver-edit.jpg'" 
+onmouseup="document.images['team2016'].src='../images/taxi2016-edit.jpg'" />
 </center>
 
 The Chebfun project
