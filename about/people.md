@@ -199,6 +199,16 @@ layout: basic
     </div>
 
     <div class="col-xs-6 col-sm-3">
+    <img class="thumbnail profile" src="images/hwilber.jpg" />
+    <h3>Heather Wilber</h3>
+    Heather Wilber worked with Grady Wright and Alex Townsend to create
+    Spherefun when she was a Master's student at Boise State University during
+    2015-16.  She then led the creation of the Diskfun, which was the main
+    topic of her Master's thesis.  Heather has now moved on to begin PhD work
+    in mathematics at Cornell.
+    </div>
+
+    <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/gw.png" />
     <h3>Grady Wright</h3>
     During a six-month visit to Oxford in 2014, Grady Wright of
@@ -210,6 +220,8 @@ layout: basic
     by Wright.
     </div>
 
+</div>
+<div class="row chebpeople">
     <div class="col-xs-6 col-sm-3">
     <img class="thumbnail profile" src="images/kx.png" />
     <h3>Kuan Xu</h3>
@@ -220,7 +232,11 @@ layout: basic
     he wrote the Chebfun v5 code for handling unbounded intervals.
     </div>
 
-</div><!-- <div class="row chebpeople">
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
+
+</div> <!-- <div class="row chebpeople">
     <div class="col-xs-6 col-sm-3"></div>
     <div class="col-xs-6 col-sm-3"></div>
     <div class="col-xs-6 col-sm-3"></div>
@@ -263,7 +279,3 @@ layout: basic
 + **Marcus Webb** spent six months with the Chebfun team at the end of his
   undergraduate studies at Oxford in 2012. He showed how Chebfun can be used
   for analytic continuation in the complex plane and improved `bary`.
-
-+ **Heather Wilber**, a master's student of Grady Wright at Boise State University,
-  worked with Wright and Alex Townsend during 2015-16 to create Spherefun.  She then
-  led the creation of the related project Diskfun.
