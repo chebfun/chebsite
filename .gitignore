@@ -7,6 +7,7 @@ docs/functions/*.html
 examples/applics/*.m
 examples/approx/*.m
 examples/approx2/*.m
+examples/approx3/*.m
 examples/calc/*.m
 examples/cheb/*.m
 examples/complex/*.m

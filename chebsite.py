@@ -140,6 +140,7 @@ class Chebsite:
             'applics':      'Applications',
             'approx':       'Approximation (1D)',
             'approx2':      'Approximation (2D)',
+            'approx3':      'Approximation (3D)',
             'calc':         'Calculus',
             'cheb':         'Chebyshev expansions',
             'complex':      'Complex variables',
