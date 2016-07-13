@@ -60,6 +60,11 @@ should be added to this list.
   <br/>
   [http://rktoolbox.org](http://rktoolbox.org)
 
++ **C<sup>3</sup> = Compressed Continuous Computation**, a C package for
+  "function train" computing with functions in dimensions up to hundreds
+  by Alex Gorodetsky (MIT)
+  <br/>
+  [http://github.com/goroda/Compressed-Continuous-Computation](http://github.com/goroda/Compressed-Continuous-Computation)
 
 
 <!-- 
