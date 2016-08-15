@@ -9,30 +9,29 @@ while others are distinct projects based on closely related ideas.
 [Please contact us](mailto:help@chebfun.org) if you know of a project that
 should be added to this list.
 
-
 + **ApproxFun**, a project in Julia
   by Sheehan Olver (Sydney) and Alex Townsend (MIT).
   <br/>
   [https://github.com/dlfivefifty/ApproxFun.jl](https://github.com/dlfivefifty/ApproxFun.jl)
-
 
 + **pychebfun**, a project in Python
   started by Christopher Swierczewski (Washington) and currently maintained by Olivier Verdier (Bergen).
   <br/>
   [https://github.com/olivierverdier/pychebfun](https://github.com/olivierverdier/pychebfun)
 
++ **chebpy**, a Python implementation of Chebfun by Mark Richardson.
+  <br/>
+  [https://github.com/chebpy/chebpy](https://github.com/chebpy/chebpy)
 
 + **Fourfun**, a MATLAB package by Kristyn McLeod (ASU)
   for computation with periodic functions.
   <br/>
   [http://uk.mathworks.com/matlabcentral/fileexchange/46999-fourfun](http://uk.mathworks.com/matlabcentral/fileexchange/46999-fourfun)
 
-
 + **CHEBINT**, a MATLAB/Octave toolbox
   by Ronald Cools and Koen Poppe (KU Leuven)
   <br/>
   [http://nines.cs.kuleuven.be/software/CHEBINT/](http://nines.cs.kuleuven.be/software/CHEBINT/)
-
 
 + **PaCAL**, a package for probabilistic calculation in Python
   by Szymon Jaroszewicz (Polish Academy of Sciences) and Marcin Korzen (West Pomeranian U. of Technology)
@@ -48,7 +47,6 @@ should be added to this list.
   by Richard J. Fateman (Berkeley).
   <br/>
   [http://www.cs.berkeley.edu/~fateman/papers/cheby.pdf](http://www.cs.berkeley.edu/~fateman/papers/cheby.pdf)
-
 
 + **libchebfun**, an unmaintained project in C
   by Pedro Gonnet (Google) and Nick Hale (Stellenbosch).
