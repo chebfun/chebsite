@@ -386,6 +386,7 @@ class Chebsite:
 
     def write_examples_inventory(self):
         examples = [x for x in self.nodes if x.isa('example')]
+        examples = sorted(examples, key=lambda e: e.data.example_id.lower())
         text = '\n'.join(e.data.example_id + '.m' for e in examples)
 
         fh = open('examples/inventory.txt', 'w')
@@ -394,6 +395,7 @@ class Chebsite:
 
     def write_guide_inventory(self):
         chaps = [x for x in self.nodes if x.isa('guidechap')]
+        chaps = sort_alphanum(chaps, key=lambda a: a.data.slug)
         text = '\n'.join('guide' + c.data.chapter_number.zfill(2) + '.m' for c in chaps)
 
         fh = open('docs/guide/inventory.txt', 'w')
@@ -569,15 +571,17 @@ def pathlist(path):
 
 #-----------------------------------------------------------------------------
 #-----------------------------------------------------------------------------
-# A function for better (alphanum) sorting. Obfuscated code, but it works. Ug.
-# Modified from  <http://nedbatchelder.com/blog/200712/human_sorting.html#comments>
+# A function for better (alphanum) sorting.  Modified from
+# <http://nedbatchelder.com/blog/200712/human_sorting.html>
 
 def sort_alphanum(l, key, reverse=False):
-    return sorted(l, reverse=reverse,
-                     key=lambda a: \
-                         zip( \
-                            re.split("(\\d+)", \
-                                key(a).lower())[0::2], \
-                            map(int, re.split("(\\d+)", \
-                                key(a).lower())[1::2])) \
-                            )
+    def try_int(s):
+        try:
+            return int(s)
+        except:
+            return s
+
+    def alphanum_key(a):
+        return [try_int(c) for c in re.split('(\d+)', key(a))]
+
+    return sorted(l, reverse=reverse, key=alphanum_key)
