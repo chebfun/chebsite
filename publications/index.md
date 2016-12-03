@@ -25,29 +25,29 @@ it](../support).
   <ul>
 
 <li>Battles and Trefethen, <a href="chebfun_paper.pdf" target="_blank">An
-  extension of Matlab to continuous functions and operators</a>, <em>SIAM J. Sci.
-  Comp.</em> 2004</li>
+extension of Matlab to continuous functions and operators</a>, <em>SIAM J. Sci.
+Comp.</em> 2004</li>
 
 <li>Pach&#243;n, Platte and Trefethen, <a href="pachon_et_al_submitted.pdf"
-  target="_blank">Piecewise smooth chebfuns</a>, <em>IMA J. Numer. Anal.</em> 2010</li>
+target="_blank">Piecewise smooth chebfuns</a>, <em>IMA J. Numer. Anal.</em> 2010</li>
 
 <li>Platte and Trefethen, <a href="platte_trefethen.pdf"
-  target="_blank">Chebfun: a new kind of numerical computing</a>, <em>ECMI 2008
-  Proceedings</em> 2010</li>
+target="_blank">Chebfun: a new kind of numerical computing</a>, <em>ECMI 2008
+Proceedings</em> 2010</li>
 
 <li>Wright, Javed, Montanelli and Trefethen, <a href="--"
-  target="_blank">Extension of Chebfun to periodic functions</a>, <em>SIAM J.
-  Sci. Comp.</em> 2015</li>
+target="_blank">Extension of Chebfun to periodic functions</a>, <em>SIAM J.
+Sci. Comp.</em> 2015</li>
 
 <li>Trefethen, <a href="trefethen_functions.pdf" target="_blank">Computing
-  numerically with functions instead of numbers</a>, <em>Commun. of the ACM</em>
-  2015</li>
+numerically with functions instead of numbers</a>, <em>Commun. of the ACM</em>
+2015</li>
 
 <li>Aurentz and Trefethen, <a href="--"
-  target="_blank">Chopping a Chebyshev series</a>, <em>Trans. Math. Softw.</em>,
-  to appear</li>
+target="_blank">Chopping a Chebyshev series</a>, <em>Trans. Math. Softw.</em>,
+to appear</li>
 
-  </ul>
+</ul>
 </div>
 
 <div class='col-sm-6'>
@@ -89,6 +89,7 @@ differential equations</a>, <em>J. Comp. Phys.</em> 2010</li>
   3D with exponential integrators</a>, submitted </li>
 
   </ul>
+</div>
 
 
 <div class='col-sm-6'>
@@ -114,6 +115,7 @@ submitted</li>
   in three dimensions</a>, <em>SIAM J. Sci. Comp.,</em> submitted</li>
 
   </ul>
+</div>
 
 <div class='col-sm-6'>
   <h3>Links with linear algebra</h3>
@@ -139,6 +141,7 @@ submitted</li>
   for trivariate functions</a>, submitted</li>
 
   </ul>
+</div>
 
 <div class='col-sm-6'>
   <h3>Approximation theory and practice</h3>
@@ -175,6 +178,9 @@ interpolation and quadrature</a>, <em>Maths. Today</em> 2011</li>
   target="_blank">Optimal domain splitting for interpolation by Chebyshev
   polynomials</a>, <em>SIAM J. Numer. Anal.</em> 2014</li>
 
+</ul>
+</div>
+
 <div class='col-sm-6'>
   <h3>Orthogonal polynomials and quadrature</h3>
   <ul>
@@ -182,7 +188,6 @@ interpolation and quadrature</a>, <em>Maths. Today</em> 2011</li>
 <li>Hale and Trefethen, <a href="hale_trefethen_Feb142012.pdf"
   target="_blank">Chebfun and numerical quadrature</a>, <em>Science in China</em>
   2012</li>
-
 
 <li>Hale and Townsend, <a href="HaleTownsend2013a.pdf" target="_blank">Fast and
   accurate computation of Gauss–Legendre and Gauss–Jacobi quadrature nodes and
@@ -212,6 +217,7 @@ in the hypercube</a>, <em>SIAM Rev.,</em> to appear</li>
 in the hypercube</a>, <em>Proc. AMS,</em> submitted</li>
 
   </ul>
+</div>
 
 <div class='col-sm-6'>
   <h3>One- and two-page summaries</h3>
@@ -227,6 +233,9 @@ in the hypercube</a>, <em>Proc. AMS,</em> submitted</li>
 summary of the main features of Chebfun</a>, 2014</li>
 
   </ul>
+</div>
+
+<div class='col-sm-6'>
   <h3>Books</h3>
   <ul>
 
