@@ -134,10 +134,14 @@ submitted</li>
   target="_blank">Block operators and spectral discretizations</a>,
   <em>SIAM Rev.</em>, to appear</li>
 
+<li>Hashemi and Nakatsukasa, <a href="--"
+  target="_blank">On the spectral problem
+  for trivariate functions</a>, submitted</li>
+
   </ul>
 
 <div class='col-sm-6'>
-  <h3>Approximation theory and practice
+  <h3>Approximation theory and practice</h3>
   <ul>
 
 <li>Pach&#243;n and Trefethen, <a href="remez.pdf" target="_blank">Barycentric-
