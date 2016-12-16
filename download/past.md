@@ -9,6 +9,7 @@ layout: basic
 All versions are compatible with MATLAB 7.4 (R2007a) through 7.12 (R2010b) and are freely available subject to [our license][license].
 
 
+- **Chebfun Version 5.5.0** (July 2016): [via GitHub](https://github.com/chebfun/chebfun/archive/v5.5.0.zip)
 - **Chebfun Version 5.4.0** (May 2016): [via GitHub](https://github.com/chebfun/chebfun/archive/v5.4.0.zip)
 - **Chebfun Version 5.3.0** (November 2015): [via GitHub](https://github.com/chebfun/chebfun/archive/v5.3.0.zip)
 - **Chebfun Version 5.2.1** (September 2015): [via GitHub](https://github.com/chebfun/chebfun/archive/v5.2.1.zip)
