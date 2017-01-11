@@ -11,6 +11,7 @@ examples/approx3/*.m
 examples/calc/*.m
 examples/cheb/*.m
 examples/complex/*.m
+examples/disk/*.m
 examples/fourier/*.m
 examples/fun/*.m
 examples/geom/*.m
