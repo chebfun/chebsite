@@ -1,4 +1,4 @@
 ---
-title: Diskfun
+title: Disk
 layout: examples-category-index
 ---
