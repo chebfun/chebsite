@@ -144,7 +144,7 @@ class Chebsite:
             'calc':         'Calculus',
             'cheb':         'Chebyshev expansions',
             'complex':      'Complex variables',
-            'disk':         'Complex variables',
+            'disk':         'Disk',
             'fun':          'Fun stuff',
             'fourier':      'Fourier analysis',
             'geom':         'Geometry',
