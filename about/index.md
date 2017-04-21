@@ -7,16 +7,15 @@ What is Chebfun?
 ====
 
 Chebfun is an open-source software system for numerical computing with
-functions. The mathematical basis of Chebfun is piecewise polynomial
+functions. The mathematical starting point of Chebfun is piecewise polynomial
 interpolation implemented with what we call “Chebyshev technology”. The
 foundations are described, with Chebfun examples, in _[Approximation Theory and
 Approximation Practice](../ATAP/)_. Chebfun has extensive capabilities for dealing with
 linear and nonlinear differential and integral operators, and it also includes
 continuous analogues of linear algebra notions like QR and singular value
-decomposition. The [Chebfun2](../docs/guide/guide12.html) extension works with
-functions of two variables defined on a rectangle in the $x$-$y$ plane. To get
-a sense of the breadth and power of Chebfun, a great place to start is by
-looking at our [Examples](../examples).
+decomposition. The Chebfun2, Chebfun3, Spherefun and Diskfun extensions generalize
+much of this functionality to other domains. To get a sense of the breadth and power
+of Chebfun, a great place to start is by looking at our [Examples](../examples).
 
 <div class="row">
     <div class="col-sm-6 col-md-6">
