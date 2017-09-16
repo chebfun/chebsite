@@ -39,7 +39,7 @@ of Chebfun, a great place to start is by looking at our [Examples](../examples).
     <div class="col-sm-6 col-md-6">
     <a href='../publications' class='widget'>
         <h3>Publications</h3>
-        <p>There are many Chebfun-related mathematical publications, including a book.</p>
+        <p>There are many Chebfun-related mathematical publications, including two books.</p>
     </a>
     </div>
 
