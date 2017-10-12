@@ -64,6 +64,10 @@ should be added to this list.
   <br/>
   [http://github.com/goroda/Compressed-Continuous-Computation](http://github.com/goroda/Compressed-Continuous-Computation)
 
++ **COJAC**, a multi-purpose tool which offers a port of certain features of
+  Chebfun to Java, by F. Bapst (HEIA-FR, Fribourg, Switzerland)
+  <br/>[https://github.com/Cojac/Cojac](https://github.com/Cojac/Cojac)
+
 
 <!-- 
 Please also read the following page:
