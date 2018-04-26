@@ -68,6 +68,10 @@ should be added to this list.
   Chebfun to Java, by F. Bapst (HEIA-FR, Fribourg, Switzerland)
   <br/>[https://github.com/Cojac/Cojac](https://github.com/Cojac/Cojac)
 
++ **ChebTools**, a C++ library for working with Chebyshev expansions in
+  one dimension and global rootfinding with Python wrapper by Ian H. Bell
+	(NIST), Bradley Alpert (NIST), and Lucas Bouck (GMU).
+	<br/>[https://github.com/usnistgov/ChebTools](https://github.com/usnistgov/ChebTools)
 
 <!-- 
 Please also read the following page:
