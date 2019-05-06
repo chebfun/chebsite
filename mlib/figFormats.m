@@ -6,7 +6,7 @@ function figFormats(flag)
 %   FIGFORMATS('reset') restores the settings to their factory defaults.
 
 if ( nargin == 0 )
-    if ( ~verLessThan('matlab', '8.6') )
+    if ( ~verLessThan('matlab', '8.6') && verLessThan('matlab','9.4') )
         % In R2015b and later, measurements in "pixels" now refer to
         % measurements in "device-independent" pixels, not "true" pixels.
         % Since the website requires figures of a certain size in "true"
