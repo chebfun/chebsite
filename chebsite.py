@@ -157,7 +157,7 @@ class Chebsite:
             'pde':          'Partial differential equations',
             'quad':         'Quadrature',
             'roots':        'Rootfinding',
-            'sphere':       'Sphere and Ball',
+            'sphere':       'Sphere and ball',
             'stats':        'Statistics and probability',
             'temp':         'Temporary',
             'veccalc':      'Vector calculus'
