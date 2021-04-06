@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Examples &raquo; Chebfun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet"><!--  media="screen" -->
+    <link href="/css/normalize.min.css" rel="stylesheet"><!--  media="screen" -->
+    <link href="/css/chebsite.css" rel="stylesheet"><!--  media="screen" -->
+    <link href="/css/tomorrow.css" rel="stylesheet"><!--  media="screen" -->
+    <link href="/css/flexslider.css" rel="stylesheet"><!--  media="screen" -->
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4297200-10', 'chebfun.org');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div id='navbar' class="navbar navbar-default navbar-fixed-top">
+      <div class="container nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <a id="logo" href="/"><img src='/images/logo.png' /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/about">About</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/download">Download</a></li>
+            <li><a href="/docs">Docs</a></li>
+            <li><a href="/examples">Examples</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/search"><span class="glyphicon glyphicon-search"></span></a></li>
+            <li><a href="https://github.com/chebfun/chebfun"><img id='github-logo' src='/css/github-logo.png'/></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+<div class="page-wrapper">
+
+    <div class='page-header'>
+<h1 class='pull-left-15px'>Examples</h1>
+</div>
+
+    <div class="container">
+<div class="row main noleftpadding"><div class="col-sm-4 noleftpadding">
+    <ul class='sidenav'>
+    <li><a href="/examples/applics/index.html">Applications<span>0</span></a></li>
+    <li><a href="/examples/approx/index.html">Approximation (1D)<span>5</span></a></li>
+    <li><a href="/examples/approx2/index.html">Approximation (2D)<span>2</span></a></li>
+    <li><a href="/examples/approx3/index.html">Approximation (3D)<span>0</span></a></li>
+    <li><a href="/examples/calc/index.html">Calculus<span>0</span></a></li>
+    <li><a href="/examples/cheb/index.html">Chebyshev expansions<span>2</span></a></li>
+    <li><a href="/examples/complex/index.html">Complex variables<span>8</span></a></li>
+    <li><a href="/examples/disk/index.html">Disk<span>0</span></a></li>
+    <li><a href="/examples/fourier/index.html">Fourier analysis<span>0</span></a></li>
+    <li><a href="/examples/fun/index.html">Fun stuff<span>0</span></a></li>
+    <li><a href="/examples/geom/index.html">Geometry<span>0</span></a></li>
+    <li><a href="/examples/integro/index.html">Integral equations<span>1</span></a></li>
+    <li><a href="/examples/linalg/index.html">Linear algebra<span>4</span></a></li>
+    <li><a href="/examples/ode-eig/index.html">ODE eigenvalue problems<span>2</span></a></li>
+    <li><a href="/examples/ode-linear/index.html">ODEs (linear)<span>2</span></a></li>
+    <li><a href="/examples/ode-nonlin/index.html">ODEs (nonlinear)<span>2</span></a></li>
+    <li><a href="/examples/opt/index.html">Optimization<span>0</span></a></li>
+    <li><a href="/examples/pde/index.html">Partial differential equations<span>0</span></a></li>
+    <li><a href="/examples/quad/index.html">Quadrature<span>0</span></a></li>
+    <li><a href="/examples/ode-random/index.html">Random ODEs<span>0</span></a></li>
+    <li><a href="/examples/roots/index.html">Rootfinding<span>2</span></a></li>
+    <li><a href="/examples/sphere/index.html">Sphere and ball<span>5</span></a></li>
+    <li><a href="/examples/stats/index.html">Statistics and probability<span>2</span></a></li>
+    <li><a href="/examples/veccalc/index.html">Vector calculus<span>0</span></a></li>
+    </ul>
+</div>
+<div id='content' class="col-sm-8" role="main">
+    <p>The Chebfun Examples have been written by various authors beginning in 2010.
+New Examples are always welcome!&mdash;download <a href="ExampleTemplate.m">ExampleTemplate.m</a> to get started,
+and if you have a draft, <a href="../support/">get in touch</a>.</p>
+<p>The Examples are updated from time to time, but the original date is retained.
+That is why, for example, you will sometimes see an example dated in one year
+referencing a paper from a later year.</p>
+    <ol class='examples slats'>
+    <li>
+        <a href='/examples/complex/PhaseplotCommand.html'>
+            <div class='thumbwrapper'><img src='/examples/complex/img/PhaseplotCommand_01.png' /></div>
+            <h3>The phaseplot command</h3>
+            <p>Nick Trefethen, October 2020<!--
+                <span class='tags'><span href='#' class='tag'>#conformal</span></span>
+         --></p>
+        </a>
+    </li>
+    <li>
+        <a href='/examples/stats/Smoothies.html'>
+            <div class='thumbwrapper'><img src='/examples/stats/img/Smoothies_01.png' /></div>
+            <h3>Smoothies: nowhere analytic functions</h3>
+            <p>Nick Trefethen, February 2020<!--
+                <span class='tags'><span href='#' class='tag'>#randnfun</span></span>
+         --></p>
+        </a>
+    </li>
+    <li>
+        <a href='/examples/linalg/VandermondeArnoldi.html'>
+            <div class='thumbwrapper'><img src='/examples/linalg/img/VandermondeArnoldi_01.png' /></div>
+            <h3>Vandermonde with Arnoldi</h3>
+            <p>Pablo Brubeck, Yuji Nakatsukasa, and Nick Trefethen, January 2020<!--
+                <span class='tags'><span href='#' class='tag'>#arnoldi</span>, <span href='#' class='tag'>#interpolation</span>, <span href='#' class='tag'>#least-squares</span>, <span href='#' class='tag'>#vandermonde</span></span>
+         --></p>
+        </a>
+    </li>
+    <li>
+        <a href='/examples/ode-nonlin/GulfStream.html'>
+            <div class='thumbwrapper'><img src='/examples/ode-nonlin/img/GulfStream_01.png' /></div>
+            <h3>A third-order nonlinear BVP on the half-line</h3>
+            <p>C. I. Gheorghiu, January 2020<!--
+                <span class='tags'><span href='#' class='tag'>#chebop</span>, <span href='#' class='tag'>#ode</span></span>
+         --></p>
+        </a>
+    </li>
+    <li>
+        <a href='/examples/linalg/EigLandscapes.html'>
+            <div class='thumbwrapper'><img src='/examples/linalg/img/EigLandscapes_01.png' /></div>
+            <h3>Eigenvalue Landscapes</h3>
+            <p>Nick Trefethen, November 2019<!--
+                <span class='tags'><span href='#' class='tag'>#avoidance</span>, <span href='#' class='tag'>#chebfun2</span>, <span href='#' class='tag'>#linearalgebra</span></span>
+         --></p>
+        </a>
+    </li>
+    <li>
+        <a href='/examples/approx2/Hosepipe.html'>
+            <div class='thumbwrapper'><img src='/examples/approx2/img/Hosepipe_01.png' /></div>
+            <h3>Combining Chebyshev and trigonometric</h3>
+            <p>Nick Trefehen, November 2019<!--
+                <span class='tags'></span>
+         --></p>
+        </a>
+    </li>
+    <li>
+        <a href='/examples/complex/ConformalL.html'>
+            <div class='thumbwrapper'><img src='/examples/complex/img/ConformalL_01.png' /></div>
+            <h3>Conformal mapping of an L-shaped region</h3>
+            <p>Nick Trefethen, October 2019<!--
+                <span class='tags'><span href='#' class='tag'>#conformal</span></span>
+         --></p>
+        </a>
+    </li>
+    </ol>
+</div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <p>&copy; Copyright 2019 the University of Oxford and the Chebfun Developers.</p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=matlab" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/config.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+  </body>
+</html>
