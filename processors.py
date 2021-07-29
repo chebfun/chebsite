@@ -91,7 +91,7 @@ class ContentProcessor:
         # extension_configs = { 'codehilite': [('guess_lang', 'False'), ('linenums', 'False')],
         #                       'headerid':   [('level', 2)] }
 
-	chebmdext         = chebsitemd.ChebsiteExtension()
+        chebmdext         = chebsitemd.ChebsiteExtension()
         extensions        = ['extra', 'headerid', 'toc', chebmdext]
         extension_configs = { 'headerid':   [('level', 2)] }
         self.md  = markdown.Markdown(extensions=extensions,
