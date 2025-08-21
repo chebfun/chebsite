@@ -208,10 +208,7 @@ try `spin('kdv')`, `spin('ks')`, `spin2('gss')`, or
 
 ## Chebfun3
 
-A 3D extension of Chebfun, written by Behnam Hashemi, will be released in 2016.
-
-<br>
-<br>
+A 3D extension of Chebfun, written by Behnam Hashemi, was released in 2016.
 
 Here is a photo of many of the team as of 28 May 2016. 
 Standing: Mikael Slevinsky, J&eacute;r&eacute;my Fleury, Nick
