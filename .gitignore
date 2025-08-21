@@ -1,5 +1,6 @@
 
 _build
+myenv/
 examples/*/img/*.html
 docs/guide/img/*.html
 docs/functions/*.html
