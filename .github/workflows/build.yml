@@ -33,10 +33,10 @@ jobs:
           token: ${{ secrets.BUILD_REPO_TOKEN }}
 
       # 4. Checkout _build repo (where we will push)
-      - name: Checkout _build repo
+      - name: Checkout chebfun.github.io
         uses: actions/checkout@v4
         with:
-          repository: chebfun/_build
+          repository: chebfun/chebfun.github.io
           path: chebsite/_build
           token: ${{ secrets.BUILD_REPO_TOKEN }}
 
